@@ -1,0 +1,24 @@
+Thursday, 04-Aug-2016 14:04:11 - restore started
+Thursday, 04-Aug-2016 14:04:11 - wp version     : 4.5.3
+Thursday, 04-Aug-2016 14:04:11 - php version    : 5.5.38
+Thursday, 04-Aug-2016 14:04:11 - mysql version  : 5.5.48
+Thursday, 04-Aug-2016 14:04:11 - memory limit   : 1024M
+Thursday, 04-Aug-2016 14:04:11 - execution time : 600
+Thursday, 04-Aug-2016 14:04:11 - mysql timeout  : 600
+Thursday, 04-Aug-2016 14:04:11 - socket timeout : 600
+Thursday, 04-Aug-2016 14:04:11 - file download started
+Thursday, 04-Aug-2016 14:04:20 - download finished, filesize - 70 MB
+Thursday, 04-Aug-2016 14:04:20 - extracting database using ziparchive
+Thursday, 04-Aug-2016 14:04:20 - changing prefix from "wp_" to "wp82_"
+Thursday, 04-Aug-2016 14:04:20 - database import started
+Thursday, 04-Aug-2016 14:04:21 - updating mysql query with current site's url - new query : "INSERT INTO wp82_options VALUES("1","siteurl","http://webtreex.com.br/wp","yes")"
+Thursday, 04-Aug-2016 14:04:27 - mysql query failed. error : 1065 Query was empty - query : ""
+Thursday, 04-Aug-2016 14:04:27 - database import finished
+Thursday, 04-Aug-2016 14:04:27 - search and replace started
+Thursday, 04-Aug-2016 14:04:27 - there are 49 tables to scan
+Thursday, 04-Aug-2016 14:04:28 - search and replace finished
+Thursday, 04-Aug-2016 14:04:28 - extracting archive using ziparchive
+Thursday, 04-Aug-2016 14:04:32 - copying files..
+Thursday, 04-Aug-2016 14:04:35 - deleting temp directory..
+Thursday, 04-Aug-2016 14:04:37 - deleting downloaded zip file..
+Thursday, 04-Aug-2016 14:04:37 - restore finished
