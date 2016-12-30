@@ -17,13 +17,14 @@ div.gmw-pt-horizontal-big-form-wrapper .gmw-distance-select,
 div.gmw-pt-horizontal-big-form-wrapper .gmw-posts-dropdown {
 	display:inline-block;
 	margin:0 10px 10px 0px;
+	vertical-align: top;
 }
 
 div.gmw-pt-horizontal-big-form-wrapper input[type="text"], 
 div.gmw-pt-horizontal-big-form-wrapper select {
-    -webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box;    
-	box-sizing: border-box;
+     
+	    
+	
 }
 
 div.gmw-pt-horizontal-big-form-wrapper input[type="text"] {
@@ -92,8 +93,8 @@ div.gmw-pt-horizontal-big-form-wrapper .gmw-locator-btn-wrapper {
 div.gmw-pt-horizontal-big-form-wrapper.gmw-form-wrapper .gmw-locator-btn-within-wrapper {
 	cursor: pointer;
 	position: absolute;
-	right:0px;
-	top:0px;
+	right:5px !important;
+	top:10px !important;
 	padding: 15px 5px 0 0;
 	width:initial;
 	height: initial;
@@ -251,9 +252,9 @@ div.gmw-pt-horizontal-big-form-wrapper .gmw-checkbox-taxonomy-wrapper .category-
 	div.gmw-pt-horizontal-big-form-wrapper .gmw-submit-wrapper,
 	div.gmw-pt-horizontal-big-form-wrapper .gmw-submit-button {
 		width:100% !important;
-		-webkit-box-sizing: border-box; 
-		-moz-box-sizing: border-box;    
-		box-sizing: border-box;
+		 
+		    
+		
 		margin:0 0px 10px 0px !important;
 		display:block;
 	}

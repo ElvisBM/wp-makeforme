@@ -22,6 +22,7 @@ div.gmw-fl-horizontal-xprofile-big-form-wrapper .gmw-posts-dropdown,
 div.gmw-fl-horizontal-xprofile-big-form-wrapper .gmw-fl-form-xprofile-fields {
 	display:inline-block;
 	margin:0 10px 10px 0px;
+	vertical-align: top;
 }
 div.gmw-fl-horizontal-xprofile-big-form-wrapper .editfield label, div.gmw-fl-horizontal-xprofile-big-form-wrapper .editfield.checkbox, div.gmw-fl-horizontal-xprofile-big-form-wrapper .editfield.radio{display: none;}
 
@@ -49,9 +50,9 @@ div.gmw-fl-horizontal-xprofile-big-form-wrapper form .date input[type="text"] {
 
 div.gmw-fl-horizontal-xprofile-big-form-wrapper input[type="text"], 
 div.gmw-fl-horizontal-xprofile-big-form-wrapper select {
-    -webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box;    
-	box-sizing: border-box;
+     
+	    
+	
 }
 
 .gmw-fl-form-xprofile-fields div.gmw-fl-horizontal-xprofile-big-form-wrapper select, .gmw-fl-form-xprofile-fields div.gmw-fl-horizontal-xprofile-big-form-wrapper input[type="text"]{width: 100%}
@@ -141,10 +142,10 @@ div.gmw-fl-horizontal-xprofile-big-form-wrapper .gmw-locator-btn-within-wrapper 
 	cursor: pointer;
 	padding:2px 5px;
 	position: absolute;
-	right:0px;
+	right:4px !important;
 	height: initial;
 	width:initial;
-	top:0px;
+	top:10px !important;
 }
 
 div.gmw-fl-horizontal-xprofile-big-form-wrapper .gmw-locator-btn-wrapper .gmw-locator-btn-within {
@@ -296,9 +297,9 @@ div.gmw-fl-horizontal-xprofile-big-form-wrapper input.gmw-submit{
 	div.gmw-fl-horizontal-xprofile-big-form-wrapper .gmw-submit-wrapper,
 	div.gmw-fl-horizontal-xprofile-big-form-wrapper .gmw-submit-button {
 		width:100% !important;
-		-webkit-box-sizing: border-box; 
-		-moz-box-sizing: border-box;    
-		box-sizing: border-box;
+		 
+		    
+		
 		margin:0 0px 10px 0px !important;
 		display:block;
 	}

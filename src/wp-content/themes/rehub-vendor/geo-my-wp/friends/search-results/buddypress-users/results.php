@@ -51,6 +51,7 @@
     
     <?php do_action( 'bp_before_directory_members_list' ); ?>
 
+    <div class="rhbp-grid-loop">
     <ul id="members-list" class="item-list geowp-item-list col_wrap_fourth rh-flex-eq-height">
     <?php while ( bp_members() ) : bp_the_member(); ?>
         
@@ -61,11 +62,16 @@
             <?php do_action( 'gmw_search_results_loop_item_start', $gmw, $member ); ?>        
             <?php 
                 $author_ID = bp_get_member_user_id();
-                $mycredrank = ( function_exists( 'mycred_get_users_rank' ) ) ? mycred_get_users_rank($author_ID) : '';
-                $mycredpoint = ( function_exists( 'mycred_get_users_fcred' ) ) ? mycred_get_users_fcred($author_ID ) : '';
             ?>
             <div class="member-inner-list" style="<?php rh_cover_image_url( 'members', 120, true ); ?>">
-                <?php if (!empty($mycredrank) && is_object( $mycredrank)) :?><span class="rh-user-rank-mc rh-user-rank-<?php echo $mycredrank->post_id; ?>"><?php echo $mycredrank->title ;?></span><?php endif;?>            
+                <?php               
+                    $membertype = bp_get_member_type($author_ID);
+                    $membertype_object = bp_get_member_type_object($membertype);
+                    $membertype_label = (!empty($membertype_object) && is_object($membertype_object)) ? $membertype_object->labels['singular_name'] : '';
+                ?>      
+                <?php if($membertype_label) :?>
+                    <span class="rh-user-m-type rh-user-m-type-<?php echo $membertype;?>"><?php echo $membertype_label;?></span>                
+                <?php endif;?>           
                 <div class="item-avatar">
                     <a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar(); ?></a>
                     <?php // <i class="online-status fa fa-circle"></i> ?>
@@ -87,7 +93,7 @@
                     <?php if (defined('wcv_plugin_dir')):?>
                         <?php if(WCV_Vendors::is_vendor( $author_ID)):?>
                         <div class="store_member_in_m_loop">
-                            <span class="store_member_in_m_loop_l"><?php _e('Owner of shop:', 'rehubchild');?></span>
+                            <span class="store_member_in_m_loop_l"><?php _e('Owner of shop:', 'rehub_framework');?></span>
                             <a href="<?php echo WCV_Vendors::get_vendor_shop_page( $author_ID );?>" class="store_member_in_m_loop_a"><?php echo get_user_meta( $author_ID, 'pv_shop_name', true );?></a>
                         </div>
                         <?php endif;?>
@@ -131,6 +137,7 @@
         </li>
     <?php endwhile; ?>
     </ul>
+    </div>
 
     <?php do_action( 'bp_after_directory_members_list' ); ?>
 
