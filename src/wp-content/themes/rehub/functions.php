@@ -947,6 +947,11 @@ if (rehub_option('type_user_review') == 'full_review' || rehub_option('type_user
 	}
 }
 
+
+
+//MakeForme
+include (TEMPLATEPATH . '/functions/functions_makeforme.php');
+
 //Affiliate for posts
 include (TEMPLATEPATH . '/functions/affiliate_functions.php');
 
