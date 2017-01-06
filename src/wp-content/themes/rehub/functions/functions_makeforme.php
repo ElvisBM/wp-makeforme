@@ -13,6 +13,15 @@ function makeforme_register_sidebars() {
 		'before_title' => '<div class="title">',
 		'after_title' => '</div>',
 	));
+
+	register_sidebar(array(
+		'id' => 'filters-header',
+		'name' => __('Filters  Header', ''),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<div class="title">',
+		'after_title' => '</div>',
+	));
 }
 
 add_action( 'widgets_init', 'makeforme_register_sidebars' );
