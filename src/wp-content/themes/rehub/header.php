@@ -66,12 +66,20 @@
     <?php if(rehub_option('rehub_header_top') !='1')  : ?>  
         <!-- top -->  
         <div class="header_top_wrap<?php echo $header_topline_style;?>">
-            <div class="header-top clearfix">    
-                <?php if(has_nav_menu('user_logged_in_menu') && is_user_logged_in() && rehub_option('rehub_logged_enable_intop') == '1'): ?>
-                    <?php wp_nav_menu( array( 'container_class' => 'top-nav', 'container' => 'div', 'theme_location' => 'user_logged_in_menu', 'fallback_cb' => 'add_top_menu_for_blank', 'depth' => '1', 'items_wrap' => '<i class="fa fa-caret-down re-top-menu-collapse"></i><ul id="%1$s" class="%2$s">%3$s</ul>'  ) ); ?> 
-                <?php else :?>
-                    <?php wp_nav_menu( array( 'container_class' => 'top-nav', 'container' => 'div', 'theme_location' => 'top-menu', 'fallback_cb' => 'add_top_menu_for_blank', 'depth' => '1', 'items_wrap' => '<i class="fa fa-caret-down re-top-menu-collapse"></i><ul id="%1$s" class="%2$s">%3$s</ul>'  ) ); ?>
-                <?php endif;?>
+            <div class="header-top clearfix">   
+
+                <?php if(rehub_option('header_six_login') == 1) : ?>
+                    <?php $rtlclass = (is_rtl()) ? 'floatleft mr10' : 'floatright ml10'; ?>
+                    <?php $loginurl = (rehub_option('header_six_btn_login_url')) ? ' loginurl='.esc_url(rehub_option('header_six_btn_login_url')).'' : '';?>
+                    <?php echo do_shortcode('[wpsm_user_modal as_btn="1" class="mobileinmenu '.$rtlclass.'"'.$loginurl.']') ;?>
+                <?php endif; ?> 
+
+                <?php if ( is_active_sidebar( 'header-top' ) ) : ?>
+                    <?php dynamic_sidebar( 'header-top' ); ?>
+                <?php else : ?>
+                    <p><?php _e('', ''); ?></p>
+                <?php endif; ?>   
+
                 <div class="top-social"> 
                     <?php if(rehub_option('rehub_login_icon') == 'top' && rehub_option('userlogin_enable') == '1') : ?>
                        <?php echo do_shortcode ('[wpsm_user_modal]');?>
@@ -105,19 +113,27 @@
             <?php if(rehub_option('rehub_header_style') == 'header_first' || rehub_option('rehub_header_style') == 'header_seven') : ?><div class="search head_search"><?php get_search_form(); ?></div><?php endif; ?>
             <?php if(rehub_option('rehub_header_style') != 'header_third' && rehub_option('rehub_header_style') != 'header_six') : ?><?php if(rehub_option('rehub_ads_top')) : ?><div class="mediad"><?php echo do_shortcode(rehub_option('rehub_ads_top')); ?></div><?php endif; ?><?php endif; ?>
             <?php if(rehub_option('rehub_header_style') == 'header_six') : ?>
-                <?php if(rehub_option('header_six_menu') != '') : ?>
-                    <?php $nav_menu = wp_get_nav_menu_object( rehub_option('header_six_menu') ); // Get menu
-                    if (!empty ($nav_menu)) :?>
-                        <div id="re_menu_near_logo">
-                            <?php wp_nav_menu( array( 'fallback_cb' => '', 'menu' => $nav_menu, 'container' => false  ) );?>
+
+
+                <?php if ( is_active_sidebar( 'filters-header' ) ) : ?>
+                    <div id="filters-header" class="vc_row-fluid">
+                        <div class="wpb_column vc_column_container">
+                            <?php dynamic_sidebar( 'filters-header' ); ?>
                         </div>
-                    <?php endif ;?>                                       
-                <?php endif; ?>
-                <?php if(rehub_option('header_six_login') == 1) : ?>
-                    <?php $rtlclass = (is_rtl()) ? 'floatleft mr10' : 'floatright ml10'; ?>
-                    <?php $loginurl = (rehub_option('header_six_btn_login_url')) ? ' loginurl='.esc_url(rehub_option('header_six_btn_login_url')).'' : '';?>
-                    <?php echo do_shortcode('[wpsm_user_modal as_btn="1" class="mobileinmenu '.$rtlclass.'"'.$loginurl.']') ;?>
-                <?php endif; ?> 
+                    </div>
+                <?php else : ?>
+                    <p><?php _e('', ''); ?></p>
+                <?php endif; ?>  
+
+                <div id="cart_header">
+                    <?php
+                        if ($woocommerce){
+                           echo'<a class="rh_woocartmenu-link icon-in-main-menu menu-item-one-line  cart_count" href="'.$woocommerce->cart->get_cart_url().'"><span class="rh_woocartmenu-icon"></span><span class="count">'.$woocommerce->cart->cart_contents_count.'</span></a>';
+                        };
+                    ?>
+                </div>
+
+
                 <?php if(rehub_option('header_six_btn') == 1) : ?>
                     <?php $rtlclass = (is_rtl()) ? 'floatleft' : 'floatright'; ?>
                     <?php $btnlink = rehub_option('header_six_btn_url'); ?>

@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+
+a, p, h1, h2, h3, h4{
+	font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+	overflow-x: hidden;
+}
+.vc_column_container>.vc_column-inner{
+	width: 100%;
+	padding:0px!important;
+}
+
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #fff; 
+}
+
+:-ms-input-placeholder {  
+  color: #fff; 
+}
+
+
 /*
  * Header Top
  */
@@ -14,4 +47,91 @@
 
 }
 
+nav.top_menu > ul > li ul, .main-nav.dark_style{
+	background: #fbf8da; 
+	-webkit-box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.46);
+	-moz-box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.46);
+	box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.46);
+}
 
+.vc_row-has-fill>.vc_column_container>.vc_column-inner{
+	padding-top: 0px!important;
+}
+
+.social_icon.small_i a{
+	width: 25px;
+    height: 25px;
+    font-size: 1.7em;
+}
+
+
+#filters-header{
+	width: 70%;
+    float: left;
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+#filters-header .widget_search input{
+	border: 0px;
+    background: #53ad9d;
+    padding: 20px 10px;
+}
+#filters-header .widget_search .fa-search{
+	color: #fff;
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+
+#menu-menu-principal{
+	margin-left: 140px;
+}
+
+.main-nav.dark_style nav.top_menu > ul > li > a{
+	font-family: 'Poppins', sans-serif;
+    color: #248f9e;
+    font-weight: 300;
+}
+
+.main-nav.dark_style nav.top_menu > ul > li > a span{
+	color:#e15d4c;
+}
+
+.main-nav.dark_style nav.top_menu > ul > li > a span.maker{
+	color:#1da58c;
+}
+
+
+#cart_header{
+	float: left;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+#cart_header a .rh_woocartmenu-icon{
+	padding-top: 9px;
+    width: 42px;
+    height: 42px;
+    font-weight: 200;
+    border-radius: 5px;
+    background: #de5046;
+}
+
+#cart_header a .rh_woocartmenu-icon:after{
+	content: "\f291";
+        font-size: 1.8em;
+    font-family: FontAwesome;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+#cart_header a .count{
+	background: #39ad98;
+    color: #fff;
+    border-radius: 50px;
+    padding: 0px 7px;
+    margin-left: -5px;
+    z-index: 999;
+    position: absolute;
+    font-size: 14px;
+}
