@@ -184,8 +184,8 @@ p.demo_store { position: fixed; top: 0; left: 0; right: 0; margin: 0; width: 100
 .woocommerce .products .product.non_btn a.button{ display: none;}
 .woocommerce .products .hoticonfireclass:before{float: left;}
 
-.product #buttons{position: absolute;margin-top: -42px;right: 0;}
-.product #buttons  a.woo_loop_btn{background: #14b5da!important;}
+.product #buttons{position: absolute;margin-top: -46px;right: 0;}
+.product #buttons  a.woo_loop_btn{background: #14b5da!important;font-family: 'Poppins', sans-serif;font-weight: 400;letter-spacing: 0.5px;}
 .product #buttons  a.woo_loop_btn:before{content: "\f291";font-size: 1.2em;font-family: FontAwesome;font-weight: normal;letter-spacing: 0;margin-right: 10px;}
 
 
@@ -199,7 +199,7 @@ p.demo_store { position: fixed; top: 0; left: 0; right: 0; margin: 0; width: 100
 .woocommerce .products.column_woo .product_price_height{margin: 15px 0 8px 0; }
 
 .woocommerce .products.grid_woo > .product{padding: 0px; border:0px solid #ddd;background: #f6f2a5;}
-.woocommerce .products.grid_woo > .product h3{font-size: 1.2em;font-weight: normal;color: #14b5da;text-align: center;}
+.woocommerce .products.grid_woo > .product h3{font-size: 1.2em;line-height: 1.3em;letter-spacing: 0.5px;font-weight: 200;color: #14b5da;text-align: center;}
 .woocommerce .products.grid_woo > .product .price{color: #cc0000}
 .woocommerce .products.grid_woo > .product .woo_loop_btn_actions{text-align: left;margin-bottom: 0px;}
 

@@ -5,13 +5,8 @@ a, p, h1, h2, h3, h4{
 	font-family: 'Poppins', sans-serif;
 }
 
-
 body{
 	overflow-x: hidden;
-}
-.vc_column_container>.vc_column-inner{
-	width: 100%;
-	padding:0px!important;
 }
 
 ::-webkit-input-placeholder {
@@ -31,6 +26,54 @@ body{
 }
 
 
+
+span.sou{
+	color:#e15f4d;
+}
+
+span.maker{
+	color:#2ebfd1;
+}
+
+span.me{
+	color:#3cb08f;
+}
+
+a.ver-todos{
+	text-decoration: none;
+    color: #14b5da;
+    cursor: pointer;
+    float: right;
+    font-size: 0.6em;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    bottom: -9px;
+    background: #fff;
+    padding: 10px;
+}
+
+.titulo{
+	margin-bottom: 0px!important;
+	padding-bottom: 0px!important;
+}
+
+
+.titulo p{
+	margin: 10px 0 5px 0;
+	font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.titulo article{
+	margin-bottom: 10px;
+}
+
+
+.vc_column_container>.vc_column-inner{
+	width: 100%;
+	padding:0px!important;
+}
 /*
  * Header Top
  */

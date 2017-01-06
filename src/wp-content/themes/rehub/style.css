@@ -1461,7 +1461,7 @@ border: 1px solid #cecece; border-bottom: none}
 .postNavigation .thumbnail {float: right;margin-left: 5px;position: relative;width: 70px;height: 70px; text-align: center;}
 .postNavigation.nextPostBox .thumbnail {float: left;margin-left: 0;margin-right: 5px;}
 .postNavigation .headline {height: 70px;overflow: hidden;position: relative;-webkit-font-smoothing: antialiased;font-size: 14px;padding: 0 8px;}
-.postNavigation .headline span{ font-size: 10px; line-height: 10px; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 8px}
+.postNavigation .headline span{ font-size: 10px; line-height: 10px; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 8px}
 .postNavigation .headline h4{ margin: 0}
 .postNavigation .inner-prevnext {position: absolute;top: 0;height: 100%;box-sizing: border-box;-webkit-box-sizing: border-box;padding: 15px;width: 290px;background-color: #fff; color: #111 !important;  transition: all .2s ease-in-out 0.3s;}
 .postNavigation.nextPostBox .inner-prevnext{margin: 0 0 0 40px; left: 0; }
@@ -2224,22 +2224,25 @@ article.post .yith_float_btns a{ text-decoration: none;}
 .open_dls_onclk{ display: none;}
 .r_show_hide{cursor: pointer;}
 
-.re_filter_panel{position: relative;z-index: 1000; margin: 0 0 25px 0; box-shadow: 0 2px 2px #E4E4E4; background-color: #f7f7f7; user-select: none;}
-.re_filter_panel ul.re_filter_ul{margin: 0; padding: 0}
+.re_filter_panel{position: relative;z-index: 1000; margin: 0 0 25px 0; background-color: #f6f2a5; user-select: none;}
+.re_filter_panel ul.re_filter_ul{margin: 0; padding: 0;color: #3cb08f;font-weight: 200;font-family: 'Poppins', sans-serif;font-weight: 400;}
 .re_filter_panel ul.re_filter_ul li{display: inline-block; margin: 0}
-.re_filter_panel ul.re_filter_ul li span {cursor: pointer;padding: 12px 16px;display: inline-block;transition: all .3s ease; font: bold 14px/16px Arial;}
+.re_filter_panel ul.re_filter_ul li span {cursor: pointer;padding: 12px 16px;display: inline-block;transition: all .3s ease;font-family: 'Poppins', sans-serif;letter-spacing: 0.5px;}
 span.active.re_filtersort_btn{color: #fff}
 div.sortingloading{opacity: 0.2; position: relative;}
+.re_filter_ul span.re_filtersort_btn:hover,.re_filter_ul span.active.re_filtersort_btn{
+	    background: #3cb08f !important;
+}
 
 .re_filter_panel .re_tax_dropdown{position: absolute;top: 0;right: 0;margin: 0;overflow: hidden; transition: all 0.5s ease; }
 .re_filter_panel .re_tax_dropdown.active{box-shadow: 0 3px 20px #ccc;}
-.re_filter_panel .re_tax_dropdown li.label{display: block; padding: 12px 20px; margin: 0;font: bold 14px/16px Arial;background: #EEEEEE;     cursor: pointer;}
+.re_filter_panel .re_tax_dropdown li.label{display: block; padding: 12px 20px; margin: 0;font-family: 'Poppins', sans-serif;letter-spacing: 0.5px;background: #14b5da;color: #fff;font-weight: 200; cursor: pointer;}
 .re_filter_panel .re_tax_dropdown li.label:after{float: right; content: "+"; margin-left: 5px; transition: transform .3s ease-in-out}
 .re_filter_panel .re_tax_dropdown.active li.label:after{transform: rotate3d(0,0,1,180deg);}
 .re_filter_panel .re_tax_dropdown li.rh_drop_item {display: block;margin: 0; height: 0} 
 .re_filter_panel .re_tax_dropdown.active li.rh_drop_item {height: auto}   
-.re_filter_panel .re_tax_dropdown li.rh_drop_item span{display: block;padding: 12px 20px;background-color: #FFF;border-top: 1px solid #EDEDED;opacity: 0;-webkit-transform: translate3d(100%,0,0);transform: translate3d(100%,0,0);-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;transition: opacity 0.3s, transform 0.3s;  font: normal 14px/16px Arial;  color:#111;} 
-.re_filter_panel .re_tax_dropdown li.rh_drop_item span:hover, .re_filter_panel .re_tax_dropdown li.rh_drop_item span.active{box-shadow: inset 0 300px 0 #f9f9f9; color:#111 !important; cursor: pointer;}
+.re_filter_panel .re_tax_dropdown li.rh_drop_item span{display: block;padding: 12px 20px;background-color: #3cb08f;color:#fff;border-top: 1px solid #EDEDED;opacity: 0;-webkit-transform: translate3d(100%,0,0);transform: translate3d(100%,0,0);-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;transition: opacity 0.3s, transform 0.3s;} 
+.re_filter_panel .re_tax_dropdown li.rh_drop_item span:hover, .re_filter_panel .re_tax_dropdown li.rh_drop_item span.active{background-color:#fff!important;cursor: pointer;color: #3cb08f!important;}
 .re_filter_panel .re_tax_dropdown li.rh_drop_item span:before{display: none;}
 .re_filter_panel .re_tax_dropdown.active li.rh_drop_item span {opacity: 1;-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
 .re_filter_panel .re_tax_dropdown.active li:nth-child(5) span {-webkit-transition-delay: 0.05s;transition-delay: 0.05s;}
