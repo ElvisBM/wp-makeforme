@@ -1,4 +1,4 @@
-<?php $search_text = (rehub_option("rehub_search_text")) ? rehub_option("rehub_search_text") : __("Search", "rehub_framework"); ?>
+<?php $search_text = (rehub_option("rehub_search_text")) ? rehub_option("rehub_search_text") : __("Buscamos para você", "rehub_framework"); ?>
 <?php $posttypes = rehub_option("rehub_search_ptypes");?>
 <?php $posttype = (!empty($posttypes) && is_array($posttypes)) ? implode(',', $posttypes) : 'post'; ?>
 <form  role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
