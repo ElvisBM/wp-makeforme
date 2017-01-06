@@ -1,4 +1,4 @@
-msgid ""
+Vendido por msgid ""
 msgstr ""
 "Project-Id-Version: WC Vendors\n"
 "POT-Creation-Date: 2015-05-25 19:33-0500\n"
@@ -1150,7 +1150,7 @@ msgstr "Dashboard del Vendedor"
 #: ../classes/front/class-vendor-cart.php:41
 #: ../classes/front/class-vendor-shop.php:265
 msgid "Sold by"
-msgstr "Vendido por"
+msgstr "Maker "
 
 #: ../classes/front/dashboard/class-vendor-dashboard.php:46
 msgid "Order marked shipped."

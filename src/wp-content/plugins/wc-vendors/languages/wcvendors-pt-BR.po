@@ -411,7 +411,7 @@ msgstr "negado"
 #: ../classes/front/class-vendor-cart.php:59
 #: ../classes/front/class-vendor-shop.php:178
 msgid "Sold by: "
-msgstr "Vendido por:"
+msgstr "Maker:"
 
 #: ../classes/admin/emails/class-wc-approve-vendor.php:28
 msgid "Vendor Application"
@@ -1137,7 +1137,7 @@ msgstr "Painel do Vendedor"
 #: ../classes/front/class-vendor-cart.php:41
 #: ../classes/front/class-vendor-shop.php:263
 msgid "Sold by"
-msgstr "Vendido por"
+msgstr "Maker "
 
 #: ../classes/front/dashboard/class-vendor-dashboard.php:46
 msgid "Order marked shipped."

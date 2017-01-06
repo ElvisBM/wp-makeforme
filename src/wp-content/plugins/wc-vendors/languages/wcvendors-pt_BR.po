@@ -960,7 +960,7 @@ msgstr "E-mail do Usuário"
 #: classes/admin/settings/sf-options.php:103,
 #: classes/admin/settings/sf-options.php:116
 msgid "Sold By"
-msgstr "Vendido Por"
+msgstr "Maker "
 
 #: classes/admin/settings/sf-options.php:104
 msgid "Enable sold by labels"
