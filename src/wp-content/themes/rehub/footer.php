@@ -20,9 +20,14 @@
 			<?php dynamic_sidebar( 'sidebar-3' ); ?>
 		<?php endif; ?> 
 	</div>
-	<div class="footer_widget col_item last">
+	<div class="footer_widget col_item ">
 		<?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
 			<?php dynamic_sidebar( 'sidebar-4' ); ?>
+		<?php endif; ?> 
+	</div>
+	<div class="footer_widget col_item last">
+		<?php if ( is_active_sidebar( 'sidebar-8' ) ) : ?>
+			<?php dynamic_sidebar( 'sidebar-8' ); ?>
 		<?php endif; ?> 
 	</div>
 	</div>		

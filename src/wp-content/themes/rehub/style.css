@@ -1174,7 +1174,6 @@ select.dropdown_product_cat{ padding: 6px 7px; border: 1px solid #dddddd; width:
 .footer-bottom .footer_widget p { margin-bottom: 22px; }
 .footer-bottom .container .footer_widget a { text-decoration: underline; }
 .footer-bottom .footer_widget .widget_categories ul li, .footer-bottom .footer_widget .widget_archive ul li, .footer-bottom .footer_widget .widget_nav_menu ul li { font-size: 13px; margin-bottom: 12px; padding-left: 12px; position: relative; }
-.widget.better_menu li:before, .footer-bottom .footer_widget .widget_categories ul li:before, .footer-bottom .footer_widget .widget_archive ul li:before, .footer-bottom .footer_widget .widget_nav_menu ul li:before{position: absolute; content: "."; top: 0; left: 0; color: #999; line-height: 0; font-size: 30px; font-family: Arial}
 .footer-bottom .footer_widget .woocommerce ul li { background-image: none; padding-left: 0 }
 .footer-bottom .woocommerce ins, .footer-bottom .woocommerce del { color: #247600; }
 .footer-bottom .widget_search #searchform { background-color: #fff }
@@ -1200,7 +1199,6 @@ footer#theme_footer.dark_style { background: none #222; border-top: 1px solid #4
 footer#theme_footer.white_style { background: none #fff; border-top: 1px solid #ddd;}
 .footer-bottom.white_style{background-color: #f9f9f9;    border-top: 1px solid #ddd;}
 .footer-bottom.white_style .footer_widget {color: #111;}
-.footer-bottom.white_style .footer_widget:nth-child(2){border-left: 1px solid #ededed; border-right: 1px solid #ededed; }
 .footer-bottom.white_style .footer_widget .title, .footer-bottom.white_style .footer_widget h2, .footer-bottom.white_style .container .footer_widget a, .footer-bottom .footer_widget.white_style ul li a, footer#theme_footer.white_style div.f_text, footer#theme_footer.white_style div.f_text a:not(.rehub-main-color) {color: #000;}
 .footer-bottom.dark_style .footer_widget .widget_categories ul li:before, .footer-bottom.dark_style .footer_widget .widget_archive ul li:before, .footer-bottom.dark_style .footer_widget .widget_nav_menu ul li:before{color:#fff;}
 .footer-contact{margin: 0 0 30px 0}

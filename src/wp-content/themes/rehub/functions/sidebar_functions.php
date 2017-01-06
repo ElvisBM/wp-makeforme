@@ -41,6 +41,14 @@ function rehub_register_sidebars() {
 		'after_title' => '</div>',
 	));
 	register_sidebar(array(
+		'id' => 'sidebar-8',
+		'name' => __('Footer 4', 'rehub_framework'),
+		'before_widget' => '<div id="%1$s" class="widget last %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<div class="title">',
+		'after_title' => '</div>',
+	));
+	register_sidebar(array(
 		'id' => 'sidebar-5',
 		'name' => __('Woocommerce sidebar', 'rehub_framework'),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',

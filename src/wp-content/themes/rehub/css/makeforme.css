@@ -301,5 +301,37 @@ nav.top_menu > ul > li ul, .main-nav.dark_style{
     margin-bottom: 30px;
 }
 
+.footer-bottom.white_style{
+    background-color: #f6f2a5;
+}
 
+.footer-bottom .col_wrap_three .col_item{
+    width:25%;
+}
 
+.footer-bottom.white_style .footer_widget .title{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: #24b9d6;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footer-bottom .footer_widget .widget_nav_menu ul li{
+    padding: 0px;
+    margin-bottom: 4px;
+}
+
+.footer-bottom .container .footer_widget a{
+    text-decoration: none;
+}
+footer#theme_footer.white_style{
+    background: #1fa58c;
+    border:0px;
+    color: #fff;
+    padding: 5px 0px;
+}
+footer#theme_footer.white_style .f_text{color: #fff!important;}
+
+.footer_most_bottom img{ width: 50px;margin-right: 60px;}
