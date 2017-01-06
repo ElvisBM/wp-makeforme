@@ -17,4 +17,4 @@
  */
 ?>
 
-<small class="wcvendors_sold_by_in_loop"><?php echo apply_filters('wcvendors_sold_by_in_loop', $sold_by_label ); ?> <?php echo $sold_by; ?></small><br />
+<small class="wcvendors_sold_by_in_loop"><?php echo apply_filters('wcvendors_sold_by_in_loop', 'Maker ' ); ?> <?php echo $sold_by; ?></small><br />
