@@ -291,5 +291,15 @@ nav.top_menu > ul > li ul, .main-nav.dark_style{
     right: 0px;
 }
 
+.wpb_single_image img{
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+    margin-top: -67px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
 
 
