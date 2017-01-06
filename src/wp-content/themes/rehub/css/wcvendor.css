@@ -40,11 +40,72 @@ small.wcvendors_sold_by_in_loop {font-size: 12px;margin-bottom: 10px;display: in
 .form-row #rememberme{ margin-top: 10px}
 .wcv_shop_description{ margin-bottom: 15px}
 .wcv_vendorslist{ overflow: hidden; margin: 0 -1% 30px -1% !important;}
-.wcv_vendorslist a.wcv-grid-shop-name{ text-decoration: none; font-size: 16px; font-weight: bold; display: inline-block;}
+.wcv_vendorslist a.wcv-grid-shop-name{ 
+    text-decoration: none;
+    font-size: 1.2em;
+    display: inline-block;
+    color: #f6f2a5;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 15px;
+    }
 .wcv_vendorslist li{position: relative; float: left; width: 23%; margin: 0 1% 28px 1% !important; list-style: none !important; text-align: center;box-shadow: rgba(0,0,0,0.15) 0px 1px 2px;background: white;}
-.wcv_vendorslist .cover_logo { display: block; height: 135px; overflow: hidden; background: #eee; background-position: center top; background-repeat: no-repeat;background-size: cover; }
-.wcv_vendorslist .item-avatar { position: absolute; left: 50%; top: 86px; margin-left: -43px; border-radius: 2px;width: 80px; box-shadow: 0 0 1px 0 rgba(0,0,0,0.3), 0 1px 1px 0 rgba(0,0,0,0.1); background-color: #fff; padding: 2px;border: 3px solid #fff; }
-.wcv_vendorslist .member-inner-list{ text-align: center;}  .wcv_vendorslist .store-desc{ display: block; position: relative; overflow: hidden; height: 42px; margin: 10px auto 0 auto; padding: 0 20px; font-size: 12px; color: #999; line-height: 14px }
+.wcv_vendorslist .cover_logo { display: block; height: 250px; overflow: hidden; background: #eee; background-position: center top; background-repeat: no-repeat;background-size: cover; }
+
+.wcv_vendorslist span.cover_logo{background-color: #fbf8da;background-size: 90%!important;background-position: center; z-index: 100;position: relative;}
+.wcv_vendorslist .item-avatar {    
+    width: 112px;
+    height: 112px;
+    background-color: #fff;
+    padding: 2px;
+    overflow: hidden;
+    border-radius: 70px;
+    margin: 0 auto;
+    margin-top: -50px;
+    border: 1px solid #14b5da;
+    position: relative;
+    z-index: 999;
+}
+
+{
+
+}
+
+.wcv_vendorslist .member-details{
+	background: #1fa58c;
+}
+
+.wcv_vendorslist .item-avatar a{
+	width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 70px;
+    border: 1px solid #14b5da;
+    overflow: hidden;
+}
+
+.member-inner-list:hover .item-avatar,
+.member-inner-list:hover .item-avatar a{
+	border: 1px solid #de5046;
+}
+
+.wcv_vendorslist .item-avatar img{
+	width: 95%;
+}
+
+
+.wcv_vendorslist .member-inner-list{ text-align: center;} 
+ .wcv_vendorslist .store-desc{     display: block;
+    height: 50px;
+    margin: 10px auto 0 auto;
+    padding: 0 20px;
+    font-size: 0.8em;
+    color: #fff;
+    line-height: 14px;
+    font-family: 'Poppins', sans-serif;
+}
 .wcv_vendorslist .last-vendor-products{ display: block; padding: 15px 15px 25px; text-align: center; height: 70px; overflow: hidden; white-space: nowrap; }
 .wcv_vendorslist .last-vendor-products a { display: inline-block; vertical-align: top; width: 70px; height: 70px; position: relative; }
 span.product_count_in_member { position: absolute; bottom: 0; right: 0; background: rgba(255, 255, 255, 0.78); padding: 0 6px; font-size: 13px; line-height: 18px; }
@@ -57,7 +118,6 @@ span.product_count_in_member { position: absolute; bottom: 0; right: 0; backgrou
 .rh_vendors_listflat .rh-user-favor-shop .count, #buddypress .rh-user-favor-shop .count{width: 20px; height: 20px; line-height: 20px; left: 22px; right: auto;}
 .wcv_vendorslist .rh-user-favor-shop:hover .count{opacity: 1; font-size: 12px;   right:100%;}
 .rh_vendors_listflat .rh-user-favor-shop:hover .count, #buddypress .rh-user-favor-shop:hover .count{opacity: 1; font-size: 12px; top: -10px}
-.wcv_vendorslist .member-details{overflow: hidden; padding: 50px 0 0 0}
 #buddypress .rh-user-favor-shop{position: relative}
 .table-vendor-sales-report .product a{ text-decoration: none; }
 .table-vendor-sales-report.table-condensed th, .table-vendor-sales-report.table-condensed td{ padding: 10px 8px}
