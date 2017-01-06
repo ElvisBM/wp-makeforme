@@ -178,3 +178,118 @@ nav.top_menu > ul > li ul, .main-nav.dark_style{
     position: absolute;
     font-size: 14px;
 }
+
+
+/*
+ * Promoções Home
+ */
+.promocoes .wpsm_featured_wrap{overflow: visible;}
+.promocoes .wpb_column{ width: 47%;margin-left: 2%; }
+.promocoes .content_slide{
+    display: inline-block;
+    height: 110px;
+    width: 100%;
+    background: #f6f2a5;
+    z-index: 999;
+    position: absolute;
+    left: 0px;
+}
+
+.promocoes .main_slider.full_width_slider.flexslider{height: 600px;}
+
+.promocoes .main_slider.full_width_slider.flexslider .slides .slide{
+    height: 600px;
+}
+
+.promocoes .flex-overlay{height: 480px  }
+.promocoes  .main_slider .flex-overlay h2 {
+   margin-top: 10px;
+}
+
+.promocoes .main_slider.flexslider .priced_block .btn_offer_block{
+    background: #14b5da!important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.promocoes .main_slider.flexslider .priced_block {
+    display: inline-block;
+    margin: 0;
+    float: left;
+    margin-left: -40px;
+    margin-top: 182px;
+}
+
+.promocoes .priced_block .price_count{
+    font-family: 'Poppins', sans-serif;
+    background: rgba(31, 165, 140, 0.69);
+    color: #fff;
+    height: 115px;
+    width: 160px;
+    border-radius: 120px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.promocoes .priced_block .price_count del{
+    font-size: 1.1em;
+}
+
+.promocoes .priced_block .price_count ins{
+    font-size: 2.2em;
+    font-weight: 400;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+.promocoes .main_slider.flexslider .priced_block .btn_offer_block:after{
+    content: "\f291";
+    font-size: 1.4em;
+    font-family: FontAwesome;
+    font-weight: normal;
+    letter-spacing: 0;
+    padding: 10px;
+}
+
+.promocoes  .main_slider .flex-overlay h2 a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.promocoes .wcvendors_sold_by_in_loop{margin: 0;color: #dd4a43;font-family: 'Poppins', sans-serif;font-size: 1.5em;margin-top: 20px;}
+.promocoes .wcvendors_sold_by_in_loop a{color: #21a68d; font-weight: 500;}
+
+.promocoes .main_slider.flexslider .hero-description ul li{ color: #10483d;
+    font-family: 'Poppins', sans-serif; }
+
+.promocoes .flex-direction-nav{background: #f50;height:0px;margin-top: -56px;}
+.promocoes .main_slider .flex-direction-nav a, 
+.promocoes .post_slider .flex-direction-nav a{
+    opacity: 1;
+    height: 80px;
+    width: 40px;
+    position: relative;
+    background-color: rgba(31, 165, 140, 0.64);
+}
+
+.promocoes .flex-direction-nav .flex-prev{
+    float: left;
+    margin-left: 0px;
+    left: 0px;
+}
+
+.promocoes .flex-control-nav{ display: none; }
+
+.promocoes .flex-direction-nav .flex-next{
+    float: right;
+    right: 0px;
+}
+
+
+

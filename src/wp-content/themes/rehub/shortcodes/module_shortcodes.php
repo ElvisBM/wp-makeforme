@@ -642,13 +642,7 @@ ob_start();
 				<span class="pattern"></span>
 				<a href="<?php the_permalink();?>" class="feat_overlay_link"></a>
 		  		<div class="flex-overlay">
-		    		<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
-		    		<div class="post-meta">
-		      			<div class="inner_meta">    				
-							<?php do_action( 'rehub_vendor_show_action' ); ?>       				
-		      			</div>
-		    		</div>		    		
-		    		<?php if ($dis_excerpt !='1' && $bottom_style !='1') :?><div class="hero-description"><p><?php kama_excerpt('maxchar=150'); ?></p></div><?php endif ;?>
+		    		<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>	    		
 		    		<?php if(rehub_option('disable_btn_offer_loop')!='1')  : ?>
 		    		<div class="priced_block clearfix">
 		    			<p> <span class="price_count"><?php wc_get_template( 'loop/price.php' ); ?></p>
@@ -667,8 +661,17 @@ ob_start();
 			            $product );?> 
 		    			<?php endif; ?>	
 		    		</div>
-		    		<?php endif;?>            		
+		    		<?php endif;?>   
 		    	</div>
+		    	<div class="content_slide">
+		    		<div class="post-meta">
+		      			<div class="inner_meta">    				
+							<?php do_action( 'rehub_vendor_show_action' ); ?>       				
+		      			</div>
+		    		</div>	
+		    		<?php if ($dis_excerpt !='1' && $bottom_style !='1') :?><div class="hero-description"><p><?php kama_excerpt('maxchar=150'); ?></p></div><?php endif ;?>
+		    	</div> 
+
 			</li>
 		<?php endwhile; endif; ?>
 		<?php  wp_reset_query(); ?>
