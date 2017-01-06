@@ -66,7 +66,7 @@ Header
 ****************************************************************************/
 #main_header { width: 100%; background-color: #fff; position: relative; z-index: 9000 }
 .header_top_wrap{background-color: #fff;}
-.header-top { width: 1200px; margin: 0 auto; border-bottom: 1px solid #dddddd; border-left: 1px solid #dddddd; border-right: 1px solid #dddddd; min-height: 30px; overflow: visible; box-sizing: border-box; }
+.header-top { width: 1200px; margin: 0 auto; border-bottom: 1px solid #dddddd; border-left: 1px solid #dddddd; border-right: 1px solid #dddddd; min-height: 40px; overflow: visible; box-sizing: border-box; }
 .header-top .top-nav {float: left;overflow: hidden }
 .header-top .top-nav a { color: #111111; }
 .header-top .top-nav li { padding-left: 13px; border-left: 1px solid #666666; margin: 0 13px 10px 0; float: left; font: 12px/12px Arial, Helvetica, trebuchet ms; }
@@ -74,7 +74,7 @@ Header
 .header-top .top-nav a:hover { text-decoration: underline }
 .header-top .top-nav li:first-child { margin-left: 0px; border-left: 0px; padding-left: 0; }
 .header-top .top-social { overflow: visible; float: right; text-align: right; padding-right: 3px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.header-top .top-social .social_icon.small_i a { float: right; margin: 5px 2px 0 0 }
+.header-top .top-social .social_icon.small_i a { float: right;  margin: 8px 9px 0 0; }
 .header-top .top-social .social_icon{ float: right;}
 .responsive_nav_wrap { display: none; position: relative; }
 header .logo-section { width: 1200px; margin: 0 auto; padding: 20px 0; overflow: visible; }
@@ -280,7 +280,7 @@ nav.top_menu > ul > li{border-right: 1px solid rgba(0, 0, 0, 0.08); }
 nav.top_menu > ul > li:last-child{ border-right: none !important; box-shadow: none;}
 .main-nav.dark_style nav.top_menu > ul > li {border-right: 1px solid rgba(255, 255, 255, 0.15);}
 a.logo_image_inmenu {border: none !important;display: none !important; line-height: 40px !important}
-a.logo_image_inmenu img, a.logo_image_mobile img{max-height: 40px; max-width: 180px; vertical-align: middle;}
+a.logo_image_inmenu img, a.logo_image_mobile img{max-height: 68px;max-width: 180px;margin-top: -10px;margin-left: -160px;}
 .is-sticky a.logo_image_inmenu, #dl-menu a.logo_image_mobile, .logo_menu_row_enable a.logo_image_inmenu{display: inline-block !important;}
 #logo_mobile_wrapper, a.logo_image_mobile img{display: none;}
 #dl-menu a.logo_image_mobile img{ position: absolute; top: 0; left: 55px; right: auto; bottom: 0; margin: auto; display: block;}
@@ -1822,7 +1822,7 @@ button.alreadyhot:not(.heartplus) {cursor: not-allowed; opacity: 0.75 }
 .post_thumbs_comm{font: normal 14px/29px Arial; color: #aaa; float: left}
 .post_thumbs_comm span:before{font-family: FontAwesome; content: "\f27a"; margin-right: 5px}
 .eq_grid .thumb_enabled_col.col_item{padding-bottom: 50px }
-.woocommerce .products.grid_woo .product.thumb_enabled_col, .woocommerce .products.column_woo .product.thumb_enabled_col{padding-bottom: 55px }
+.woocommerce .products.grid_woo .product.thumb_enabled_col, .woocommerce .products.column_woo .product.thumb_enabled_col{padding-bottom: 0px }
 .thumbminus.loading:before, .thumbplus.loading:before{content: "\f021" !important; font-family: FontAwesome; -webkit-animation: fa-spin 1s linear infinite; -moz-animation: fa-spin 1s linear infinite; -o-animation: fa-spin 1s linear infinite; animation: fa-spin 1s linear infinite;}
 .fonscale { height: 9px; position: relative;border: 1px solid #ddd;border-radius: 3px; background-color: #ececec; background: -webkit-linear-gradient(top, #f5f5f5 1px, #f0f0f0 1px, #eeeeee); background: linear-gradient(to bottom, #f5f5f5 1px, #f0f0f0 1px, #eeeeee) }
 .scaleperc { height: 9px; width: 0;position: absolute; left: -1px; top: -1px; border: 1px solid #AC0000;border-radius: 3px; background-color: #CA212A; background: -webkit-linear-gradient(top, #DE6E6E 1px, #CA212A); background: linear-gradient(to bottom, #DE6E6E 1px,#CA212A) }
@@ -2046,7 +2046,6 @@ span.stars-rate.blue-star span:before{color: #2C7FD0}
 .offer_grid .rehub_offer_coupon.zeroclipboard-is-hover{border: 1px dashed #008DBF;}
 .offer_grid .rehub_offer_coupon.zeroclipboard-is-hover i.fa{color: #008DBF}
 .coupon_btn.expired_coupon{display: none;}
-.coupon_btn:before {content: "";position: absolute;top: 0;right: 0;border-width: 0 16px 16px 0;border-style: solid;border-color: transparent transparent #D1D1D1 #CDCDCD;background: #fff;box-shadow: -3px 3px 2px rgba(0,0,0,0.1);display: block;width: 0;}
 .rehub_feat_block .coupon_btn:before, .woo_loop_btn.coupon_btn:before, .offer_grid .priced_block .coupon_btn:before{border-width: 0 9px 9px 0;}
 .rehub_offer_coupon.expired_coupon{border: 1px dashed #ddd;}
 .rehub_offer_coupon.expired_coupon span{text-decoration: line-through;}
@@ -2566,7 +2565,7 @@ article.post .rate_bar_wrap_two_reviews a.link_to_review{ position: absolute; bo
 .top-social .act-rehub-login-popup i{margin-right: 3px}
 .user-dropdown-intop{ position: relative;}
 .user-ava-intop{ position: relative; line-height: 22px; vertical-align: middle; cursor: pointer;}
-.user-ava-intop img{border-radius: 50%; vertical-align: middle;}
+.user-ava-intop img{border-radius: 50%; vertical-align: middle; width: 30px;margin-top: 3px;}
 .logo-section .user-ava-intop img{width: 30px} 
 .user-ava-intop:after{content: "\f107";display: inline-block;font-family: FontAwesome;font-style: normal;font-weight: 400;line-height: 22px;color: inherit;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;padding-left: 4px;font-size: 15px}
 .user-ava-intop.user-ava-intop-open:after{content: "\f106";}
@@ -2601,20 +2600,6 @@ article.post .rate_bar_wrap_two_reviews a.link_to_review{ position: absolute; bo
 .social_icon a:hover { top: 2px;box-shadow: none; }
 .social_icon.small_i a { width: 20px; height: 20px; display: inline-block; margin-right: 2px; font-size: 14px; line-height: 20px; text-align: center; }
 .social_icon.small_i a:hover { top: -1px; }
-.social_icon .db { background-color: #ff80ae; }
-.social_icon .fb { background-color: #39599F; }
-.social_icon .gp { background-color: #eb4026; }
-.social_icon .in { background-color: #66c9ff }
-.social_icon .ins { background-color: #3a82b8 }
-.social_icon .pn { background-color: #ca212a }
-.social_icon .rss { background-color: #ff9933 }
-.social_icon .sc { background-color: #ff7d2f }
-.social_icon .tm { background-color: #00acef }
-.social_icon .tw { background-color: #66ccff }
-.social_icon .vk { background-color: #537599 }
-.social_icon .yt { background-color: #cd0000 }
-.social_icon .wa { background-color: #4bc557 }
-.social_icon .vim { background-color: #5DC6FF }
 .social_icon .hm { background-color: #555; }
 .post_share { position: relative; margin: 25px 0; clear: both; overflow: hidden;  }
 .top_share .post_share{margin: 0 0 15px 0; overflow: hidden;}

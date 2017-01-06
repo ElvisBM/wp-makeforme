@@ -30,7 +30,7 @@ $bg_styles = (!empty($store_bg)) ? ' style="background-image: url('.$store_bg.')
 		<a href="<?php echo $shop_link; ?>">
 			<span class="cover_logo"<?php echo $bg_styles; ?>></span>
 		</a>
-		<div class="member-details">
+		<div class="member-details"> 
 			<div class="item-avatar">
 				<a href="<?php echo $shop_link; ?>">
 					<img src="<?php echo rh_show_vendor_avatar($vendor_id, 80, 80);?>" class="vendor_store_image_single" width=80 height=80 />
