@@ -75,46 +75,13 @@
                 <?php $showimg->width = '224';?>                                       
             <?php endif ; ?>            
             <?php $showimg->show_resized_image(); ?>
-        </a>
-        <div class="yith_float_btns">
-            <div class="button_action"> 
-                <?php if(rehub_option('woo_rhcompare') == 1) {echo wpsm_comparison_button(array('class'=>'rhwooloopcompare'));}?>
-                <?php if ( defined( 'YITH_WCWL' )){ ?> 
-                    <?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?> 
-                <?php } ?>                                          
-            </div> 
-        </div>          
+        </a>   
         <div class="brand_store_tag">       
             <?php WPSM_Woohelper::re_show_brand_tax(); //show brand taxonomy?>
         </div>
         <?php do_action( 'rehub_after_woo_brand' ); ?>
     </figure>
-    <div class="woo_loop_desc">      
-        <a <?php if(rehub_option('woo_thumb_enable') =='1') :?>class="<?php echo getHotIconclass($post->ID); ?>"<?php endif ;?> href="<?php echo $woolink ;?>"<?php echo $wootarget ;?>>
-            <?php echo rh_expired_or_not($post->ID, 'span');?>     
-            <?php 
-                /**
-                 * woocommerce_shop_loop_item_title hook.
-                 *
-                 * @hooked woocommerce_template_loop_product_title - 10
-                 */     
-                do_action( 'woocommerce_shop_loop_item_title' ); 
-            ?>
-        </a>
-        <?php do_action( 'rehub_vendor_show_action' ); ?>            
-    </div>
-    <div class="woo_loop_btn_actions">
-        <div class="product_price_height">
-            <?php
-                /**
-                 * woocommerce_after_shop_loop_item_title hook.
-                 *
-                 * @hooked woocommerce_template_loop_rating - 5
-                 * @hooked woocommerce_template_loop_price - 10
-                 */
-                do_action( 'woocommerce_after_shop_loop_item_title' );
-            ?>
-        </div>
+    <div id="buttons">
         <?php if (rehub_option('woo_btn_disable') != '1'):?>
             <?php if ( $product->add_to_cart_url() !='') : ?>
                 <?php  echo apply_filters( 'woocommerce_loop_add_to_cart_link',
@@ -141,9 +108,45 @@
                     </div>
                 <?php endif;?>
             <?php endif;?>                     
-        <?php endif;?>            
+        <?php endif;?>  
     </div>
-    <?php if (rehub_option('woo_thumb_enable') == '1' && !$disable_thumbs) :?>
+    <div class="woo_loop_desc">      
+        <a <?php if(rehub_option('woo_thumb_enable') =='1') :?>class="<?php echo getHotIconclass($post->ID); ?>"<?php endif ;?> href="<?php echo $woolink ;?>"<?php echo $wootarget ;?>>
+            <?php echo rh_expired_or_not($post->ID, 'span');?>     
+            <?php 
+                /**
+                 * woocommerce_shop_loop_item_title hook.
+                 *
+                 * @hooked woocommerce_template_loop_product_title - 10
+                 */     
+                do_action( 'woocommerce_shop_loop_item_title' ); 
+            ?>
+        </a>
+        <?php do_action( 'rehub_vendor_show_action' ); ?>            
+    </div>
+    <div class="woo_loop_btn_actions">
+        <hr />
+        <div class="yith_float_btns">
+            <div class="button_action"> 
+                <?php if(rehub_option('woo_rhcompare') == 1) {echo wpsm_comparison_button(array('class'=>'rhwooloopcompare'));}?>
+                <?php if ( defined( 'YITH_WCWL' )){ ?> 
+                    <?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?> 
+                <?php } ?>                                          
+            </div> 
+        </div>   
+        <div class="product_price_height">
+            <?php
+                /**
+                 * woocommerce_after_shop_loop_item_title hook.
+                 *
+                 * @hooked woocommerce_template_loop_rating - 5
+                 * @hooked woocommerce_template_loop_price - 10
+                 */
+                do_action( 'woocommerce_after_shop_loop_item_title' );
+            ?>
+        </div>              
+    </div>
+    <?php if (false) ://rehub_option('woo_thumb_enable') == '1' && !$disable_thumbs?>
         <div class="re_actions_for_grid two_col_btn_for_grid">
             <div class="btn_act_for_grid">
                 <?php echo getHotThumb($post->ID, false);?>
