@@ -189,7 +189,6 @@ p.demo_store { position: fixed; top: 0; left: 0; right: 0; margin: 0; width: 100
 .product #buttons  a.woo_loop_btn:before{content: "\f291";font-size: 1.2em;font-family: FontAwesome;font-weight: normal;letter-spacing: 0;margin-right: 10px;}
 
 
-.woocommerce .products.column_woo .product, .product-category-box{transition: all 0.2s ease; box-shadow: rgba(0,0,0,0.15) 0px 1px 2px;border-top: 1px solid #f4f4f4; padding: 0; background-color: #fff; backface-visibility: hidden;}
 .product-category-box{margin: 0 0 20px 0;}
 .woocommerce .products.column_woo .product figure img, .product-category-box img{width: 100%}
 .woocommerce .products.column_woo .product:hover, .product-category-box:hover {box-shadow: rgba(0,0,0,0.12) 0px 3px 4px;}
@@ -197,6 +196,8 @@ p.demo_store { position: fixed; top: 0; left: 0; right: 0; margin: 0; width: 100
 .product-category-box .woo_column_cont{padding: 20px}
 .woocommerce .products.column_woo .product .date_for_grid{font-size: 12px}
 .woocommerce .products.column_woo .product_price_height{margin: 15px 0 8px 0; }
+
+.woocommerce .products.column_woo .product, .product-category-box{padding: 0px; border:0px solid #ddd;background: #f6f2a5;}
 
 .woocommerce .products.grid_woo > .product{padding: 0px; border:0px solid #ddd;background: #f6f2a5;}
 .woocommerce .products.grid_woo > .product h3{font-size: 1.2em;line-height: 1.3em;letter-spacing: 0.5px;font-weight: 200;color: #14b5da;text-align: center;}

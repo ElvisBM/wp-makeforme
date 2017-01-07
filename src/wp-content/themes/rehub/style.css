@@ -322,7 +322,7 @@ a.logo_image_inmenu img, a.logo_image_mobile img{max-height: 68px;max-width: 180
 /****************************************************************************
     Content Common
 ****************************************************************************/
-.content { width: 1200px; margin: 15px auto 0 auto; background: #fff; padding: 25px 30px; box-shadow: 0px 0px 1px #bbb; position: relative; clear: both; box-sizing: border-box; -webkit-box-sizing: border-box; }
+.content { width: 1200px; margin: 15px auto 0 auto; background: #fff; padding: 15px 0px; position: relative; clear: both; box-sizing: border-box; -webkit-box-sizing: border-box; }
 .content.no_shadow{ box-shadow: none; margin: 0 auto; }
 .title_single_area h1{font-size: 34px; line-height: 34px;margin: 0 0 20px 0;}
 .rh_post_layout_outside .title_single_area h1{ font-size: 38px; line-height: 40px; }
@@ -1154,7 +1154,7 @@ select.dropdown_product_cat{ padding: 6px 7px; border: 1px solid #dddddd; width:
 .rehub_chimp.centered_form{text-align: center;}
 .rehub_chimp_flat #mc_embed_signup input.email {border: 1px solid #111;width: 100%;outline: none;box-sizing: border-box;border-radius: 0;font-weight: normal;font-size: 15px; padding: 12px 10px}
 .sidebar .rehub_chimp #mc_embed_signup input#mc-embedded-subscribe{position: static; margin: 10px auto; width: 100%; border-radius: 5px}
-.rehub_chimp_flat #mc_embed_signup input#mc-embedded-subscribe {border-radius:0;position: absolute;right: 0;top: 0;height: 100%;border:none;box-sizing: border-box;font-size: 16px;text-shadow: none;font-weight: bold;color: #fff !important;width: 150px;background:none #5EB936;cursor:pointer; box-shadow: none; padding: 12px 10px}
+.rehub_chimp_flat #mc_embed_signup input#mc-embedded-subscribe {border-radius:0;position: absolute;right: 0;top: 0;height: 100%;border:none;box-sizing: border-box;font-size: 16px;text-shadow: none;font-weight: bold;color: #fff !important;width: 150px;font-weight: 400;letter-spacing: 0.5px;font-family: 'Poppins', sans-serif;background:#14b5da;cursor:pointer; box-shadow: none; padding: 12px 10px}
 .rehub_chimp{background-color: #F5F5F5;padding: 20px; border: 4px solid #E6E6E6; text-align: center;}
 .rehub_chimp_flat #mc_embed_signup{position: relative;vertical-align: middle;margin: 0; background-color: transparent; padding: 0; max-width: 100%}
 .rehub_chimp #mc_embed_signup label, .rehub_chimp_flat #mc_embed_signup label{ display: none;}
@@ -1212,8 +1212,8 @@ span.call-us-number {font-size: 22px;display: block;line-height: 32px;}
     *-*-*-* HOME GRID *-*-*-*
 ****************************************************************************/
 .title h5 { font: 700 23px/20px 'Roboto', trebuchet ms; color: #222222; display: block; text-transform: uppercase; border-bottom: 3px solid #000000; padding-bottom: 12px; margin: 0 0 20px 0; }
-.title h1 span { font-weight: normal; }
-.title h1 {margin: 0 0 28px 0;}
+.title h1 span { font-weight: normal;  }
+.title h1 {margin: 0 0 28px 0; font-size: 2em;font-weight: 400;border-bottom: 2px #d4d4d4 solid;}
 .masonry_grid_fullwidth { margin-bottom: 20px }
 .small_post { position: relative; float: left; background-color: #fff; overflow: hidden;  }
 .masonry_grid_fullwidth .small_post { border: 1px solid #e3e3e3; /*box-shadow: 0 1px 1px #EDEDED;*/ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }

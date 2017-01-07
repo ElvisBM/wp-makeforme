@@ -43,8 +43,9 @@ get_header(); ?>
     	             * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
     	             * @hooked woocommerce_breadcrumb - 20
     	             */
-    	            do_action( 'woocommerce_before_main_content' );
-    	        ?>      		
+    	            //do_action( 'woocommerce_before_main_content' );
+    	        ?>   
+                <div class="title"><h1><?php woocommerce_page_title(); ?></h1></div>  	
 				<?php do_action( 'woocommerce_archive_description' ); ?>
 				<?php if ( have_posts() ) : ?>
 					<?php
@@ -75,14 +76,14 @@ get_header(); ?>
 				<?php endif; ?>
     		</article>
     	</div>
-	<!-- /Main Side --> 
+	   <!-- /Main Side --> 
 
-    <!-- Sidebar -->
-    <?php if(rehub_option('woo_archive_sidebar') =='1'):?>
-    <?php else :?>
-        <?php get_sidebar('shop'); ?>
-    <?php endif;?>
-    <!-- /Sidebar --> 
+        <!-- Sidebar -->
+        <?php if(rehub_option('woo_archive_sidebar') =='1'):?>
+        <?php else :?>
+            <?php get_sidebar('shop'); ?>
+        <?php endif;?>
+        <!-- /Sidebar --> 
 
     </div>
 </div>
