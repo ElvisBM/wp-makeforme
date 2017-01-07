@@ -119,6 +119,7 @@ nav.top_menu > ul > li ul, .main-nav.dark_style{
 	border: 0px;
     background: #53ad9d;
     padding: 20px 10px;
+    font-size: 1em;
 }
 #filters-header .widget_search .fa-search{
 	color: #fff;
@@ -335,6 +336,44 @@ footer#theme_footer.white_style{
 footer#theme_footer.white_style .f_text{color: #fff!important;}
 
 .footer_most_bottom img{ width: 50px;margin-right: 60px;}
+
+#pgwModal{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.wpsm-button.white{
+    font-family: 'Poppins', sans-serif;
+    border: 0px solid #25796a;
+    background-color: #0db5d9;
+    color: #fff !important;
+    font-size: 0.9em!important;
+    font-weight: 400!important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.48);
+}
+.wpsm-button.white:hover{
+    border: 0px solid #25796a;
+    background-color: #fff;
+    color: #0db5d9 !important;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.48);
+}
+
+
+#pgwModal .wpsm-button.rehub_main_btn{
+    padding: 12px 20px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    background: #14b5da!important;
+    color: #fff!important;
+    font-weight: 200!important;
+    cursor: pointer;
+}
+#pgwModal .act-rehub-login-popup{ color:#3cb08f!important; }
+#pgwModal .crie-conta{ background: #3cb08f; color: #fff!important;padding: 5px 10px;}
+
 
 /* 
  * Page Makers

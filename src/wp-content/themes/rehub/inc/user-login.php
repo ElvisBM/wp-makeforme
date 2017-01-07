@@ -26,7 +26,7 @@ function rehub_login_register_modal() {
 					<!-- Register form -->
 					<div id="rehub-register-popup">
 					<div class="rehub-register-popup">	 
-						<div class="re_title_inmodal"><?php _e('Register New Account', 'rehub_framework'); ?></div>
+						<div class="re_title_inmodal"><?php _e('Criar conta', 'rehub_framework'); ?></div>
 						<?php if (rehub_option('custom_msg_popup') !='') {
 							echo '<div class="mb15 mt15 rh_custom_msg_popup">';
 							echo do_shortcode(rehub_option('custom_msg_popup'));
@@ -35,7 +35,7 @@ function rehub_login_register_modal() {
 						<form id="rehub_registration_form_modal" action="<?php echo home_url( '/' ); ?>" method="POST">
 							<?php do_action( 'wordpress_social_login' ); ?>
 							<div class="re-form-group mb20">
-								<label><?php _e('Username', 'rehub_framework'); ?></label>
+								<label><?php _e('Usuário', 'rehub_framework'); ?></label>
 								<input class="re-form-input required" name="rehub_user_login" type="text"/>
 							</div>
 							<div class="re-form-group mb20">
@@ -43,11 +43,11 @@ function rehub_login_register_modal() {
 								<input class="re-form-input required" name="rehub_user_email" id="rehub_user_email" type="email"/>
 							</div>
 							<div class="re-form-group mb20">
-								<label for="rehub_user_signonpassword"><?php _e('Password', 'rehub_framework'); ?><span class="alignright font90"><?php _e('Minimum 6 symbols', 'rehub_framework');  ?></span></label>
+								<label for="rehub_user_signonpassword"><?php _e('Senha', 'rehub_framework'); ?><span class="alignright font90"><?php _e('Mínimo 6 caracteres', 'rehub_framework');  ?></span></label>
 								<input class="re-form-input required" name="rehub_user_signonpassword" id="rehub_user_signonpassword" type="password"/>
 							</div>
 							<div class="re-form-group mb20">
-								<label for="rehub_user_confirmpassword"><?php _e('Confirm password', 'rehub_framework'); ?></label>
+								<label for="rehub_user_confirmpassword"><?php _e('Confirmar senha', 'rehub_framework'); ?></label>
 								<input class="re-form-input required" name="rehub_user_confirmpassword" id="rehub_user_confirmpassword" type="password"/>
 							</div>	
 							<?php if ( class_exists( 'BuddyPress' ) && rehub_option('userpopup_xprofile') == 1):?>
@@ -89,7 +89,7 @@ function rehub_login_register_modal() {
 							if($show_terms_conditions){ ?>
 								<div class="re-form-group mb20">
 									<div class="checkbox">
-										<label><input name="rehub_terms" type="checkbox"> <?php echo sprintf( __( 'I accept the <a target="_blank" href="%s">Terms & Conditions</a>', 'rehub_framework' ), esc_url(get_the_permalink(rehub_option('userlogin_term_page'))) ) ?></label>
+										<label><input name="rehub_terms" type="checkbox"> <?php echo sprintf( __( 'Aceite os <a target="_blank" href="%s"> Termos e Condições </a>', 'rehub_framework' ), esc_url(get_the_permalink(rehub_option('userlogin_term_page'))) ) ?></label>
 									</div>
 								</div><?php
 							}
@@ -98,7 +98,7 @@ function rehub_login_register_modal() {
 								<?php do_action( 'wcvendors_apply_for_vendor_before' ); ?>
 								<div class="re-form-group mb20">
 									<div class="checkbox">
-										<label><input name="wcv_apply_as_vendor" type="checkbox"> <?php _e('Apply as vendor?', 'rehub_framework'); ?></label>
+										<label><input name="wcv_apply_as_vendor" type="checkbox"> <?php _e('É um maker/vendedor?', 'rehub_framework'); ?></label>
 									</div>
 								</div>
 								<?php do_action( 'wcvendors_apply_for_vendor_after' ); ?>
@@ -109,12 +109,12 @@ function rehub_login_register_modal() {
 
 							<div class="re-form-group mb20">
 								<input type="hidden" name="action" value="rehub_register_member_popup_function"/>
-								<button class="wpsm-button rehub_main_btn" type="submit"><?php _e('Sign up', 'rehub_framework'); ?></button>
+								<button class="wpsm-button rehub_main_btn" type="submit"><?php _e('Cadastrar-se', 'rehub_framework'); ?></button>
 							</div>
 							<?php wp_nonce_field( 'ajax-login-nonce', 'register-security' ); ?>
 						</form>
 						<div class="rehub-errors"></div>
-						<div class="rehub-login-popup-footer"><?php _e('Already have an account?', 'rehub_framework'); ?> <span class="act-rehub-login-popup color_link" data-type="login"><?php _e('Login', 'rehub_framework'); ?></span></div>
+						<div class="rehub-login-popup-footer"><?php _e('Já tem uma conta?', 'rehub_framework'); ?> <span class="act-rehub-login-popup color_link" data-type="login"><?php _e('Logar', 'rehub_framework'); ?></span></div>
 					</div>
 					</div>
 				<?php endif;?>
@@ -122,38 +122,38 @@ function rehub_login_register_modal() {
 				<!-- Login form -->
 				<div id="rehub-login-popup">
 			 	<div class="rehub-login-popup">
-					<div class="re_title_inmodal"><?php _e('Login', 'rehub_framework'); ?></div>
+					<div class="re_title_inmodal"><?php _e('Logar', 'rehub_framework'); ?></div>
 					<form id="rehub_login_form_modal" action="<?php echo home_url( '/' ); ?>" method="post">
 						<?php do_action( 'wordpress_social_login' ); ?>
 						<div class="re-form-group mb20">
-							<label><?php _e('Username', 'rehub_framework') ?></label>
+							<label><?php _e('Usuário', 'rehub_framework') ?></label>
 							<input class="re-form-input required" name="rehub_user_login" type="text"/>
 						</div>
 						<div class="re-form-group mb20">
-							<label for="rehub_user_pass"><?php _e('Password', 'rehub_framework')?></label>
+							<label for="rehub_user_pass"><?php _e('Senha', 'rehub_framework')?></label>
 							<input class="re-form-input required" name="rehub_user_pass" id="rehub_user_pass" type="password"/>
 							<?php if(function_exists('um_get_core_page')) :?>
-								<a href="<?php echo um_get_core_page('password-reset'); ?>" class="alignright"><?php _e('Lost Password?', 'rehub_framework'); ?></a>
+								<a href="<?php echo um_get_core_page('password-reset'); ?>" class="alignright"><?php _e('Perdeu sua senha?', 'rehub_framework'); ?></a>
 							<?php else: ?>
-								<span class="act-rehub-login-popup color_link alignright" data-type="resetpass"><?php _e('Lost Password?', 'rehub_framework');  ?></span>
+								<span class="act-rehub-login-popup color_link alignright" data-type="resetpass"><?php _e('Perdeu sua senha?', 'rehub_framework');  ?></span>
 							<?php endif;?>							
 						</div>
 						<div class="re-form-group mb20">
 							<label for="rehub_remember"><input name="rehub_remember" id="rehub_remember" type="checkbox" value="forever" />
-							<?php _e('Remember me', 'rehub_framework'); ?></label>
+							<?php _e('Lembrar-me', 'rehub_framework'); ?></label>
 						</div>						
 						<div class="re-form-group mb20">
 							<input type="hidden" name="action" value="rehub_login_member_popup_function"/>
-							<button class="wpsm-button rehub_main_btn" type="submit"><?php _e('Login', 'rehub_framework'); ?></button>
+							<button class="wpsm-button rehub_main_btn" type="submit"><?php _e('Entrar', 'rehub_framework'); ?></button>
 						</div>
 						<?php wp_nonce_field( 'ajax-login-nonce', 'loginsecurity' ); ?>
 					</form>
 					<div class="rehub-errors"></div>
-					<div class="rehub-login-popup-footer"><?php _e('Don\'t have an account?', 'rehub_framework'); ?> 
+					<div class="rehub-login-popup-footer"><?php _e('Não tem uma conta?', 'rehub_framework'); ?> 
 					<?php if (rehub_option('custom_register_link') !=''):?>
-						<span class="act-rehub-login-popup color_link" data-type="url" data-customurl="<?php echo esc_html(rehub_option('custom_register_link'));?>"><?php _e('Sign Up', 'rehub_framework'); ?></span>						
+						<span class="act-rehub-login-popup color_link crie-conta" data-type="url" data-customurl="<?php echo esc_html(rehub_option('custom_register_link'));?>"><?php _e('Crie agora', 'rehub_framework'); ?></span>						
 					<?php else:?>
-						<span class="act-rehub-login-popup color_link" data-type="register"><?php _e('Sign Up', 'rehub_framework'); ?></span>
+						<span class="act-rehub-login-popup color_link crie-conta" data-type="register"><?php _e('Crie agora', 'rehub_framework'); ?></span>
 					<?php endif;?>
 					</div>
 				</div>
@@ -162,20 +162,20 @@ function rehub_login_register_modal() {
 				<!-- Lost Password form -->
 				<div id="rehub-reset-popup">
 			 	<div class="rehub-reset-popup">
-					<div class="re_title_inmodal"><?php _e('Reset Password', 'rehub_framework'); ?></div>
+					<div class="re_title_inmodal"><?php _e('Resetar Senha', 'rehub_framework'); ?></div>
 					<form id="rehub_reset_password_form_modal" action="<?php echo home_url( '/' ); ?>" method="post">
 						<div class="re-form-group mb20">
-							<label for="rehub_user_or_email"><?php _e('Username or E-mail', 'rehub_framework') ?></label>
+							<label for="rehub_user_or_email"><?php _e('Usuário ou Email', 'rehub_framework') ?></label>
 							<input class="re-form-input required" name="rehub_user_or_email" id="rehub_user_or_email" type="text"/>
 						</div>
 						<div class="re-form-group mb20">
 							<input type="hidden" name="action" value="rehub_reset_password_popup_function"/>
-							<button class="wpsm-button rehub_main_btn" type="submit"><?php _e('Get new password', 'rehub_framework'); ?></button>
+							<button class="wpsm-button rehub_main_btn" type="submit"><?php _e('Nova senha', 'rehub_framework'); ?></button>
 						</div>
 						<?php wp_nonce_field( 'ajax-login-nonce', 'password-security' ); ?>
 					</form>
 					<div class="rehub-errors"></div>
-					<div class="rehub-login-popup-footer"><?php _e('Already have an account?', 'rehub_framework'); ?> <span class="act-rehub-login-popup color_link" data-type="login"><?php _e('Login', 'rehub_framework'); ?></span></div>
+					<div class="rehub-login-popup-footer"><?php _e('Já tem uma conta?', 'rehub_framework'); ?> <span class="act-rehub-login-popup color_link" data-type="login"><?php _e('Logar', 'rehub_framework'); ?></span></div>
 				</div>
 				</div>
 			</div>
@@ -206,12 +206,12 @@ function rehub_login_member_popup_function(){
 
 	// Check CSRF token
 	if( !check_ajax_referer( 'ajax-login-nonce', 'loginsecurity', false) ){
-		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type"><i></i>'.__('Session has expired, please reload the page and try again', 'rehub_framework').'</div>'));
+		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type"><i></i>'.__('A sessão expirou, conecte-se e tente novamente', 'rehub_framework').'</div>'));
 	}
  	
  	// Check if input variables are empty
  	elseif(empty($user_login) or empty($user_pass)){
-		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type"><i></i>'.__('Please fill all form fields', 'rehub_framework').'</div>'));
+		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type"><i></i>'.__('Preencha todos os campos do formulário', 'rehub_framework').'</div>'));
  	}
 
  	else{
@@ -221,7 +221,7 @@ function rehub_login_member_popup_function(){
 			echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type"><i></i>'.$user->get_error_message().'</div>'));
 		}
 	    else{
-			echo json_encode(array('error' => false, 'message'=> '<div class="wpsm_box green_type">'.__('Login successful, reloading page...', 'rehub_framework').'</div>'));
+			echo json_encode(array('error' => false, 'message'=> '<div class="wpsm_box green_type">'.__('Login bem sucedido, recarregando a página ...', 'rehub_framework').'</div>'));
 		}
  	}
  	die();
@@ -259,35 +259,35 @@ function rehub_register_member_popup_function(){
 
 		if(!$resp->isSuccess()){
 		    // $errors = $resp->getErrorCodes();
-			echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type">'.__('Wrong captcha response, please try again.', 'rehub_framework').'</div>'));
+			echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type">'.__('Resposta errada do captcha, tente novamente.', 'rehub_framework').'</div>'));
 			die();
 		}
 	}
 	
 	// Check CSRF token
 	if( !check_ajax_referer( 'ajax-login-nonce', 'register-security', false) ){
-		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type">'.__('Session has expired, please reload the page and try again', 'rehub_framework').'</div>'));
+		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type">'.__('Sessão expirada, conecte-se e tente novamente', 'rehub_framework').'</div>'));
 		die();
 	}
  	
  	// Check if input variables are empty
  	elseif(empty($user_login) or empty($user_email) or empty($user_signonpassword) or empty($user_confirmpassword)){
-		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type">'.__('Please fill all form fields', 'rehub_framework').'</div>'));
+		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type">'.__('Preencha todos os campos do formulário', 'rehub_framework').'</div>'));
 		die();
  	}
 
  	elseif($show_terms_conditions and !isset($_POST['rehub_terms'])){
-		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type">'.__('Please accept the terms and conditions before registering', 'rehub_framework').'</div>'));
+		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type">'.__('Aceite os termos e condições antes de registrar', 'rehub_framework').'</div>'));
 		die();
  	}
 
  	elseif($user_signonpassword != $user_confirmpassword){
-		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type">'.__('Your passwords do not match. Set the same password in both fields', 'rehub_framework').'</div>'));
+		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type">'.__('Suas senhas não coincidem. Defina a mesma senha em ambos os campos', 'rehub_framework').'</div>'));
 		die();
  	} 
 
  	elseif(mb_strlen($user_signonpassword) < 6){
-		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type">'.__('Your passwords must have minimum 6 symbols.', 'rehub_framework').'</div>'));
+		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type">'.__('Suas senhas devem ter no mínimo 6 caracteres.', 'rehub_framework').'</div>'));
 		die();
  	}  		
 	
@@ -340,15 +340,15 @@ function rehub_register_member_popup_function(){
 		    $errorshow = false;
 			if ($role == 'vendor'){
 				$status = 'approved';				
-				$message = '<div class="wpsm_box green_type">'.__( 'Congratulations! You are now a vendor. Be sure to configure your store settings before adding products.', 'rehub_framework').'</div>';				
+				$message = '<div class="wpsm_box green_type">'.__( 'Parabéns! Agora você é um Maker. Certifique-se de que configura as definições da loja antes de adicionar produtos.', 'rehub_framework').'</div>';				
 			}
 			elseif ($role == 'customer'){
 				$status = 'customer';				
-				$message = '<div class="wpsm_box green_type">'.__( 'Congratulations! Now you must add some settings before application', 'rehub_framework').'</div>';
+				$message = '<div class="wpsm_box green_type">'.__( 'Parabéns! Agora você deve adicionar suas informações e produtos, enquanto atualizamos o Make for Me.', 'rehub_framework').'</div>';
 			}			
 			else{
                 $status = 'pending';
-				$message = '<div class="wpsm_box green_type">'.__( 'Your application has been received. You will be notified by email the results of your application. Currently you can use site as Pending vendor.', 'rehub_framework').'</div>';
+				$message = '<div class="wpsm_box green_type">'.__( 'Sua solicitação foi recebida com sucesso. Você será notificado por e-mail dos resultados de sua loja Maker. Atualmente, você pode usar o site como Maker pendente.', 'rehub_framework').'</div>';
 			}
 			if ($status != 'customer' && $status != ''){
 				global $woocommerce;
@@ -363,7 +363,7 @@ function rehub_register_member_popup_function(){
 			update_user_meta($errors, '_um_cool_but_hard_to_guess_plain_pw', $user_signonpassword);
 			$secure_cookie = (!is_ssl()) ? false : '';
 			wp_signon( array('user_login' => $user_login, 'user_password' => $user_signonpassword), $secure_cookie );
-			echo json_encode(array('error' => false, 'message' => '<div class="wpsm_box green_type">'.__( 'Registration complete. Now you can use your account. Reloading page...', 'rehub_framework').'</div>'));			
+			echo json_encode(array('error' => false, 'message' => '<div class="wpsm_box green_type">'.__( 'Registro completo. Agora você pode usar sua conta. Recarregando a página ...', 'rehub_framework').'</div>'));			
 		}
 
 	}
@@ -381,12 +381,12 @@ function rehub_reset_password_popup_function(){
 
 	// Check CSRF token
 	if( !check_ajax_referer( 'ajax-login-nonce', 'password-security', false) ){
-		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type">'.__('Session has expired, please reload the page and try again', 'rehub_framework').'</div>'));
+		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type">'.__('A sessão expirou, recarregue a página e tente novamente', 'rehub_framework').'</div>'));
 	}		
 
  	// Check if input variables are empty
  	elseif(empty($username_or_email)){
-		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type">'.__('Please fill all form fields', 'rehub_framework').'</div>'));
+		echo json_encode(array('error' => true, 'message'=> '<div class="wpsm_box warning_type">'.__('Preencha todos os campos do formulário', 'rehub_framework').'</div>'));
  	}
 
  	else{
@@ -401,7 +401,7 @@ function rehub_reset_password_popup_function(){
 			$display_errors .= '</div>';		
 			echo json_encode(array('error' => true, 'message' => $display_errors));
 		}else{
-			echo json_encode(array('error' => false, 'message' => '<div class="wpsm_box green_type">'.__('Password was reset. Please check your email. Reloading page...', 'rehub_framework').'</div>'));
+			echo json_encode(array('error' => false, 'message' => '<div class="wpsm_box green_type">'.__('A senha foi redefinida. Por favor verifique seu email. Recarregando a página ...', 'rehub_framework').'</div>'));
 		}
  	}
  	die();
@@ -415,11 +415,11 @@ function rehub_lostPassword_retrieve( $user_data ) {
 	$errors = new WP_Error();
 
 	if(empty($user_data)){
-		$errors->add( 'empty_username', __( 'Please enter a username or e-mail address.', 'rehub_framework' ) );
+		$errors->add( 'empty_username', __( 'Digite um nome de usuário ou endereço de e-mail.', 'rehub_framework' ) );
 	}elseif(strpos($user_data, '@')){
 		$user_data = get_user_by( 'email', trim( $user_data ) );
 		if(empty($user_data)){
-			$errors->add( 'invalid_email', __( 'There is no user registered with that email address.', 'rehub_framework'  ) );
+			$errors->add( 'invalid_email', __( 'Não há nenhum usuário registrado com esse endereço de e-mail.', 'rehub_framework'  ) );
 		}
 	}else{
 		$login = trim( $user_data );
@@ -429,7 +429,7 @@ function rehub_lostPassword_retrieve( $user_data ) {
 		return $errors;
 	}
 	if(!$user_data){
-		$errors->add('invalidcombo', __('Invalid username or e-mail.', 'rehub_framework'));
+		$errors->add('invalidcombo', __('Nome de usuário ou e-mail inválido.', 'rehub_framework'));
 		return $errors;
 	}
 	$user_login = $user_data->user_login;
@@ -437,7 +437,7 @@ function rehub_lostPassword_retrieve( $user_data ) {
 	do_action('retrieve_password', $user_login);
 	$allow = apply_filters('allow_password_reset', true, $user_data->ID);
 	if(!$allow){
-		return new WP_Error( 'no_password_reset', __( 'Password reset is not allowed for this user', 'rehub_framework' ) );
+		return new WP_Error( 'no_password_reset', __( 'A reposição de palavra-passe não é permitida para este utilizador', 'rehub_framework' ) );
 	}
 	elseif(is_wp_error($allow)){
 		return $allow;
@@ -450,11 +450,11 @@ function rehub_lostPassword_retrieve( $user_data ) {
 	}
 	$hashed = $wp_hasher->HashPassword($key);
 	$wpdb->update($wpdb->users, array('user_activation_key' => $hashed), array('user_login' => $user_login));
-	$message = __('Someone requested password reset for the following account:', 'rehub_framework' ) . "\r\n\r\n";
+	$message = __('Alguém solicitou a redefinição de senha para a seguinte conta:', 'rehub_framework' ) . "\r\n\r\n";
 	$message .= network_home_url( '/' ) . "\r\n\r\n";
-	$message .= sprintf( __( 'Username: %s', 'rehub_framework' ), $user_login ) . "\r\n\r\n";
-	$message .= __('If this was a mistake, just ignore this email and nothing will happen.', 'rehub_framework' ) . "\r\n\r\n";
-	$message .= __('To reset your password, visit the following address:', 'rehub_framework' ) . "\r\n\r\n";
+	$message .= sprintf( __( 'Usuário: %s', 'rehub_framework' ), $user_login ) . "\r\n\r\n";
+	$message .= __('Se este foi um erro, basta ignorar este e-mail e nada vai acontecer.', 'rehub_framework' ) . "\r\n\r\n";
+	$message .= __('Para redefinir sua senha, visite o seguinte endereço:', 'rehub_framework' ) . "\r\n\r\n";
 	$message .= '<' . network_site_url( "wp-login.php?action=rp&key=$key&login=" . rawurlencode( $user_login ), 'login' ) . ">\r\n\r\n";
 	
 	if ( is_multisite() ) {
@@ -462,11 +462,11 @@ function rehub_lostPassword_retrieve( $user_data ) {
 	} else {
 		$blogname = wp_specialchars_decode( get_option( 'blogname' ), ENT_QUOTES );
 	}
-	$title   = sprintf( __( '[%s] Password Reset', 'rehub_framework' ), $blogname );
+	$title   = sprintf( __( '[%s] Resetar senha', 'rehub_framework' ), $blogname );
 	$title   = apply_filters( 'retrieve_password_title', $title );
 	$message = apply_filters( 'retrieve_password_message', $message, $key );
 	if ( $message && ! wp_mail( $user_email, $title, $message ) ) {
-		$errors->add( 'noemail', __( 'The e-mail could not be sent.<br />Possible reason: your host may have disabled the mail() function.', 'rehub_framework' ) );
+		$errors->add( 'noemail', __( 'O e-mail não pôde ser enviado. <br /> Possível motivo: seu host pode ter desativado a função mail ().', 'rehub_framework' ) );
 		return $errors;
 		wp_die();
 	}

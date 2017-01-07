@@ -1696,14 +1696,14 @@ body .bg_r_b{ background-position: right bottom !important;}body .bg_r_t{ backgr
 .re-form-input, .wpcf7 input, .wpcf7 textarea, .re-form-group.field_type_textbox input, .re-form-group.field_type_url input{ width: 100%;  padding: 12px 10px !important; height: auto; font-size: 15px; margin-bottom: 5px; max-width: 100%; }
 .re-form-input-small{padding: 6px 9px !important; width: 100%}
 .re-form-input.error{border-color: #bb0000}
-.re-form-group > label{ display: block; font-weight: bold; font-size: 14px; margin-bottom: 7px}
+.re-form-group > label{ display: block; font-weight:400; font-size: 1em; letter-spacing: 0.5px; margin-bottom: 7px}
 .re-form-group legend{font-weight: bold;margin: 0px 0px 5px;}
 .re-form-group.datebox-selects select{float: left; width: 31%; margin: 0 2% 0 0}
 .re-form-group.field_type_selectbox select{ width: 100%; cursor: pointer; margin: 0;border: 1px solid #ccc; }
 .re-form-group .option-label{ margin: 0 5px 5px 0 }
 .xprofile_hidename .field_name, .re-form-group .clear-value{display: none;}
 #xp-woo-profile-details-section .xp-woo-description{margin: 0 0 0 0; font-size: 80%; color: #777}
-input[type="text"], textarea, input[type="tel"], input[type="password"], input[type="email"], input[type="url"]{box-sizing:border-box;outline:0;padding: 9px 10px;color: #444;background: none #fff; border-radius: 0;transition: border-color 0.4s ease;border:1px solid #ccc;line-height: 18px; font: normal 15px/18px Arial; -webkit-appearance: none;}
+input[type="text"], textarea, input[type="tel"], input[type="password"], input[type="email"], input[type="url"]{box-sizing:border-box;outline:0;padding: 9px 10px;color: #444;background:#fbf8da; border-radius: 0; border:0px;line-height: 18px; -webkit-appearance: none;}
 input[type="text"]:focus, textarea:focus, input[type="tel"]:focus, input[type="password"]:focus, input[type="email"]:focus{border-color:#444;}
 .rh_table_image{display: table-cell; vertical-align: middle; text-align: center;}
 .rh_table_image img{width: auto; max-width: 100%; height: auto;}
@@ -2697,9 +2697,9 @@ body.pgwModalOpen { overflow: hidden; }
 #pgwModalBackdrop { background: #000; opacity: 0.5; filter: alpha(opacity=50); }
 #pgwModal .pm-body { background-color: #fff; -webkit-box-shadow: 0 0px 15px #444; box-shadow: 0 0px 15px #444; }
 #pgwModal .pm-title { background: #e5e5e5; padding: 5px 0 6px; border-bottom: 1px solid #d5d5d5;  font-size: 1rem; min-height: 25px; }
-#pgwModal .pm-content { background: #fff; padding: 25px;  text-align: left; }
+#pgwModal .pm-content { background: #f6f3a6; padding: 25px;  text-align: left;color: #53ad9d;}
 #pgwModal .pm-close { cursor: pointer; position: absolute; top: 0; right: 0;height: 30px; width: 30px; }
-#pgwModal .pm-close span.pm-icon:before { display: block; height: 30px; width: 30px; content: "x"; font: 16px/30px Verdana; color: #fff;  background-color: #CDCDCD; text-align: center;}
+#pgwModal .pm-close span.pm-icon:before { display: block; height: 30px; width: 30px; content: "x"; font: 16px/30px Verdana; color: #fff;  background-color: rgba(222, 80, 70, 0.54);text-align: center;}
 #pgwModal .pm-close:hover span.pm-icon:before { background-color: #999}
 body.pgwModalOpen .content, body.pgwModalOpen #main_header {-webkit-filter: grayscale(100%); filter: grayscale(100%);-webkit-transition: -webkit-filter 500ms linear; -moz-transition : -webkit-filter 500ms linear; transition : -webkit-filter 500ms linear; backface-visibility: hidden;-webkit-backface-visibility: hidden;}
 .coupon_reveal_popup{ display: none}
