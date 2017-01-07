@@ -64,10 +64,10 @@ $table_prefix  = 'wp_';
 define('FS_METHOD','direct');
 
 // Habilita modo de debug
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
  
 // Guarda os logs em /wp-content/debug.log
-define('WP_DEBUG_LOG', true);
+define('WP_DEBUG_LOG', false);
 
 
 /**
