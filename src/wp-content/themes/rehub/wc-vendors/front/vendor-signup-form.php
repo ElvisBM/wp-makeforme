@@ -57,6 +57,7 @@
 		</div>
 
 		<div class="tabs-content" id="payment">
+
 			<!-- Paypal address -->
 			<?php WCVendors_Pro_Store_Form::paypal_address( ); ?>
 		</div>
