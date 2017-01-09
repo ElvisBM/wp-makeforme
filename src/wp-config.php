@@ -33,6 +33,9 @@ define('DB_CHARSET', 'utf8mb4');
 /** O tipo de collate do banco de dados. Não altere isso se tiver dúvidas. */
 define('DB_COLLATE', '');
 
+
+define('WP_LANG', 'pt_BR');
+
 /**#@+
  * Chaves únicas de autenticação e salts.
  *
