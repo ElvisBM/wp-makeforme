@@ -1211,9 +1211,9 @@ span.call-us-number {font-size: 22px;display: block;line-height: 32px;}
 /****************************************************************************
     *-*-*-* HOME GRID *-*-*-*
 ****************************************************************************/
-.title h5 { font: 700 23px/20px 'Roboto', trebuchet ms; color: #222222; display: block; text-transform: uppercase; border-bottom: 3px solid #000000; padding-bottom: 12px; margin: 0 0 20px 0; }
+.title h5 {     font-family: 'Poppins', sans-serif; color: #222222; display: block; text-transform: uppercase; border-bottom: 3px solid #000000; padding-bottom: 12px; margin: 0 0 20px 0; }
 .title h1 span { font-weight: normal;  }
-.title h1 {margin: 0 0 28px 0; font-size: 2em;font-weight: 400;border-bottom: 2px #d4d4d4 solid;}
+.title h1 {    font-family: 'Poppins', sans-serif;color:#2cbbd4;margin: 0 0 28px 0; font-size: 1.8em;font-weight: 400;border-bottom: 2px #d4d4d4 solid;}
 .masonry_grid_fullwidth { margin-bottom: 20px }
 .small_post { position: relative; float: left; background-color: #fff; overflow: hidden;  }
 .masonry_grid_fullwidth .small_post { border: 1px solid #e3e3e3; /*box-shadow: 0 1px 1px #EDEDED;*/ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -1237,7 +1237,7 @@ span.call-us-number {font-size: 22px;display: block;line-height: 32px;}
 .small_post a.comment_two { position: absolute; top: 0; right: -1px; padding: 2px; line-height: 12px; font-size: 12px}
 .small_post .overlay { text-align: center; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; background: rgba(0,0,0,.7); }
 .small_post .overlay .btn_more { border: 1px solid #ffffff; color: #ffffff; }
-.small_post .overlay h2 { font: 26px/26px 'Roboto', trebuchet ms; display: inline-block !important; margin: 65px 15px 10px; text-transform: uppercase; border-top: 1px solid #ffffff; border-bottom: 1px solid #ffffff; padding-top: 10px; padding-bottom: 5px; max-height: 52px }
+.small_post .overlay h2 { font-family: 'Poppins', sans-serif; display: inline-block !important; margin: 65px 15px 10px; text-transform: uppercase; border-top: 1px solid #ffffff; border-bottom: 1px solid #ffffff; padding-top: 10px; padding-bottom: 5px; max-height: 52px }
 .small_post .overlay h2 a { color: #ffffff; }
 .small_post .player { margin-bottom: 10px; display: inline-block; }
 .small_post figure { width: 100%; margin-bottom: 20px; position: relative; box-sizing: border-box; }
@@ -1288,7 +1288,7 @@ h2.ext_link { display: inline-block }
 .post_slider .flex-control-nav { bottom: -36px !important; margin: 0 }
 .post_slider .flex-control-nav li a { width: 7px; height: 7px; border-radius: 50%; display: inline-block; font-size: 0px; background: #c9c9c9; text-indent: -9999px; }
 .post_slider .caption, .slider_post .caption { color: #ffffff; position: absolute; bottom: 0px; right: 0px; display: block; z-index: 99999; padding: 3px 6px 3px 5px; font-size: 14px }
-.post_slider .caption a, .slider_post .caption a { font: 16px/16px 'Roboto', trebuchet ms; color: #ffffff; text-decoration: none !important; }
+.post_slider .caption a, .slider_post .caption a { font-family: 'Poppins', sans-serif;color: #ffffff; text-decoration: none !important; }
 .post_slider .caption i, .slider_post .caption i { margin-left: 3px }
 .post_slider .bigcaption, .slider_post .bigcaption{background-color: rgba(0, 0, 0, 0.5); color: #EBEBE8; position: absolute; bottom: -50px; left: 0px; right: 0; width: 100%; display: block; z-index: 99999; padding: 18px; font-size: 16px; text-align: center; box-sizing: border-box; -webkit-boxsizing: borderbox; transition: all 0.4s ease 0s; transition-delay: 0.25s; opacity: 0; letter-spacing: 0.5px}
 .post_slider .flex-active-slide .bigcaption, .slider_post .flex-active-slide .bigcaption{ bottom: 0; opacity: 1}
@@ -1339,7 +1339,7 @@ border: 1px solid #cecece; border-bottom: none}
 .with_sidebar_rating.top_rating_block.list_style_rating .rating_col{ width: 65px;}
 .with_sidebar_rating.top_rating_block.list_style_rating .t_score{display: none;}
 .top_rating_block.list_style_rating .star strong{ float: left;margin: 0 5px;font-weight: normal;font-size: 13px;}
-.top_rating_item .rank_count { z-index:2; border-radius: 50%;font: 700 18px/18px "Roboto", trebuchet; background-color: #111; border: 2px solid #fff; box-shadow: 0 0 4px #999; padding: 6px 0 0 0; color: #fff; width: 30px; height: 24px; display: block; position: absolute;top: 50%;left: 0;margin: -20px 0 0 -37px;}
+.top_rating_item .rank_count { z-index:2; border-radius: 50%;font-family: 'Poppins', sans-serif; background-color: #111; border: 2px solid #fff; box-shadow: 0 0 4px #999; padding: 6px 0 0 0; color: #fff; width: 30px; height: 24px; display: block; position: absolute;top: 50%;left: 0;margin: -20px 0 0 -37px;}
 #rank_1.top_rating_item .rank_count {border: 2px solid #fff; box-shadow: 0 0 4px #999; padding: 6px 0 0 0; color: #fff; width: 30px; height: 24px; display: block; }
 #rank_1.top_rating_item .rank_count i { font-size: 20px }
 .top_rating_item h2 { margin: 0; font-size: 18px; line-height: 22px;margin-bottom: 8px}
@@ -1354,10 +1354,10 @@ border: 1px solid #cecece; border-bottom: none}
 .top_rating_item .rehub_offer_coupon span{color: #111}
 .top_rating_item .priced_block .btn_offer_block { float: none; margin: 0 auto; display: block; width: 130px; font-size: 16px; line-height: 18px }
 .top_rating_item .priced_block .not_masked_coupon{width: 130px; margin: 10px auto;   } 
-.top_rating_item .score { text-align: center; font: 700 13px/18px 'Roboto', trebuchet ms; padding: 8px; color: #666; text-transform: uppercase; }
+.top_rating_item .score { text-align: center;     font-family: 'Poppins', sans-serif; padding: 8px; color: #666; text-transform: uppercase; }
 .top_rating_item .score.square_score { background: #e43917; color: #fff; }
-.top_rating_item .score span.it_score { display: block; font: bold 30px/27px 'Roboto', trebuchet ms; color: #111; }
-.top_rating_item .score.square_score span.it_score { font: bold 38px/36px 'Roboto', trebuchet ms; color: #fff }
+.top_rating_item .score span.it_score { display: block; font-family: 'Poppins', sans-serif; color: #111; }
+.top_rating_item .score.square_score span.it_score { font-family: 'Poppins', sans-serif; color: #fff }
 .top_rating_item .star { margin: 6px auto 0 auto !important; float: none !important; }
 .top_rating_item .star .title_stars{ font-size: 12px;  display: block;line-height: 14px;}
 .top_rating_item .star .title_stars small{ font-size: 11px;margin-bottom: 4px;}
@@ -1368,7 +1368,7 @@ border: 1px solid #cecece; border-bottom: none}
 .full_width_rating .top_rating_item p{font: 15px/18px 'arial', trebuchet ms; margin: 10px 0}
 .full_width_rating .top_rating_item .priced_block .price_count{font-size: 25px}
 .full_width_rating .top_rating_item .priced_block .btn_offer_block{width: 150px;font-size: 18px;line-height: 25px;}
-.with_sidebar_rating .top_rating_item .score.square_score span.it_score { font: bold 30px/30px 'Roboto', trebuchet ms; }
+.with_sidebar_rating .top_rating_item .score.square_score span.it_score {font-family: 'Poppins', sans-serif; }
 .table_view_charts{ margin: 10px 0; overflow: hidden;}
 .top_chart_wrap, .swiper-container{float: left; width: calc(100% - 160px); position: relative; }
 .top_chart_controls{ float: right; margin-bottom: 10px}

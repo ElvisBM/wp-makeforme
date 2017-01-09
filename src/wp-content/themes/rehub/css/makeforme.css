@@ -380,3 +380,44 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
  */
  .page-id-544 .title h1{ color: #24b9d6; }
  #page-195 .title h1{ color: #53ad9d; }
+
+
+
+ /*
+  * Setings front payment
+  */
+
+#payment{ }
+#payment .control-group{display: none;}
+#payment .field{}
+#payment .field label{display: inline-block;width: auto;margin:0px;font-family: 'Poppins', sans-serif;font-weight: 500;}
+.wcv-navigation ul.menu.black li a:hover{background: #24b9d6!important;color:#fff!important;}
+#payment .field input{display: block;width: 100%;}
+#payment .field span{display: none;width: auto;}
+#payment .field:hover > span{ display: inline-block; }
+#payment .field.bank_account_id{display: none;}
+#payment .field.receiver_id{display: none}
+#conta_banco_wcvendor{}
+#recebedor_wcvendor{}
+
+
+.wcv-tabs.top>.tabs-nav li.active a {
+    border:0px;
+    border-bottom: 1px solid #53ad9d;
+    background: #fbf8da;
+    color: #53ad9d;
+}
+.wcv-tabs.top>.tabs-nav{
+    border-bottom: 1px solid #53ad9d;
+}
+
+.wcv-tabs .tabs-nav li a:hover {
+    background: #fbf8da;
+    color: #53ad9d;
+}
+
+.wcv-grid a.button{
+    background: #ff4e0c !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}

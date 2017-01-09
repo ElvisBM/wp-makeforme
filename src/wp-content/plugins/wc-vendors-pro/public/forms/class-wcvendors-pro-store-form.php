@@ -1477,7 +1477,7 @@ class WCVendors_Pro_Store_Form {
 			// Vacation Mode 
 			WCVendors_Pro_Form_Helper::input( apply_filters( 'wcv_vacation_mode', array( 
 						'id' 				=> '_wcv_vacation_mode', 
-						'label' 			=> __( 'Enable Vacation Mode', 'wcvendors-pro' ), 
+						'label' 			=> __( 'Ativar modo de férias', 'wcvendors-pro' ), 
 						'type' 				=> 'checkbox', 
 						'class' 			=> 'wcv-vacaction-mode',
 						'wrapper_start' 	=> '<div class="wcv-cols-group wcv-horizontal-gutters"><div class="all-100">', 
