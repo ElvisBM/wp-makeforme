@@ -1703,7 +1703,7 @@ body .bg_r_b{ background-position: right bottom !important;}body .bg_r_t{ backgr
 .re-form-group .option-label{ margin: 0 5px 5px 0 }
 .xprofile_hidename .field_name, .re-form-group .clear-value{display: none;}
 #xp-woo-profile-details-section .xp-woo-description{margin: 0 0 0 0; font-size: 80%; color: #777}
-input[type="text"], textarea, input[type="tel"], input[type="password"], input[type="email"], input[type="url"]{box-sizing:border-box;outline:0;padding: 9px 10px;color: #444;background:#fbf8da; border-radius: 0; border:0px;line-height: 18px; -webkit-appearance: none;}
+input[type="text"], textarea, input[type="tel"], input[type="password"], input[type="email"], input[type="url"]{box-sizing:border-box;outline:0;padding: 9px 10px;color: #444;background:#fbf8da; font-size:1.2em; border-radius: 0; border:0px;line-height: 18px; -webkit-appearance: none;}
 input[type="text"]:focus, textarea:focus, input[type="tel"]:focus, input[type="password"]:focus, input[type="email"]:focus{border-color:#444;}
 .rh_table_image{display: table-cell; vertical-align: middle; text-align: center;}
 .rh_table_image img{width: auto; max-width: 100%; height: auto;}

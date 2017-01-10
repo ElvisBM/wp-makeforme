@@ -25,6 +25,14 @@ body{
   color: #fff; 
 }
 
+.woocommerce-page form .form-row input.input-text:-ms-input-placeholder,
+.woocommerce-page form .form-row input.input-text::-webkit-input-placeholder,
+.woocommerce-page form .form-row input.input-text:-moz-placeholder,
+.woocommerce-page form .form-row input.input-text:-ms-input-placeholder  {  
+  color: #000!important; 
+}
+
+
 
 
 span.sou{
@@ -392,7 +400,7 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
 #payment .field{}
 #payment .field label{display: inline-block;width: auto;margin:0px;font-family: 'Poppins', sans-serif;font-weight: 500;}
 .wcv-navigation ul.menu.black li a:hover{background: #24b9d6!important;color:#fff!important;}
-#payment .field input{display: block;width: 100%;}
+#payment .field input{display: block;width: 100%;font-size: 1.2em;}
 #payment .field span{display: none;width: auto;}
 #payment .field:hover > span{ display: inline-block; }
 #payment .field.bank_account_id{display: none;}
