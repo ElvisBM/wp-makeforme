@@ -397,16 +397,21 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
 
 #payment{ }
 #payment .control-group{display: none;}
-#payment .field{}
+#payment .field{ margin-bottom: 15px;}
 #payment .field label{display: inline-block;width: auto;margin:0px;font-family: 'Poppins', sans-serif;font-weight: 500;}
 .wcv-navigation ul.menu.black li a:hover{background: #24b9d6!important;color:#fff!important;}
 #payment .field input{display: block;width: 100%;font-size: 1.2em;}
 #payment .field span{display: none;width: auto;}
+#payment .bootstrap-select.btn-group .dropdown-menu li a span.text{ display: inline-block; }
+#payment .bootstrap-select.btn-group .dropdown-toggle .filter-option{ display: inline-block; }
 #payment .field:hover > span{ display: inline-block; }
 #payment .field.bank_account_id{display: none;}
 #payment .field.receiver_id{display: none}
+#payment select{ height: 40px;width: 100%; }
 #conta_banco_wcvendor{}
-#recebedor_wcvendor{}
+#recebedor_wcvendor{margin-top: 30px;}
+#recebedor_wcvendor h3{margin-bottom: 10px;}
+#payment .bootstrap-select{ width: 100%; }
 
 
 .wcv-tabs.top>.tabs-nav li.active a {
