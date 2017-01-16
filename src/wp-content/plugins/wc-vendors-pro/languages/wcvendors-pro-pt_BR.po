@@ -3,7 +3,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: WC Vendors Pro\n"
 "POT-Creation-Date: 2016-03-19 13:04+0000\n"
-"PO-Revision-Date: 2017-01-09 15:09-0200\n"
+"PO-Revision-Date: 2017-01-14 23:04-0200\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1091,7 +1091,7 @@ msgstr ""
 
 #: includes/class-wcvendors-pro.php:688
 msgid "Coupon Delete"
-msgstr "Apagar Cupão"
+msgstr "Apagar Cupom"
 
 #: includes/class-wcvendors-pro.php:689
 msgid "Delete vendor coupons permanently. "
@@ -1100,7 +1100,7 @@ msgstr "Excluir definitivamente Cupons de vendedor. "
 #: includes/class-wcvendors-pro.php:690
 msgid "Bypass the trash when a vendor deletes a coupon and delete permanently."
 msgstr ""
-"Evitar o lixo, quando um vendedor elimina um cupão e o exclui "
+"Evitar o lixo, quando um vendedor elimina um Cupom e o exclui "
 "definitivamente."
 
 #: includes/class-wcvendors-pro.php:697
@@ -1227,14 +1227,14 @@ msgstr "Configurações da comissão para pagamentos."
 
 #: includes/class-wcvendors-pro.php:788
 msgid "Coupon Action"
-msgstr "Ação do cupão"
+msgstr "Ação do Cupom"
 
 #: includes/class-wcvendors-pro.php:789
 msgid ""
 "Process the commission before or after the coupon has been applied to the "
 "price."
 msgstr ""
-"Processar a comissão antes ou depois do cupão tem sido aplicado ao preço."
+"Processar a comissão antes ou depois do Cupom tem sido aplicado ao preço."
 
 #: includes/class-wcvendors-pro.php:793
 msgid "After"
@@ -1905,7 +1905,7 @@ msgstr "Adicionar Produto"
 #: public/partials/shop_coupon/wcvendors-pro-table-shop-coupon-table-actions.php:18
 #: templates/dashboard/shop_coupon-edit.php:16
 msgid "Add Coupon"
-msgstr "Adicionar Cupão"
+msgstr "Adicionar Cupom"
 
 #: public/class-wcvendors-pro-dashboard.php:259
 #: public/class-wcvendors-pro-order-controller.php:334
@@ -3283,49 +3283,49 @@ msgstr "Atualizar"
 
 #: public/class-wcvendors-pro-shop-coupon-controller.php:81
 msgid "Please enter a coupon code"
-msgstr "Por favor insira um código de cupão"
+msgstr "Por favor insira um código de Cupom"
 
 #: public/class-wcvendors-pro-shop-coupon-controller.php:94
 msgid "This coupon code exists. "
-msgstr "Esse código de cupão existe. "
+msgstr "Esse código de Cupom existe. "
 
 #: public/class-wcvendors-pro-shop-coupon-controller.php:163
 msgid "Coupon Updated."
-msgstr "Cupão Atualizado."
+msgstr "Cupom Atualizado."
 
 #: public/class-wcvendors-pro-shop-coupon-controller.php:165
 msgid "Coupon Added."
-msgstr "Cupão Adicionado."
+msgstr "Cupom Adicionado."
 
 #: public/class-wcvendors-pro-shop-coupon-controller.php:170
 msgid "There was a problem updating the coupon."
-msgstr "Ocorreu um problema ao atualizar o cupão."
+msgstr "Ocorreu um problema ao atualizar o Cupom."
 
 #: public/class-wcvendors-pro-shop-coupon-controller.php:172
 msgid "There was a problem adding the coupon."
-msgstr "Ocorreu um problema ao adicionar o cupão."
+msgstr "Ocorreu um problema ao adicionar o Cupom."
 
 #: public/class-wcvendors-pro-shop-coupon-controller.php:210
 msgid "Coupon Deleted."
-msgstr "Cupão Apagado."
+msgstr "Cupom Apagado."
 
 #: public/class-wcvendors-pro-shop-coupon-controller.php:212
 msgid "There was a problem deleting the coupon."
-msgstr "Ocorreu um problema ao apagar o cupão."
+msgstr "Ocorreu um problema ao apagar o Cupom."
 
 #: public/class-wcvendors-pro-shop-coupon-controller.php:237
 msgid "Coupon"
-msgstr "Cupão"
+msgstr "Cupom"
 
 #: public/class-wcvendors-pro-shop-coupon-controller.php:238
 msgid "Coupon Type"
-msgstr "Tipo de Cupão"
+msgstr "Tipo de Cupom"
 
 #: public/class-wcvendors-pro-shop-coupon-controller.php:239
 #: public/forms/class-wcvendors-pro-coupon-form.php:195
 #: public/forms/class-wcvendors-pro-coupon-form.php:196
 msgid "Coupon Amount"
-msgstr "Montante do Cupão"
+msgstr "Montante do Cupom"
 
 #: public/class-wcvendors-pro-shop-coupon-controller.php:241
 msgid "Product ID's"
@@ -3542,12 +3542,12 @@ msgstr "aprovado"
 #: public/forms/class-wcvendors-pro-coupon-form.php:97
 #: public/forms/class-wcvendors-pro-coupon-form.php:98
 msgid "Coupon Code"
-msgstr "Código de Cupão"
+msgstr "Código de Cupom"
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:116
 #: public/forms/class-wcvendors-pro-coupon-form.php:117
 msgid "Coupon Description"
-msgstr "Descrição do Cupão"
+msgstr "Descrição do Cupom"
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:141
 #: public/forms/class-wcvendors-pro-coupon-form.php:143
@@ -3569,7 +3569,7 @@ msgstr "Aplicar a todos os meus produtos"
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:172
 msgid "Check this box if the coupon applies to all your products."
-msgstr "Selecione esta opção se o cupão se aplica a todos os seus produtos."
+msgstr "Selecione esta opção se o Cupom se aplica a todos os seus produtos."
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:220
 msgid "Allow Free Shipping"
@@ -3581,13 +3581,13 @@ msgid ""
 "must be enabled and be set to require \"a valid free shipping coupon\" (see "
 "the \"Free Shipping Requires\" setting)."
 msgstr ""
-"Selecione esta opção se o cupão permite envio grátis. O método de envio "
-"grátis deve estar ativo e definido para exigir \"um cupão válido de envio "
+"Selecione esta opção se o Cupom permite envio grátis. O método de envio "
+"grátis deve estar ativo e definido para exigir \"um Cupom válido de envio "
 "grátis\" (ver a configuração de \"envio grátis\")."
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:248
 msgid "Coupon Expiry Date"
-msgstr "Data de Validade do Cupão"
+msgstr "Data de Validade do Cupom"
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:278
 msgid "Minimum Spend"
@@ -3614,7 +3614,7 @@ msgid ""
 "Check this box if the coupon cannot be used in conjunction with other "
 "coupons."
 msgstr ""
-"Selecionar esta caixa se o cupão não puder ser usado em simultâneo com "
+"Selecionar esta caixa se o Cupom não puder ser usado em simultâneo com "
 "outros Cupons."
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:356
@@ -3627,7 +3627,7 @@ msgid ""
 "coupons will only work if the item is not on sale. Per-cart coupons will "
 "only work if there are no sale items in the cart."
 msgstr ""
-"Selecionar esta opção se o cupão não se aplicar aos itens em promoção. "
+"Selecionar esta opção se o Cupom não se aplicar aos itens em promoção. "
 "Cupons por item só irão funcionar, se o item não estiver em promoção. Cupons "
 "por carrinho só irão funcionar se não houver itens de venda no carrinho."
 
@@ -3659,7 +3659,7 @@ msgstr ""
 #: public/forms/class-wcvendors-pro-coupon-form.php:508
 #: public/forms/class-wcvendors-pro-coupon-form.php:533
 msgid "Usage limit per coupon"
-msgstr "Limite de uso por cupão"
+msgstr "Limite de uso por Cupom"
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:509
 #: public/forms/class-wcvendors-pro-coupon-form.php:534
