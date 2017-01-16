@@ -874,13 +874,13 @@ function wpsm_member_shortcode( $atts, $content = null ) {
 	$Old     = array( '<br />', '<br>' );
 	$New     = array( '','' );
 	$content = str_replace( $Old, $New, $content );	
-	if($guest_text == '') $guest_text = ' This content visible only for members. You can login <a href="/wp-login.php" class="act-rehub-login-popup">here</a>.';
+	if($guest_text == '') $guest_text = ' Este conteúdo é visível apenas para membros. Você pode entrar <a href="/wp-login.php" class="act-rehub-login-popup">here</a>.';
 	if (is_user_logged_in() && !is_null( $content ) && !is_feed()) {
-		return '<div class="wpsm-members"><strong>'.__("Members only", "rehub_framework").'</strong>' . do_shortcode( $content ) . '</div>';
+		return '<div class="wpsm-members"><strong>'.__("Para membros", "rehub_framework").'</strong>' . do_shortcode( $content ) . '</div>';
 	}
 	else { 
 
-		return '<div class="wpsm-members not-logined"><strong>'.__("Members only", "rehub_framework").'</strong> '.$guest_text.'</div>';	
+		return '<div class="wpsm-members not-logined"><strong>'.__("Para membros", "rehub_framework").'</strong> '.$guest_text.'</div>';	
 		 }
 
 	}	
@@ -1345,7 +1345,7 @@ function rehub_affbtn_function( $atts, $content = null ) {
 		elseif (rehub_option('rehub_btn_text') !='') :
 			$out .= rehub_option("rehub_btn_text");
 		else :
-			$out .= __("Buy this item", "rehub_framework");	
+			$out .= __("Comprar", "rehub_framework");	
 		endif;
 		$out .='</a></div></div>';
 	endif;            
@@ -2945,7 +2945,7 @@ if (is_user_logged_in()) {
 	$mycredpoint = ( function_exists( 'mycred_get_users_fcred' ) ) ? mycred_get_users_fcred($user_id) : '';    
 	if ( function_exists('bp_notifications_get_notifications_for_user')) {
 		$notifications = bp_notifications_get_notifications_for_user($user_id, 'object');
-		$notification_bp_item .='<li class="bp-profile-edit-menu-item menu-item"><a href="'.bp_core_get_user_domain( $user_id ).'"><i class="fa fa-cogs"></i></i><span>'. __("Edit Profile", "rehub_framework") .'</span></a></li>';		
+		$notification_bp_item .='<li class="bp-profile-edit-menu-item menu-item"><a href="'.bp_core_get_user_domain( $user_id ).'"><i class="fa fa-cogs"></i></i><span>'. __("Editar perfil", "rehub_framework") .'</span></a></li>';		
 		if (!empty($notifications)){
 			$notice_bp_number = count($notifications);
 			$notice_number = 0;
@@ -2972,13 +2972,13 @@ if (is_user_logged_in()) {
         }
         $output .= '</li>';
         if ($profile_url) :
-        	$output .= '<li class="user-profile-link-intop menu-item"><a href="'. esc_url(get_the_permalink($profile_url)) .'"><i class="fa fa-user"></i><span>'. __("My profile", "rehub_framework") .'</span></a></li>';
+        	$output .= '<li class="user-profile-link-intop menu-item"><a href="'. esc_url(get_the_permalink($profile_url)) .'"><i class="fa fa-user"></i><span>'. __("Meu Perfil", "rehub_framework") .'</span></a></li>';
         endif;
         if ($sumbit_url) :
-        	$output .= '<li class="user-addsome-link-intop menu-item"><a href="'. esc_url(get_the_permalink($sumbit_url)) .'"><i class="fa fa-cloud-upload"></i><span>'. __("Submit a Post", "rehub_framework") .'</span></a></li>';
+        	$output .= '<li class="user-addsome-link-intop menu-item"><a href="'. esc_url(get_the_permalink($sumbit_url)) .'"><i class="fa fa-cloud-upload"></i><span>'. __("Enviar um artigo", "rehub_framework") .'</span></a></li>';
         endif; 
         if ($edit_url) :
-        	$output .= '<li class="user-editposts-link-intop menu-item"><a href="'. esc_url(get_the_permalink($edit_url)) .'"><i class="fa fa-pencil"></i><span>'. __("Edit My Posts", "rehub_framework") .'</span></a></li>';
+        	$output .= '<li class="user-editposts-link-intop menu-item"><a href="'. esc_url(get_the_permalink($edit_url)) .'"><i class="fa fa-pencil"></i><span>'. __("Editar meus artigos", "rehub_framework") .'</span></a></li>';
         endif;  
         if (defined('wcv_plugin_dir')) :
 		    if (class_exists('WCV_Vendors') && class_exists('WCVendors_Pro') && WCV_Vendors::is_vendor($user_id) ) {
@@ -2988,14 +2988,14 @@ if (is_user_logged_in()) {
 		    	$redirect_to = get_permalink(WC_Vendors::$pv_options->get_option( 'vendor_dashboard_page' ));
 		    }
         	if (!empty($redirect_to)){
-	        	$output .= '<li class="user-editshop-link-intop menu-item"><a href="'. esc_url($redirect_to) .'"><i class="fa fa-shopping-bag" aria-hidden="true"></i><span>'. __("Manage Your Shop", "rehub_framework") .'</span></a></li>';        	
+	        	$output .= '<li class="user-editshop-link-intop menu-item"><a href="'. esc_url($redirect_to) .'"><i class="fa fa-shopping-bag" aria-hidden="true"></i><span>'. __("Gerenciar minha loja", "rehub_framework") .'</span></a></li>';        	
         	}
         endif;                            
         if(has_nav_menu('user_logged_in_menu')):
         	$output .= wp_nav_menu( array( 'theme_location' => 'user_logged_in_menu','menu_class' => '','container' => false,'depth' => 1,'items_wrap'=> '%3$s', 'echo' => false ) );
         endif;
         $output .=$notification_bp_item;
-        $output .= '<li class="user-logout-link-intop menu-item"><a href="'. wp_logout_url( home_url()) .'"><i class="fa fa-lock"></i><span>'. __("Log out", "rehub_framework") .'</span></a></li>';
+        $output .= '<li class="user-logout-link-intop menu-item"><a href="'. wp_logout_url( home_url()) .'"><i class="fa fa-lock"></i><span>'. __("Sair", "rehub_framework") .'</span></a></li>';
 $output .= '</ul></div>';
 } else {
 	if(get_option('users_can_register')) :
@@ -3006,10 +3006,10 @@ $output .= '</ul></div>';
 				$output .= '<span class="act-rehub-login-popup'.$as_button.$class_show.'" data-type="login"><i class="fa fa-sign-in"></i><span>'.__("Logar / Cadastrar", "rehub_framework").'</span></span>';
 			endif;
 		else:
-			$output .= '<span class="act-rehub-login-popup'.$as_button.$class_show.'" data-type="url" data-customurl="'.esc_url($loginurl).'"><i class="fa fa-sign-in"></i><span>'.__("Login / Register", "rehub_framework").'</span></span>';
+			$output .= '<span class="act-rehub-login-popup'.$as_button.$class_show.'" data-type="url" data-customurl="'.esc_url($loginurl).'"><i class="fa fa-sign-in"></i><span>'.__("Logar / Registrar", "rehub_framework").'</span></span>';
 		endif;
 	else:
-		$output .= '<a class="act-rehub-login-popup'.$as_button.$class_show.'" data-type="restrict" href="#"><i class="fa fa-sign-in"></i><span>'.__("Login / Register is disabled", "rehub_framework").'</span></a>';
+		$output .= '<a class="act-rehub-login-popup'.$as_button.$class_show.'" data-type="restrict" href="#"><i class="fa fa-sign-in"></i><span>'.__("Logar / Registro desabilitado", "rehub_framework").'</span></a>';
 	endif;	
 	
 }
@@ -3102,7 +3102,7 @@ function wpsm_comparison_button( $atts, $content = null ) {
 	$compare_active = ( in_array( $postid, $post_ids_arr ) ) ? ' comparing' : ' not-incompare';
 	
 	$out = '<span';   
-    $out .=' class="wpsm-button wpsm-button-new-compare addcompare-id-'.$postid.' '.$atts['color'].' '.$atts['size'].''.$compare_active.$class_show.'" data-addcompare-id="'.$postid.'"><i class="fa re-icon-compare"></i>'.__("Add to compare", "rehub_framework").'</span>';
+    $out .=' class="wpsm-button wpsm-button-new-compare addcompare-id-'.$postid.' '.$atts['color'].' '.$atts['size'].''.$compare_active.$class_show.'" data-addcompare-id="'.$postid.'"><i class="fa re-icon-compare"></i>'.__("Adicionar comparação", "rehub_framework").'</span>';
     return $out;
 }
 add_shortcode('wpsm_compare_button', 'wpsm_comparison_button');
