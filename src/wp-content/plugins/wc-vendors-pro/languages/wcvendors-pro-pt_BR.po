@@ -3,7 +3,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: WC Vendors Pro\n"
 "POT-Creation-Date: 2016-03-19 13:04+0000\n"
-"PO-Revision-Date: 2017-01-14 23:04-0200\n"
+"PO-Revision-Date: 2017-01-16 15:22-0200\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1319,7 +1319,7 @@ msgstr "Categorias"
 #: includes/class-wcvendors-pro.php:846
 #: public/forms/class-wcvendors-pro-product-form.php:523
 msgid "Tags"
-msgstr "Etiquetas"
+msgstr "Tags"
 
 #: includes/class-wcvendors-pro.php:847
 msgid "Attributes"
@@ -1450,16 +1450,16 @@ msgstr "Gestão de Inventário (também desativa todos os campos de inventário)
 #: includes/class-wcvendors-pro.php:924
 #: public/forms/class-wcvendors-pro-product-form.php:1109
 msgid "Stock Qty"
-msgstr "Qty de Stock"
+msgstr "Quantidade  de estoque"
 
 #: includes/class-wcvendors-pro.php:925
 msgid "Backorders"
-msgstr "Pedidos em atraso (por falta de stock)"
+msgstr "Pedidos em atraso (por falta de estoque)"
 
 #: includes/class-wcvendors-pro.php:926
 #: public/forms/class-wcvendors-pro-product-form.php:1167
 msgid "Stock status"
-msgstr "Estado do Stock"
+msgstr "Estado do estoque"
 
 #: includes/class-wcvendors-pro.php:927
 msgid "Sold individually"
@@ -1489,15 +1489,15 @@ msgstr "Classe de envio"
 
 #: includes/class-wcvendors-pro.php:947
 msgid "Upsells / Grouping"
-msgstr "Vendas incrementadas / Agrupadas"
+msgstr "Produtos recomendados / Grupo de produtos"
 
 #: includes/class-wcvendors-pro.php:950
 msgid "Up sells"
-msgstr "Vendas incrementadas"
+msgstr "Produtos recomendados"
 
 #: includes/class-wcvendors-pro.php:951
 msgid "Cross sells"
-msgstr "Vendas cruzadas"
+msgstr "Produtos recomendados no carrinho de compra ligado com o produto atual"
 
 #: includes/class-wcvendors-pro.php:952
 msgid "Grouped Products"
@@ -3202,7 +3202,7 @@ msgstr "Categorias:"
 
 #: public/class-wcvendors-pro-product-controller.php:1057
 msgid "Tags:"
-msgstr "Etiquetas:"
+msgstr "Tags:"
 
 #: public/class-wcvendors-pro-product-controller.php:1103
 msgid "No products found."
@@ -3838,7 +3838,7 @@ msgstr "Música"
 
 #: public/forms/class-wcvendors-pro-product-form.php:901
 msgid "Stock Keeping Unit"
-msgstr "Unidade de Manutenção de Stock"
+msgstr "Unidade de Manutenção de estoque"
 
 #: public/forms/class-wcvendors-pro-product-form.php:903
 msgid ""
@@ -3892,15 +3892,15 @@ msgstr "Ativar comentários"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1085
 msgid "Manage stock?"
-msgstr "Gerir stock?"
+msgstr "Gerenciar estoque? "
 
 #: public/forms/class-wcvendors-pro-product-form.php:1086
 msgid "Enable stock management at product level"
-msgstr "Ativar a gestão do stock ao nível do produto"
+msgstr "Ativar a gestão do estoque ao nível do produto"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1113
 msgid "Stock quantity."
-msgstr "Quantidade de stock."
+msgstr "Quantidade do estoque."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1138
 msgid "Allow Backorders?"
@@ -3931,16 +3931,16 @@ msgid ""
 "Controls whether or not the product is listed as \"in stock\" or \"out of "
 "stock\" on the frontend."
 msgstr ""
-"Controla se o produto é listado no frontend \"em stock\" ou \"fora de stock"
-"\"."
+"Controla se o produto é listado no frontend \"em estoque” ou \"fora de "
+"estoque”."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1173
 msgid "In stock"
-msgstr "Em stock"
+msgstr "Em estoque"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1174
 msgid "Out of stock"
-msgstr "Fora de stock"
+msgstr "Fora de estoque"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1196
 msgid "Sold Individually"
@@ -3985,7 +3985,7 @@ msgstr ""
 
 #: public/forms/class-wcvendors-pro-product-form.php:1365
 msgid "Up-Sells"
-msgstr "Vendas Incrementadas"
+msgstr "Produtos recomendados"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1371
 msgid ""
@@ -3993,9 +3993,9 @@ msgid ""
 "product, for example, products that are more profitable or better quality or "
 "more expensive."
 msgstr ""
-"Vendas incrementadas são produtos que recomenda, em vez do produto em causa, "
-"por exemplo, produtos que são mais rentáveis, com melhor qualidade ou mais "
-"caros."
+"Produtos recomendados são produtos que recomenda, em vez do produto em "
+"causa, por exemplo, produtos que são mais rentáveis, com melhor qualidade ou "
+"mais caros."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1373
 #: public/forms/class-wcvendors-pro-product-form.php:1415
@@ -4004,15 +4004,15 @@ msgstr "Procurar um produto&hellip;"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1407
 msgid "Cross-Sells"
-msgstr "Vendas Cruzadas"
+msgstr "Produtos recomendados no carrinho de compra"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1413
 msgid ""
 "Cross-sells are products which you promote in the cart, based on the current "
 "product."
 msgstr ""
-"Vendas cruzadas são produtos que promove no carrinho, baseado no produto "
-"atual."
+"Produtos recomendados são produtos que promove no carrinho, baseado no "
+"produto atual."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1437
 msgid "Choose a grouped product&hellip;"
@@ -4029,7 +4029,7 @@ msgstr ""
 
 #: public/forms/class-wcvendors-pro-product-form.php:1535
 msgid "Linked Products"
-msgstr "Produtos Ligados"
+msgstr "Produtos Relacionados/Recomendados"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1613
 msgid "National shipping fee"
