@@ -31,3 +31,10 @@
     font-weight: 400;
     letter-spacing: 1px;
 }
+
+.woocommerce .summary .masked_coupon, .woocommerce a.woo_loop_btn, .woocommerce input.button.alt, .woocommerce .checkout-button.button, .woocommerce a.add_to_cart_button, .woocommerce-page a.add_to_cart_button, .woocommerce .single_add_to_cart_button, .woocommerce div.product form.cart .button, .priced_block .btn_offer_block, .rh-deal-compact-btn, input.mdf_button, #buddypress input[type="submit"], #buddypress input[type="button"], #buddypress input[type="reset"], #buddypress button.submit, .ap-pro-form-field-wrapper input[type="submit"], .btn_block_part .btn_offer_block, .wpsm-button.rehub_main_btn, .wcv-grid a.button, input.gmw-submit, #ws-plugin--s2member-profile-submit{
+	font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    background: #53ad9d!important;
+}
