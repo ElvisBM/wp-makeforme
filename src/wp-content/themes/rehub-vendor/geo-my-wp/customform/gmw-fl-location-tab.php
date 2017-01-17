@@ -29,7 +29,7 @@ class RH_GMW_FL_Location_Page {
 
         $this->location_fields = apply_filters('gmw_fl_location_page', array(
                 'address_autocomplete' => array(
-                        __('Address Autocomplete', 'rehub_framework'),
+                        __('Preenchimento automático de endereço', 'rehub_framework'),
                         array(
                                 'autocomplete' => array(
                                         'name'        => 'formatted_address',
@@ -45,7 +45,7 @@ class RH_GMW_FL_Location_Page {
                         ),
                 ),
                 'map' => array(
-                        __( 'Find your location on the map', 'rehub_framework' ),
+                        __( 'Encontre a sua localização no mapa', 'rehub_framework' ),
                         array(
                                 'map' => array(
                                         'name'        => 'map',
@@ -65,7 +65,7 @@ class RH_GMW_FL_Location_Page {
                         array(
                                 'locator'   => array(
                                         'name'        => 'locator',
-                                        'title'       => __( 'Get Your Current Location','rehub_framework' ),
+                                        'title'       => __( 'Buscar minha localização','rehub_framework' ),
                                         'std'         => '',
                                         'id'          => 'gmw-yl-locator-btn',
                                         'class'       => '',
@@ -86,7 +86,7 @@ class RH_GMW_FL_Location_Page {
                                         'id'          => 'gmw-street',
                                         'class'       => '',
                                         'placeholder' => '',
-                                        'label'       => __('Street', 'rehub_framework'),
+                                        'label'       => __('Rua', 'rehub_framework'),
                                         'desc'        => '',
                                         'type'        => 'text',
                                         'attributes'  => array('size' => '40')
@@ -97,7 +97,7 @@ class RH_GMW_FL_Location_Page {
                                         'id'          => 'gmw-apt',
                                         'class'       => '',
                                         'placeholder' => '',
-                                        'label'       => __('Apt/Suit', 'rehub_framework'),
+                                        'label'       => __('Complemento', 'rehub_framework'),
                                         'desc'        => '',
                                         'type'        => 'text',
                                         'attributes'  => array('size' => '40')
@@ -108,7 +108,7 @@ class RH_GMW_FL_Location_Page {
                                         'id'          => 'gmw-city',
                                         'class'       => '',
                                         'placeholder' => '',
-                                        'label'       => __('City', 'rehub_framework'),
+                                        'label'       => __('Cidade', 'rehub_framework'),
                                         'desc'        => '',
                                         'type'        => 'text',
                                         'attributes'  => array('size' => '40')
@@ -118,7 +118,7 @@ class RH_GMW_FL_Location_Page {
                                         'std'         => '',
                                         'id'          => 'gmw-state',
                                         'placeholder' => '',
-                                        'label'       => __('State', 'rehub_framework'),
+                                        'label'       => __('Estado', 'rehub_framework'),
                                         'desc'        => '',
                                         'type'        => 'text',
                                         'attributes'  => array('size' => '40')
@@ -129,7 +129,7 @@ class RH_GMW_FL_Location_Page {
                                         'id'          => 'gmw-state-long',
                                         'class'       => '',
                                         'placeholder' => '',
-                                        'label'       => __('State Long Name', 'rehub_framework'),
+                                        'label'       => __('Nome do Estado', 'rehub_framework'),
                                         'desc'        => '',
                                         'type'        => 'hidden',
                                         'attributes'  => array('size' => '40')
@@ -140,7 +140,7 @@ class RH_GMW_FL_Location_Page {
                                         'id'          => 'gmw-zipcode',
                                         'class'       => '',
                                         'placeholder' => '',
-                                        'label'       => __('Zipcode', 'rehub_framework'),
+                                        'label'       => __('CEP', 'rehub_framework'),
                                         'desc'        => '',
                                         'type'        => 'text',
                                         'attributes'  => array('size' => '40')
@@ -151,7 +151,7 @@ class RH_GMW_FL_Location_Page {
                                         'id'          => 'gmw-country',
                                         'class'       => '',
                                         'placeholder' => '',
-                                        'label'       => __('Country', 'rehub_framework'),
+                                        'label'       => __('País', 'rehub_framework'),
                                         'desc'        => '',
                                         'type'        => 'text',
                                         'attributes'  => array('size' => '40')
@@ -162,7 +162,7 @@ class RH_GMW_FL_Location_Page {
                                         'id'          => 'gmw-country-long',
                                         'class'       => '',
                                         'placeholder' => '',
-                                        'label'       => __('Country Long Name', 'rehub_framework'),
+                                        'label'       => __('País', 'rehub_framework'),
                                         'desc'        => '',
                                         'type'        => 'hidden',
                                         'attributes'  => array('size' => '40')
@@ -173,7 +173,7 @@ class RH_GMW_FL_Location_Page {
                                         'id'          => 'gmw-address',
                                         'class'       => '',
                                         'placeholder' => '',
-                                        'label'       => __('address', 'rehub_framework'),
+                                        'label'       => __('Endereço', 'rehub_framework'),
                                         'desc'        => '',
                                         'type'        => 'hidden',
                                         'attributes'  => array('size' => '40')
@@ -184,7 +184,7 @@ class RH_GMW_FL_Location_Page {
                                         'id'          => 'gmw-formatted-address',
                                         'class'       => '',
                                         'placeholder' => '',
-                                        'label'       => __('Formatted Address', 'rehub_framework'),
+                                        'label'       => __('Endereço completo', 'rehub_framework'),
                                         'desc'        => '',
                                         'type'        => 'hidden',
                                         'attributes'  => array('size' => '40')
@@ -195,7 +195,7 @@ class RH_GMW_FL_Location_Page {
                                         'id'          => 'gmw-street-number',
                                         'class'       => '',
                                         'placeholder' => '',
-                                        'label'       => __('Street number', 'rehub_framework'),
+                                        'label'       => __('Número', 'rehub_framework'),
                                         'desc'        => '',
                                         'type'        => 'hidden',
                                         'attributes'  => array('size' => '40')
@@ -206,7 +206,7 @@ class RH_GMW_FL_Location_Page {
                                         'id'          => 'gmw-street-name',
                                         'class'       => '',
                                         'placeholder' => '',
-                                        'label'       => __('Street name', 'rehub_framework'),
+                                        'label'       => __('Endereço', 'rehub_framework'),
                                         'desc'        => '',
                                         'type'        => 'hidden',
                                         'attributes'  => array('size' => '40')
