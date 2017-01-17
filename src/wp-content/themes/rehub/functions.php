@@ -23,7 +23,9 @@ function rehub_framework_register_scripts() {
 	wp_register_style('video-pl', get_template_directory_uri() . '/css/video-playlist.css');
 	wp_register_style('eddrehub', get_template_directory_uri() . '/css/edd.css');
 	wp_register_style('rhwcvendor', get_template_directory_uri() . '/css/wcvendor.css');
+	wp_register_style('geomywprehub', get_template_directory_uri() . '/css/geo-my-wp.css');
 	wp_register_style('makeforme', get_template_directory_uri() . '/css/makeforme.css');
+	
 	
 	//Scripts
 	wp_register_script('modernizr', get_template_directory_uri() . '/js/modernizr.js', array('jquery'), '2.7.1'); // Modernizr
@@ -69,6 +71,7 @@ function rehub_enqueue_scripts() {
 	wp_enqueue_style('fontawesome');
 	wp_enqueue_style('default_font', '//fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,cyrillic');
 	wp_enqueue_style('makeforme');
+	wp_enqueue_style('geomywprehub');
 	wp_enqueue_script('modernizr');
 	wp_enqueue_script('rehub');
 	if (class_exists('Woocommerce')) {wp_enqueue_style( 'rehub-woocommerce');}

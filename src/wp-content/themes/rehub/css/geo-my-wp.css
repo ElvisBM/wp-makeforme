@@ -1,0 +1,33 @@
+
+#gmw-your-location-wrapper div#your-location-section{
+	border:0px!important; 
+}
+
+#gmw-your-location-wrapper div#your-location-section p{
+	border-bottom: #53ad9d solid 1px!important;
+    color: #fbf8da;
+    background: #53ad9d;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+#gmw-your-location-wrapper div#your-location-section-inner{
+	    background: #fbf8da;
+}
+
+#gmw-your-location-wrapper input[type="text"]{
+	font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #53ad9d;
+}
+
+
+#buddypress input#gmw-yl-edit, input#gmw-yl-edit, input#gmw-yl-delete, #buddypress input#gmw-yl-delete, input#gmw-yl-locator-btn, #buddypress input#gmw-yl-locator-btn{
+	background-color: #24b9d6 !important;
+    color: #fbf8da !important;
+    border: 1px solid #53ad9d !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
