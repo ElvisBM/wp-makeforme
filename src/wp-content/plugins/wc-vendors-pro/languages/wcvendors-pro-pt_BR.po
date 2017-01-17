@@ -3,7 +3,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: WC Vendors Pro\n"
 "POT-Creation-Date: 2016-03-19 13:04+0000\n"
-"PO-Revision-Date: 2017-01-16 15:22-0200\n"
+"PO-Revision-Date: 2017-01-17 00:26-0200\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -58,7 +58,7 @@ msgstr "URL do Website / Blog da Loja"
 #: public/forms/class-wcvendors-pro-store-form.php:1221
 #: public/forms/wcvendors-pro-address.php:32
 msgid "Store Address"
-msgstr "Morada da Loja"
+msgstr "Endereço"
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:101
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:138
@@ -86,7 +86,7 @@ msgstr "Cidade"
 #: public/class-wcvendors-pro-order-controller.php:151
 #: public/class-wcvendors-pro-order-controller.php:200
 msgid "Postcode"
-msgstr "Código Postal"
+msgstr "CEP"
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:117
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:154
@@ -1683,7 +1683,7 @@ msgstr ""
 #: templates/dashboard/shop_coupon-edit.php:16
 #: templates/dashboard/store-settings.php:115
 msgid "Save Changes"
-msgstr "Guardar Alterações"
+msgstr "Salvar Alterações"
 
 #: includes/lib/api-manager/admin/class-wcvendors-pro-api-manager-menu.php:81
 msgid "License Key Status"
@@ -4442,7 +4442,7 @@ msgstr "Adicionar Taxa"
 
 #: public/forms/wcvendors-pro-address.php:21
 msgid "Store Country"
-msgstr "País da Loja"
+msgstr "País"
 
 #: public/forms/wcvendors-pro-address.php:33
 msgid "Street Address"
@@ -4458,21 +4458,21 @@ msgstr "Apartamento, casa, etc. "
 #: public/forms/wcvendors-pro-shipping-address.php:57
 #: public/forms/wcvendors-pro-shipping-address.php:58
 msgid "City / Town"
-msgstr "Cidade / Vila"
+msgstr "Cidade"
 
 #: public/forms/wcvendors-pro-address.php:67
 #: public/forms/wcvendors-pro-address.php:68
 #: public/forms/wcvendors-pro-shipping-address.php:69
 #: public/forms/wcvendors-pro-shipping-address.php:70
 msgid "State / County"
-msgstr "País"
+msgstr "Estado"
 
 #: public/forms/wcvendors-pro-address.php:77
 #: public/forms/wcvendors-pro-address.php:78
 #: public/forms/wcvendors-pro-shipping-address.php:79
 #: public/forms/wcvendors-pro-shipping-address.php:80
 msgid "Postcode / Zip"
-msgstr "Código Postal"
+msgstr "CEP"
 
 #: public/forms/wcvendors-pro-shipping-address.php:23
 msgid "Shipping Country"
@@ -4594,7 +4594,7 @@ msgstr "Voltar para o Painel"
 
 #: templates/dashboard/product-edit.php:182
 msgid "Save Draft"
-msgstr "Guardar Rascunho"
+msgstr "Salvar Rascunho"
 
 #: templates/dashboard/reports/overview.php:26
 msgid "Commission Due"
