@@ -409,14 +409,14 @@ class RH_GMW_FL_Location_Page {
         $userid = ($user_id) ? $user_id : get_current_user_id();
         
         $fieldsLabel = apply_filters( 'gmw_fl_your_location_page_titles', array(
-                'your_location'     => __( 'Your Map Location', 'rehub_framework' ),
-                'no_location'       => __( "You haven't set a map location yet", 'rehub_framework' ),
-                'edit_location'     => __( 'Edit Location', 'rehub_framework' ),
-                'delete_location'   => __( 'Delete Location', 'rehub_framework' ),
-                'manualy_enter'     => __( 'Enter your map location manually', 'rehub_framework' ),
-                'address'           => __( 'Address', 'rehub_framework' ),
+                'your_location'     => __( 'Sua localização no Mapa', 'rehub_framework' ),
+                'no_location'       => __( "Você ainda não definiu seu endereço", 'rehub_framework' ),
+                'edit_location'     => __( 'Editar localização', 'rehub_framework' ),
+                'delete_location'   => __( 'Deletar localização', 'rehub_framework' ),
+                'manualy_enter'     => __( 'Inserir localização manualmente', 'rehub_framework' ),
+                'address'           => __( 'Endereço', 'rehub_framework' ),
                 'coords'            => __( 'Latitude / Longitude', 'rehub_framework' ),
-                'save_location'     => __( 'Save Map Location', 'rehub_framework' ),
+                'save_location'     => __( 'Salvar localização', 'rehub_framework' ),
         ) );
         
         ?>
