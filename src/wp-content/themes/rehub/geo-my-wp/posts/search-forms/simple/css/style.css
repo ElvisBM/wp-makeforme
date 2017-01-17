@@ -24,13 +24,14 @@ div.gmw-pt-horizontal-gray-form-wrapper .gmw-distance-select,
 div.gmw-pt-horizontal-gray-form-wrapper .gmw-posts-dropdown {
 	display:inline-block;
 	margin:0 10px 10px 0px;
+	vertical-align: top;
 }
 
 div.gmw-pt-horizontal-gray-form-wrapper input[type="text"], 
 div.gmw-pt-horizontal-gray-form-wrapper select {
-    -webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box;    
-	box-sizing: border-box;
+     
+	    
+	
 }
 
 div.gmw-pt-horizontal-gray-form-wrapper input[type="text"] {
@@ -258,9 +259,9 @@ div.gmw-pt-horizontal-gray-form-wrapper .gmw-checkbox-taxonomy-wrapper .category
 	div.gmw-pt-horizontal-gray-form-wrapper .gmw-submit-wrapper,
 	div.gmw-pt-horizontal-gray-form-wrapper .gmw-submit-button {
 		width:100% !important;
-		-webkit-box-sizing: border-box; 
-		-moz-box-sizing: border-box;    
-		box-sizing: border-box;
+		 
+		    
+		
 		margin:0 0px 10px 0px !important;
 		display:block;
 	}

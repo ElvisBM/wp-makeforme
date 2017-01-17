@@ -38,7 +38,7 @@
 			<?php $columns == '4_col';?>
 			<?php while ( $gmw_query->have_posts() ) : $gmw_query->the_post(); ?>
 
-				<?php include(locate_template('inc/parts/woocolumnpart.php')); ?>
+				<?php include(rh_locate_template('inc/parts/woocolumnpart.php')); ?>
 
 			<?php endwhile; ?>
 		<!--  end of the loop -->

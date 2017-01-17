@@ -25,6 +25,7 @@ div.gmw-fl-horizontal-xprofile-form-wrapper .gmw-posts-dropdown,
 div.gmw-fl-horizontal-xprofile-form-wrapper .gmw-fl-form-xprofile-fields {
 	display:inline-block;
 	margin:0 8px 10px 0px;
+	vertical-align: top;
 }
 div.gmw-fl-horizontal-xprofile-form-wrapper .editfield label{display: none;}
 
@@ -59,9 +60,9 @@ div.gmw-fl-horizontal-xprofile-form-wrapper form .date input[type="text"] {
 
 div.gmw-fl-horizontal-xprofile-form-wrapper input[type="text"], 
 div.gmw-fl-horizontal-xprofile-form-wrapper select {
-    -webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box;    
-	box-sizing: border-box;
+     
+	    
+	
 }
 
 div.gmw-fl-horizontal-xprofile-form-wrapper input[type="text"] {
@@ -300,9 +301,9 @@ div.gmw-fl-horizontal-xprofile-form-wrapper input.gmw-submit{
 	div.gmw-fl-horizontal-xprofile-form-wrapper .gmw-submit-wrapper,
 	div.gmw-fl-horizontal-xprofile-form-wrapper .gmw-submit-button {
 		width:100% !important;
-		-webkit-box-sizing: border-box; 
-		-moz-box-sizing: border-box;    
-		box-sizing: border-box;
+		 
+		    
+		
 		margin:0 0px 10px 0px !important;
 		display:block;
 	}

@@ -61,11 +61,16 @@
             <?php do_action( 'gmw_search_results_loop_item_start', $gmw, $member ); ?>        
             <?php 
                 $author_ID = bp_get_member_user_id();
-                $mycredrank = ( function_exists( 'mycred_get_users_rank' ) ) ? mycred_get_users_rank($author_ID) : '';
-                $mycredpoint = ( function_exists( 'mycred_get_users_fcred' ) ) ? mycred_get_users_fcred($author_ID ) : '';
             ?>
             <div class="member-inner-list" style="<?php rh_cover_image_url( 'members', 120, true ); ?>">
-                <?php if (!empty($mycredrank) && is_object( $mycredrank)) :?><span class="rh-user-rank-mc rh-user-rank-<?php echo $mycredrank->post_id; ?>"><?php echo $mycredrank->title ;?></span><?php endif;?>           
+                <?php               
+                    $membertype = bp_get_member_type($author_ID);
+                    $membertype_object = bp_get_member_type_object($membertype);
+                    $membertype_label = (!empty($membertype_object) && is_object($membertype_object)) ? $membertype_object->labels['singular_name'] : '';
+                ?>      
+                <?php if($membertype_label) :?>
+                    <span class="rh-user-m-type rh-user-m-type-<?php echo $membertype;?>"><?php echo $membertype_label;?></span>                
+                <?php endif;?>        
                 <div class="item-avatar">
                     <a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar(); ?></a>
                     <?php // <i class="online-status fa fa-circle"></i> ?>

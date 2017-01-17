@@ -81,14 +81,7 @@ $rows = vp_metabox('rehub_top_table.columncontents');  //Get the rows
 	                                $showimg->use_thumb = true;
 	                                $width_figure_table = apply_filters( 'wpsm_top_table_figure_width', 120 );
 	                                $height_figure_table = apply_filters( 'wpsm_top_table_figure_height', 120 );
-	                                if( rehub_option( 'aq_resize_crop') == '1') {
-	                                    $showimg->width = $width_figure_table;
-	                                } 
-	                                else {
-	                                    $showimg->width = $width_figure_table;
-	                                    $showimg->height = $height_figure_table;
-	                                    $showimg->crop = true;
-	                                }
+	                                $showimg->width = $width_figure_table;
 	                                $showimg->show_resized_image();                                    
 	                                ?>                                                                  
 	                            </a>
@@ -104,15 +97,15 @@ $rows = vp_metabox('rehub_top_table.columncontents');  //Get the rows
 	                    echo do_shortcode(wp_kses_post($row['column_html']));                       
 	                    $element = $row['column_type'];
 	                        if ($element == 'meta_value') {
-	                            include(locate_template('inc/top/metacolumn.php'));
+	                            include(rh_locate_template('inc/top/metacolumn.php'));
 	                        } else if ($element == 'taxonomy_value') {
-	                                include(locate_template('inc/top/taxonomyrow.php'));                                    
+	                                include(rh_locate_template('inc/top/taxonomyrow.php'));                                    
 	                        } else if ($element == 'review_function') {
-	                            include(locate_template('inc/top/reviewcolumn.php'));
+	                            include(rh_locate_template('inc/top/reviewcolumn.php'));
 	                        } else if ($element == 'user_review_function') {
-	                            include(locate_template('inc/top/userreviewcolumn.php'));   
+	                            include(rh_locate_template('inc/top/userreviewcolumn.php'));   
 	                        } else if ($element == 'static_user_review_function') {
-	                            include(locate_template('inc/top/staticuserreviewcolumn.php'));                                                                              
+	                            include(rh_locate_template('inc/top/staticuserreviewcolumn.php'));                                                                              
 	                        } else {
 	                            
 	                        };

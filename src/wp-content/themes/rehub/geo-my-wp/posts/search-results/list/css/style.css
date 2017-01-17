@@ -34,7 +34,7 @@ display: inline;
 	width:100%;
 	min-height: 25px;
 	margin: 5px 0px;
-	box-sizing: border-box;
+	
 }
 
 ul.gmw-pagination {
@@ -73,9 +73,9 @@ ul.gmw-pagination li span {
 
 .rh-gmw-post-list{ padding: 25px; margin-bottom: 15px; border: 1px solid #e3e3e3; background-color: #fff; position: relative; }
 .no_bg_wrap .rh-gmw-post-list, .no_bg_wrap .offer_grid.offer_grid_com{ box-shadow: 0 1px 3px rgba(0,0,0,.16); border: none;}
-.newscom_wrap_table{display: table;width: 100%;box-sizing: border-box;}
+.newscom_wrap_table{display: table;width: 100%;}
 .rh-gmw-list-image{width: 140px;  margin: 0 20px 20px 0; padding-right: 20px }
-.rh-gmw-list-image figure{width: 150px; max-width: 140px; height: 140px;border: 1px solid #eee; box-sizing: border-box; padding: 5px; vertical-align: middle; text-align: center; position: relative;display: table-cell; margin-bottom:5px; }
+.rh-gmw-list-image figure{width: 150px; max-width: 140px; height: 140px;border: 1px solid #eee;  padding: 5px; vertical-align: middle; text-align: center; position: relative;display: table-cell; margin-bottom:5px; }
 .rh-gmw-list-image figure img{width: auto; max-height: 128px}
 .rh-gmw-list-desc, .rh-gmw-list-image, .rh-gmw-list-additional{ display: table-cell;vertical-align: top; }
 .rh-gmw-list-desc{padding: 0 20px 0 0}
