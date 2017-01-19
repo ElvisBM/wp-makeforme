@@ -481,6 +481,8 @@ class WCVendors_Pro_Shipping_Controller {
 		if ( isset( $_POST['_wcv_shipping_fees'] ) ) {
 			$shipping_countries    	= isset( $_POST['_wcv_shipping_countries'] ) 	? $_POST['_wcv_shipping_countries'] : array(); 
 			$shipping_states    	= isset( $_POST['_wcv_shipping_states'] ) 		? $_POST['_wcv_shipping_states'] : array();
+			$shipping_citys    	= isset( $_POST['_wcv_shipping_citys'] ) 		? $_POST['_wcv_shipping_citys'] : array();
+			$shipping_districts    	= isset( $_POST['_wcv_shipping_districts'] ) 		? $_POST['_wcv_shipping_districts'] : array();
 			$shipping_fees     		= isset( $_POST['_wcv_shipping_fees'] )  		? $_POST['_wcv_shipping_fees'] : array();
 			$shipping_fee_count 	= sizeof( $shipping_fees );
 
@@ -489,10 +491,14 @@ class WCVendors_Pro_Shipping_Controller {
 				if ( $shipping_fees[ $i ] != '' ) {
 					$country       = wc_clean( $shipping_countries[ $i ] ); 
 					$state         = wc_clean( $shipping_states[ $i ] );
+					$city          = wc_clean( $shipping_citys[ $i ] );
+					$district      = wc_clean( $shipping_districts[ $i ] );
 					$fee           = wc_format_decimal( $shipping_fees[ $i ] );
 					$shipping_rates[ $i ] = array(
 						'country'	=> $country,
-						'state' 	=> $state, 
+						'state' 	=> $state,
+						'city' 		=> $city,
+						'district' 	=> $district, 
 						'fee' 		=> $fee,
 					);
 				}
@@ -625,6 +631,8 @@ class WCVendors_Pro_Shipping_Controller {
 		if ( isset( $_POST[ '_wcv_shipping_fees' ] ) ) {
 			$shipping_countries    	= isset( $_POST[ '_wcv_shipping_countries' ] ) ? $_POST[ '_wcv_shipping_countries' ] : array(); 
 			$shipping_states    	= isset( $_POST[ '_wcv_shipping_states' ] ) ? $_POST[ '_wcv_shipping_states' ] : array();
+			$shipping_citys    	= isset( $_POST[ '_wcv_shipping_citys' ] ) ? $_POST[ '_wcv_shipping_citys' ] : array();
+			$shipping_districts    	= isset( $_POST[ '_wcv_shipping_districts' ] ) ? $_POST[ '_wcv_shipping_districts' ] : array();
 			$shipping_fees     		= isset( $_POST[ '_wcv_shipping_fees' ] )  ? $_POST[ '_wcv_shipping_fees' ] : array();
 			$shipping_fee_count 	= sizeof( $shipping_fees );
 
@@ -632,10 +640,14 @@ class WCVendors_Pro_Shipping_Controller {
 				if ( $shipping_fees[ $i ] != '' ) {
 					$country       = wc_clean( $shipping_countries[ $i ] ); 
 					$state         = wc_clean( $shipping_states[ $i ] );
+					$city          = wc_clean( $shipping_citys[ $i ] );
+					$district      = wc_clean( $shipping_districts[ $i ] );
 					$fee           = wc_format_decimal( $shipping_fees[ $i ] );
 					$shipping_rates[ $i ] = array(
 						'country'	=> $country,
-						'state' 	=> $state, 
+						'state' 	=> $state,
+						'city' 		=> $city,
+						'district' 	=> $district, 
 						'fee' 		=> $fee,
 					);
 				}
