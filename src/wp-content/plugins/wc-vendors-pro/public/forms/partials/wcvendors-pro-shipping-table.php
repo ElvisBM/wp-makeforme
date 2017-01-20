@@ -32,7 +32,7 @@
 				<?php foreach ( $shipping_rates as $rate ) : ?>
 				<tr>
 					<td class="sort"><i class="fa fa-sort"></i></td>
-					<td class="country"><input type="text" placeholder="<?php _e( "Country", 'wcvendors-pro' ); ?>" name="_wcv_shipping_countries[]" value="<?php echo esc_attr( $rate['country'] ); ?>" /></td>
+					<td class="country"><input type="text" placeholder="<?php _e( "Country", 'wcvendors-pro' ); ?>" name="_wcv_shipping_countries[]" value="BR" /></td>
 					<td class="state"><input type="text" placeholder="<?php _e( "State", 'wcvendors-pro' ); ?>" name="_wcv_shipping_states[]" value="<?php echo esc_attr( $rate['state'] ); ?>" /></td>
 					<td class="city"><input type="text" placeholder="<?php _e( "City", 'wcvendors-pro' ); ?>" name="_wcv_shipping_citys[]" value="<?php echo esc_attr( $rate['city'] ); ?>" /></td>
 					<td class="district"><input type="text" placeholder="<?php _e( "District", 'wcvendors-pro' ); ?>" name="_wcv_shipping_districts[]" value="<?php echo esc_attr( $rate['district'] ); ?>" /></td>
@@ -50,14 +50,15 @@
 						$rate = array(
 							'country'	=> '',
 							'state' 	=> '',
-							'city' 		=> '', 
+							'city' 		=> '',
+							'district' 	=> '', 
 							'fee' 		=> '',
 						);
 						$file_data_row = '<tr>
 							<td class="sort"><i class="fa fa-sort"></i></td>
-							<td class="country"><input type="text" placeholder="'. __( "Country", "wcvendors-pro" ) .'" name="_wcv_shipping_countries[]" value="' .esc_attr( $rate["country"] ). '" /></td>
+							<td class="country"><input type="text" placeholder="'. __( "Country", "wcvendors-pro" ) .'" name="_wcv_shipping_countries[]" value="BR" /></td>
 							<td class="state"><input type="text" placeholder="'. __( "State", "wcvendors-pro" ). '" name="_wcv_shipping_states[]" value="'. esc_attr( $rate["state"] ) .'" /></td>
-							<td class="state"><input type="text" placeholder="'. __( "City", "wcvendors-pro" ). '" name="_wcv_shipping_citys[]" value="'. esc_attr( $rate["city"] ) .'" /></td>
+							<td class="district"><input type="text" placeholder="'. __( "City", "wcvendors-pro" ). '" name="_wcv_shipping_citys[]" value="'. esc_attr( $rate["city"] ) .'" /></td>
 							<td class="district"><input type="text" placeholder="'. __( "District", "wcvendors-pro" ). '" name="_wcv_shipping_districts[]" value="'. esc_attr( $rate["district"] ) .'" /></td>
 							<td class="fee"><input type="text" data-error="'.__( "This should be a number.", "wcvendors-pro" ) .'" data-rules="decimal" placeholder="'. __( "Fee", "wcvendors-pro" ). '" name="_wcv_shipping_fees[]" value="'. esc_attr( $rate["fee"] ) .'" /></td>
 							<td width="1%"><a href="#" class="delete"><i class="fa fa-times"></i></a></td>
