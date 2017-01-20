@@ -313,7 +313,32 @@ class WCVendors_Pro_Shipping_Method extends WC_Shipping_Method {
 		));
     
 	} // calculate_shipping() 
-	
+
+
+
+	/**
+	 * Get Endereço VIACEP
+	 */
+	public static function get_adress_viacep( $cep ){
+
+		$url_viacep = "viacep.com.br/ws/" . $cep .  "/json/";
+
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($ch, CURLOPT_URL, $url_viacep );
+
+		$result = curl_exec($ch);
+
+		curl_close($ch);
+
+		$endereco = json_decode($result);
+
+		return $endereco;
+	}
+
+
+
 	/**
 	 *  Get the shipping rate 
 	 * 
@@ -323,12 +348,19 @@ class WCVendors_Pro_Shipping_Method extends WC_Shipping_Method {
 	 */
 	public static function get_shipping_rate( $product_id, $vendor_id, $package, $settings ) {
 
+
+		$endereco = self::get_adress_viacep( $package[ 'destination' ][ 'postcode' ] );
+
 		$customer_country 		= strtolower( $package[ 'destination' ][ 'country' ] );
-		$customer_state			= strtolower( $package[ 'destination' ][ 'state' ] ); 
+		$customer_state			= strtolower( $package[ 'destination' ][ 'state' ] );
+		$customer_city			= strtolower( $endereco->localidade ); 
+		$customer_district		= strtolower( $endereco->bairro );  
 		$store_shipping_type	= get_user_meta( $vendor_id, '_wcv_shipping_type', true ); 
 		$store_rates			= get_user_meta( $vendor_id, '_wcv_shipping', true ); 
 		$store_country 			= ( $store_rates && $store_rates['shipping_from'] == 'other' ) ? strtolower( $store_rates['shipping_address']['country'] ) : strtolower( get_user_meta( $vendor_id, '_wcv_store_country', true ) ); 
 		$store_state 			= ( $store_rates && $store_rates['shipping_from'] == 'other' ) ? strtolower( $store_rates['shipping_address']['state'] ) : strtolower( get_user_meta( $vendor_id, '_wcv_store_state', true ) ); 
+		$store_city 			= ( $store_rates && $store_rates['shipping_from'] == 'other' ) ? strtolower( $store_rates['shipping_address']['city'] ) : strtolower( get_user_meta( $vendor_id, '_wcv_store_city', true ) );
+		$store_district 		= ( $store_rates && $store_rates['shipping_from'] == 'other' ) ? strtolower( $store_rates['shipping_address']['district'] ) : strtolower( get_user_meta( $vendor_id, '_wcv_store_district', true ) );
 		$shipping_rate 			= new stdClass(); 
 		$product_rates 			= get_post_meta( $product_id, '_wcv_shipping_details', true );  
 
@@ -420,8 +452,20 @@ class WCVendors_Pro_Shipping_Method extends WC_Shipping_Method {
 
 				foreach ( $product_shipping_table as $rate ) {
 
-					//  Country and state match 
-					if ( strtolower( $customer_country ) == strtolower( $rate[ 'country' ] ) && strtolower( $customer_state ) == strtolower( $rate[ 'state' ] ) ) { 
+					//  Country and state and city and district match 
+					if ( strtolower( $customer_country ) == strtolower( $rate[ 'country' ] ) && strtolower( $customer_state ) == strtolower( $rate[ 'state' ] ) && strtolower( $customer_city ) == strtolower( $rate[ 'city' ] ) && strtolower( $customer_district ) == strtolower( $rate[ 'district' ] ) ) { 
+						$shipping_rate->fee = $rate[ 'fee' ]; 
+						return $shipping_rate; 
+					}
+
+					// Country and state and city and district is any 
+					if ( strtolower( $customer_country ) == strtolower( $rate[ 'country' ] ) && strtolower( $customer_state ) == strtolower( $rate[ 'state' ] ) && strtolower( $customer_city ) == strtolower( $rate[ 'city' ] ) && empty( $rate[ 'district' ] ) ) { 
+						$shipping_rate->fee = $rate[ 'fee' ]; 
+						return $shipping_rate; 
+					}
+
+					// Country and state and city is any 
+					if ( strtolower( $customer_country ) == strtolower( $rate[ 'country' ] ) && strtolower( $customer_state ) == strtolower( $rate[ 'state' ] ) && empty( $rate[ 'city' ] ) ) { 
 						$shipping_rate->fee = $rate[ 'fee' ]; 
 						return $shipping_rate; 
 					}
@@ -450,23 +494,35 @@ class WCVendors_Pro_Shipping_Method extends WC_Shipping_Method {
 
 				foreach ( $store_shipping_table as $rate ) {
 
-					// Country and state 
-					if ( strtolower( $customer_country ) == strtolower( $rate[ 'country' ] ) && strtolower( $customer_state ) == strtolower( $rate[ 'state' ] ) ) { 
+					//  Country and state and city and district match 
+					if ( strtolower( $customer_country ) == strtolower( $rate[ 'country' ] ) && strtolower( $customer_state ) == strtolower( $rate[ 'state' ] ) && strtolower( $customer_city ) == strtolower( $rate[ 'city' ] ) && strtolower( $customer_district ) == strtolower( $rate[ 'district' ] ) ) { 
+						$shipping_rate->fee = $rate[ 'fee' ]; 
+						return $shipping_rate; 
+					}
+
+					// Country and state and city and district is any 
+					if ( strtolower( $customer_country ) == strtolower( $rate[ 'country' ] ) && strtolower( $customer_state ) == strtolower( $rate[ 'state' ] ) && strtolower( $customer_city ) == strtolower( $rate[ 'city' ] ) && empty( $rate[ 'district' ] ) ) { 
+						$shipping_rate->fee = $rate[ 'fee' ]; 
+						return $shipping_rate; 
+					}
+
+					// Country and state and city is any 
+					if ( strtolower( $customer_country ) == strtolower( $rate[ 'country' ] ) && strtolower( $customer_state ) == strtolower( $rate[ 'state' ] ) && empty( $rate[ 'city' ] ) ) { 
 						$shipping_rate->fee = $rate[ 'fee' ]; 
 						return $shipping_rate; 
 					}
 
 					// Country and state is any 
-					if ( strtolower( $customer_country ) == strtolower( $rate[ 'country' ] ) && empty( $rate[ 'state' ] )  ) { 
-						$shipping_rate->fee = $rate[ 'fee' ]; 
-						return $shipping_rate;  
-					}
-
-					// Country is any and state is any 
-					if ( $rate[ 'country' ] == '' && $rate[ 'state' ] == '' ) { 
+					if ( strtolower( $customer_country ) == strtolower( $rate[ 'country' ] ) && empty( $rate[ 'state' ] ) ) { 
 						$shipping_rate->fee = $rate[ 'fee' ]; 
 						return $shipping_rate; 
 					}
+
+					// Country and state is any 
+					if ( $rate[ 'country' ] == '' && $rate[ 'state' ] == '' ) { 
+						$shipping_rate->fee = $rate[ 'fee' ]; 
+						return $shipping_rate; 
+					} 
 
 				}
 
