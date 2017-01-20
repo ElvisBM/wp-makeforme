@@ -103,6 +103,13 @@ foreach ( $settings_social as $value) { if ( 1 == $value ) $social_count +=1;  }
 
 	<div class="tabs-content" id="shipping">
 
+		<p>
+			Defina a taxa de entrega para as localidades que atende. Se o "For Me/Comprador" estiver em uma localidade não definida por suas regras de entrega, ele terá a opção de retirar em sua loja.<br />
+			Campos obrigátorios: Estado, Cidade e Taxa de Entrega. <br />
+			Caso atenda apenas um bairro específico, verifique nós correio o nome exato dele e preencha o campo bairro.<br />
+			<span>Exemplo de preenchimento da taxa: digite 12.50 para R$12,50 de taxa de entrega.</span>
+		</p>	
+
 		<?php do_action( 'wcvendors_settings_before_shipping' ); ?>
 
 		<!-- Shipping Rates -->

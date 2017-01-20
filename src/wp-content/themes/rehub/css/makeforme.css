@@ -32,9 +32,6 @@ body{
   color: #000!important; 
 }
 
-
-
-
 span.sou{
 	color:#e15f4d;
 }
@@ -394,7 +391,6 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
  /*
   * Setings front payment
   */
-
 #payment{ }
 #payment .control-group{display: none;}
 #payment .field{ margin-bottom: 15px;}
@@ -412,8 +408,6 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
 #recebedor_wcvendor{margin-top: 30px;}
 #recebedor_wcvendor h3{margin-bottom: 10px;}
 #payment .bootstrap-select{ width: 100%; }
-
-
 .wcv-tabs.top>.tabs-nav li.active a {
     border:0px;
     border-bottom: 1px solid #53ad9d;
@@ -434,3 +428,56 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
+
+.wcv-product-type{display: none;}
+#general .external_url{display: block!important}
+#general .prices{display: block!important}
+#general .show_if_variable{display: block!important}
+
+.rh_wcv_dashboard_page h2, .wcvendors-pro-dashboard-wrapper h2, .wcv-grid h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.wcv-grid table .row-actions a {
+    font-size: 1em;
+    text-decoration: none;
+    background-color: #24b9d6 !important;
+    color: #fbf8da !important;
+    border: 1px solid #53ad9d !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin: 10px 5px;
+    display: inline-block;
+}
+
+#attributes .wcv-horizontal-gutters{min-height: 70px;border:0px!important;}
+#attributes select{ height: 40px;width: 40%; min-width: 320px; }
+#attributes .button.add_attribute{background-color: #24b9d6 !important;color: #fbf8da !important;border: 1px solid #53ad9d !important;font-family: 'Poppins', sans-serif;font-weight: 400;letter-spacing: 1px;}
+#attributes a{font-family: 'Poppins', sans-serif;font-weight: 400;letter-spacing: 1px;}
+
+#variations .variations-toolbar optgroup{display: none;}
+#variations select{ height: 35px;width: 30%; min-width: 320px; margin:0px 5px;font-size: 0.95em;}
+#variations a.button {background-color: #24b9d6 !important;color: #fbf8da !important;border: 1px solid #53ad9d !important;font-family: 'Poppins', sans-serif;font-weight: 400;letter-spacing: 1px;}
+#variations a{font-family: 'Poppins', sans-serif;font-weight: 400;letter-spacing: 0.5px;font-size: 0.95em;}
+#variations p{font-family: 'Poppins', sans-serif;font-weight: 200;letter-spacing: 0.5px;font-weight: 100;}
+#variations span{font-family: 'Poppins', sans-serif;font-weight: 200;letter-spacing: 0.5px;font-weight: 100;}
+#variations p.tip{font-size: 0.95em;font-weight: 100;display: inline-block;margin-top: 5px;}
+#variations strong{}
+#variations .sku{display: none;}
+#variations .hide_if_variation_virtual{display: none!important}
+#variations .all-25{display: none;}
+#variations .all-25:last-child{display: inline-block;}
+
+#shipping .control-group{display: none;}
+#shipping .wcv_shipping_rates .country{display: none;}
+#shipping span{color: #24b9d6;}
+#shipping input,
+#shipping select{width: 95%;height: 40px;border-radius: 5px;font-size: 1em;}
+#shipping thead{font-size: 1.2em;font-weight: 400;color: #53ad9d;text-transform: uppercase;letter-spacing: 0.5px;}
+#shipping tbody tr{height: 50px;}
+
+
