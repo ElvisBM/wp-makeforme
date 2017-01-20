@@ -79,15 +79,14 @@ $post_status				= ( isset($product) && null !== $product ) ? $product->post->pos
 					<?php WCVendors_Pro_Product_Form::private_listing( $object_id ); ?>
 				</div>
 
-
-				<div class="options_group show_if_external">
-					<?php WCVendors_Pro_Product_Form::external_url( $object_id ); ?>
-					<?php WCVendors_Pro_Product_Form::button_text( $object_id ); ?>
-				</div>
-
-				<div class="show_if_simple show_if_external">
+				<div class="show_if_simple show_if_external prices">
 					<!-- Price and Sale Price -->
 					<?php WCVendors_Pro_Product_Form::prices( $object_id ); ?>
+				</div>
+
+				<div class="options_group show_if_external external_url">
+					<?php WCVendors_Pro_Product_Form::external_url( $object_id ); ?>
+					<?php WCVendors_Pro_Product_Form::button_text( $object_id ); ?>
 				</div>
 
 				<div class="show_if_simple show_if_external show_if_variable"> 
@@ -182,6 +181,7 @@ $post_status				= ( isset($product) && null !== $product ) ? $product->post->pos
 			<?php do_action( 'wcv_before_attributes_tab', $object_id ); ?>
 
 			<div class="wcv_product_attributes tabs-content" id="attributes"> 
+				<p> Adicione atributos em seu produto para personalizar ainda mais e criar variações do mesmo produto, ex: Quantidade: 50 | 100 | 150</p>
 
 				<?php WCVendors_Pro_Product_Form::product_attributes( $object_id ); ?>
 
@@ -193,7 +193,8 @@ $post_status				= ( isset($product) && null !== $product ) ? $product->post->pos
 
 			<?php do_action( 'wcv_before_variations_tab', $object_id ); ?>
 
-			<div class="wcv_product_variations tabs-content" id="variations"> 
+			<div class="wcv_product_variations tabs-content" id="variations">
+				<p> Adicione as variações do produto, definindo o valor, imagem, quantidade em estoque, peso e dimensões para variação do produto disponivel.</p> 
 
 				<?php WCVendors_Pro_Product_Form::product_variations( $object_id ); ?>
 
