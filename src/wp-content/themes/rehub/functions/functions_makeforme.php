@@ -23,12 +23,11 @@ function makeforme_register_sidebars() {
 		'after_title' => '</div>',
 	));
 }
-
 add_action( 'widgets_init', 'makeforme_register_sidebars' );
 
 
 
-//
+//Request Receiver Pagarme
 function request_receiver_pagarme( $receiver_id ){
 
 	$api_url = "https://api.pagar.me/1/recipients/".$receiver_id."/balance";
@@ -57,4 +56,16 @@ function request_receiver_pagarme( $receiver_id ){
 }
 
 
+
+/**
+ * Adicionando Script 
+ */
+function loadScriptsTemplate(){
+
+     if (is_page( 'dashboard' )){
+        wp_enqueue_script('cidade-estados', get_template_directory_uri().'/js/cidades-estados-1.4-utf8.js');
+        wp_enqueue_script('makeforme-cidade-estados', get_template_directory_uri().'/js/makeforme_cidade_estado.js');
+     }
+}
+add_action('wp_enqueue_scripts','loadScriptsTemplate');
 
