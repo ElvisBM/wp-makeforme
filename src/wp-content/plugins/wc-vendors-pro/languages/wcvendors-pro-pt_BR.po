@@ -3,7 +3,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: WC Vendors Pro\n"
 "POT-Creation-Date: 2016-03-19 13:04+0000\n"
-"PO-Revision-Date: 2017-01-17 00:26-0200\n"
+"PO-Revision-Date: 2017-01-20 03:10-0200\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -12,9 +12,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: wcvendors-pro.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Last-Translator: \n"
 "Language: pt_PT\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -29,25 +27,16 @@ msgid "Trusted Vendor"
 msgstr "Vendedor de confiança"
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:83
-msgid ""
-" Check to allow this vendor to publish products immediately regardless of "
-"global publishing rules."
-msgstr ""
-" Marque para permitir que este vendedor publique de imediato produtos, "
-"independentemente das regras editoriais globais."
+msgid " Check to allow this vendor to publish products immediately regardless of global publishing rules."
+msgstr " Marque para permitir que este vendedor publique de imediato produtos, independentemente das regras editoriais globais."
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:87
 msgid "Untrusted Vendor"
 msgstr "Vendedor não confiável"
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:88
-msgid ""
-" Check to require all products submitted to be reviewed, regardless of "
-"global publishing rules. This overrides the trusted vendor option."
-msgstr ""
-"Verifique para exigir que todos os produtos submetidos devem ser revistos, "
-"independentemente das regras globais de publicação. Anula a opção de "
-"vendedor confiável."
+msgid " Check to require all products submitted to be reviewed, regardless of global publishing rules. This overrides the trusted vendor option."
+msgstr "Verifique para exigir que todos os produtos submetidos devem ser revistos, independentemente das regras globais de publicação. Anula a opção de vendedor confiável."
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:92
 #: public/forms/class-wcvendors-pro-store-form.php:637
@@ -125,7 +114,7 @@ msgstr "Telefone"
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:135
 msgid "Store Shipping Address"
-msgstr "Endereço da Loja de Envio"
+msgstr "Endereço da Loja de Entrega"
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:172
 msgid "Store Social"
@@ -138,8 +127,7 @@ msgstr "Twitter"
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:176
 msgid "<a href=\"https://twitter.com/\">Twitter</a> username without the url."
-msgstr ""
-"<a href=\"https://twitter.com/\">Twitter</a> nome de utilizador sem a url."
+msgstr "<a href=\"https://twitter.com/\">Twitter</a> nome de utilizador sem a url."
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:179
 #: includes/class-wcvendors-pro.php:1028 includes/class-wcvendors-pro.php:1108
@@ -147,11 +135,8 @@ msgid "Instagram"
 msgstr "Instagram"
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:180
-msgid ""
-"<a href=\"https://instagram.com/\">Instagram</a> username without the url."
-msgstr ""
-"<a href=\"https://instagram.com/\">Instagram</a> nome de utilizador sem a "
-"url."
+msgid "<a href=\"https://instagram.com/\">Instagram</a> username without the url."
+msgstr "<a href=\"https://instagram.com/\">Instagram</a> nome de utilizador sem a url."
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:183
 #: includes/class-wcvendors-pro.php:1029 includes/class-wcvendors-pro.php:1109
@@ -233,7 +218,7 @@ msgstr "Percentagem + comissão"
 #: templates/dashboard/reports/overview.php:35
 #: templates/dashboard/reports/overview.php:56
 msgid "Shipping"
-msgstr "Envio"
+msgstr "Entrega"
 
 #: admin/class-wcvendors-pro-shipping-controller.php:226
 msgid "Flat Rate"
@@ -247,30 +232,11 @@ msgstr "Taxa Fixa por País"
 #: admin/class-wcvendors-pro-shipping.php:106
 #: includes/class-wcvendors-pro.php:606
 msgid "Vendor Shipping"
-msgstr "Envio do Vendedor"
+msgstr "Entrega do Vendedor"
 
 #: admin/class-wcvendors-pro-shipping.php:65
-msgid ""
-"This shipping module is for your vendors to input their own shipping prices "
-"on their Pro Dashboard.  <p>The prices you enter for Product Cost and "
-"Handling Fees will only be used if a vendor has not entered their own prices "
-"on their Pro Vendor Dashboard.  <p>The simplest shipping system is Flat "
-"Rate, where vendors can input a cost within their country, and outside of "
-"their country.  Country Table Rate will require vendors to enter country "
-"codes that they ship to and set prices for each country.  <p><strong><a href="
-"\"https://www.wcvendors.com/kb/pro-shipping/\" target=\"prodocs\">WC Vendors "
-"Pro Shipping Documentation</a></strong>"
-msgstr ""
-"Este módulo de envio é para os seus vendedores introduzirem os seus próprios "
-"preços de envio no Painel Pro.  <p>Os preços que você coloca no custo do "
-"produto e taxas de manipulação só serão usados se um vendedor não carregou "
-"os seus próprios preços no Painel Vendedor Pro.  <p>O sistema de envio mais "
-"simples é a taxa fixa, onde os vendedores podem inserir um custo dentro e "
-"fora do seu país. A opção de envio Taxa por País exigirá que os vendedores "
-"digitem códigos de país para os quais pretendem vender e carreguem os preços "
-"de para cada país. <p><strong><a href=\"https://www.wcvendors.com/kb/pro-"
-"shipping/\" target=\"prodocs\">WC Vendors Pro Shipping Documentation</a></"
-"strong>"
+msgid "This shipping module is for your vendors to input their own shipping prices on their Pro Dashboard.  <p>The prices you enter for Product Cost and Handling Fees will only be used if a vendor has not entered their own prices on their Pro Vendor Dashboard.  <p>The simplest shipping system is Flat Rate, where vendors can input a cost within their country, and outside of their country.  Country Table Rate will require vendors to enter country codes that they ship to and set prices for each country.  <p><strong><a href=\"https://www.wcvendors.com/kb/pro-shipping/\" target=\"prodocs\">WC Vendors Pro Shipping Documentation</a></strong>"
+msgstr "Este módulo de Entrega é para os seus vendedores introduzirem os seus próprios preços de Entrega no Painel Pro.  <p>Os preços que você coloca no custo do produto e taxas de manipulação só serão usados se um vendedor não carregou os seus próprios preços no Painel Vendedor Pro.  <p>O sistema de Entrega mais simples é a taxa fixa, onde os vendedores podem inserir um custo dentro e fora do seu país. A opção de Entrega Taxa por País exigirá que os vendedores digitem códigos de país para os quais pretendem vender e carreguem os preços de para cada país. <p><strong><a href=\"https://www.wcvendors.com/kb/pro-shipping/\" target=\"prodocs\">WC Vendors Pro Shipping Documentation</a></strong>"
 
 #: admin/class-wcvendors-pro-shipping.php:97
 msgid "Standalone Method"
@@ -278,7 +244,7 @@ msgstr "Método Independente"
 
 #: admin/class-wcvendors-pro-shipping.php:99
 msgid "Enable WC Vendors Pro Shipping as a standalone shipping method"
-msgstr "Ativar WC Vendors Pro como um método de envio independente"
+msgstr "Ativar WC Vendors Pro como um método de Entrega independente"
 
 #: admin/class-wcvendors-pro-shipping.php:103
 msgid "Method Title"
@@ -286,9 +252,7 @@ msgstr "Titulo do Método"
 
 #: admin/class-wcvendors-pro-shipping.php:105
 msgid "This controls the title which the user sees during checkout."
-msgstr ""
-"Isto controla o título que o utilizador vê durante o checkout (finalizar "
-"compra)."
+msgstr "Isto controla o título que o utilizador vê durante o checkout (finalizar compra)."
 
 #: admin/class-wcvendors-pro-shipping.php:109
 #: public/forms/class-wcvendors-pro-product-form.php:1007
@@ -306,16 +270,11 @@ msgstr "Nenhum"
 
 #: admin/class-wcvendors-pro-shipping.php:120
 msgid "Shipping System"
-msgstr "Sistema de Envio"
+msgstr "Sistema de Entrega"
 
 #: admin/class-wcvendors-pro-shipping.php:124
-msgid ""
-"Your vendors have a simple flat rate for national and international shipping "
-"or a per country rate table. This can be overridden on a per vendor basis."
-msgstr ""
-"Os seus vendedores têm uma taxa fixa simples para o envio nacional e "
-"internacional ou uma tabela de envio por país. Isso pode ser substituído "
-"numa base por vendedor."
+msgid "Your vendors have a simple flat rate for national and international shipping or a per country rate table. This can be overridden on a per vendor basis."
+msgstr "Os seus vendedores têm uma taxa fixa simples para o Entrega nacional e internacional ou uma tabela de Entrega por país. Isso pode ser substituído numa base por vendedor."
 
 #: admin/class-wcvendors-pro-shipping.php:128
 msgid "Product Cost Nationally"
@@ -323,36 +282,32 @@ msgstr "Custo Nacional do Produto"
 
 #: admin/class-wcvendors-pro-shipping.php:130
 #: admin/class-wcvendors-pro-shipping.php:157
-msgid ""
-"Default per product cost excluding tax for products on a per vendor level. e."
-"g. 5.50."
-msgstr ""
-"Padrão do custo por produto, líquido de imposto num nível de vendedor. por "
-"exemplo. 5,50."
+msgid "Default per product cost excluding tax for products on a per vendor level. e.g. 5.50."
+msgstr "Padrão do custo por produto, líquido de imposto num nível de vendedor. por exemplo. 5,50."
 
 #: admin/class-wcvendors-pro-shipping.php:134
 msgid "Free National shipping"
-msgstr "Envio Grátis Nacional"
+msgstr "Entrega Grátis Nacional"
 
 #: admin/class-wcvendors-pro-shipping.php:135
 msgid "Enable store wide free national shipping"
-msgstr "Ativar envio nacional grátis"
+msgstr "Ativar Entrega nacional grátis"
 
 #: admin/class-wcvendors-pro-shipping.php:137
 msgid "Check this to enable free national shipping"
-msgstr "Marque esta opção para ativar o envio nacional grátis"
+msgstr "Marque esta opção para ativar o Entrega nacional grátis"
 
 #: admin/class-wcvendors-pro-shipping.php:141
 msgid "Disable National shipping"
-msgstr "Desativar Envio Nacional"
+msgstr "Desativar Entrega Nacional"
 
 #: admin/class-wcvendors-pro-shipping.php:142
 msgid "Disable national shipping"
-msgstr "Desativar Envio Nacional"
+msgstr "Desativar Entrega Nacional"
 
 #: admin/class-wcvendors-pro-shipping.php:144
 msgid "Check this to disable national shipping"
-msgstr "Marque esta opção para desativar envio nacional"
+msgstr "Marque esta opção para desativar Entrega nacional"
 
 #: admin/class-wcvendors-pro-shipping.php:148
 msgid "Product Qty Override National"
@@ -360,16 +315,12 @@ msgstr "Substituir Qty Produto Nacional"
 
 #: admin/class-wcvendors-pro-shipping.php:149
 msgid "Charge once for national shipping, even if more than one is purchased."
-msgstr ""
-"Cobre uma única vez para o envio nacional, mesmo se selecionado mais de que "
-"um item do mesmo produto."
+msgstr "Cobre uma única vez para o Entrega nacional, mesmo se selecionado mais de que um item do mesmo produto."
 
 #: admin/class-wcvendors-pro-shipping.php:151
 #: admin/class-wcvendors-pro-shipping.php:178
-msgid ""
-"Disable the product qty in shipping calculations on a per product basis."
-msgstr ""
-"Desativar a qty do produto nos cálculos de envio numa base por produto."
+msgid "Disable the product qty in shipping calculations on a per product basis."
+msgstr "Desativar a qty do produto nos cálculos de Entrega numa base por produto."
 
 #: admin/class-wcvendors-pro-shipping.php:155
 msgid "Product Cost Internationally"
@@ -377,50 +328,97 @@ msgstr "Custo Internacional do Produto"
 
 #: admin/class-wcvendors-pro-shipping.php:161
 msgid "Free International shipping"
-msgstr "Envio Internacional Grátis"
+msgstr "Entrega Internacional Grátis"
 
 #: admin/class-wcvendors-pro-shipping.php:162
 msgid "Enable store wide free international shipping"
-msgstr "Ativar o envio grátis internacional"
+msgstr "Ativar o Entrega grátis internacional"
 
 #: admin/class-wcvendors-pro-shipping.php:164
 msgid "Check this to enable free international shipping"
-msgstr "Marque esta opção para ativar envio internacional"
+msgstr "Marque esta opção para ativar Entrega internacional"
 
 #: admin/class-wcvendors-pro-shipping.php:168
 msgid "Disable International Shipping"
-msgstr "Desativar Envio Internacional"
+msgstr "Desativar Entrega Internacional"
 
 #: admin/class-wcvendors-pro-shipping.php:169
 msgid "Disable store wide international shipping"
-msgstr "Desativar Envio Internacional da Loja"
+msgstr "Desativar Entrega Internacional da Loja"
 
 #: admin/class-wcvendors-pro-shipping.php:171
 msgid "Check this to disable international shipping"
-msgstr "Marque esta opção para desativar o envio internacional"
+msgstr "Marque esta opção para desativar o Entrega internacional"
 
 #: admin/class-wcvendors-pro-shipping.php:175
 msgid "Product Qty Override International"
 msgstr "Anula a Qty Produto Internacional"
 
 #: admin/class-wcvendors-pro-shipping.php:176
-msgid ""
-"Charge once for international shipping, even if more than one is purchased."
-msgstr ""
-"Cobra apenas uma vez para o envio internacional, mesmo se mais de um produto "
-"for comprado."
+msgid "Charge once for international shipping, even if more than one is purchased."
+msgstr "Cobra apenas uma vez para o Entrega internacional, mesmo se mais de um produto for comprado."
 
 #: admin/class-wcvendors-pro-shipping.php:182
 msgid "Default product Handling Fee (per vendor)"
 msgstr "Taxa padrão de manuseamento do produto (por vendedor)"
 
+#: public/forms/partials/wcvendors-pro-attributes.php:21
+msgid "Select an attribute"
+msgstr "Selecionar atributo"
+
+#: public/class-wcvendors-pro-public.php:205
+#: public/forms/partials/wcvendors-pro-product-attribute.php:40
+msgid "Visible on the product page"
+msgstr "Visivivel na página do produto"
+
+#: public/class-wcvendors-pro-public.php:206
+#: public/forms/partials/wcvendors-pro-product-attribute.php:44
+msgid "Used for variations"
+msgstr "Valores de variação <br />Adicione os valores com \"|\" <br />ex: 50 | 100 | 150"
+
+#: public/class-wcvendors-pro-public.php:203
+#: public/forms/partials/wcvendors-pro-product-attribute.php:52
+msgid "Value(s)"
+msgstr "Valor(es)"
+
+#: public/forms/partials/wcvendors-pro-attributes.php:39
+msgid "Add"
+msgstr "Adicionar"
+
+#: public/class-wcvendors-pro-public.php:201
+#: public/forms/partials/wcvendors-pro-product-attribute.php:19
+#: public/forms/partials/wcvendors-pro-product-variation.php:58
+msgid "Remove"
+msgstr "Remover"
+
+#: public/forms/class-wcvendors-pro-product-form.php:814
+#: public/forms/class-wcvendors-pro-product-form.php:834
+#: public/forms/partials/wcvendors-pro-attributes.php:46
+#: public/forms/partials/wcvendors-pro-attributes.php:93
+#: public/forms/partials/wcvendors-pro-product-variations.php:69
+#: public/forms/partials/wcvendors-pro-product-variations.php:155
+msgid "Close"
+msgstr "Fechar"
+
+#: public/forms/class-wcvendors-pro-product-form.php:815
+#: public/forms/class-wcvendors-pro-product-form.php:835
+msgid "Clear"
+msgstr "Limpar"
+
+#: public/forms/partials/wcvendors-pro-attributes.php:46
+#: public/forms/partials/wcvendors-pro-attributes.php:93
+#: public/forms/partials/wcvendors-pro-product-variations.php:69
+#: public/forms/partials/wcvendors-pro-product-variations.php:155
+msgid "Expand"
+msgstr "Mostrar"
+
+#: public/forms/class-wcvendors-pro-product-form.php:1660
+msgid "Variations"
+msgstr "Variações"
+
 #: admin/class-wcvendors-pro-shipping.php:184
-msgid ""
-"Product handling fee excluding tax. Fixed amount (5.00) or add a percentage "
-"sign for a percentage (5%). Leave blank to disable."
-msgstr ""
-"Taxa de manuseamento de produto, excluindo impostos. Quantia fixa (5,00) ou "
-"adicione um sinal para percentagem (5%). Deixe em branco para desativar."
+msgid "Product handling fee excluding tax. Fixed amount (5.00) or add a percentage sign for a percentage (5%). Leave blank to disable."
+msgstr "Taxa de manuseamento de produto, excluindo impostos. Quantia fixa (5,00) ou adicione um sinal para percentagem (5%). Deixe em branco para desativar."
 
 #: admin/class-wcvendors-pro-shipping.php:188
 msgid "Method availability"
@@ -463,16 +461,15 @@ msgstr "Comissão"
 
 #: admin/partials/vendor/wcvendors-pro-store-meta-shipping-panel.php:19
 msgid "Store Shipping"
-msgstr "Envio da Loja"
+msgstr "Entrega da Loja"
 
 #: admin/partials/vendor/wcvendors-pro-store-meta-shipping-panel.php:23
 msgid "Shipping Type"
-msgstr "Tipo de Envio"
+msgstr "Tipo de Entrega"
 
 #: admin/partials/vendor/wcvendors-pro-store-meta-shipping-panel.php:35
 msgid "You can override the global setting for shipping type for this vendor."
-msgstr ""
-"Você pode anular a configuração global do tipo de envio para este vendedor."
+msgstr "Você pode anular a configuração global do tipo de Entrega para este vendedor."
 
 #: admin/partials/vendor/wcvendors-pro-user-meta.php:69
 msgid "Store Branding"
@@ -536,19 +533,8 @@ msgstr "Compatibilidade doTema"
 
 #: admin/partials/wcvendors-pro-system-status.php:27
 #, php-format
-msgid ""
-"Your theme is not 100%% WooCommerce compatible and will not display vendor "
-"stores properly. Please show this page ( <a href=\"%s\">https://docs."
-"woothemes.com/document/third-party-custom-theme-compatibility/</a> ) to your "
-"theme author and instruct them to provide full WooCommerce compatibility, "
-"not the limited WooCommerce compatibility they currently provide by using "
-"woocommerce.php instead of full templates."
-msgstr ""
-"O seu tema não é 100 %% compatível com o WooCommerce e não exibirá  "
-"corretamente as lojas dos vendedores. Por favor, mostre esta página ( <a "
-"href=\"%s\">https://docs.woothemes.com/document/third-party-custom-theme-"
-"compatibility/</a> ) ao autor do tema e peça-lhe a total compatibilidade com "
-"o WooCommerce, ao invés da compatibilidade limitada atual com o WooCommerce."
+msgid "Your theme is not 100%% WooCommerce compatible and will not display vendor stores properly. Please show this page ( <a href=\"%s\">https://docs.woothemes.com/document/third-party-custom-theme-compatibility/</a> ) to your theme author and instruct them to provide full WooCommerce compatibility, not the limited WooCommerce compatibility they currently provide by using woocommerce.php instead of full templates."
+msgstr "O seu tema não é 100 %% compatível com o WooCommerce e não exibirá  corretamente as lojas dos vendedores. Por favor, mostre esta página ( <a href=\"%s\">https://docs.woothemes.com/document/third-party-custom-theme-compatibility/</a> ) ao autor do tema e peça-lhe a total compatibilidade com o WooCommerce, ao invés da compatibilidade limitada atual com o WooCommerce."
 
 #: admin/partials/wcvendors-pro-system-status.php:35
 msgid "Pro dasboard page"
@@ -556,21 +542,13 @@ msgstr "Página do painel pro"
 
 #: admin/partials/wcvendors-pro-system-status.php:40
 #, php-format
-msgid ""
-"WC Vendors Pro WILL NOT FUNCTION without this set. <a href=\"%s\">Click here "
-"to set the page</a>."
-msgstr ""
-"WC Vendors Pro NAO FUNCIONARÁ se não estiver configurado. <a href=\"%s"
-"\">Clique aqui para definir a página</a>."
+msgid "WC Vendors Pro WILL NOT FUNCTION without this set. <a href=\"%s\">Click here to set the page</a>."
+msgstr "WC Vendors Pro NAO FUNCIONARÁ se não estiver configurado. <a href=\"%s\">Clique aqui para definir a página</a>."
 
 #: admin/partials/wcvendors-pro-system-status.php:43
 #, php-format
-msgid ""
-"Your pro dashboard page cannot be set to your free dashboard page. <a href="
-"\"%s\">Click here to change</a>."
-msgstr ""
-"A sua página do painel pro não pode ser definida para página do painel "
-"grátis. <a href=\"%s\">Clique aqui para mudar</a>."
+msgid "Your pro dashboard page cannot be set to your free dashboard page. <a href=\"%s\">Click here to change</a>."
+msgstr "A sua página do painel pro não pode ser definida para página do painel grátis. <a href=\"%s\">Clique aqui para mudar</a>."
 
 #: admin/partials/wcvendors-pro-system-status.php:53
 msgid "Feedback form page"
@@ -578,12 +556,8 @@ msgstr "Página do formulário de comentários"
 
 #: admin/partials/wcvendors-pro-system-status.php:57
 #, php-format
-msgid ""
-"Vendor ratings will not work without this page set. <a href=\"%s\">Click "
-"here to set the page</a>."
-msgstr ""
-"O sistema de avaliações dos vendedores não funcionará sem esta página "
-"definida. <a href=\"%s\">Clique aqui para definir a página</a>."
+msgid "Vendor ratings will not work without this page set. <a href=\"%s\">Click here to set the page</a>."
+msgstr "O sistema de avaliações dos vendedores não funcionará sem esta página definida. <a href=\"%s\">Clique aqui para definir a página</a>."
 
 #: admin/partials/wcvendors-pro-system-status.php:64
 msgid "Vendor Shop Permalink"
@@ -591,33 +565,21 @@ msgstr "Ligação Permanente da Loja do Vendedor"
 
 #: admin/partials/wcvendors-pro-system-status.php:68
 #, php-format
-msgid ""
-"You need to set a vendor store permalink. <a href=\"%s\">Click here to set "
-"the slug</a>."
-msgstr ""
-"Precisa de definir uma ligação permanente para a loja do vendedor. <a href="
-"\"%s\">Clique aqui para definir a slug</a>."
+msgid "You need to set a vendor store permalink. <a href=\"%s\">Click here to set the slug</a>."
+msgstr "Precisa de definir uma ligação permanente para a loja do vendedor. <a href=\"%s\">Clique aqui para definir a slug</a>."
 
 #: admin/partials/wcvendors-pro-template-status.php:4
 msgid "WC Vendors Pro Templates"
 msgstr "Modelos WC Vendors Pro"
 
 #: admin/partials/wcvendors-pro-template-status.php:4
-msgid ""
-"This section shows any files that are overriding the default WC Vendors Pro "
-"template pages."
-msgstr ""
-"Esta seção mostra todos os arquivos que anulam o padrão das páginas modelo "
-"WC Vendors Pro."
+msgid "This section shows any files that are overriding the default WC Vendors Pro template pages."
+msgstr "Esta seção mostra todos os arquivos que anulam o padrão das páginas modelo WC Vendors Pro."
 
 #: admin/partials/wcvendors-pro-template-status.php:42
 #, php-format
-msgid ""
-"<code>%s</code> version <strong style=\"color:red\">%s</strong> is out of "
-"date. The core version is %s"
-msgstr ""
-"<code>%s</code> versão <strong style=\"color:red\">%s</strong> "
-"desatualizada. A versão atual é %s"
+msgid "<code>%s</code> version <strong style=\"color:red\">%s</strong> is out of date. The core version is %s"
+msgstr "<code>%s</code> versão <strong style=\"color:red\">%s</strong> desatualizada. A versão atual é %s"
 
 #: admin/partials/wcvendors-pro-template-status.php:54
 #: admin/partials/wcvendors-pro-template-status.php:63
@@ -633,28 +595,16 @@ msgid "This plugin requires PHP Version 5.4.  Sorry about that."
 msgstr "Este plugin requer Versão PHP 5.4. Lamento."
 
 #: includes/class-wcvendors-pro-activator.php:49
-msgid ""
-"WC Vendors Pro requires WooCommerce to run. Please install WooCommerce and "
-"activate before attempting to activate again."
-msgstr ""
-"Para funcionar WC Vendors Pro requer WooCommerce. Por favor, instale e ative "
-"WooCommerce."
+msgid "WC Vendors Pro requires WooCommerce to run. Please install WooCommerce and activate before attempting to activate again."
+msgstr "Para funcionar WC Vendors Pro requer WooCommerce. Por favor, instale e ative WooCommerce."
 
 #: includes/class-wcvendors-pro-activator.php:57
-msgid ""
-"WC Vendors Pro requires WC Vendors to run. Please install WC Vendors and "
-"activate before attempting to activate again."
-msgstr ""
-"Para funcionar WC Vendors Pro requer WC Vendors. Por favor, instale e ative "
-"WC Vendors."
+msgid "WC Vendors Pro requires WC Vendors to run. Please install WC Vendors and activate before attempting to activate again."
+msgstr "Para funcionar WC Vendors Pro requer WC Vendors. Por favor, instale e ative WC Vendors."
 
 #: includes/class-wcvendors-pro-activator.php:121
-msgid ""
-"<b>WC Vendors Pro is disabled</b>. WC Vendors Pro requires WC Vendors v1.7.0 "
-"or higher to operate."
-msgstr ""
-"<b>WC Vendors Pro está desativado</b>. Para funcionar, WC Vendors Pro requer "
-"WC Vendors v1.7.0 ou superior."
+msgid "<b>WC Vendors Pro is disabled</b>. WC Vendors Pro requires WC Vendors v1.7.0 or higher to operate."
+msgstr "<b>WC Vendors Pro está desativado</b>. Para funcionar, WC Vendors Pro requer WC Vendors v1.7.0 ou superior."
 
 #: includes/class-wcvendors-pro-activator.php:132
 msgid "Pro Dashboard"
@@ -736,7 +686,7 @@ msgstr "Por favor selecione uma avaliação por estrela."
 
 #: includes/class-wcvendors-pro-ratings-controller.php:191
 msgid "Your feedback has been saved."
-msgstr "O seu comentário foi guardado."
+msgstr "O seu comentário foi salvo."
 
 #: includes/class-wcvendors-pro-ratings-controller.php:193
 msgid "There was an error posting your feedback."
@@ -744,13 +694,8 @@ msgstr "Houve um erro ao publicar o seu comentário."
 
 #: includes/class-wcvendors-pro-ratings-controller.php:210
 #, php-format
-msgid ""
-"<p>This page should not be accessed directly. Please return to the <a href="
-"\"%s\">my account page</a> and select an order to leave feedback. </p>"
-msgstr ""
-"<p>Esta página não deve ser acedida diretamente. Por favor, regresse a <a "
-"href=\"%s\">my account page</a> e selecione uma Pedido para deixar o seu "
-"comentário. </p>"
+msgid "<p>This page should not be accessed directly. Please return to the <a href=\"%s\">my account page</a> and select an order to leave feedback. </p>"
+msgstr "<p>Esta página não deve ser acedida diretamente. Por favor, regresse a <a href=\"%s\">my account page</a> e selecione uma Pedido para deixar o seu comentário. </p>"
 
 #: includes/class-wcvendors-pro-ratings-controller.php:258
 msgid "Revise Feedback"
@@ -774,8 +719,7 @@ msgstr "Ver todas as avaliações <br /><br />"
 
 #: includes/class-wcvendors-pro-ratings-controller.php:620
 msgid "No ratings have been submitted for this product yet."
-msgstr ""
-"Não existem de momento nenhumas avaliações submetidas para este produto."
+msgstr "Não existem de momento nenhumas avaliações submetidas para este produto."
 
 #: includes/class-wcvendors-pro-ratings-controller.php:635
 #: public/class-wcvendors-pro-order-controller.php:331
@@ -802,25 +746,17 @@ msgstr "Desativação de Licença"
 
 #: includes/class-wcvendors-pro-updater.php:352
 #, php-format
-msgid ""
-"The WC Vendors Pro license key has not been activated, so the plugin is "
-"inactive! %sClick here%s to activate the license key and the plugin."
-msgstr ""
-"A chave de licença de WC Vendors Pro não foi ativada, pelo que o plugin está "
-"inativo! %sClique aqui%s para ativar a chave de licença e o plugin."
+msgid "The WC Vendors Pro license key has not been activated, so the plugin is inactive! %sClick here%s to activate the license key and the plugin."
+msgstr "A chave de licença de WC Vendors Pro não foi ativada, pelo que o plugin está inativo! %sClique aqui%s para ativar a chave de licença e o plugin."
 
 #: includes/class-wcvendors-pro-updater.php:371
 #, php-format
-msgid ""
-"<b>Warning!</b> You're blocking external requests which means you won't be "
-"able to get %s updates. Please add %s to %s."
-msgstr ""
-"<b>Aviso!</b> Você está a bloquear pedidos externos, o que significa que não "
-"será capaz de obter %s atualizações. Por favor adicione %s a %s."
+msgid "<b>Warning!</b> You're blocking external requests which means you won't be able to get %s updates. Please add %s to %s."
+msgstr "<b>Aviso!</b> Você está a bloquear pedidos externos, o que significa que não será capaz de obter %s atualizações. Por favor adicione %s a %s."
 
 #: includes/class-wcvendors-pro.php:496
 msgid "Click to view vendor shipping settings here."
-msgstr "Clique aqui para ver as configurações de envio do vendedor."
+msgstr "Clique aqui para ver as configurações de Entrega do vendedor."
 
 #: includes/class-wcvendors-pro.php:498
 msgid "General options"
@@ -831,26 +767,16 @@ msgid "Pro Dashboard Page"
 msgstr "Página do Painel Pro"
 
 #: includes/class-wcvendors-pro.php:502
-msgid ""
-"Page requires the [wcv_pro_dashboard] shortcode. <strong>DO NOT USE THE WC "
-"VENDORS FREE DASHBOARD PAGE HERE - and do NOT delete the Free Dashboard "
-"pages either, you will break your site if you do.</strong>"
-msgstr ""
-"A página requer o [wcv_pro_dashboard] shortcode. <strong>NÃO USE AQUI A "
-"PÁGINA DO PAINEL WC VENDORS GRÁTIS - e também NÃO elimine as páginas do "
-"Painel grátis, ou vai quebrar o site se o fizer.</strong>"
+msgid "Page requires the [wcv_pro_dashboard] shortcode. <strong>DO NOT USE THE WC VENDORS FREE DASHBOARD PAGE HERE - and do NOT delete the Free Dashboard pages either, you will break your site if you do.</strong>"
+msgstr "A página requer o [wcv_pro_dashboard] shortcode. <strong>NÃO USE AQUI A PÁGINA DO PAINEL WC VENDORS GRÁTIS - e também NÃO elimine as páginas do Painel grátis, ou vai quebrar o site se o fizer.</strong>"
 
 #: includes/class-wcvendors-pro.php:510
 msgid "Store Header"
 msgstr "Cabeçalho de Loja"
 
 #: includes/class-wcvendors-pro.php:511
-msgid ""
-"Which store header to use. Store headers need to be enabled for this option "
-"to work."
-msgstr ""
-"Que cabeçalho de loja usar. Para esta opção funcionar os cabeçalhos de loja "
-"precisam ser ativados."
+msgid "Which store header to use. Store headers need to be enabled for this option to work."
+msgstr "Que cabeçalho de loja usar. Para esta opção funcionar os cabeçalhos de loja precisam ser ativados."
 
 #: includes/class-wcvendors-pro.php:515
 #: templates/front/shipping/shipping-panel.php:28
@@ -868,9 +794,7 @@ msgstr "Ativar Cabeçalhos de Loja nas Páginas da Loja"
 
 #: includes/class-wcvendors-pro.php:524
 msgid "Check to enable the entire header on the /vendors/username/ page."
-msgstr ""
-"Selecione para permitir a totalidade do cabeçalho em /vendedores/nome de "
-"utilizador/ página."
+msgstr "Selecione para permitir a totalidade do cabeçalho em /vendedores/nome de utilizador/ página."
 
 #: includes/class-wcvendors-pro.php:531
 msgid "Store Single Product Header"
@@ -881,11 +805,8 @@ msgid "Enable Store Headers on Single Product Pages."
 msgstr "Ativar cabeçalhos de loja em páginas individuais dos produtos."
 
 #: includes/class-wcvendors-pro.php:533
-msgid ""
-"Check to enable the entire header on /shop/product-category/product-name/"
-msgstr ""
-"Selecione para permitir a totalidade do cabeçalho em /loja/produto-categoria/"
-"produto-nome/"
+msgid "Check to enable the entire header on /shop/product-category/product-name/"
+msgstr "Selecione para permitir a totalidade do cabeçalho em /loja/produto-segmento/produto-nome/"
 
 #: includes/class-wcvendors-pro.php:540
 msgid "WordPress Dashboard"
@@ -904,23 +825,16 @@ msgid "Vendor Dashboard Notice"
 msgstr "Aviso Painel do Vendedor"
 
 #: includes/class-wcvendors-pro.php:551
-msgid ""
-"Display a message to vendors on all dashboard pages below the dashboard menu."
-msgstr ""
-"Exibir uma mensagem aos vendedores em todas as páginas abaixo do menu do "
-"painel."
+msgid "Display a message to vendors on all dashboard pages below the dashboard menu."
+msgstr "Exibir uma mensagem aos vendedores em todas as páginas abaixo do menu do painel."
 
 #: includes/class-wcvendors-pro.php:558
 msgid "Pro Features"
 msgstr "Características Pro"
 
 #: includes/class-wcvendors-pro.php:558
-msgid ""
-"<strong>Please save your permalinks after changing any of the following "
-"settings</strong>"
-msgstr ""
-"<strong>Por favor, guarde as suas ligações permanentes depois de alterar "
-"qualquer uma das seguintes configurações</strong>"
+msgid "<strong>Please save your permalinks after changing any of the following settings</strong>"
+msgstr "<strong>Por favor, salve as suas ligações permanentes depois de alterar qualquer uma das seguintes configurações</strong>"
 
 #: includes/class-wcvendors-pro.php:561
 msgid "Product Management"
@@ -968,8 +882,7 @@ msgstr "Desativar gestão de configurações da loja no painel pro. "
 
 #: includes/class-wcvendors-pro.php:590
 msgid "Check to remove the store settings management from the pro dashboard."
-msgstr ""
-"Selecione para remover a gestão de configurações de loja do painel pro."
+msgstr "Selecione para remover a gestão de configurações de loja do painel pro."
 
 #: includes/class-wcvendors-pro.php:597
 #: public/class-wcvendors-pro-dashboard.php:280
@@ -982,19 +895,15 @@ msgstr "Desativar totalmente o sistema de avaliações. "
 
 #: includes/class-wcvendors-pro.php:599
 msgid "Check to remove the ratings system from the front end completely."
-msgstr ""
-"Selecione para remover totalmente o sistema de avaliações do front end."
+msgstr "Selecione para remover totalmente o sistema de avaliações do front end."
 
 #: includes/class-wcvendors-pro.php:607
 msgid "Disable the vendor shipping system completely. "
-msgstr "Desativar totalmente o sistema de envio do vendedor. "
+msgstr "Desativar totalmente o sistema de Entrega do vendedor. "
 
 #: includes/class-wcvendors-pro.php:608
-msgid ""
-"Check to remove the vendor shipping system from the front end completely."
-msgstr ""
-"Selecione para remover totalmente o sistema de envio do vendedor do front "
-"end."
+msgid "Check to remove the vendor shipping system from the front end completely."
+msgstr "Selecione para remover totalmente o sistema de Entrega do vendedor do front end."
 
 #: includes/class-wcvendors-pro.php:615
 #: public/class-wcvendors-pro-dashboard.php:522
@@ -1026,12 +935,8 @@ msgid "Edit Approved Products"
 msgstr "Editar Produtos Aprovados"
 
 #: includes/class-wcvendors-pro.php:634
-msgid ""
-"Publish edits to approved products. ( New products will still have to be "
-"approved )"
-msgstr ""
-"Publicar edições em produtos aprovados. (Novos produtos ainda terão que ser "
-"aprovados)"
+msgid "Publish edits to approved products. ( New products will still have to be approved )"
+msgstr "Publicar edições em produtos aprovados. (Novos produtos ainda terão que ser aprovados)"
 
 #: includes/class-wcvendors-pro.php:635
 msgid "Allow vendors to edit products that have already been approved."
@@ -1083,11 +988,8 @@ msgid "Delete vendor products permanently. "
 msgstr "Apagar definitivamente produtos do vendedor. "
 
 #: includes/class-wcvendors-pro.php:681
-msgid ""
-"Bypass the trash when a vendor deletes a product and delete permanently."
-msgstr ""
-"Evitar o lixo, quando um vendedor elimina um produto e o exclui "
-"definitivamente."
+msgid "Bypass the trash when a vendor deletes a product and delete permanently."
+msgstr "Evitar o lixo, quando um vendedor elimina um produto e o exclui definitivamente."
 
 #: includes/class-wcvendors-pro.php:688
 msgid "Coupon Delete"
@@ -1099,9 +1001,7 @@ msgstr "Excluir definitivamente Cupons de vendedor. "
 
 #: includes/class-wcvendors-pro.php:690
 msgid "Bypass the trash when a vendor deletes a coupon and delete permanently."
-msgstr ""
-"Evitar o lixo, quando um vendedor elimina um Cupom e o exclui "
-"definitivamente."
+msgstr "Evitar o lixo, quando um vendedor elimina um Cupom e o exclui definitivamente."
 
 #: includes/class-wcvendors-pro.php:697
 msgid "View Your Store"
@@ -1136,12 +1036,8 @@ msgid "Feedback Form Page"
 msgstr "Página de formulário de Comentários"
 
 #: includes/class-wcvendors-pro.php:725
-msgid ""
-"The page to display the feedback from this will have the [wcv_feedback_form] "
-"shortcode."
-msgstr ""
-"A página para exibir o formulário dos comentários terá o [wcv_feedback_form] "
-"shortcode."
+msgid "The page to display the feedback from this will have the [wcv_feedback_form] shortcode."
+msgstr "A página para exibir o formulário dos comentários terá o [wcv_feedback_form] shortcode."
 
 #: includes/class-wcvendors-pro.php:733
 msgid "Vendor Ratings Label"
@@ -1149,9 +1045,7 @@ msgstr "Etiqueta de Avaliação do Vendedor"
 
 #: includes/class-wcvendors-pro.php:734
 msgid "The vendor ratings tab title on the single product page."
-msgstr ""
-"O título do separador de avaliação do vendedor na página individual do "
-"produto."
+msgstr "O título do separador de avaliação do vendedor na página individual do produto."
 
 #: includes/class-wcvendors-pro.php:737
 msgid "Product Ratings"
@@ -1162,12 +1056,8 @@ msgid "Feedback System"
 msgstr "Sistema de Comentários"
 
 #: includes/class-wcvendors-pro.php:742
-msgid ""
-"Start all vendors at a 5 star rating until they receive their first feedback "
-"score"
-msgstr ""
-"Comece em todos os vendedores com uma avaliação de 5 estrelas, até que "
-"recebam a sua primeira pontuação."
+msgid "Start all vendors at a 5 star rating until they receive their first feedback score"
+msgstr "Comece em todos os vendedores com uma avaliação de 5 estrelas, até que recebam a sua primeira pontuação."
 
 #: includes/class-wcvendors-pro.php:743
 msgid "Reverse the feedback system."
@@ -1230,11 +1120,8 @@ msgid "Coupon Action"
 msgstr "Ação do Cupom"
 
 #: includes/class-wcvendors-pro.php:789
-msgid ""
-"Process the commission before or after the coupon has been applied to the "
-"price."
-msgstr ""
-"Processar a comissão antes ou depois do Cupom tem sido aplicado ao preço."
+msgid "Process the commission before or after the coupon has been applied to the price."
+msgstr "Processar a comissão antes ou depois do Cupom tem sido aplicado ao preço."
 
 #: includes/class-wcvendors-pro.php:793
 msgid "After"
@@ -1249,16 +1136,8 @@ msgid "Global Commission Type"
 msgstr "Tipo de Comissão Global"
 
 #: includes/class-wcvendors-pro.php:801
-msgid ""
-"This is the default commission type for all vendors. <strong>This overrides "
-"default commission in WC Vendors Free.  You may edit a vendors user account "
-"to override the global rate for that vendor.  You may edit an individual "
-"product to override the commission rate only for that product.</strong>"
-msgstr ""
-"Este é o tipo de comissão padrão para todos os vendedores. <strong>Substitui "
-"a comissão padrão em WC Vendors Grátis.  You may edit a vendors user account "
-"to override the global rate for that vendor.  You may edit an individual "
-"product to override the commission rate only for that product.</strong>"
+msgid "This is the default commission type for all vendors. <strong>This overrides default commission in WC Vendors Free.  You may edit a vendors user account to override the global rate for that vendor.  You may edit an individual product to override the commission rate only for that product.</strong>"
+msgstr "Este é o tipo de comissão padrão para todos os vendedores. <strong>Substitui a comissão padrão em WC Vendors Grátis.  You may edit a vendors user account to override the global rate for that vendor.  You may edit an individual product to override the commission rate only for that product.</strong>"
 
 #: includes/class-wcvendors-pro.php:810
 msgid "The percent of commission you give the vendors."
@@ -1289,12 +1168,8 @@ msgid "Product Add/Edit Form"
 msgstr "Adicionar Produto/Editar Formulário"
 
 #: includes/class-wcvendors-pro.php:837
-msgid ""
-"Configure what to hide from all vendors when adding a product on the front "
-"end."
-msgstr ""
-"Configure o que fica escondido dos vendedores quando adicionam produtos no "
-"front end."
+msgid "Configure what to hide from all vendors when adding a product on the front end."
+msgstr "Configure o que fica escondido dos vendedores quando adicionam produtos no front end."
 
 #: includes/class-wcvendors-pro.php:840
 msgid "Basic"
@@ -1314,7 +1189,7 @@ msgstr "Descrição Abreviada"
 #: public/forms/class-wcvendors-pro-product-form.php:384
 #: public/forms/class-wcvendors-pro-product-form.php:417
 msgid "Categories"
-msgstr "Categorias"
+msgstr "Segmentos"
 
 #: includes/class-wcvendors-pro.php:846
 #: public/forms/class-wcvendors-pro-product-form.php:523
@@ -1327,11 +1202,11 @@ msgstr "Atributos"
 
 #: includes/class-wcvendors-pro.php:854
 msgid "Category Display"
-msgstr "Mostrar Categoria"
+msgstr "Mostrar Segmento"
 
 #: includes/class-wcvendors-pro.php:855
 msgid "What kind of category selection."
-msgstr "Que tipo de seleção de categoria."
+msgstr "Que tipo de seleção de  segmento"
 
 #: includes/class-wcvendors-pro.php:859
 msgid "Multi select"
@@ -1343,25 +1218,19 @@ msgstr "Conferir"
 
 #: includes/class-wcvendors-pro.php:866
 msgid "Hide Categories"
-msgstr "Esconder Categorias"
+msgstr "Esconder Segmentos"
 
 #: includes/class-wcvendors-pro.php:867
-msgid ""
-"A comma separated list of categories to hide from the vendor product form. "
-msgstr ""
-"Uma lista de categorias separada por vírgulas para não apresentar no "
-"formulário do produto do vendedor. "
+msgid "A comma separated list of categories to hide from the vendor product form. "
+msgstr "Uma lista de segmentos separada por vírgulas para não apresentar no formulário do produto do vendedor. "
 
 #: includes/class-wcvendors-pro.php:873
 msgid "Hide Attributes"
 msgstr "Esconder Atributos"
 
 #: includes/class-wcvendors-pro.php:874
-msgid ""
-"A comma separated list of attributes to hide from the vendor product form. "
-msgstr ""
-"Uma lista de atributos separada por vírgulas para não apresentar no "
-"formulário do produto do vendedor. "
+msgid "A comma separated list of attributes to hide from the vendor product form. "
+msgstr "Uma lista de atributos separada por vírgulas para não apresentar no formulário do produto do vendedor. "
 
 #: includes/class-wcvendors-pro.php:881
 msgid "Media"
@@ -1423,8 +1292,7 @@ msgstr "Imposto"
 
 #: includes/class-wcvendors-pro.php:910
 msgid "Download files (also disables all download fields)"
-msgstr ""
-"Carregamento de ficheiros (também desativa todos os campos de carregamento)"
+msgstr "Carregamento de ficheiros (também desativa todos os campos de carregamento)"
 
 #: includes/class-wcvendors-pro.php:911
 msgid "Download limit"
@@ -1441,11 +1309,11 @@ msgstr "Tipo do Carregamento"
 #: includes/class-wcvendors-pro.php:920
 #: public/forms/class-wcvendors-pro-product-form.php:1525
 msgid "Inventory"
-msgstr "Inventário"
+msgstr "Estoque"
 
 #: includes/class-wcvendors-pro.php:923
 msgid "Manage Inventory (also disables all inventory fields)"
-msgstr "Gestão de Inventário (também desativa todos os campos de inventário)"
+msgstr "Gestão de Estoque (também desativa todos os campos do estoque)"
 
 #: includes/class-wcvendors-pro.php:924
 #: public/forms/class-wcvendors-pro-product-form.php:1109
@@ -1485,7 +1353,7 @@ msgstr "Dimensões"
 #: includes/class-wcvendors-pro.php:940
 #: public/forms/class-wcvendors-pro-product-form.php:1326
 msgid "Shipping class"
-msgstr "Classe de envio"
+msgstr "Classe de Entrega"
 
 #: includes/class-wcvendors-pro.php:947
 msgid "Upsells / Grouping"
@@ -1513,8 +1381,7 @@ msgstr "Configurações de Formulário."
 
 #: includes/class-wcvendors-pro.php:961
 msgid "Configure what to hide on the vendor settings page."
-msgstr ""
-"Configurar o que pretende esconder na página de configurações do vendedor."
+msgstr "Configurar o que pretende esconder na página de configurações do vendedor."
 
 #: includes/class-wcvendors-pro.php:964
 msgid "Settings Form Tabs"
@@ -1561,7 +1428,7 @@ msgstr "Telefone da Loja"
 
 #: includes/class-wcvendors-pro.php:984 includes/class-wcvendors-pro.php:1064
 msgid "Store address ( if you use pro shipping this option will not work. )"
-msgstr "Endereço da loja (se usa envio pro esta opção não vai funcionar.)"
+msgstr "Endereço da loja (se usa Entrega pro esta opção não vai funcionar.)"
 
 #: includes/class-wcvendors-pro.php:994
 msgid "Paypal email"
@@ -1577,7 +1444,7 @@ msgstr "Ícone da Loja"
 
 #: includes/class-wcvendors-pro.php:1016 includes/class-wcvendors-pro.php:1096
 msgid "Shipping policy"
-msgstr "Política de envio"
+msgstr "Política de Entrega"
 
 #: includes/class-wcvendors-pro.php:1017 includes/class-wcvendors-pro.php:1097
 msgid "Return policy"
@@ -1616,24 +1483,16 @@ msgid "Signup Messages"
 msgstr "Mensagens de Subscrição"
 
 #: includes/class-wcvendors-pro.php:1120
-msgid ""
-"These options allow you to provide messages to vendors signing up to your "
-"market place."
-msgstr ""
-"Estas opções permitem-lhe fornecer mensagens para os vendedores aderirem ao "
-"seu mercado."
+msgid "These options allow you to provide messages to vendors signing up to your market place."
+msgstr "Estas opções permitem-lhe fornecer mensagens para os vendedores aderirem ao seu mercado."
 
 #: includes/class-wcvendors-pro.php:1123
 msgid "Vendor signup notice"
 msgstr "Aviso de inscrição de vendedor"
 
 #: includes/class-wcvendors-pro.php:1124
-msgid ""
-"Display a message to vendors on signup page, this could include store "
-"specific instructions."
-msgstr ""
-"Exibe uma mensagem aos vendedores na página de inscrição, o que pode  "
-"incluir instruções específicas de loja."
+msgid "Display a message to vendors on signup page, this could include store specific instructions."
+msgstr "Exibe uma mensagem aos vendedores na página de inscrição, o que pode  incluir instruções específicas de loja."
 
 #: includes/class-wcvendors-pro.php:1130
 msgid "Pending vendor message"
@@ -1644,12 +1503,8 @@ msgid "Display a message to pending vendors after they have applied."
 msgstr "Exibe uma mensagem ao vendedor pendente depois da sua solicitação."
 
 #: includes/class-wcvendors-pro.php:1134
-msgid ""
-"Your application has been received. You will be notified by email the "
-"results of your application."
-msgstr ""
-"A sua solicitação foi recebida. Será brevemente notificado por email do "
-"resultado do seu pedido."
+msgid "Your application has been received. You will be notified by email the results of your application."
+msgstr "A sua solicitação foi recebida. Será brevemente notificado por email do resultado do seu pedido."
 
 #: includes/class-wcvendors-pro.php:1138
 msgid "Approved vendor message"
@@ -1660,22 +1515,12 @@ msgid "Display a message on the dashboard for approved vendors."
 msgstr "Exibe uma mensagem no painel para os vendedores aprovados."
 
 #: includes/class-wcvendors-pro.php:1142
-msgid ""
-"Congratulations! You are now a vendor. Be sure to configure your store "
-"settings before adding products."
-msgstr ""
-"Parabéns! Você agora é um vendedor no bemvestir.moda. Certifique-se de "
-"configurar as definições da sua loja antes de adicionar produtos."
+msgid "Congratulations! You are now a vendor. Be sure to configure your store settings before adding products."
+msgstr "Parabéns! Você agora é um vendedor no bemvestir.moda. Certifique-se de configurar as definições da sua loja antes de adicionar produtos."
 
 #: includes/lib/api-manager/admin/class-wcvendors-pro-api-manager-menu.php:55
-msgid ""
-"If you are having any problems with activation, please visit your <a href="
-"\"https://www.wcvendors.com/my-account/\" target=\"_blank\">my account</a> "
-"page to reset your activation."
-msgstr ""
-"Se estiver com problemas com a ativação, por favor viste a sua página <a "
-"href=\"https://www.wcvendors.com/my-account/\" target=\"_blank\">minha "
-"conta</a> para reiniciar a sua ativação."
+msgid "If you are having any problems with activation, please visit your <a href=\"https://www.wcvendors.com/my-account/\" target=\"_blank\">my account</a> page to reset your activation."
+msgstr "Se estiver com problemas com a ativação, por favor viste a sua página <a href=\"https://www.wcvendors.com/my-account/\" target=\"_blank\">minha conta</a> para reiniciar a sua ativação."
 
 #: includes/lib/api-manager/admin/class-wcvendors-pro-api-manager-menu.php:61
 #: includes/lib/api-manager/admin/class-wcvendors-pro-api-manager-menu.php:65
@@ -1707,153 +1552,79 @@ msgstr "Plugin ativado. "
 
 #: includes/lib/api-manager/admin/class-wcvendors-pro-api-manager-menu.php:174
 msgid "Connection failed to the License Key API server. Try again later."
-msgstr ""
-"Conexão falhada para o código de licença servidor API. Tente novamente mais "
-"tarde."
+msgstr "Conexão falhada para o código de licença servidor API. Tente novamente mais tarde."
 
 #: includes/lib/api-manager/admin/class-wcvendors-pro-api-manager-menu.php:261
-msgid ""
-"The license could not be deactivated. Use the License Deactivation tab to "
-"manually deactivate the license before activating a new license."
-msgstr ""
-"A licença não pode ser desativada. Use o separador para desativar "
-"manualmente a licença antes de ativar uma nova."
+msgid "The license could not be deactivated. Use the License Deactivation tab to manually deactivate the license before activating a new license."
+msgstr "A licença não pode ser desativada. Use o separador para desativar manualmente a licença antes de ativar uma nova."
 
 #: includes/lib/api-manager/admin/class-wcvendors-pro-api-manager-menu.php:300
 msgid "Plugin license deactivated. "
 msgstr "Licença do plugin desativada."
 
 #: includes/lib/api-manager/admin/class-wcvendors-pro-api-manager-menu.php:368
-msgid ""
-"Deactivates the WC Vendors Pro license so it can be used on another website."
-msgstr ""
-"Desativa a licença WC Vendors Pro para que possa ser usada num outro site."
+msgid "Deactivates the WC Vendors Pro license so it can be used on another website."
+msgstr "Desativa a licença WC Vendors Pro para que possa ser usada num outro site."
 
 #: includes/lib/api-manager/classes/class-wcvendors-pro-plugin-update.php:370
 #, php-format
-msgid ""
-"The license key for %s has expired. You can reactivate or purchase a license "
-"key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
-msgstr ""
-"O código de licença para %s expirou. Pode desativar ou comprar a licença no "
-"painel da sua <a href=\"%s\" target=\"_blank\">conta</a>."
+msgid "The license key for %s has expired. You can reactivate or purchase a license key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "O código de licença para %s expirou. Pode desativar ou comprar a licença no painel da sua <a href=\"%s\" target=\"_blank\">conta</a>."
 
 #: includes/lib/api-manager/classes/class-wcvendors-pro-plugin-update.php:381
 #, php-format
-msgid ""
-"The subscription for %s is on-hold. You can reactivate the subscription from "
-"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
-msgstr ""
-"A subscrição para %s está suspensa Pode reativar a subscrição no painel da "
-"sua <a href=\"%s\" target=\"_blank\">conta</a>."
+msgid "The subscription for %s is on-hold. You can reactivate the subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "A subscrição para %s está suspensa Pode reativar a subscrição no painel da sua <a href=\"%s\" target=\"_blank\">conta</a>."
 
 #: includes/lib/api-manager/classes/class-wcvendors-pro-plugin-update.php:392
 #, php-format
-msgid ""
-"The subscription for %s has been cancelled. You can renew the subscription "
-"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new "
-"license key will be emailed to you after your order has been completed."
-msgstr ""
-"A inscrição para %s foi cancelada. Pode renovar a subscrição no painel da "
-"sua <a href=\"%s\" target=\"_blank\">conta</a>. Um novo código de licença "
-"será enviado depois do seu pedido ter sido concluído."
+msgid "The subscription for %s has been cancelled. You can renew the subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new license key will be emailed to you after your order has been completed."
+msgstr "A inscrição para %s foi cancelada. Pode renovar a subscrição no painel da sua <a href=\"%s\" target=\"_blank\">conta</a>. Um novo código de licença será enviado depois do seu pedido ter sido concluído."
 
 #: includes/lib/api-manager/classes/class-wcvendors-pro-plugin-update.php:403
 #, php-format
-msgid ""
-"The subscription for %s has expired. You can reactivate the subscription "
-"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
-msgstr ""
-"A subscrição para %s expirou. Pode reativar a subscrição no painel da sua <a "
-"href=\"%s\" target=\"_blank\">conta</a>."
+msgid "The subscription for %s has expired. You can reactivate the subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "A subscrição para %s expirou. Pode reativar a subscrição no painel da sua <a href=\"%s\" target=\"_blank\">conta</a>."
 
 #: includes/lib/api-manager/classes/class-wcvendors-pro-plugin-update.php:414
 #, php-format
-msgid ""
-"The subscription for %s has been suspended. You can reactivate the "
-"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
-"a>."
-msgstr ""
-"A subscrição para %s foi suspensa. Pode reativar a subscrição no painel da "
-"sua <a href=\"%s\" target=\"_blank\">conta</a>."
+msgid "The subscription for %s has been suspended. You can reactivate the subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "A subscrição para %s foi suspensa. Pode reativar a subscrição no painel da sua <a href=\"%s\" target=\"_blank\">conta</a>."
 
 #: includes/lib/api-manager/classes/class-wcvendors-pro-plugin-update.php:425
 #, php-format
-msgid ""
-"The subscription for %s is still pending. You can check on the status of the "
-"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
-"a>."
-msgstr ""
-"A subscrição para %s continua pendente. Pode verificar o estado da "
-"subscrição através do painel da sua <a href=\"%s\" target=\"_blank\">conta</"
-"a>."
+msgid "The subscription for %s is still pending. You can check on the status of the subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "A subscrição para %s continua pendente. Pode verificar o estado da subscrição através do painel da sua <a href=\"%s\" target=\"_blank\">conta</a>."
 
 #: includes/lib/api-manager/classes/class-wcvendors-pro-plugin-update.php:436
 #, php-format
-msgid ""
-"The subscription for %s has been placed in the trash and will be deleted "
-"soon. You can purchase a new subscription from your account <a href=\"%s\" "
-"target=\"_blank\">dashboard</a>."
-msgstr ""
-"A subscrição para %s foi enviada para o lixo e será eliminada brevemente. "
-"Pode comprar uma subscrição nova através do painel da sua <a href=\"%s\" "
-"target=\"_blank\">conta</a>."
+msgid "The subscription for %s has been placed in the trash and will be deleted soon. You can purchase a new subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "A subscrição para %s foi enviada para o lixo e será eliminada brevemente. Pode comprar uma subscrição nova através do painel da sua <a href=\"%s\" target=\"_blank\">conta</a>."
 
 #: includes/lib/api-manager/classes/class-wcvendors-pro-plugin-update.php:447
 #, php-format
-msgid ""
-"A subscription for %s could not be found. You can purchase a subscription "
-"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
-msgstr ""
-"A subscrição para %s não pôde ser encontrada. Pode comprar a subscrição "
-"através do painel da sua <a href=\"%s\" target=\"_blank\">conta</a>."
+msgid "A subscription for %s could not be found. You can purchase a subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "A subscrição para %s não pôde ser encontrada. Pode comprar a subscrição através do painel da sua <a href=\"%s\" target=\"_blank\">conta</a>."
 
 #: includes/lib/api-manager/classes/class-wcvendors-pro-plugin-update.php:458
 #, php-format
-msgid ""
-"A license key for %s could not be found. Maybe you forgot to enter a license "
-"key when setting up %s, or the key was deactivated in your account. You can "
-"reactivate or purchase a license key from your account <a href=\"%s\" target="
-"\"_blank\">dashboard</a>."
-msgstr ""
-"O código de licença para %s não pôde ser encontrado. Talvez se tenha "
-"esquecido de colocar o código de licença nas configurações %s, ou o código "
-"foi desativado na sua conta. Pode reativar ou comprar o código de licença "
-"através do painel da sua <a href=\"%s\" target=\"_blank\">conta</a>."
+msgid "A license key for %s could not be found. Maybe you forgot to enter a license key when setting up %s, or the key was deactivated in your account. You can reactivate or purchase a license key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "O código de licença para %s não pôde ser encontrado. Talvez se tenha esquecido de colocar o código de licença nas configurações %s, ou o código foi desativado na sua conta. Pode reativar ou comprar o código de licença através do painel da sua <a href=\"%s\" target=\"_blank\">conta</a>."
 
 #: includes/lib/api-manager/classes/class-wcvendors-pro-plugin-update.php:469
 #, php-format
-msgid ""
-"Download permission for %s has been revoked possibly due to a license key or "
-"subscription expiring. You can reactivate or purchase a license key from "
-"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
-msgstr ""
-"A autorização de Download para %s foi revogada possivelmente devido ao "
-"código de licença ou subscrição terem expirado. Pode reativar ou comprar o "
-"código de licença no painel da sua <a href=\"%s\" target=\"_blank\">conta</"
-"a>."
+msgid "Download permission for %s has been revoked possibly due to a license key or subscription expiring. You can reactivate or purchase a license key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "A autorização de Download para %s foi revogada possivelmente devido ao código de licença ou subscrição terem expirado. Pode reativar ou comprar o código de licença no painel da sua <a href=\"%s\" target=\"_blank\">conta</a>."
 
 #: includes/lib/api-manager/classes/class-wcvendors-pro-plugin-update.php:480
 #, php-format
-msgid ""
-"%s has not been activated. Go to the settings page and enter the license key "
-"and license email to activate %s."
-msgstr ""
-"%s não foi ativado. Vá à página de configurações e coloque o código e email "
-"da licença para ativar %s."
+msgid "%s has not been activated. Go to the settings page and enter the license key and license email to activate %s."
+msgstr "%s não foi ativado. Vá à página de configurações e coloque o código e email da licença para ativar %s."
 
 #: includes/lib/api-manager/classes/class-wcvendors-pro-plugin-update.php:491
 #, php-format
-msgid ""
-"You changed the subscription for %s, so you will need to enter your new WC "
-"Vendors Pro license Key in the settings page. The License Key should have "
-"arrived in your email inbox, if not you can get it by logging into your "
-"account <a href=\"%s\" target=\"_blank\">dashboard</a>."
-msgstr ""
-"Modificou a subscrição para %s, pelo que terá que colocar o código de "
-"licença WC Vendors Pro na página de configurações. Deverá receber o código "
-"de licença na sua caixa de email, caso contrário, poderá obtê-lo no painel "
-"da sua <a href=\"%s\" target=\"_blank\">conta</a>."
+msgid "You changed the subscription for %s, so you will need to enter your new WC Vendors Pro license Key in the settings page. The License Key should have arrived in your email inbox, if not you can get it by logging into your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "Modificou a subscrição para %s, pelo que terá que colocar o código de licença WC Vendors Pro na página de configurações. Deverá receber o código de licença na sua caixa de email, caso contrário, poderá obtê-lo no painel da sua <a href=\"%s\" target=\"_blank\">conta</a>."
 
 #: includes/partials/ratings/admin/wcvendors-pro-ratings-feedback-form.php:30
 msgid "Edit Vendor Rating"
@@ -3041,7 +2812,7 @@ msgstr "Ver Detalhes da Ordem"
 
 #: public/class-wcvendors-pro-order-controller.php:399
 msgid "Shipping Label"
-msgstr "Informação de Envio"
+msgstr "Informação de Entrega"
 
 #: public/class-wcvendors-pro-order-controller.php:405
 msgid "Order Note"
@@ -3063,7 +2834,7 @@ msgstr "Produto:"
 
 #: public/class-wcvendors-pro-order-controller.php:438
 msgid "Shipping: "
-msgstr "Envio: "
+msgstr "Entrega: "
 
 #: public/class-wcvendors-pro-order-controller.php:438
 msgid "Tax: "
@@ -3091,12 +2862,8 @@ msgid "Standard"
 msgstr "Padrão"
 
 #: public/class-wcvendors-pro-order-controller.php:896
-msgid ""
-"A vendor has added a tracking number to your order. You can track this at "
-"the following url. "
-msgstr ""
-"Um vendedor adicionou um número de acompanhamento para a Pedido. Pode fazer "
-"o seguimento através da seguinte url. "
+msgid "A vendor has added a tracking number to your order. You can track this at the following url. "
+msgstr "Um vendedor adicionou um número de acompanhamento para a Pedido. Pode fazer o seguimento através da seguinte url. "
 
 #: public/class-wcvendors-pro-product-controller.php:96
 #: public/class-wcvendors-pro-product-controller.php:98
@@ -3108,9 +2875,7 @@ msgstr "Produto Atualizado. <a href=\"%s\">Ver produto.</a>"
 #: public/class-wcvendors-pro-product-controller.php:125
 #, php-format
 msgid "Product submitted for review. <a href=\"%s\">Preview product.</a>"
-msgstr ""
-"Produot submetido para revisão. <a href=\"%s\">Pré visualização de produto.</"
-"a>"
+msgstr "Produot submetido para revisão. <a href=\"%s\">Pré visualização de produto.</a>"
 
 #: public/class-wcvendors-pro-product-controller.php:104
 msgid "There was a problem editing the product."
@@ -3143,9 +2908,7 @@ msgstr "Houve um problema ao eliminar o produto."
 
 #: public/class-wcvendors-pro-product-controller.php:494
 msgid "Product SKU must be unique."
-msgstr ""
-"O SKU (Stock Keeping Unit), em Português - Unidade de Manutenção de Stock, "
-"do produto deverá ser único."
+msgstr "O SKU (Stock Keeping Unit), em Português - Unidade de Manutenção de Stock, do produto deverá ser único."
 
 #: public/class-wcvendors-pro-product-controller.php:963
 msgid "Online"
@@ -3214,9 +2977,7 @@ msgstr "Um resultado está disponível, pressione enter para o selecionar."
 
 #: public/class-wcvendors-pro-public.php:136
 msgid "%qty% results are available, use up and down arrow keys to navigate."
-msgstr ""
-"%qty% resultados estão disponíveis, use as setas para cima e para baixo para "
-"navegar."
+msgstr "%qty% resultados estão disponíveis, use as setas para cima e para baixo para navegar."
 
 #: public/class-wcvendors-pro-public.php:137
 msgid "No matches found"
@@ -3443,23 +3204,17 @@ msgstr "publicado. <a href=\"%s\">Ver Loja de Vendedor/a>"
 
 #: public/class-wcvendors-pro-store-controller.php:142
 msgid "saved."
-msgstr "guardado."
+msgstr "salvo."
 
 #: public/class-wcvendors-pro-store-controller.php:143
 #, php-format
 msgid "submitted. <a target=\"_blank\" href=\"%s\">Preview Vendor Store</a>"
-msgstr ""
-"submetido. <a target=\"_blank\" href=\"%s\">Pré-visualizar Loja de Vendedor</"
-"a>"
+msgstr "submetido. <a target=\"_blank\" href=\"%s\">Pré-visualizar Loja de Vendedor</a>"
 
 #: public/class-wcvendors-pro-store-controller.php:144
 #, php-format
-msgid ""
-"scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
-"\">Preview Vendor Store</a>"
-msgstr ""
-"programado para: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
-"\">Pré-visualizar Loja de Vendedor</a>"
+msgid "scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview Vendor Store</a>"
+msgstr "programado para: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Pré-visualizar Loja de Vendedor</a>"
 
 #: public/class-wcvendors-pro-store-controller.php:146
 msgid "M j, Y @ G:i"
@@ -3467,11 +3222,8 @@ msgstr "M j, Y @ G:i"
 
 #: public/class-wcvendors-pro-store-controller.php:147
 #, php-format
-msgid ""
-"draft updated. <a target=\"_blank\" href=\"%s\">Preview Vendor Store</a>"
-msgstr ""
-"rascunho atualizado. <a target=\"_blank\" href=\"%s\">Pré-visualizar Loja de "
-"Vendedor</a>"
+msgid "draft updated. <a target=\"_blank\" href=\"%s\">Preview Vendor Store</a>"
+msgstr "rascunho atualizado. <a target=\"_blank\" href=\"%s\">Pré-visualizar Loja de Vendedor</a>"
 
 #: public/class-wcvendors-pro-store-controller.php:260
 #: public/forms/class-wcvendors-pro-store-form.php:456
@@ -3480,31 +3232,21 @@ msgstr "Loja"
 
 #: public/class-wcvendors-pro-store-controller.php:442
 #: public/class-wcvendors-pro-vendor-controller.php:516
-msgid ""
-"That store name is already taken. Your store name must be unique. <br /> "
-"Settings have not been saved."
-msgstr ""
-"Esse nome de loja já existe. O nome da sua loja deve ser exclusivo. <br /> "
-"As configurações não foram guardadas."
+msgid "That store name is already taken. Your store name must be unique. <br /> Settings have not been saved."
+msgstr "Esse nome de loja já existe. O nome da sua loja deve ser exclusivo. <br /> As configurações não foram salvas."
 
 #: public/class-wcvendors-pro-store-controller.php:447
 #: public/class-wcvendors-pro-vendor-controller.php:520
 msgid "Store Settings Saved"
-msgstr "Configurações da Loja Guardadas"
+msgstr "Configurações da Loja foram salvadas"
 
 #: public/class-wcvendors-pro-store-controller.php:508
 msgid "There was a problem saving your settings. Settings have not been saved."
-msgstr ""
-"Ocorreu um problema ao gravar as suas configurações, as quais não ficaram "
-"guardadas."
+msgstr "Ocorreu um problema ao gravar as suas configurações, as quais não ficaram salvas."
 
 #: public/class-wcvendors-pro-store-controller.php:648
-msgid ""
-"Your application has been received. You will be notified by email the "
-"results of your application"
-msgstr ""
-"A sua solicitação foi recebida. Será brevemente notificado por email do "
-"resultado do seu pedido"
+msgid "Your application has been received. You will be notified by email the results of your application"
+msgstr "A sua solicitação foi recebida. Será brevemente notificado por email do resultado do seu pedido"
 
 #: public/class-wcvendors-pro-store-controller.php:770
 #: public/class-wcvendors-pro-vendor-controller.php:834
@@ -3520,16 +3262,8 @@ msgid "No "
 msgstr "Não "
 
 #: public/class-wcvendors-pro-vendor-controller.php:397
-msgid ""
-"The Vendor Dashboard is only visible to Vendors. Due to WordPress "
-"capabilities and its limitations, Administrators can not view it. You should "
-"create a test vendor user account, with the role Vendor, and use that "
-"account to view and experience the Vendor Dashboard. "
-msgstr ""
-"O Painel de vendedor só é visível para os vendedores. Devido aos recursos do "
-"WordPress e às suas limitações, os administradores não conseguem visualizá-"
-"lo. Deve criar uma conta de vendedor de testes e usá-la para ver e "
-"experimentar o Painel de Vendedor. "
+msgid "The Vendor Dashboard is only visible to Vendors. Due to WordPress capabilities and its limitations, Administrators can not view it. You should create a test vendor user account, with the role Vendor, and use that account to view and experience the Vendor Dashboard. "
+msgstr "O Painel de vendedor só é visível para os vendedores. Devido aos recursos do WordPress e às suas limitações, os administradores não conseguem visualizá-lo. Deve criar uma conta de vendedor de testes e usá-la para ver e experimentar o Painel de Vendedor. "
 
 #: public/class-wcvendors-pro-vendor-controller.php:410
 msgid "pending"
@@ -3573,17 +3307,11 @@ msgstr "Selecione esta opção se o Cupom se aplica a todos os seus produtos."
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:220
 msgid "Allow Free Shipping"
-msgstr "Permitir Envio Grátis"
+msgstr "Permitir Entrega Grátis"
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:224
-msgid ""
-"Check this box if the coupon grants free shipping. The free shipping method "
-"must be enabled and be set to require \"a valid free shipping coupon\" (see "
-"the \"Free Shipping Requires\" setting)."
-msgstr ""
-"Selecione esta opção se o Cupom permite envio grátis. O método de envio "
-"grátis deve estar ativo e definido para exigir \"um Cupom válido de envio "
-"grátis\" (ver a configuração de \"envio grátis\")."
+msgid "Check this box if the coupon grants free shipping. The free shipping method must be enabled and be set to require \"a valid free shipping coupon\" (see the \"Free Shipping Requires\" setting)."
+msgstr "Selecione esta opção se o Cupom permite Entrega grátis. O método de Entrega grátis deve estar ativo e definido para exigir \"um Cupom válido de Entrega grátis\" (ver a configuração de \"Entrega grátis\")."
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:248
 msgid "Coupon Expiry Date"
@@ -3610,26 +3338,16 @@ msgid "Individual use only"
 msgstr "Somente uso individual"
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:334
-msgid ""
-"Check this box if the coupon cannot be used in conjunction with other "
-"coupons."
-msgstr ""
-"Selecionar esta caixa se o Cupom não puder ser usado em simultâneo com "
-"outros Cupons."
+msgid "Check this box if the coupon cannot be used in conjunction with other coupons."
+msgstr "Selecionar esta caixa se o Cupom não puder ser usado em simultâneo com outros Cupons."
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:356
 msgid "Exclude sale items"
 msgstr "Excluir itens de promoção"
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:362
-msgid ""
-"Check this box if the coupon should not apply to items on sale. Per-item "
-"coupons will only work if the item is not on sale. Per-cart coupons will "
-"only work if there are no sale items in the cart."
-msgstr ""
-"Selecionar esta opção se o Cupom não se aplicar aos itens em promoção. "
-"Cupons por item só irão funcionar, se o item não estiver em promoção. Cupons "
-"por carrinho só irão funcionar se não houver itens de venda no carrinho."
+msgid "Check this box if the coupon should not apply to items on sale. Per-item coupons will only work if the item is not on sale. Per-cart coupons will only work if there are no sale items in the cart."
+msgstr "Selecionar esta opção se o Cupom não se aplicar aos itens em promoção. Cupons por item só irão funcionar, se o item não estiver em promoção. Cupons por carrinho só irão funcionar se não houver itens de venda no carrinho."
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:405
 #: public/forms/class-wcvendors-pro-coupon-form.php:453
@@ -3649,12 +3367,8 @@ msgid "No restrictions"
 msgstr "Sem restrições"
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:485
-msgid ""
-"List of allowed emails to check against the customer&#039;s billing email "
-"when an order is placed. Separate email addresses with commas."
-msgstr ""
-"Lista de e-mails autorizados para verificar contra e-mail cliente&#039;s "
-"quando uma ordem é enviada. Separe os endereços de email com vírgulas."
+msgid "List of allowed emails to check against the customer&#039;s billing email when an order is placed. Separate email addresses with commas."
+msgstr "Lista de e-mails autorizados para verificar contra e-mail cliente&#039;s quando uma ordem é enviada. Separe os endereços de email com vírgulas."
 
 #: public/forms/class-wcvendors-pro-coupon-form.php:508
 #: public/forms/class-wcvendors-pro-coupon-form.php:533
@@ -3805,11 +3519,8 @@ msgid "Never"
 msgstr "Nunca"
 
 #: public/forms/class-wcvendors-pro-product-form.php:832
-msgid ""
-"Enter the number of days before a download link expires, or leave blank."
-msgstr ""
-"Digite o número de dias antes de um link para download expirar, ou deixe em "
-"branco."
+msgid "Enter the number of days before a download link expires, or leave blank."
+msgstr "Digite o número de dias antes de um link para download expirar, ou deixe em branco."
 
 #: public/forms/class-wcvendors-pro-product-form.php:863
 msgid "Download Type"
@@ -3817,12 +3528,8 @@ msgstr "Tipo de download"
 
 #: public/forms/class-wcvendors-pro-product-form.php:865
 #, php-format
-msgid ""
-"Choose a download type - this controls the <a href=\"%s\">http://schema.org</"
-"a>."
-msgstr ""
-"Escolha um tipo de download - isto controla o <a href=\"%s\">http://schema."
-"org</a>."
+msgid "Choose a download type - this controls the <a href=\"%s\">http://schema.org</a>."
+msgstr "Escolha um tipo de download - isto controla o <a href=\"%s\">http://schema.org</a>."
 
 #: public/forms/class-wcvendors-pro-product-form.php:869
 msgid "Standard Product"
@@ -3841,12 +3548,8 @@ msgid "Stock Keeping Unit"
 msgstr "Unidade de Manutenção de estoque"
 
 #: public/forms/class-wcvendors-pro-product-form.php:903
-msgid ""
-"SKU refers to a Stock-keeping unit, a unique identifier for each distinct "
-"product and service that can be purchased."
-msgstr ""
-"SKU refere-se a uma Unidade de Manutenção de Stock, um identificador único "
-"para cada produto e serviço distintos, que podem ser comprados."
+msgid "SKU refers to a Stock-keeping unit, a unique identifier for each distinct product and service that can be purchased."
+msgstr "SKU refere-se a uma Unidade de Manutenção de Stock, um identificador único para cada produto e serviço distintos, que podem ser comprados."
 
 #: public/forms/class-wcvendors-pro-product-form.php:936
 msgid "Private Listing, hide this product from the catalog."
@@ -3875,7 +3578,7 @@ msgstr "Este texto será mostrado no botão que liga ao produto externo."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1012
 msgid "Shipping only"
-msgstr "Somente envio"
+msgstr "Somente Entrega"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1013
 msgctxt "Tax status"
@@ -3907,12 +3610,8 @@ msgid "Allow Backorders?"
 msgstr "Permitir Pedidos em atraso?"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1142
-msgid ""
-"If managing stock, this controls whether or not backorders are allowed. If "
-"enabled, stock quantity can go below 0."
-msgstr ""
-"Em gestão de stock, controla se as Pedidos em atraso são permitidas ou não. "
-"Se ativado, a quantidade de stock pode ser inferior a 0."
+msgid "If managing stock, this controls whether or not backorders are allowed. If enabled, stock quantity can go below 0."
+msgstr "Em gestão de stock, controla se as Pedidos em atraso são permitidas ou não. Se ativado, a quantidade de stock pode ser inferior a 0."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1144
 msgid "Do not allow"
@@ -3927,12 +3626,8 @@ msgid "Allow"
 msgstr "Permitir"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1171
-msgid ""
-"Controls whether or not the product is listed as \"in stock\" or \"out of "
-"stock\" on the frontend."
-msgstr ""
-"Controla se o produto é listado no frontend \"em estoque” ou \"fora de "
-"estoque”."
+msgid "Controls whether or not the product is listed as \"in stock\" or \"out of stock\" on the frontend."
+msgstr "Controla se o produto é listado no frontend \"em estoque” ou \"fora de estoque”."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1173
 msgid "In stock"
@@ -3947,8 +3642,7 @@ msgid "Sold Individually"
 msgstr "Vendido Individualmente"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1198
-msgid ""
-"Enable this to only allow one of this item to be bought in a single order"
+msgid "Enable this to only allow one of this item to be bought in a single order"
 msgstr "Ative para permitir que apenas um item seja comprado numa única Pedido"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1224
@@ -3973,29 +3667,19 @@ msgstr "Dimensões na forma decimal"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1327
 msgid "No shipping class"
-msgstr "Sem classe de envio"
+msgstr "Sem classe de Entrega"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1332
-msgid ""
-"Shipping classes are used by certain shipping methods to group similar "
-"products."
-msgstr ""
-"Classes de envio são utilizadas por alguns métodos de envio para agrupar "
-"produtos similares."
+msgid "Shipping classes are used by certain shipping methods to group similar products."
+msgstr "Classes de Entrega são utilizadas por alguns métodos de Entrega para agrupar produtos similares."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1365
 msgid "Up-Sells"
 msgstr "Produtos recomendados"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1371
-msgid ""
-"Up-sells are products which you recommend instead of the currently viewed "
-"product, for example, products that are more profitable or better quality or "
-"more expensive."
-msgstr ""
-"Produtos recomendados são produtos que recomenda, em vez do produto em "
-"causa, por exemplo, produtos que são mais rentáveis, com melhor qualidade ou "
-"mais caros."
+msgid "Up-sells are products which you recommend instead of the currently viewed product, for example, products that are more profitable or better quality or more expensive."
+msgstr "Produtos recomendados são produtos que recomenda, em vez do produto em causa, por exemplo, produtos que são mais rentáveis, com melhor qualidade ou mais caros."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1373
 #: public/forms/class-wcvendors-pro-product-form.php:1415
@@ -4007,12 +3691,8 @@ msgid "Cross-Sells"
 msgstr "Produtos recomendados no carrinho de compra"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1413
-msgid ""
-"Cross-sells are products which you promote in the cart, based on the current "
-"product."
-msgstr ""
-"Produtos recomendados são produtos que promove no carrinho, baseado no "
-"produto atual."
+msgid "Cross-sells are products which you promote in the cart, based on the current product."
+msgstr "Produtos recomendados são produtos que promove no carrinho, baseado no produto atual."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1437
 msgid "Choose a grouped product&hellip;"
@@ -4024,8 +3704,7 @@ msgstr "Agrupamento"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1482
 msgid "Set this option to make this product part of a grouped product."
-msgstr ""
-"Defina esta opção para que este produto faça parte de um produto agrupado."
+msgstr "Defina esta opção para que este produto faça parte de um produto agrupado."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1535
 msgid "Linked Products"
@@ -4033,7 +3712,7 @@ msgstr "Produtos Relacionados/Recomendados"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1613
 msgid "National shipping fee"
-msgstr "Taxa de envio nacional"
+msgstr "Taxa de Entrega nacional"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1614
 #: public/forms/class-wcvendors-pro-product-form.php:1715
@@ -4046,24 +3725,20 @@ msgstr "O custo para enviar este produto dentro do seu país."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1643
 #: public/forms/class-wcvendors-pro-store-form.php:899
-msgid ""
-"Charge once per product for national shipping, even if more than one is "
-"purchased."
-msgstr ""
-"Cobrar apenas uma vez para o envio nacional, mesmo se mais de um produto for "
-"comprado."
+msgid "Charge once per product for national shipping, even if more than one is purchased."
+msgstr "Cobrar apenas uma vez para o Entrega nacional, mesmo se mais de um produto for comprado."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1667
 msgid "Disable national shipping for this product."
-msgstr "Desativar envio nacional para este produto."
+msgstr "Desativar Entrega nacional para este produto."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1690
 msgid "Free national shipping"
-msgstr "Envio nacional grátis"
+msgstr "Entrega nacional grátis"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1714
 msgid "International shipping fee"
-msgstr "Taxa de Envio Internacional"
+msgstr "Taxa de Entrega Internacional"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1717
 msgid "The cost to ship this product outside your country."
@@ -4071,20 +3746,16 @@ msgstr "O custo para enviar este produto para outro país."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1741
 #: public/forms/class-wcvendors-pro-store-form.php:996
-msgid ""
-"Charge once per product for international shipping, even if more than one is "
-"purchased."
-msgstr ""
-"Cobrar apenas uma vez para o envio internacional, mesmo se mais de um "
-"produto for comprado."
+msgid "Charge once per product for international shipping, even if more than one is purchased."
+msgstr "Cobrar apenas uma vez para o Entrega internacional, mesmo se mais de um produto for comprado."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1765
 msgid "Disable international shipping for this product."
-msgstr "Desativar o envio internacional para este produto."
+msgstr "Desativar o Entrega internacional para este produto."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1789
 msgid "Free international shipping"
-msgstr "Envio internacional grátis"
+msgstr "Entrega internacional grátis"
 
 #: public/forms/class-wcvendors-pro-product-form.php:1815
 #: public/forms/class-wcvendors-pro-store-form.php:874
@@ -4099,17 +3770,12 @@ msgstr "Taxa de manuseamento do produto. Montante (5.00) ou Percentagem (5%)."
 
 #: public/forms/class-wcvendors-pro-product-form.php:1833
 #: public/forms/class-wcvendors-pro-store-form.php:1258
-msgid ""
-"Countries must use the international standard for two letter country codes. "
-"eg. AU for Australia."
-msgstr ""
-"Os países devem ter o padrão internacional com códigos de duas letras do "
-"respetivo país. por exemplo. AU para Austrália."
+msgid "Countries must use the international standard for two letter country codes. eg. AU for Australia."
+msgstr "    "
 
 #: public/forms/class-wcvendors-pro-store-form.php:354
 msgid "Once you become a vendor you can upload your banner here."
-msgstr ""
-"Depois de se tornar um vendedor pode carregar para aqui o seu banner da loja."
+msgstr "Depois de se tornar um vendedor pode carregar para aqui o seu banner da loja."
 
 #: public/forms/class-wcvendors-pro-store-form.php:361
 #: public/forms/class-wcvendors-pro-store-form.php:364
@@ -4122,8 +3788,7 @@ msgstr "Remover Banner de Loja"
 
 #: public/forms/class-wcvendors-pro-store-form.php:395
 msgid "Once you become a vendor you can upload your store icon here."
-msgstr ""
-"Depois de se tornar um vendedor pode carregar para aqui o seu ícone da loja."
+msgstr "Depois de se tornar um vendedor pode carregar para aqui o seu ícone da loja."
 
 #: public/forms/class-wcvendors-pro-store-form.php:402
 #: public/forms/class-wcvendors-pro-store-form.php:405
@@ -4144,9 +3809,7 @@ msgstr "oseuenderecopaypal@aqui.com"
 
 #: public/forms/class-wcvendors-pro-store-form.php:438
 msgid "Your PayPal address is used to send you your commission."
-msgstr ""
-"O seu endereço de email no PayPal é utilizado para o pagamento da sua "
-"comissão."
+msgstr "O seu endereço de email no PayPal é utilizado para o pagamento da sua comissão."
 
 #: public/forms/class-wcvendors-pro-store-form.php:462
 msgid "Store Name <small>Required</small>"
@@ -4187,12 +3850,8 @@ msgid "https://yourcompany-blogurl.com/here"
 msgstr "https://nomedasuaempresa-blogurl.com/aqui"
 
 #: public/forms/class-wcvendors-pro-store-form.php:640
-msgid ""
-"Your <a href=\"https://yourcompany-blogurl.com/here\">Company / Blog </a> "
-"url."
-msgstr ""
-"URL da sua <a href=\"https://asuaempresa-blogurl.com/aqui\">Empresa / Blog </"
-"a>."
+msgid "Your <a href=\"https://yourcompany-blogurl.com/here\">Company / Blog </a> url."
+msgstr "URL da sua <a href=\"https://asuaempresa-blogurl.com/aqui\">Empresa / Blog </a>."
 
 #: public/forms/class-wcvendors-pro-store-form.php:665
 msgid "Twitter Username"
@@ -4203,10 +3862,8 @@ msgid "YourTwitterUserHere"
 msgstr "O seu nome de utilizador Twitter"
 
 #: public/forms/class-wcvendors-pro-store-form.php:668
-msgid ""
-"Your <a href=\"https://twitter.com/\">Twitter</a> username without the url."
-msgstr ""
-"<a href=\"https://twitter.com/\">Twitter</a> nome de utilizador sem a url."
+msgid "Your <a href=\"https://twitter.com/\">Twitter</a> username without the url."
+msgstr "<a href=\"https://twitter.com/\">Twitter</a> nome de utilizador sem a url."
 
 #: public/forms/class-wcvendors-pro-store-form.php:694
 msgid "Instagram Username"
@@ -4217,12 +3874,8 @@ msgid "YourInstagramUsername"
 msgstr "O seu nome de utilizador Instagram"
 
 #: public/forms/class-wcvendors-pro-store-form.php:697
-msgid ""
-"Your <a href=\"https://instagram.com/\">Instagram</a> username without the "
-"url."
-msgstr ""
-"<a href=\"https://instagram.com/\">Instagram</a> nome de utilizador sem a "
-"url."
+msgid "Your <a href=\"https://instagram.com/\">Instagram</a> username without the url."
+msgstr "<a href=\"https://instagram.com/\">Instagram</a> nome de utilizador sem a url."
 
 #: public/forms/class-wcvendors-pro-store-form.php:723
 msgid "Facebook URL"
@@ -4286,71 +3939,55 @@ msgstr "<a href=https://www.pinterest.com/\">Pinterest</a> url."
 
 #: public/forms/class-wcvendors-pro-store-form.php:873
 msgid "Default National Shipping Fee"
-msgstr "Taxa Padrão de Envio Nacional"
+msgstr "Taxa Padrão de Entrega Nacional"
 
 #: public/forms/class-wcvendors-pro-store-form.php:876
-msgid ""
-"The default shipping fee within your country, this can be overridden on a "
-"per product basis."
-msgstr ""
-"Taxa padrão de envio nacional, a qual pode ser substituída numa base por "
-"produto."
+msgid "The default shipping fee within your country, this can be overridden on a per product basis."
+msgstr "Taxa padrão de Entrega nacional, a qual pode ser substituída numa base por produto."
 
 #: public/forms/class-wcvendors-pro-store-form.php:922
 msgid "Free national shipping."
-msgstr "Envio nacional grátis."
+msgstr "Entrega nacional grátis."
 
 #: public/forms/class-wcvendors-pro-store-form.php:945
 msgid "Disable national shipping."
-msgstr "Desativar envio nacional."
+msgstr "Desativar Entrega nacional."
 
 #: public/forms/class-wcvendors-pro-store-form.php:967
 msgid "Default International Shipping Fee"
-msgstr "Taxa Padrão Envio Internacional"
+msgstr "Taxa Padrão Entrega Internacional"
 
 #: public/forms/class-wcvendors-pro-store-form.php:970
-msgid ""
-"The default shipping fee outside your country, this can be overridden on a "
-"per product basis. "
-msgstr ""
-"Taxa padrão de envio internacional, a qual pode ser substituída numa base "
-"por produto."
+msgid "The default shipping fee outside your country, this can be overridden on a per product basis. "
+msgstr "Taxa padrão de Entrega internacional, a qual pode ser substituída numa base por produto."
 
 #: public/forms/class-wcvendors-pro-store-form.php:1021
 msgid "Free international shipping."
-msgstr "Envio internacional grátis."
+msgstr "Entrega internacional grátis."
 
 #: public/forms/class-wcvendors-pro-store-form.php:1046
 msgid "Disable international shipping."
-msgstr "Desativar envio internacional."
+msgstr "Desativar Entrega internacional."
 
 #: public/forms/class-wcvendors-pro-store-form.php:1115
 msgid "Leave empty to disable"
 msgstr "Deixe em branco para desativar"
 
 #: public/forms/class-wcvendors-pro-store-form.php:1117
-msgid ""
-"The product handling fee, this can be overridden on a per product basis. "
-"Amount (5.00) or Percentage (5%)."
-msgstr ""
-"A taxa de manuseamento de produto, qual pode ser substituída numa base por "
-"produto. Montante (5,00) ou percentagem (5%)."
+msgid "The product handling fee, this can be overridden on a per product basis. Amount (5.00) or Percentage (5%)."
+msgstr "A taxa de manuseamento de produto, qual pode ser substituída numa base por produto. Montante (5,00) ou percentagem (5%)."
 
 #: public/forms/class-wcvendors-pro-store-form.php:1139
 msgid "Order handling fee"
 msgstr "Taxa de manuseamento de Pedido"
 
 #: public/forms/class-wcvendors-pro-store-form.php:1142
-msgid ""
-"The order handling fee for all products in the order. Amount (5.00) or "
-"Percentage (5%)"
-msgstr ""
-"A taxa de manuseamento para todos os produtos da Pedido. Montante (5.00) ou "
-"Percentagem (5%)"
+msgid "The order handling fee for all products in the order. Amount (5.00) or Percentage (5%)"
+msgstr "A taxa de manuseamento para todos os produtos da Pedido. Montante (5.00) ou Percentagem (5%)"
 
 #: public/forms/class-wcvendors-pro-store-form.php:1167
 msgid "Shipping Policy"
-msgstr "Política de envio"
+msgstr "Política de Entrega"
 
 #: public/forms/class-wcvendors-pro-store-form.php:1191
 msgid "Return Policy"
@@ -4358,7 +3995,7 @@ msgstr "Política de devolução"
 
 #: public/forms/class-wcvendors-pro-store-form.php:1214
 msgid "Shipping from"
-msgstr "Envio de"
+msgstr "Entrega de"
 
 #: public/forms/class-wcvendors-pro-store-form.php:1216
 msgid "Where products will be shipped from."
@@ -4370,7 +4007,7 @@ msgstr "Outro"
 
 #: public/forms/class-wcvendors-pro-tracking-number-form.php:116
 msgid "Date Shipped"
-msgstr "Data de envio"
+msgstr "Data de Entrega"
 
 #: public/forms/class-wcvendors-pro-tracking-number-form.php:141
 msgid "Shipping Provider"
@@ -4389,12 +4026,8 @@ msgid "File URL"
 msgstr "Ficheiro URL"
 
 #: public/forms/partials/wcvendors-pro-downloadable-files.php:23
-msgid ""
-"This is the URL or absolute path to the file which customers will get access "
-"to."
-msgstr ""
-"Este é o URL ou o caminho absoluto para o ficheiro, ao qual os clientes "
-"terão acesso."
+msgid "This is the URL or absolute path to the file which customers will get access to."
+msgstr "Este é o URL ou o caminho absoluto para o ficheiro, ao qual os clientes terão acesso."
 
 #: public/forms/partials/wcvendors-pro-downloadable-files.php:34
 #: public/forms/partials/wcvendors-pro-downloadable-files.php:51
@@ -4416,9 +4049,186 @@ msgstr "Escolher ficheiro"
 msgid "Insert file URL"
 msgstr "Inserir URL do ficheiro"
 
+#: public/forms/partials/wcvendors-pro-product-variation.php:341
+#: public/forms/partials/wcvendors-pro-downloadable-files.php:63
 #: public/forms/partials/wcvendors-pro-downloadable-files.php:57
 msgid "Add File"
-msgstr "Adicionar Ficheiro"
+msgstr "Adicionar Arquivo"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:29
+msgid "Add variation"
+msgstr "Adicionar variação"
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:95
+msgid "Ativado"
+msgstr ""
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:122
+msgid "Regular Price:"
+msgstr "Preço: "
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:124
+msgid "Variation price (required)"
+msgstr "Preço de variação (obrigatório)"
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:130
+msgid "Sale Price:"
+msgstr "Preço de venda:"
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:142
+msgid "Sale start date:"
+msgstr "Data de início da venda:"
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:144
+msgctxt "placeholder"
+msgid "From&hellip;"
+msgstr "De&hellip;"
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:151
+msgid "Sale end date:"
+msgstr "Data de término da venda:"
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:153
+msgctxt "placeholder"
+msgid "To&hellip;"
+msgstr "Para&hellip;"
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:155
+msgid "Cancel schedule"
+msgstr "Cancelar programação"
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:164
+msgid "Stock Qty:"
+msgstr "Quantidade de estoque"
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:222
+msgid "Dimensions (L&times;W&times;H)"
+msgstr "Dimensões (L&times;W&times;H)"
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:250
+msgid "Shipping class:"
+msgstr "Classe de venda:"
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:256
+#: public/forms/partials/wcvendors-pro-product-variation.php:276
+msgid "Same as parent"
+msgstr "Igual ao pai"
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:273
+msgid "Tax class:"
+msgstr "Classe da taxa:"
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:290
+msgid "Variation Description:"
+msgstr "Descrição de variação:"
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:301
+msgid "Downloadable Files"
+msgstr "Arquivos para download: "
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:354
+msgid "Download Limit:"
+msgstr "Limite de download:"
+
+#: public/forms/partials/wcvendors-pro-product-variation.php:362
+msgid "Download Expiry:"
+msgstr "Download expirado:"
+
+#: public/forms/partials/wcvendors-pro-product-variations-default-attribute.php:19
+#: public/forms/partials/wcvendors-pro-product-variations.php:82
+msgid "Default Form Values"
+msgstr "Valores padrão"
+
+#: public/forms/partials/wcvendors-pro-product-variations-default-attribute.php:19
+#: public/forms/partials/wcvendors-pro-product-variations-default-attribute.php:40
+#: public/forms/partials/wcvendors-pro-product-variations.php:126
+msgid "These are the attributes that will be pre-selected on the frontend."
+msgstr "Estes são os atributos que serão pré-selecionados no produto em sua loja."
+
+#: public/forms/partials/wcvendors-pro-product-variations-default-attribute.php:28
+#: public/forms/partials/wcvendors-pro-product-variations.php:101
+msgid "No default"
+msgstr "Sem predefinição"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:22
+msgid "Before you can add a variation you need to add some variation attributes on the <strong>Attributes</strong> tab."
+msgstr "Antes de adicionar uma variação, você precisa adicionar alguns atributos de variação na guia <strong> Atributos </ strong>."
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:30
+msgid "Create variations from all attributes"
+msgstr "Criar variações para todos os atributos"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:31
+msgid "Delete all variations"
+msgstr "Deletar todas variações"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:33
+msgid "Toggle &quot;Enabled&quot;"
+msgstr "Alternar &quot;Ativar&quot;"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:34
+msgid "Toggle &quot;Downloadable&quot;"
+msgstr "Alternar &quot;Download&quot;"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:35
+msgid "Toggle &quot;Virtual&quot;"
+msgstr "Alternar &quot;Virtual&quot;"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:37
+msgid "Preços"
+msgstr ""
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:38
+msgid "Set regular prices"
+msgstr "Definir preços"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:39
+msgid "Increase regular prices (fixed amount or percentage)"
+msgstr "Aumentar os preços regulares (valor fixo ou percentual)"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:40
+msgid "Decrease regular prices (fixed amount or percentage)"
+msgstr "Diminuir os preços regulares (valor fixo ou percentual)"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:41
+msgid "Set sale prices"
+msgstr "Definir preços de venda"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:42
+msgid "Increase sale prices (fixed amount or percentage)"
+msgstr "Aumentar os preços de venda (valor fixo ou percentual)"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:43
+msgid "Decrease sale prices (fixed amount or percentage)"
+msgstr "Diminuir os preços de venda (valor fixo ou percentual)"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:44
+msgid "Definir datas de venda programadas"
+msgstr ""
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:47
+msgid "Toggle &quot;Manage stock&quot;"
+msgstr "Alternar &quot;Gerenciar estoque&quot;"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:48
+msgid "Stock"
+msgstr "Estoque"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:56
+msgid "Downloadable products"
+msgstr "Produtos para download"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:62
+msgid "Go"
+msgstr "Vamos lá"
+
+#: public/forms/partials/wcvendors-pro-product-variations.php:67
+#: public/forms/partials/wcvendors-pro-product-variations.php:153
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] ""
+msgstr[1] ""
 
 #: public/forms/partials/wcvendors-pro-shipping-table.php:22
 #: public/forms/partials/wcvendors-pro-shipping-table.php:34
@@ -4429,7 +4239,11 @@ msgstr "Estado"
 
 #: public/forms/partials/wcvendors-pro-shipping-table.php:23
 msgid "Shipping Fee"
-msgstr "Tava de Envio"
+msgstr "Taxa de Entrega"
+
+#: public/forms/partials/wcvendors-pro-shipping-table.php:24
+msgid "District"
+msgstr "Bairro"
 
 #: public/forms/partials/wcvendors-pro-shipping-table.php:35
 #: public/forms/partials/wcvendors-pro-shipping-table.php:55
@@ -4476,12 +4290,12 @@ msgstr "CEP"
 
 #: public/forms/wcvendors-pro-shipping-address.php:23
 msgid "Shipping Country"
-msgstr "País de envio"
+msgstr "País de Entrega"
 
 #: public/forms/wcvendors-pro-shipping-address.php:34
 #: public/forms/wcvendors-pro-shipping-address.php:35
 msgid "Shipping Address"
-msgstr "Morada de Entrega"
+msgstr "Endereço do Maker"
 
 #: public/partials/order/wcvendors-pro-order-table-actions.php:70
 msgid "Export Orders"
@@ -4501,19 +4315,19 @@ msgstr "Detalhes de Cobrança"
 #: templates/dashboard/order/order_details.php:56
 #: templates/dashboard/order/order_details.php:58
 msgid "Address"
-msgstr "Morada"
+msgstr "Endereço"
 
 #: templates/dashboard/order/order_details.php:34
 msgid "No billing address set."
-msgstr "Não existe morada de cobrança definida."
+msgstr "Não existe endereço de cobrança definida."
 
 #: templates/dashboard/order/order_details.php:50
 msgid "Shipping Details"
-msgstr "Detalhes de Envio"
+msgstr "Detalhes de Entrega"
 
 #: templates/dashboard/order/order_details.php:58
 msgid "No shipping address set."
-msgstr "Não existe morada de entrega definida."
+msgstr "Não existe endereço de entrega definida."
 
 #: templates/dashboard/order/order_details.php:87
 msgid "Order Items"
@@ -4578,11 +4392,11 @@ msgstr "Atualizar detalhes de acompanhamento"
 
 #: templates/dashboard/order/tracking_number.php:19
 msgid "Add Tracking Details"
-msgstr "Adicionar Detalhes de Envio"
+msgstr "Adicionar Detalhes de Entrega"
 
 #: templates/dashboard/order/tracking_number.php:29
 msgid "Shipment Tracking"
-msgstr "Acompanhamento de Envio"
+msgstr "Acompanhamento de Entrega"
 
 #: templates/dashboard/permission.php:14
 msgid "No Permission."
@@ -4623,24 +4437,16 @@ msgid "Orders Totals"
 msgstr "Pedidos Totais"
 
 #: templates/dashboard/reports/reports.php:21
-msgid ""
-"No orders for this period. Adjust your dates above and click Update, or list "
-"new products for customers to buy."
-msgstr ""
-"Sem Pedidos para este período. Ajuste as datas acima e clique em Atualizar, "
-"ou disponibilize novos produtos para os clientes comprarem."
+msgid "No orders for this period. Adjust your dates above and click Update, or list new products for customers to buy."
+msgstr "Sem Pedidos para este período. Ajuste as datas acima e clique em Atualizar, ou disponibilize novos produtos para os clientes comprarem."
 
 #: templates/dashboard/reports/reports.php:34
 msgid "Product Totals"
 msgstr "Totais de Produto"
 
 #: templates/dashboard/reports/reports.php:39
-msgid ""
-"No sales for this period. Adjust your dates above and click Update, or list "
-"new products for customers to buy."
-msgstr ""
-"Sem vendas para este período. Ajuste as datas acima e clique em Atualizar, "
-"ou disponibilize novos produtos para os clientes comprarem."
+msgid "No sales for this period. Adjust your dates above and click Update, or list new products for customers to buy."
+msgstr "Sem vendas para este período. Ajuste as datas acima e clique em Atualizar, ou disponibilize novos produtos para os clientes comprarem."
 
 #: templates/dashboard/reports/reports.php:52
 msgid "Recent Orders"
@@ -4669,26 +4475,16 @@ msgstr "Avalie a sua experiência"
 
 #: templates/front/ratings/feedback-form.php:19
 #, php-format
-msgid ""
-"Order #<mark class=\"order-number\">%s</mark> was placed on <mark class="
-"\"order-date\">%s</mark> and is currently <mark class=\"order-status\">%s</"
-"mark>."
-msgstr ""
-"Pedido #<mark class=\"order-number\">%s</mark> foi feita em <mark class="
-"\"order-date\">%s</mark> e atualmente está <mark class=\"order-status\">%s</"
-"mark>."
+msgid "Order #<mark class=\"order-number\">%s</mark> was placed on <mark class=\"order-date\">%s</mark> and is currently <mark class=\"order-status\">%s</mark>."
+msgstr "Pedido #<mark class=\"order-number\">%s</mark> foi feita em <mark class=\"order-date\">%s</mark> e atualmente está <mark class=\"order-status\">%s</mark>."
 
 #: templates/front/ratings/feedback-form.php:42
 msgid "from"
 msgstr "de"
 
 #: templates/front/ratings/feedback-form.php:58
-msgid ""
-"Comments: (e.g. delivery experience, item as described, quality of customer "
-"service)"
-msgstr ""
-"Comentários: (por exemplo, a experiência com a entrega, artigo corresponde "
-"ao descrito, a qualidade de serviço ao cliente)"
+msgid "Comments: (e.g. delivery experience, item as described, quality of customer service)"
+msgstr "Comentários: (por exemplo, a experiência com a entrega, artigo corresponde ao descrito, a qualidade de serviço ao cliente)"
 
 #: templates/front/ratings/feedback-form.php:73
 msgid "Submit Feedback"
@@ -4706,7 +4502,7 @@ msgstr " por "
 #: templates/front/shipping/shipping-panel.php:50
 #: templates/front/shipping/shipping-panel.php:95
 msgid "No shipping rates are available for this product."
-msgstr "Não existem taxas de envio disponíveis para este produto."
+msgstr "Não existem taxas de Entrega disponíveis para este produto."
 
 #: templates/front/shipping/shipping-panel.php:70
 #: templates/front/shipping/shipping-panel.php:71
