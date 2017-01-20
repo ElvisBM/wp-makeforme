@@ -64,7 +64,7 @@ small.wcvendors_sold_by_in_loop {font-size: 12px;margin-bottom: 10px;display: in
 .wcv_vendorslist li{position: relative; float: left; width: 23%; margin: 0 1% 28px 1% !important; list-style: none !important; text-align: center;box-shadow: rgba(0,0,0,0.15) 0px 1px 2px;background: white;}
 .wcv_vendorslist .cover_logo { display: block; height: 250px; overflow: hidden; background: #eee; background-position: center top; background-repeat: no-repeat;background-size: cover; }
 
-.wcv_vendorslist span.cover_logo{background-color: #fbf8da;background-size: 90%!important;background-position: center; z-index: 100;position: relative;}
+.wcv_vendorslist span.cover_logo{background-color: #fbf8da;background-size:cover!important;background-position: center; z-index: 100;position: relative;}
 .wcv_vendorslist .item-avatar {    
     width: 112px;
     height: 112px;
@@ -148,7 +148,7 @@ span.product_count_in_member { position: absolute; bottom: 0; right: 0; backgrou
 #pv_seller_info_container, #pv_shop_description_container{ margin-bottom: 15px}
 .btn[name="vendor_application_submit"] { padding: 5px 10px;  font: bold 14px Arial; border: 1px solid #444; cursor: pointer;}
 .wcvendor_store_wrap_bg{margin: 0 0 30px 0}
-#wcvendor_image_bg{background-color: #f4f4f4;background-position: center top;background-size: contain!important;background-repeat: no-repeat;border: 0;display: block;margin: 0;padding: 30px 20px 20px 20px;position: relative;width: 100%;z-index: 1;box-sizing: border-box;-webkit-box-sizing: border-box; min-height: 270px}
+#wcvendor_image_bg{background-color: #f4f4f4;background-position: center top;background-size: cover!important;background-repeat: no-repeat;border: 0;display: block;margin: 0;padding: 30px 20px 20px 20px;position: relative;width: 100%;z-index: 1;box-sizing: border-box;-webkit-box-sizing: border-box; min-height: 270px}
 #wcvendor_image_bg:before{content: "";width: 100%;height: 100%;position: absolute;background: rgba(251, 248, 218, 0.33);top: 0;left: -1px;}
 #wcvendor_profile_wrap .content{margin: 0 auto;display: table; padding: 0;background: none transparent; box-shadow: none;}
 .wcvcontent.content{padding: 0; background-color: transparent;}
