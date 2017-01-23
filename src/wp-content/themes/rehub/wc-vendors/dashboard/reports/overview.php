@@ -22,10 +22,23 @@
 	$available 		= substr($available, 0, -2).".".substr($available, -2, 2);
 	$transferred 	= substr($transferred, 0, -2).".".substr($transferred, -2, 2);
 
-	//Format For Brazil
-	$waitpayment	= number_format($waitpayment,2,",",".");
-	$available 		= number_format($available,2,",",".");
-	$transferred 	= number_format($transferred,2,",",".");
+	if( is_numeric ( $waitpayment ) ){
+  		$waitpayment = number_format($waitpayment,2,",",".");
+  	}else{
+  		$waitpayment = "00,00";
+  	}
+
+  	if( is_numeric ( $available ) ){
+  		$available = number_format($available,2,",",".");
+  	}else{
+  		$available = "00,00";
+  	}
+
+  	if( is_numeric ( $transferred ) ){
+  		$transferred = number_format($transferred,2,",",".");
+  	}else{
+  		$transferred = "00,00";
+  	}
 ?>
 
 <div class="wcv_dashboard_datepicker wcv-cols-group"> 
