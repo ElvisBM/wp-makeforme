@@ -429,7 +429,7 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
     font-weight: 500;
 }
 
-.wcv-product-type{display: none;}
+
 #general .external_url{display: block!important}
 #general .prices{display: block!important}
 #general .show_if_variable{display: block!important}
@@ -453,6 +453,8 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
     margin: 10px 5px;
     display: inline-block;
 }
+
+#_wcv_store_address2{display: none;}
 
 #attributes .wcv-horizontal-gutters{min-height: 70px;border:0px!important;}
 #attributes select{ height: 40px;width: 40%; min-width: 320px; }
