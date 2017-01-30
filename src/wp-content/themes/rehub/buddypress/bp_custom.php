@@ -61,10 +61,10 @@ if( ! function_exists( 'rh_content_setup_nav_profile' ) ) :
 			$position_posttab = 40;
 			$position_posts = 20;
 			$position_product = 10;
-			$post_text = sprintf( __( 'My products <span class="%s">%s</span>', 'rehub_framework' ), esc_attr( $class ), $total  );
+			$post_text = sprintf( __( 'Meus produtos <span class="%s">%s</span>', 'rehub_framework' ), esc_attr( $class ), $total  );
 			$default_tab = 'deals';	
-			$userpostslabel = (rehub_option('rehub_userposts_text') !='') ? rehub_option('rehub_userposts_text') : __( 'Reviews', 'rehub_framework' );
-			$userdealslabel = (rehub_option('rehub_userdeals_text') !='') ? rehub_option('rehub_userposts_text') : __( 'Products', 'rehub_framework' );				
+			$userpostslabel = (rehub_option('rehub_userposts_text') !='') ? rehub_option('rehub_userposts_text') : __( 'Visualizações', 'rehub_framework' );
+			$userdealslabel = (rehub_option('rehub_userdeals_text') !='') ? rehub_option('rehub_userposts_text') : __( 'Produtos', 'rehub_framework' );				
 		}	
 		else{
 			$userpostslabel = (rehub_option('rehub_userposts_text') !='') ? rehub_option('rehub_userposts_text') : __( 'Deals', 'rehub_framework' );
@@ -269,7 +269,7 @@ if (rehub_option('bp_deactivateemail_confirm') == 1){
 if (!function_exists('rh_show_vendor_store_in_bp')) {
 function rh_show_vendor_store_in_bp() { 
 	$vendor_id = bp_displayed_user_id();
-	$label = __('Owner of shop:', 'rehub_framework');
+	$label = __('Proprietário da Loja:', 'rehub_framework');
 	rh_show_vendor_ministore($vendor_id, $label);
 }}
 if (defined('wcv_plugin_dir')) {
@@ -290,8 +290,8 @@ function rh_customize_product_tracking_args() {
     bp_activity_set_post_type_tracking_args( 'product', array(
         
         'action_id'                => 'new_product',
-        'bp_activity_admin_filter' => __( 'Published a new product', 'rehub_framework' ),
-        'bp_activity_front_filter' => __( 'Products', 'rehub_framework' ),
+        'bp_activity_admin_filter' => __( 'Publicar novo produto', 'rehub_framework' ),
+        'bp_activity_front_filter' => __( 'Produtos', 'rehub_framework' ),
         'contexts'                 => array( 'activity', 'member' ),
         'activity_comment'         => true,
         'bp_activity_new_post'     => __( '%1$s posted a new <a href="%2$s">product</a>', 'rehub_framework' ),
