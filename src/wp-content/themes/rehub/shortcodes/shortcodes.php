@@ -3001,15 +3001,15 @@ $output .= '</ul></div>';
 	if(get_option('users_can_register')) :
 		if (empty ($loginurl)):
 			if ($wrap =='a'):
-				$output .= '<a class="act-rehub-login-popup menu-item-one-line'.$as_button.$class_show.'" data-type="login" href="#"><i class="fa fa-sign-in"></i><span>'.__("Logar / Cadastrar", "rehub_framework").'</span></a>';
+				$output .= '<a class="act-rehub-login-popup menu-item-one-line'.$as_button.$class_show.'" data-type="login" href="#"><i class="fa fa-sign-in"></i> <span>'.__("Entrar | Cadastrar", "rehub_framework").'</span> <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>';
 			else:
-				$output .= '<span class="act-rehub-login-popup'.$as_button.$class_show.'" data-type="login"><i class="fa fa-sign-in"></i><span>'.__("Logar / Cadastrar", "rehub_framework").'</span></span>';
+				$output .= '<span class="act-rehub-login-popup'.$as_button.$class_show.'" data-type="login"><i class="fa fa-sign-in"></i> <span>'.__("Entrar | Cadastrar", "rehub_framework").'</span> <i class="fa fa-user-circle-o" aria-hidden="true"></i></span>';
 			endif;
 		else:
-			$output .= '<span class="act-rehub-login-popup'.$as_button.$class_show.'" data-type="url" data-customurl="'.esc_url($loginurl).'"><i class="fa fa-sign-in"></i><span>'.__("Logar / Registrar", "rehub_framework").'</span></span>';
+			$output .= '<span class="act-rehub-login-popup'.$as_button.$class_show.'" data-type="url" data-customurl="'.esc_url($loginurl).'"><i class="fa fa-sign-in"></i> <span>'.__("Entrar | Cadastrar", "rehub_framework").'</span> <i class="fa fa-user-circle-o" aria-hidden="true"></i></span>';
 		endif;
 	else:
-		$output .= '<a class="act-rehub-login-popup'.$as_button.$class_show.'" data-type="restrict" href="#"><i class="fa fa-sign-in"></i><span>'.__("Logar / Registro desabilitado", "rehub_framework").'</span></a>';
+		$output .= '<a class="act-rehub-login-popup'.$as_button.$class_show.'" data-type="restrict" href="#"><i class="fa fa-sign-in"></i> 	<span>'.__("Entrar / Registro desabilitado", "rehub_framework").'</span></a>';
 	endif;	
 	
 }

@@ -68,12 +68,11 @@ display: inline; width: auto; height: auto; line-height: normal; vertical-align:
 /* Buttons
 ================================================== */
 .wpsm-button { font-family: Arial, sans-serif; margin: 0 5px 8px 0; cursor: pointer; display: inline-block; white-space: nowrap; text-align: center; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5); outline: none; background: #aaaaaa; text-decoration: none !important; transition: all 0.4s ease 0s;
-border: 1px solid #7e7e7e;color: #fff !important;font-weight: bold !important; padding: 4px 10px; line-height: 0.8em; text-decoration: none; text-align: center; white-space: normal; text-shadow: 0 1px 0 rgba(0,0,0,0.25); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); position: relative; font-size: 15px; box-sizing:border-box; font-style: normal; }
-.wpsm-button.white{border: 1px solid #ccc; background-color: #fff; color: #111 !important; text-shadow: none;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);}
+border: 1px solid #7e7e7e;color: #fff ; padding: 4px 10px; line-height: 0.8em; text-decoration: none; text-align: center; white-space: normal; text-shadow: 0 1px 0 rgba(0,0,0,0.25); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); position: relative; font-size: 15px; box-sizing:border-box; font-style: normal; }
+.wpsm-button.white{border: 1px solid #ccc; background-color: #fff; color: #111 ; text-shadow: none;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);}
 .wpsm-button.white:hover{background-color: #f5f5f5; border: 1px solid #111; }
 .wpsm-button.white:active{box-shadow: inset 0 3px 5px rgba(0,0,0,.125);background: #e6e6e6; border-color: #adadad;}
 .wpsm-button.small  { padding: 5px 12px; line-height: 12px !important; font-size: 12px }
-.wpsm-button.medium  { padding: 8px 16px; line-height: 15px !important; font-size: 15px }
 .wpsm-button.big  { padding: 12px 24px; line-height: 22px !important; font-size: 22px }
 .wpsm-button.giant  { padding: 16px 30px; line-height: 30px !important; font-size: 30px }
 .wpsm-button:active { text-decoration: none; background: #7e7e7e; top: 2px; box-shadow: none !important; background: -moz-linear-gradient(top, #7e7e7e 0%, #aaaaaa 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7e7e7e), color-stop(100%, #aaaaaa)); background: -webkit-linear-gradient(top, #7e7e7e 0%, #aaaaaa 100%); background: -o-linear-gradient(top, #7e7e7e 0%, #aaaaaa 100%); background: -ms-linear-gradient(top, #7e7e7e 0%, #aaaaaa 100%); background: linear-gradient(to bottom, #7e7e7e 0%, #aaaaaa 100%);  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e7e7e', endColorstr='#aaaaaa', GradientType=0 );}
@@ -106,7 +105,6 @@ border: 1px solid #7e7e7e;color: #fff !important;font-weight: bold !important; p
 .wpsm-button.left { float: left; }
 .wpsm-button.right { float: right; margin-right: 0; margin-left: 5px; }
 .wpsm-button.small i.fa { padding-right: 5px; }
-.wpsm-button.medium i.fa { padding-right: 8px; }
 .wpsm-button.big i.fa { padding-right: 10px; }
 .wpb_button{ border-radius: 0 !important; -webkit-border-radius: 0 !important;}
 .wpsm-button.wpsm-flat-btn{ border-radius: 0;  }

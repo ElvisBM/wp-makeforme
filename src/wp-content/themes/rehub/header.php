@@ -67,7 +67,6 @@
         <!-- top -->  
         <div class="header_top_wrap<?php echo $header_topline_style;?>">
             <div class="header-top clearfix">   
-
                 <?php if(rehub_option('header_six_login') == 1) : ?>
                     <?php $rtlclass = (is_rtl()) ? 'floatleft mr10' : 'floatright ml10'; ?>
                     <?php $loginurl = (rehub_option('header_six_btn_login_url')) ? ' loginurl='.esc_url(rehub_option('header_six_btn_login_url')).'' : '';?>
@@ -183,6 +182,39 @@
     <!-- Main Navigation -->
     <div class="main-nav<?php echo $header_menuline_style;?>">   
         <?php wp_nav_menu( array( 'container_class' => 'top_menu', 'container' => 'nav', 'theme_location' => 'primary-menu', 'fallback_cb' => 'add_menu_for_blank', 'walker' => new Rehub_Walker ) ); ?>
+
+         <?php if(rehub_option('rehub_header_top') !='1')  : ?>  
+            <!-- top -->  
+            <div id="header_top_fixo">
+                <div class="header-top clearfix">   
+                    <?php if(rehub_option('header_six_login') == 1) : ?>
+                        <?php $rtlclass = (is_rtl()) ? 'floatleft mr10' : 'floatright ml10'; ?>
+                        <?php $loginurl = (rehub_option('header_six_btn_login_url')) ? ' loginurl='.esc_url(rehub_option('header_six_btn_login_url')).'' : '';?>
+                        <?php echo do_shortcode('[wpsm_user_modal as_btn="1" class="mobileinmenu '.$rtlclass.'"'.$loginurl.']') ;?>
+                    <?php endif; ?> 
+
+                    <?php if ( is_active_sidebar( 'header-top' ) ) : ?>
+                        <?php dynamic_sidebar( 'header-top' ); ?>
+                    <?php else : ?>
+                        <p><?php _e('', ''); ?></p>
+                    <?php endif; ?>   
+
+                    <div class="top-social"> 
+                        <?php if(rehub_option('rehub_login_icon') == 'top' && rehub_option('userlogin_enable') == '1') : ?>
+                           <?php echo do_shortcode ('[wpsm_user_modal]');?>
+                        <?php endif; ?>            
+                        <?php if(rehub_option('rehub_header_social')) : ?>
+                            <?php rehub_get_social_links('small');?>  
+                        <?php endif; ?>        
+                        <?php global $woocommerce; ?>
+                        <?php if ($woocommerce && rehub_option('woo_cart_place') =='1') : ?><a class="cart-contents cart_count_<?php echo $woocommerce->cart->cart_contents_count; ?>" href="<?php echo $woocommerce->cart->get_cart_url(); ?>"><i class="fa fa-shopping-cart"></i> <?php _e( 'Cart', 'rehub_framework' ); ?> (<?php echo $woocommerce->cart->cart_contents_count; ?>) - <?php echo $woocommerce->cart->get_cart_total(); ?></a><?php endif; ?>
+                    </div>
+                </div>
+            </div>
+            <!-- /top --> 
+        <?php endif; ?>
+
+
         <div class="responsive_nav_wrap">
         </div>
         <div class="search-header-contents"><?php get_search_form() ?></div>

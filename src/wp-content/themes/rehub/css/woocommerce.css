@@ -21,7 +21,7 @@ text-decoration: none !important; }
 .woocommerce a.button:active, .woocommerce-page a.button:active, .woocommerce button.button:active, .woocommerce-page button.button:active, .woocommerce input.button:active, .woocommerce-page input.button:active, .woocommerce #respond input#submit:active, .woocommerce-page #respond input#submit:active, .woocommerce #content input.button:active, .woocommerce-page #content input.button:active { 
 box-shadow: inset 0 6px 12px rgba(218, 218, 218, 0.8), 0 1px 2px rgba(0, 0, 0, 0.09); 
 }
-.woocommerce a.woo_loop_btn, .woocommerce a.add_to_cart_button, .woocommerce-page a.add_to_cart_button, .wcv-grid a.button{font: 700 15px/15px 'Roboto',trebuchet ms;position: relative; text-transform: uppercase; border-radius: 0; padding: 8px 14px; text-decoration: none;}
+.woocommerce a.woo_loop_btn, .woocommerce a.add_to_cart_button, .woocommerce-page a.add_to_cart_button, .wcv-grid a.button{position: relative; text-transform: uppercase; border-radius: 0; padding: 8px 14px; text-decoration: none;}
 .wcv-grid a.button{font-size: 14px; display: inline-block; margin-right: 15px}
 .re_wooinner_cta_sidebar .rehub_offer_coupon, .re_wooinner_cta_sidebar .single_add_to_cart_button, .re_wooinner_cta_sidebar .masked_coupon{max-width: 230px; box-sizing: border-box;}
 .woocommerce .full_width form.cart .single_add_to_cart_button{max-width: 185px;}
@@ -136,7 +136,7 @@ p.demo_store { position: fixed; top: 0; left: 0; right: 0; margin: 0; width: 100
 .woocommerce div.product .summary form.cart .variations td.label{ padding-right: 1em; padding-bottom: 10px}
 .woocommerce div.product .summary form.cart .variations td{ vertical-align: top; }
 .woocommerce div.product .summary .woocommerce-variation-price .price {font-size: 1.2em;}
-.woocommerce div.product .summary .single_add_to_cart_button, .woocommerce div.product .summary .masked_coupon {display: inline-block; vertical-align: middle; cursor: pointer; font: 700 18px/18px 'Roboto', trebuchet ms; text-align: center; transition: all 0.4s ease 0s !important; padding: 14px 10px; border: none !important; text-transform: uppercase; position: relative; text-shadow: none!important; border-radius: 0 !important; width: 100%; box-sizing: border-box; }
+.woocommerce div.product .summary .single_add_to_cart_button, .woocommerce div.product .summary .masked_coupon {display: inline-block; vertical-align: middle; cursor: pointer; text-align: center; transition: all 0.4s ease 0s !important; padding: 14px 10px; border: none !important; text-transform: uppercase; position: relative; text-shadow: none!important; border-radius: 0 !important; width: 100%; box-sizing: border-box; }
 .woocommerce div.product .summary .single_add_to_cart_button, .woocommerce div.product .summary .masked_coupon, .woocommerce div.product .summary form.cart .button{box-shadow: 0 28px 38px 0 rgba(0,0,0,0.06),0 30px 80px 0 rgba(0,0,0,0.12) !important;}
 .woocommerce div.product form.cart .group_table td.label, .woocommerce-page div.product form.cart .group_table td.label, .woocommerce #content div.product form.cart .group_table td.label, .woocommerce-page #content div.product form.cart .group_table td.label { padding-right: 1em; padding-left: 1em; }
 .woocommerce div.product form.cart .group_table td, .woocommerce-page div.product form.cart .group_table td, .woocommerce #content div.product form.cart .group_table td, .woocommerce-page #content div.product form.cart .group_table td { vertical-align: top; }
@@ -358,7 +358,7 @@ p.demo_store { position: fixed; top: 0; left: 0; right: 0; margin: 0; width: 100
 .woocommerce ul.cart_list, .woocommerce-page ul.cart_list, .woocommerce ul.product_list_widget, .woocommerce-page ul.product_list_widget { list-style: none outside; padding: 0; margin: 0; }
 .woocommerce ul.cart_list li:after, .woocommerce-page ul.cart_list li:after, .woocommerce ul.product_list_widget li:after, .woocommerce-page ul.product_list_widget li:after { content: ""; display: block; clear: both; }
 .woocommerce ul.cart_list li, .woocommerce-page ul.cart_list li, .woocommerce ul.product_list_widget li, .woocommerce-page ul.product_list_widget li { margin-bottom: 20px }
-.woocommerce ul.product_list_widget li a { display: block; font: 15px/18px 'Roboto', Arial; color: #111; margin-bottom: 11px }
+.woocommerce ul.product_list_widget li a { display: block;color: #111; margin-bottom: 11px }
 .woocommerce ul.product_list_widget li .variation-SoldBy a{font-size: 12px}
 .woocommerce ul.product_list_widget li span.amount { color: #ff4e0c; font-weight: bold;font-size:15px;  }
 .woocommerce ul.product_list_widget li ins{text-decoration: none;}

@@ -286,9 +286,10 @@ if( ! function_exists( 'rehub_add_search_to_main_nav' ) ) {
 				$items .= '</li>';				
 			}			
 			if( $args->theme_location == 'primary-menu' && rehub_option('rehub_search_icon') == 'menu' ) {
-				$items .= '<li class="menu-item rehub-custom-menu-item top-search-onclick">';
-					$items .= '<a class="icon-search-onclick icon-in-main-menu menu-item-one-line"></a>';
-				$items .= '</li>';
+				$newitems.= '<li class="menu-item rehub-custom-menu-item top-search-onclick">';
+					$newitems .= '<a class="icon-search-onclick icon-in-main-menu menu-item-one-line"> Buscar </a>';
+				$newitems .= '</li>';
+				$items = $newitems.$items;
 			}				
 			if( $args->theme_location == 'primary-menu') {
 		        if (rehub_option('rehub_logo') && rehub_option('rehub_header_style')=='header_five') {
