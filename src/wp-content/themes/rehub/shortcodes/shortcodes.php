@@ -2994,6 +2994,9 @@ if (is_user_logged_in()) {
         if(has_nav_menu('user_logged_in_menu')):
         	$output .= wp_nav_menu( array( 'theme_location' => 'user_logged_in_menu','menu_class' => '','container' => false,'depth' => 1,'items_wrap'=> '%3$s', 'echo' => false ) );
         endif;
+        $output .= '<li class="user-editshop-link-intop menu-item"><a href="'. esc_url($redirect_to) .'product"><i class="fa fa-gift" aria-hidden="true"></i><span>'. __("Produtos da Loja", "rehub_framework") .'</span></a></li>';   
+        $output .= '<li class="user-editshop-link-intop menu-item"><a href="'. esc_url($redirect_to) .'order"><i class="fa fa-truck" aria-hidden="true"></i><span>'. __("Pedidos da Loja", "rehub_framework") .'</span></a></li>'; 
+        $output .= '<li class="user-editshop-link-intop menu-item"><a href="'. esc_url($redirect_to) .'settings"><i class="fa fa-check-square-o" aria-hidden="true"></i><span>'. __("Configurações da loja", "rehub_framework") .'</span></a></li>';        
         $output .=$notification_bp_item;
         $output .= '<li class="user-logout-link-intop menu-item"><a href="'. wp_logout_url( home_url()) .'"><i class="fa fa-lock"></i><span>'. __("Sair", "rehub_framework") .'</span></a></li>';
 $output .= '</ul></div>';
