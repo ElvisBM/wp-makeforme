@@ -741,8 +741,8 @@ class WCVendors_Pro_Store_Form {
 				'label' 		=> __( 'State / County', 'wcvendors-pro' ), 
 				'placeholder'	=> __( 'State / County', 'wcvendors-pro' ),  
 				'value' 		=> $state, 
-				'wrapper_start' => '<div class="wcv-cols-group wcv-horizontal-gutters"><div class="all-50 small-100">',
-				'wrapper_end' 	=> '</div>', 
+				'wrapper_start' => '',
+				'wrapper_end' 	=> '', 
 				) )
 			);
 
@@ -769,8 +769,8 @@ class WCVendors_Pro_Store_Form {
 				'label' 			=> __( 'Postcode / Zip', 'wcvendors-pro' ), 	
 				'placeholder'		=> __( 'Postcode / Zip', 'wcvendors-pro' ), 
 				'value' 			=> $postcode, 
-				'wrapper_start' => '<div class="all-50 small-100">',
-				'wrapper_end' 		=> '</div></div>', 
+				'wrapper_start' => '',
+				'wrapper_end' 		=> '</div>', 
 				) )
 			);
 
@@ -1065,8 +1065,8 @@ class WCVendors_Pro_Store_Form {
 			'description' 		=> __( 'The default shipping fee within your country, this can be overridden on a per product basis.', 'wcvendors-pro' ), 
 			'type' 				=> 'text', 
 			'class' 			=> 'wcv-disable-national-input',
-			'wrapper_start' 	=> '<div class="wcv-cols-group wcv-horizontal-gutters"><div class="all-50 small-100">', 
-			'wrapper_end' 		=>  '</div>', 
+			'wrapper_start' 	=> '', 
+			'wrapper_end' 		=>  '', 
 			'value'				=> $value, 
 			'custom_attributes' => array( 
 		 			'data-rules' => 'decimal', 
