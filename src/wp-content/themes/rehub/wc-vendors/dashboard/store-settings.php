@@ -86,13 +86,25 @@ foreach ( $settings_social as $value) { if ( 1 == $value ) $social_count +=1;  }
 	</div>
 
 	<div class="tabs-content" id="branding">
-		<?php do_action( 'wcvendors_settings_before_branding' ); ?>
+		<div class="wcv-cols-group">
+			<div class="all-30 tiny-100">
+				<h3>Banner da Loja</h3>
+				<p>Use sua criatividade para criar um banner com a cara da sua loja</p><br ><br >
+				<p>Especificações<br>
+				Largura, Altura: 1200x260<br>
+				Tamanho: até 4mb<br>
+				Formato: JPEG ou PNG </p><br ><br >
+			</div>
+			<div class="all-70 tiny-100">
+					<?php do_action( 'wcvendors_settings_before_branding' ); ?>
+					<!-- Store Banner -->
+					<?php WCVendors_Pro_Store_Form::store_banner( ); ?>	
+					<?php do_action( 'wcvendors_settings_after_branding' ); ?>
+			</div>
+		</div>
 
-		<!-- Store Banner -->
-		<?php WCVendors_Pro_Store_Form::store_banner( ); ?>	
 
 
-		<?php do_action( 'wcvendors_settings_after_branding' ); ?>
 	</div>
 
 	<div class="tabs-content" id="shipping">

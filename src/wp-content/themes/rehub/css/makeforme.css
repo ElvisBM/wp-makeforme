@@ -510,6 +510,14 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
     margin-right: .5em;
 }
 
+#branding h3{font-family: 'Poppins', sans-serif;font-weight: 200;color:#e05d4e;margin-bottom: 5px;}
+#branding p{font-family: 'Poppins', sans-serif;font-weight: 200;color: #5a5a5a;margin: 0px;}
+#branding span{display: inline-block;font-family: 'Poppins', sans-serif;font-weight: 100;color: #777777;margin: 0px;font-size: 0.9em;margin-bottom: 20px;}
+#branding span.red{color:#f50;font-weight: 400;}
+#branding a{background: #11b8d7;color: #fff;font-family: 'Poppins', sans-serif;font-weight: 300;letter-spacing: 0.8px; padding: 5px 10px;text-shadow: 0 1px 0 rgba(0,0,0,0.25);box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);border: 0px;font-size: 1em;text-decoration: none;}
+#branding a:hover{text-decoration: none;background: #14a18c;color:#fff;}
+#branding h6{display: none;}
+
 .wcv-tabs.top>.tabs-nav li.active a:after{
     content: "\A";
     border-style: solid;
