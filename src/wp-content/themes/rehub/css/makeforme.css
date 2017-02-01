@@ -481,7 +481,7 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
 #payment{ }
 #payment .control-group{display: none;}
 #payment .field{ margin-bottom: 15px;}
-#payment .field label{display: inline-block;width: auto;margin:0px;font-family: 'Poppins', sans-serif;font-weight: 500;}
+#payment .field label{display: inline-block;width: auto;margin:0px;font-family: 'Poppins', sans-serif;font-weight: 400;}
 .wcv-navigation ul.menu.black li a:hover{background: #24b9d6!important;color:#fff!important;}
 #payment .field input{display: block;width: 100%;font-size: 1.2em;}
 #payment .field span{display: none;width: auto;}
@@ -495,21 +495,44 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
 #recebedor_wcvendor{margin-top: 30px;}
 #recebedor_wcvendor h3{margin-bottom: 10px;}
 #payment .bootstrap-select{ width: 100%; }
-.wcv-tabs.top>.tabs-nav li.active a {
-    border:0px;
-    border-bottom: 1px solid #53ad9d;
-    background: #fbf8da;
-    color: #53ad9d;
+.wcv-tabs.top>.tabs-nav li a{margin:0px;}
+.wcv-tabs.top>.tabs-nav li.active a,
+.wcv-tabs .tabs-nav li a:hover {
+    background: #0b6c5e;
+    color: #fff;
+    padding: .5em .5em .5em 1em;
+    border-color: #0b6c5e;
+    margin-right: .5em;
+}
+
+.wcv-tabs.top>.tabs-nav li.active a:after{
+    content: "\A";
+    border-style: solid;
+    border-width: 0px 20px 37px 0px;
+    border-color: transparent #0b6c5e transparent transparent;
+    position: absolute;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    right: -2px;
+    top: 0px;
+}
+.wcv-tabs.top>.tabs-nav li.active {
+    padding-right: 10px;
 }
 .wcv-tabs.top>.tabs-nav{
-    border-bottom: 1px solid #53ad9d;
+    background: #14a18c;
+    border: 0px;
 }
 
-.wcv-tabs .tabs-nav li a:hover {
-    background: #fbf8da;
-    color: #53ad9d;
+.wcv-tabs .tabs-nav li a{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.8px;
 }
-
 .wcv-grid a.button{
     background: #ff4e0c !important;
     font-family: 'Poppins', sans-serif;
@@ -541,8 +564,31 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
     display: inline-block;
 }
 
+.wcv-form p.tip{display: none;}
 #_wcv_store_address2{display: none;}
 
+#wp-pv_shop_description-wrap{ width: 75%;display: inline-block; }
+.logo h6{font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #11b8d7;}
+.logo a{    background: #11b8d7;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    padding: 5px 10px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border: 0px;
+    font-size: 1em;
+    text-decoration: none;}
+.logo a:hover{text-decoration: none;background: #14a18c;color:#fff;}
+.logo p{     font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 0.8em;
+    color: #605e5e;
+    margin-top: 15px;
+    line-height: 1.3em;}
 #attributes .wcv-horizontal-gutters{min-height: 70px;border:0px!important;}
 #attributes select{ height: 40px;width: 40%; min-width: 320px; }
 #attributes .button.add_attribute{background-color: #24b9d6 !important;color: #fbf8da !important;border: 1px solid #53ad9d !important;font-family: 'Poppins', sans-serif;font-weight: 400;letter-spacing: 1px;}
@@ -568,5 +614,10 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
 #shipping select{width: 95%;height: 40px;border-radius: 5px;font-size: 1em;}
 #shipping thead{font-size: 1.2em;font-weight: 400;color: #53ad9d;text-transform: uppercase;letter-spacing: 0.5px;}
 #shipping tbody tr{height: 50px;}
+
+.modo_ferias label{width: 100%!important;}
+
+/* Página configurações/settings */
+#page-31 .wcv-navigation{display: none;}
 
 
