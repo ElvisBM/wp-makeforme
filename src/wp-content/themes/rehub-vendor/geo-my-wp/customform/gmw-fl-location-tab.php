@@ -29,7 +29,7 @@ class RH_GMW_FL_Location_Page {
 
         $this->location_fields = apply_filters('gmw_fl_location_page', array(
                 'address_autocomplete' => array(
-                        __('Preenchimento automático de endereço', 'rehub_framework'),
+                        __('Preencha seu endereço', 'rehub_framework'),
                         array(
                                 'autocomplete' => array(
                                         'name'        => 'formatted_address',
@@ -470,8 +470,6 @@ class RH_GMW_FL_Location_Page {
                                 
                                 <?php echo do_action( 'gmw_yl_tabs_start', $location, $userid ); ?>
                                 
-                                <li id="gmw-yl-address-tab" class="gmw-yl-tab active"><?php echo $fieldsLabel['address']; ?></li>
-                                <li id="gmw-yl-latlng-tab" class="gmw-yl-tab" ><?php echo $fieldsLabel['coords']; ?></li>
     
                                 <?php echo do_action( 'gmw_yl_tabs_end', $location, $userid ); ?>
                             </ul>

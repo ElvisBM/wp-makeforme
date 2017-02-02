@@ -473,29 +473,6 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
  .page-id-544 .title h1{ color: #24b9d6; }
  #page-195 .title h1{ color: #53ad9d; }
 
-
-
- /*
-  * Setings front payment
-  */
-#payment{ }
-#payment h3{font-family: 'Poppins', sans-serif;font-weight: 200;color:#e05d4e;margin-bottom: 5px;}
-#payment p{font-family: 'Poppins', sans-serif;font-weight: 200;color: #5a5a5a;margin: 0px;}
-#payment span{display: inline-block;font-family: 'Poppins', sans-serif;font-weight: 100;color: #777777;margin: 0px;font-size: 0.9em;margin-bottom: 20px;}
-#payment span.red{color:#f50;font-weight: 400;}
-#payment .control-group{display: none;}
-#payment .field{ margin-bottom: 15px;}
-#payment .field label{display: inline-block;margin:0px; margin-right:2%;font-family: 'Poppins', sans-serif;font-weight: 300; width: 15%;}
-.wcv-navigation ul.menu.black li a:hover{background: #24b9d6!important;color:#fff!important;}
-#payment .field input{display: inline-block;width: 80%;font-size: 1.1em;}
-#payment .field .all-50 label{display: inline-block;margin:0px; margin-right:4%;font-family: 'Poppins', sans-serif;font-weight: 300; width: 30%;}
-#payment .field .all-50 input{display: inline-block;width: 65%;font-size: 1.1em;}
-#payment .bootstrap-select.btn-group .dropdown-menu li a span.text{ display: inline-block; }
-#payment .bootstrap-select.btn-group .dropdown-toggle .filter-option{ display: inline-block; }
-#payment .field.bank_account_id{display: none;}
-#payment .field.receiver_id{display: none}
-#payment select{ height: 40px;width: 40%; }
-#payment .bootstrap-select span{margin-bottom: 0px;}
 #conta_banco_wcvendor{}
 #recebedor_wcvendor{margin-top: 30px;}
 #recebedor_wcvendor h3{margin-bottom: 10px;}
@@ -517,6 +494,14 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
 #branding a{background: #11b8d7;color: #fff;font-family: 'Poppins', sans-serif;font-weight: 300;letter-spacing: 0.8px; padding: 5px 10px;text-shadow: 0 1px 0 rgba(0,0,0,0.25);box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);border: 0px;font-size: 1em;text-decoration: none;}
 #branding a:hover{text-decoration: none;background: #14a18c;color:#fff;}
 #branding h6{display: none;}
+
+#adress h3{font-family: 'Poppins', sans-serif;font-weight: 200;color:#e05d4e;margin-bottom: 5px;}
+#adress p{font-family: 'Poppins', sans-serif;font-weight: 200;color: #5a5a5a;margin: 0px;}
+#adress span{display: inline-block;font-family: 'Poppins', sans-serif;font-weight: 100;color: #777777;margin: 0px;font-size: 0.9em;margin-bottom: 20px;}
+#adress span.red{color:#f50;font-weight: 400;}
+#adress label{width: 10%;}
+
+#gmw-yl-address-tab-wrapper label{width: auto;}
 
 .wcv-tabs.top>.tabs-nav li.active a:after{
     content: "\A";
@@ -620,13 +605,57 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
 #variations .all-25{display: none;}
 #variations .all-25:last-child{display: inline-block;}
 
-#shipping .control-group{display: none;}
+
+#store  h3{font-family: 'Poppins', sans-serif;font-weight: 200;color:#e05d4e;margin-bottom: 5px;}
+
+#social h3{font-family: 'Poppins', sans-serif;font-weight: 200;color:#e05d4e;margin-bottom: 5px;}
+#social label{display: inline-block;margin:0px; margin-right:2%;font-family: 'Poppins', sans-serif;font-weight: 300; width: 15%;}
+#social input{display: inline-block;font-family: 'Poppins', sans-serif;width: 80%;font-size: 1em;padding: 5px;letter-spacing: 0.5px;font-weight: 100;}
+
+
+
+ /*
+  * Setings front payment
+  */
+#payment{ }
+#payment h3{font-family: 'Poppins', sans-serif;font-weight: 200;color:#e05d4e;margin-bottom: 5px;}
+#payment p{font-family: 'Poppins', sans-serif;font-weight: 200;color: #5a5a5a;margin: 0px;}
+#payment span{display: inline-block;font-family: 'Poppins', sans-serif;font-weight: 100;color: #777777;margin: 0px;font-size: 0.9em;margin-bottom: 20px;}
+#payment span.red{color:#f50;font-weight: 400;}
+#payment .control-group{display: none;}
+#payment .field{ margin-bottom: 15px;}
+#payment .field label{display: inline-block;margin:0px; margin-right:2%;font-family: 'Poppins', sans-serif;font-weight: 300; width: 15%;}
+.wcv-navigation ul.menu.black li a:hover{background: #24b9d6!important;color:#fff!important;}
+#payment .field input{display: inline-block;font-family: 'Poppins', sans-serif;width: 80%;font-size: 1em;padding: 5px;letter-spacing: 0.5px;font-weight: 100;}
+#payment .field .all-50 label{display: inline-block;margin:0px; margin-right:4%;font-family: 'Poppins', sans-serif;font-weight: 300; width: 30%;}
+#payment .field .all-50 input{display: inline-block;width: 65%;}
+#payment .bootstrap-select.btn-group .dropdown-menu li a span.text{ display: inline-block; }
+#payment .bootstrap-select.btn-group .dropdown-toggle .filter-option{ display: inline-block; }
+#payment .field.bank_account_id{display: none;}
+#payment .field.receiver_id{display: none}
+#payment select{ font-family: 'Poppins', sans-serif;font-weight: 100;letter-spacing: 0.5px;font-size: 1em;height: 35px;width: 40%; }
+#payment .bootstrap-select span{margin-bottom: 0px;color: #000000;font-weight: 300;letter-spacing: 0.5px;font-size: 1em;}
+
 #shipping .wcv_shipping_rates .country{display: none;}
+#shipping h3{font-family: 'Poppins', sans-serif;font-weight: 200;color:#e05d4e;margin-bottom: 5px;}
+#shipping h4{font-family: 'Poppins', sans-serif;font-weight: 200;color:#14a18c;margin-bottom: 10px;}
+#shipping p{font-family: 'Poppins', sans-serif;font-weight: 200;letter-spacing: 0.5px;font-weight: 100;}
 #shipping span{color: #24b9d6;}
 #shipping input,
-#shipping select{width: 95%;height: 40px;border-radius: 5px;font-size: 1em;}
-#shipping thead{font-size: 1.2em;font-weight: 400;color: #53ad9d;text-transform: uppercase;letter-spacing: 0.5px;}
+#shipping select{font-family: 'Poppins', sans-serif;font-weight: 200;width: 90%;height: 30px;border-radius: 3px;color: #555;font-size: 1em;}
+#shipping thead th{font-size: 1.1em;font-weight: 300;color: #0b6c5e;letter-spacing: 0.5px;font-family: 'Poppins', sans-serif;}
 #shipping tbody tr{height: 50px;}
+#shipping tbody td{    margin-bottom: 5px!important;padding: 0px!important;height: 40px!important;}
+#shipping label{ width: 7%;text-align:left;}
+#shipping #adress_base{vertical-align: middle;margin-bottom: 20px;}
+#shipping #adress_base input{width: 95%;height: auto;border-radius: 2px;font-size: 0.9em;padding: 5px;}
+#shipping #adress_base .wcv-form .control-group{margin-bottom: 5px;}
+#shipping .cep{}
+#shipping #adress_base .cep input{width:30%;}
+#shipping #adress_base .cidade label{width:14%;}
+#shipping #adress_base .estado label{width:10%;}
+#shipping .all-100 .control-group{display: none}
+#shipping a.button.insert{background: #11b8d7!important;color: #fff;font-family: 'Poppins', sans-serif;font-weight: 300;letter-spacing: 0.8px;padding: 5px 10px;text-shadow: 0 1px 0 rgba(0,0,0,0.25);box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);border: 0px;font-size: 1em;text-decoration: none;}
 
 .modo_ferias label{width: 100%!important;}
 

@@ -2987,7 +2987,6 @@ body.pgwModalOpen .content, body.pgwModalOpen #main_header {-webkit-filter: gray
 .shadowed_btn a{box-shadow: 0 28px 38px 0 rgba(0,0,0,0.07),0 30px 80px 0 rgba(0,0,0,0.13)}
 mark{background-color: #fed700; color: #000}
 .wppl-fl-info-window .wppl-info-window-info, .wppl-pt-info-window .wppl-info-window-info{width: 230px !important;padding: 0 !important; margin: 0 15px !important; box-shadow: none !important; border: none !important; clear: none !important;}
-#buddypress input#gmw-yl-edit, input#gmw-yl-edit, input#gmw-yl-delete, #buddypress input#gmw-yl-delete, input#gmw-yl-locator-btn, #buddypress input#gmw-yl-locator-btn{background-color: #fff !important; color: #111 !important; border:1px solid #ccc !important;}
 #gmw-cl-submit-address{text-transform: uppercase; margin: 0 8px; padding: 10px}
 .vc_row input.gmw-submit{box-shadow:none !important;}
 form#ws-plugin--s2member-profile div.ws-plugin--s2member-profile-field-divider-section{border-color: #ddd !important }

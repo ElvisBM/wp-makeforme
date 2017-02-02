@@ -18,7 +18,6 @@ foreach ( $settings_social as $value) { if ( 1 == $value ) $social_count +=1;  }
 <h3><a href="..">Gerenciar Loja</a> > <?php _e( 'Settings', 'wcvendors-pro' ); ?></h3>
 
 
-
 <form method="post" action="" class="wcv-form wcv-formvalidator"> 
 
 <?php WCVendors_Pro_Store_Form::form_data(); ?>
@@ -30,6 +29,7 @@ foreach ( $settings_social as $value) { if ( 1 == $value ) $social_count +=1;  }
 	<!-- Store Settings Form -->
 	
 	<div class="tabs-content" id="store">
+		<h3>Dados da Loja</h3>
 
 		<div class="wcv-cols-group">
 			<div class="all-70 tiny-100">
@@ -108,7 +108,7 @@ foreach ( $settings_social as $value) { if ( 1 == $value ) $social_count +=1;  }
 	</div>
 
 	<div class="tabs-content" id="shipping">
-
+		<h3> Entrega</h3>
 		<p>
 			Defina a taxa de entrega para as localidades que atende. Se o "For Me/Comprador" estiver em uma localidade não definida por suas regras de entrega, ele terá a opção de retirar em sua loja.<br />
 			Campos obrigátorios: Estado, Cidade e Taxa de Entrega. <br />
@@ -116,38 +116,48 @@ foreach ( $settings_social as $value) { if ( 1 == $value ) $social_count +=1;  }
 			<span>Exemplo de preenchimento da taxa: digite 12.50 para R$12,50 de taxa de entrega.</span>
 		</p>	
 
-		<?php if ( class_exists( 'GMW_Members_Locator_Component' ) ) {echo do_shortcode('[rh_add_map_gmw]');echo '<div class="mb25"></div>';}?>
+		
+		<div id="adress_base" class="wcv-cols-group">
+			<!-- Store Address -->	
+			<?php do_action( 'wcvendors_settings_before_address' ); ?>
+			<div class="cep">
+				<?php WCVendors_Pro_Store_Form::store_address_postcode(); ?>
+			</div>
+			<div class="endereco">
+			<?php WCVendors_Pro_Store_Form::store_address1( ); ?>
+			</div>
+			<div class="cidade all-50 tiny-100">
+				<?php WCVendors_Pro_Store_Form::store_address_city( ); ?>
+			</div>
+			<div class="estado all-50 tiny-100">
+				<?php WCVendors_Pro_Store_Form::store_address_state( ); ?>
+			</div>
+			<?php do_action(  'wcvendors_settings_after_address' ); ?>
+		</div>
 
-		<?php do_action( 'wcvendors_settings_before_shipping' ); ?>
+	
+		
+		<h4>Locais de entrega:</h4>
+		<?php //do_action( 'wcvendors_settings_before_shipping' ); ?>
 
 		<!-- Shipping Rates -->
 		<?php WCVendors_Pro_Store_Form::shipping_rates( ); ?>
 
-		<?php do_action( 'wcvendors_settings_after_shipping' ); ?>
+		<?php //do_action( 'wcvendors_settings_after_shipping' ); ?>
 
 		<!-- Shiping Information  -->
 
-		<?php WCVendors_Pro_Store_Form::product_handling_fee( $shipping_details ); ?>
-		<?php WCVendors_Pro_Store_Form::shipping_policy( $shipping_details ); ?>
-		<?php WCVendors_Pro_Store_Form::return_policy( $shipping_details ); ?>
-		<?php WCVendors_Pro_Store_Form::shipping_from( $shipping_details ); ?>
-		<?php WCVendors_Pro_Store_Form::shipping_address( $shipping_details ); ?>
-
-
-		<!-- Store Address -->
-		<?php do_action( 'wcvendors_settings_before_address' ); ?>
-		<?php WCVendors_Pro_Store_Form::store_address_country( ); ?>
-		<?php WCVendors_Pro_Store_Form::store_address1( ); ?>
-		<?php WCVendors_Pro_Store_Form::store_address2( ); ?>
-		<?php WCVendors_Pro_Store_Form::store_address_city( ); ?>
-		<?php WCVendors_Pro_Store_Form::store_address_state( ); ?>
-		<?php WCVendors_Pro_Store_Form::store_address_postcode( ); ?>
-		<?php do_action(  'wcvendors_settings_after_address' ); ?>
+		<?php //WCVendors_Pro_Store_Form::product_handling_fee( $shipping_details ); ?>
+		<?php //WCVendors_Pro_Store_Form::shipping_policy( $shipping_details ); ?>
+		<?php //WCVendors_Pro_Store_Form::return_policy( $shipping_details ); ?>
+		<?php //WCVendors_Pro_Store_Form::shipping_from( $shipping_details ); ?>
+		<?php //WCVendors_Pro_Store_Form::shipping_address( $shipping_details ); ?>
 		
 	</div>
 
 	<?php if ( $social_count != $social_total ) :  ?> 
 		<div class="tabs-content" id="social">
+			<h3>Redes Sociais da Loja</h3>
 			<?php do_action( 'wcvendors_settings_before_social' ); ?>
 			<!-- Twitter -->
 			<?php WCVendors_Pro_Store_Form::twitter_username( ); ?>
@@ -173,5 +183,14 @@ foreach ( $settings_social as $value) { if ( 1 == $value ) $social_count +=1;  }
 		<!-- Submit Button -->
 		<!-- DO NOT REMOVE THE FOLLOWING TWO LINES -->
 		<?php WCVendors_Pro_Store_Form::save_button( __( 'Save Changes', 'wcvendors-pro') ); ?>
-</div>
 	</form>
+	<div class="tabs-content" id="adress">
+		<h3>Endereço</h3>
+		<p>Clique em "Editar localização" para preencher o formulário ou preencher no mapa seu endereço.</p>
+
+		<?php if ( class_exists( 'GMW_Members_Locator_Component' ) ) {echo do_shortcode('[rh_add_map_gmw]');echo '<div class="mb25"></div>';}?>
+
+	</div>
+
+</div>
+	
