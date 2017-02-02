@@ -62,10 +62,11 @@ function request_receiver_pagarme( $receiver_id ){
  */
 function loadScriptsTemplate(){
 
-     if (is_page( 'dashboard' )){
-        wp_enqueue_script('cidade-estados', get_template_directory_uri().'/js/cidades-estados-1.4-utf8.js');
-        wp_enqueue_script('makeforme-cidade-estados', get_template_directory_uri().'/js/makeforme_cidade_estado.js');
-     }
+    if (is_page( 'minha-loja' )){
+       wp_enqueue_script('cidade-estados', get_template_directory_uri().'/js/cidades-estados-1.4-utf8.js');
+       wp_enqueue_script('makeforme-cidade-estados', get_template_directory_uri().'/js/makeforme_cidade_estado.js');
+    }
+    wp_enqueue_script('makeformejs', get_template_directory_uri().'/js/makeforme.js');
 }
 add_action('wp_enqueue_scripts','loadScriptsTemplate');
 
