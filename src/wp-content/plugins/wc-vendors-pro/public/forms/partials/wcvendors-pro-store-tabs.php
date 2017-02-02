@@ -26,5 +26,6 @@
 	<li><a class="tabs-tab shipping" href="#shipping">Entrega</a></li>
 	<li><a class="tabs-tab payment" href="#payment">Dados Bancários</a></li>
 	<li><a class="tabs-tab social" href="#social">Redes</a></li>
-	<li><a class="tabs-tab" href="..">Gerenciar Loja</a></li>
+	<li><a class="gerenciar-loja-js" href="..">Gerenciar Loja</a></li>
 </ul>
+
