@@ -3,7 +3,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: WC Vendors Pro\n"
 "POT-Creation-Date: 2016-03-19 13:04+0000\n"
-"PO-Revision-Date: 2017-01-27 15:08-0200\n"
+"PO-Revision-Date: 2017-02-01 18:37-0200\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,7 +41,7 @@ msgstr "Verifique para exigir que todos os produtos submetidos devem ser revisto
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:92
 #: public/forms/class-wcvendors-pro-store-form.php:637
 msgid "Store Website / Blog URL"
-msgstr "URL do Website / Blog da Loja"
+msgstr "URL do Site ou Blog da Loja"
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:98
 #: public/forms/class-wcvendors-pro-store-form.php:1221
@@ -500,19 +500,19 @@ msgstr "Remover Banner"
 #: public/forms/class-wcvendors-pro-store-form.php:391
 #: public/forms/class-wcvendors-pro-store-form.php:401
 msgid "Store Icon"
-msgstr "Ícone da Loja"
+msgstr "Logo da Loja"
 
 #: admin/partials/vendor/wcvendors-pro-user-meta.php:90
 msgid "Upload an image for the store icon."
-msgstr "Carregue uma imagem para o ícone da loja."
+msgstr "Carregue uma imagem para o logo da loja."
 
 #: admin/partials/vendor/wcvendors-pro-user-meta.php:93
 msgid "Add Icon"
-msgstr "Adicionar Ícone"
+msgstr "Adicionar logo"
 
 #: admin/partials/vendor/wcvendors-pro-user-meta.php:94
 msgid "Remove Icon"
-msgstr "Remover Ícone"
+msgstr "Remover Logo"
 
 #: admin/partials/vendor/wcvendors-pro-vendor-commission-fields.php:19
 msgid "Pro Commission"
@@ -1391,7 +1391,7 @@ msgstr "Separador de Configurações de Formulário."
 #: includes/class-wcvendors-pro.php:1047 includes/class-wcvendors-pro.php:1071
 #: public/forms/class-wcvendors-pro-store-form.php:278
 msgid "Payment"
-msgstr "Pagamento"
+msgstr "Dados Bancários"
 
 #: includes/class-wcvendors-pro.php:968 includes/class-wcvendors-pro.php:1001
 #: includes/class-wcvendors-pro.php:1048 includes/class-wcvendors-pro.php:1081
@@ -1420,7 +1420,7 @@ msgstr "Informação do Vendedor"
 
 #: includes/class-wcvendors-pro.php:982 includes/class-wcvendors-pro.php:1062
 msgid "Company / blog URL"
-msgstr "URL da Empresa / blog"
+msgstr "URL da Empresa ou Blog"
 
 #: includes/class-wcvendors-pro.php:983 includes/class-wcvendors-pro.php:1063
 msgid "Store phone"
@@ -1440,7 +1440,7 @@ msgstr "Banner da Loja"
 
 #: includes/class-wcvendors-pro.php:1005 includes/class-wcvendors-pro.php:1085
 msgid "Store icon"
-msgstr "Ícone da Loja"
+msgstr "Logo da Loja"
 
 #: includes/class-wcvendors-pro.php:1016 includes/class-wcvendors-pro.php:1096
 msgid "Shipping policy"
@@ -3780,7 +3780,7 @@ msgstr "Depois de se tornar um vendedor pode carregar para aqui o seu banner da 
 #: public/forms/class-wcvendors-pro-store-form.php:361
 #: public/forms/class-wcvendors-pro-store-form.php:364
 msgid "Add Store Banner"
-msgstr "Adicionar Banner de Loja"
+msgstr "Adicionar Banner da Loja"
 
 #: public/forms/class-wcvendors-pro-store-form.php:362
 msgid "Remove Store Banner"
@@ -3788,16 +3788,16 @@ msgstr "Remover Banner de Loja"
 
 #: public/forms/class-wcvendors-pro-store-form.php:395
 msgid "Once you become a vendor you can upload your store icon here."
-msgstr "Depois de se tornar um vendedor pode carregar para aqui o seu ícone da loja."
+msgstr "Depois de se tornar um vendedor pode carregar para aqui o seu logo da loja."
 
 #: public/forms/class-wcvendors-pro-store-form.php:402
 #: public/forms/class-wcvendors-pro-store-form.php:405
 msgid "Add Store Icon"
-msgstr "Adicionar Ícone de Loja"
+msgstr "Adicionar logo da Loja"
 
 #: public/forms/class-wcvendors-pro-store-form.php:403
 msgid "Remove Store Icon"
-msgstr "Remover Ícone de Loja"
+msgstr "Remover logo da Loja"
 
 #: public/forms/class-wcvendors-pro-store-form.php:435
 msgid "PayPal Address"
@@ -3851,7 +3851,7 @@ msgstr "#"
 
 #: public/forms/class-wcvendors-pro-store-form.php:640
 msgid "Your <a href=\"https://yourcompany-blogurl.com/here\">Company / Blog </a> url."
-msgstr "URL da sua <a href=\"https://asuaempresa-blogurl.com/aqui\">Empresa / Blog </a>."
+msgstr "URL da Loja ou Blog."
 
 #: public/forms/class-wcvendors-pro-store-form.php:665
 msgid "Twitter Username"
