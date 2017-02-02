@@ -542,7 +542,9 @@ class WCVendors_Pro_Dashboard {
 
 		array_unshift( $pages, $dashboard_home ); 
 
-		echo '<div class="wcv-cols-group wcv-horizontal-gutters">'; 
+		$dashboard_page_slug 	= get_post( $dashboard_page_id )->post_name;
+
+		echo '<div class="wcv-cols-group wcv-horizontal-gutters '.$dashboard_page_slug.'">'; 
 
 		echo '<div class="all-100">'; 
 
