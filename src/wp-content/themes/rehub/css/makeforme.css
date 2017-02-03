@@ -25,6 +25,8 @@ body{
   color: #fff; 
 }
 
+.clear{clear: both; display: inherit;}
+
 .woocommerce-page form .form-row input.input-text:-ms-input-placeholder,
 .woocommerce-page form .form-row input.input-text::-webkit-input-placeholder,
 .woocommerce-page form .form-row input.input-text:-moz-placeholder,
@@ -549,17 +551,18 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
 }
 
 .wcv-grid table .row-actions a {
+    background: #11b8d7;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    padding: 5px 10px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border: 0px;
     font-size: 1em;
     text-decoration: none;
-    background-color: #24b9d6 !important;
-    color: #fbf8da !important;
-    border: 1px solid #53ad9d !important;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    letter-spacing: 1px;
-    padding: 5px;
-    margin: 10px 5px;
-    display: inline-block;
+    margin-right: 10px;
 }
 
 .wcv-form p.tip{display: none;}
@@ -674,3 +677,41 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
 #minha-loja-dash .wcv-datepicker-calendar{position: absolute;top: 0px;left: initial;margin-left: -20%;}
 .wcv_recent_orders{margin-top: 20px;}
 .wcv_recent_orders strong{font-weight: 500;}
+
+#add-product h3{display: inline-block;font-family: 'Poppins', sans-serif;font-weight: 200;color:#e05d4e;margin: 20px;}
+#add-product .btn-voltar{margin-right:5%;background: #0b6c5e;color: #fff;font-family: 'Poppins', sans-serif;font-weight: 300;letter-spacing: 0.8px;padding: 5px 10px;text-shadow: 0 1px 0 rgba(0,0,0,0.25);box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);border: 0px;font-size: 1em;text-decoration: none;float: right;}
+#add-product label{}
+#add-product input{}
+#add-product #name-product .control{width:80%;}
+#add-product #description-product .control{width:100%;}
+#add-product #description-product textarea{width:80%;}
+#add-product #category-product .control{width:80%;}
+#add-product #tags-product .control{width:100%;}
+#add-product #tags-product .select2-choices{width: 80%!important}
+#add-product .wcv-product-media h6{font-family: 'Poppins', sans-serif;margin-bottom: 5px;font-weight: 300;clear: both;display: inline-block;margin-right: 10px;font-size: 1em;line-height: 1.1em;text-align: right;color: #24b9d9;}
+#add-product .show_if_simple{margin-top: 10px;}
+#add-product .tabs-nav .show_if_simple{margin-top: 0px;}
+#add-product .show_if_simple .all-50:first-child{width:40%;}
+#add-product .show_if_simple .all-50:first-child label{width:42%;}
+#add-product .show_if_simple .all-50:first-child .control{ width:55%;}
+#add-product .show_if_simple .all-50{padding-left: 10px;width: 55%;}
+#add-product .show_if_simple .all-50 label{width:32%;margin-top: 10px;}
+#add-product .show_if_simple .all-50 .control{ width:50%;}
+#add-product .show_if_simple .control{ width:50%; vertical-align: top;}
+#add-product .show_if_simple .tip{display: inline-block;}
+#add-product .show_if_simple .tip a{background: #11b8d7;color: #fff;font-family: 'Poppins', sans-serif;font-weight: 300;letter-spacing: 0.8px;padding: 5px 10px;text-shadow: 0 1px 0 rgba(0,0,0,0.25);box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);border: 0px;font-size: 1em;text-decoration: none;margin-top: -5px;margin-left: 12px;}
+#add-product .wcv-datepicker-calendar.bottom{top: initial;left: initial;margin-left: -20%;}
+#add-product .wcv-product-type{display: none;}
+#add-product .tabs-tab.general{display: none!important;}
+#add-product .wcv-tabs h3{margin: 20px 0px 10px;}
+#add-product .wcv-product-media{text-align: right;}
+#add-product .wcv-product-media p{font-family: 'Poppins', sans-serif;font-weight: 200;font-size: 0.8em;color: #605e5e;margin-top: 5px;margin-right: 10px;line-height: 1.3em;}
+#add-product .wcv-product-media .galeria-product{margin-top: 10px;}
+#add-product .wcv-product-media .galeria-product a{display: inline-block;float: left;background: #11b8d7;color: #fff;font-family: 'Poppins', sans-serif;font-weight: 300;letter-spacing: 0.8px;padding: 8px 10px;text-shadow: 0 1px 0 rgba(0,0,0,0.25);box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);border: 0px;font-size: 1.2em;text-decoration: none;}
+#add-product .wcv-product-media .galeria-product .descri{ width: 20%;color:#14a18c;font-weight: 400;}
+#add-product .wcv-product-media .galeria-product #product_images_container ul{text-align: left;}
+#add-product .wcv-product-inventory label{width: 100%; text-align: left;}
+#add-product .wcv-product-inventory .show_if_simple{margin-top: -1px;}
+#add-product .wcv_shipping_rates label{width: 100%; text-align: left;}
+#add-product .wcv-product-shipping table{ width: 100%; }
+#add-product .wcv-product-shipping p{font-family: 'Poppins', sans-serif;font-weight: 200;font-size: 1em;color: #605e5e;margin-top: 5px;margin-right: 10px;line-height: 1.3em;}

@@ -70,3 +70,12 @@ function loadScriptsTemplate(){
 }
 add_action('wp_enqueue_scripts','loadScriptsTemplate');
 
+/**
+ * Add Field for product wc_tempo_de_preparado
+ */
+
+add_action('woocommerce_product_meta_start', 'wc_producao', 2);
+function wc_producao() {
+    $output = get_post_meta( get_the_ID(), 'wcv_custom_product_producao', true ); // Change wcv_custom_product_ingredients to your meta key
+    echo 'Tempo para a produção: ' . $output . '<br>';
+}

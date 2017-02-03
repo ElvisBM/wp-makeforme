@@ -25,25 +25,53 @@ $post_status				= ( isset($product) && null !== $product ) ? $product->post->pos
  *  Ok, You can edit the template below but be careful!
 */
 ?>
+<div id="add-product">
 
-<h2><?php echo $title; ?></h2>
+<h3><?php echo $title; ?></h3>
+<a class="btn-voltar" href="..">Sair</a>
 
 <!-- Product Edit Form -->
 <form method="post" action="" id="wcv-product-edit" class="wcv-form wcv-formvalidator"> 
 
 	<!-- Basic Product Details -->
 	<div class="wcv-product-basic wcv-product"> 
-	
-		<!-- Product Title -->
-		<?php WCVendors_Pro_Product_Form::title( $object_id, $product_title ); ?>
-		<!-- Product Description -->
-		<?php WCVendors_Pro_Product_Form::description( $object_id, $product_description );  ?>
+		
+		<div id="name-product">
+			<!-- Product Title -->
+			<?php WCVendors_Pro_Product_Form::title( $object_id, $product_title ); ?>
+		</div>
+		<div id="description-product">
+			<!-- Product Description -->
+			<?php WCVendors_Pro_Product_Form::description( $object_id, $product_description );  ?>
+		</div>
 		<!-- Product Short Description -->
 		<?php WCVendors_Pro_Product_Form::short_description( $object_id, $product_short_description );  ?>
+		<div id="category-product">
 		<!-- Product Categories -->
 	    <?php WCVendors_Pro_Product_Form::categories( $object_id, true ); ?>
+	    </div>
+	    <div id="tags-product">
 	    <!-- Product Tags -->
 	    <?php WCVendors_Pro_Product_Form::tags( $object_id, true ); ?>
+	    </div>
+
+		<div class="show_if_simple show_if_external prices">
+			<!-- Price and Sale Price -->
+			<?php WCVendors_Pro_Product_Form::prices( $object_id ); ?>
+		</div>
+		<div class="tempo-producao">
+			<?php 
+				WCVendors_Pro_Form_Helper::input( array(  
+				     'type'      => 'text',
+				     'post_id'   => $object_id, 
+				     'id'     => 'wcv_custom_product_producao', 
+				     'label'    => __( 'Tempo de produção', 'wcvendors-pro' ), 
+				     'placeholder'   => __( 'Tempo de produção', 'wcvendors-pro' ), 
+				     'desc_tip'    => 'true', 
+				     'description'   => __( 'Tempo de produção', 'wcvendors-pro' ), 
+				) );
+			?>
+		</div>
 	</div>
 
 	<div class="all-100"> 
@@ -79,11 +107,7 @@ $post_status				= ( isset($product) && null !== $product ) ? $product->post->pos
 					<?php WCVendors_Pro_Product_Form::private_listing( $object_id ); ?>
 				</div>
 
-				<div class="show_if_simple show_if_external prices">
-					<!-- Price and Sale Price -->
-					<?php WCVendors_Pro_Product_Form::prices( $object_id ); ?>
-				</div>
-
+		
 				<div class="options_group show_if_external external_url">
 					<?php WCVendors_Pro_Product_Form::external_url( $object_id ); ?>
 					<?php WCVendors_Pro_Product_Form::button_text( $object_id ); ?>
@@ -112,6 +136,7 @@ $post_status				= ( isset($product) && null !== $product ) ? $product->post->pos
 
 			<!-- Inventory -->
 			<div class="wcv-product-inventory inventory_product_data tabs-content" id="inventory">
+				<h3>Estoque</h3>
 				
 				<?php WCVendors_Pro_Product_Form::manage_stock( $object_id ); ?>
 				
@@ -141,16 +166,18 @@ $post_status				= ( isset($product) && null !== $product ) ? $product->post->pos
 			<div class="wcv-product-shipping shipping_product_data tabs-content" id="shipping">
 
 				<div class="hide_if_grouped hide_if_external">
+					<h3>Entrega</h3>
+					<p>Caso esse produto tenha regiões de entrega diferente da loja, defina as regiões específica para este produto.</p>
 
 					<!-- Shipping rates  -->
 					<?php WCVendors_Pro_Product_Form::shipping_rates( $object_id ); ?>	
 					<!-- weight  -->
-					<?php WCVendors_Pro_Product_Form::weight( $object_id ); ?>
+					<?php //WCVendors_Pro_Product_Form::weight( $object_id ); ?>
 					<!-- Dimensions -->
-					<?php WCVendors_Pro_Product_Form::dimensions( $object_id ); ?>
+					<?php //WCVendors_Pro_Product_Form::dimensions( $object_id ); ?>
 					<?php do_action( 'wcv_product_options_dimensions' ); ?>
 					<!-- shipping class -->
-					<?php WCVendors_Pro_Product_Form::shipping_class( $object_id ); ?>
+					<?php //WCVendors_Pro_Product_Form::shipping_class( $object_id ); ?>
 					<?php do_action( 'wcv_product_options_shipping' ); ?>
 				</div>
 			
@@ -209,3 +236,4 @@ $post_status				= ( isset($product) && null !== $product ) ? $product->post->pos
 			</div>
 		</div>
 </form>
+</div>
