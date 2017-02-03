@@ -797,8 +797,8 @@ class WCVendors_Pro_Product_Form {
 			);
 
 			// Special Price date range
-			$sale_price_dates_from = $post_id ? ( ( $date = get_post_meta( $post_id, '_sale_price_dates_from', true ) ) ? date_i18n( 'Y-m-d', $date ) : '' ) : '';
-			$sale_price_dates_to   = $post_id ? ( ( $date = get_post_meta( $post_id, '_sale_price_dates_to', true ) ) ? date_i18n( 'Y-m-d', $date ) : '' ) : '';	
+			$sale_price_dates_from = $post_id ? ( ( $date = get_post_meta( $post_id, '_sale_price_dates_from', true ) ) ? date_i18n( 'd-m-Y', $date ) : '' ) : '';
+			$sale_price_dates_to   = $post_id ? ( ( $date = get_post_meta( $post_id, '_sale_price_dates_to', true ) ) ? date_i18n( 'd-m-y', $date ) : '' ) : '';	
 		
 			// From Sale Date 
 			WCVendors_Pro_Form_Helper::input( apply_filters( 'wcv_product_sale_price_date_from', array( 
@@ -807,7 +807,7 @@ class WCVendors_Pro_Product_Form {
 				'label' 		=> __( 'From', 'wcvendors-pro' ), 
 				'class'			=> 'wcv-datepicker', 
 				'value' 		=> esc_attr( $sale_price_dates_from ), 
-				'placeholder'	=> ( '' == $sale_price_dates_from ) ? __( 'From&hellip;', 'placeholder', 'wcvendors-pro' ). ' YYYY-MM-DD' : '',  
+				'placeholder'	=> ( '' == $sale_price_dates_from ) ? __( 'From&hellip;', 'placeholder', 'wcvendors-pro' ). ' DD-MM-YYY' : '',  
 				'wrapper_start' => '<div class="wcv-cols-group wcv-horizontal-gutters"><div class="all-50 small-100 sale_price_dates_fields">',
 				'wrapper_end' 	=> '</div>', 
 				'custom_attributes' => array(
@@ -823,7 +823,7 @@ class WCVendors_Pro_Product_Form {
 				'id' 				=> '_sale_price_dates_to', 
 				'label' 			=> __( 'To', 'wcvendors-pro' ), 
 				'class'				=> 'wcv-datepicker', 
-				'placeholder'		=> ( '' == $sale_price_dates_to ) ? __( 'To&hellip;', 'placeholder', 'wcvendors-pro' ). ' YYYY-MM-DD' : '', 
+				'placeholder'		=> ( '' == $sale_price_dates_to ) ? __( 'To&hellip;', 'placeholder', 'wcvendors-pro' ). ' DD-MM-YYY' : '', 
 				'wrapper_start' 	=> '<div class="all-50 small-100 sale_price_dates_fields">',
 				'wrapper_end' 		=> '</div></div>', 
 				'value' 			=> esc_attr( $sale_price_dates_to ), 
