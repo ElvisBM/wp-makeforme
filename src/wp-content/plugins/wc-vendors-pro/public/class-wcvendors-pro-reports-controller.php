@@ -343,7 +343,7 @@ class WCVendors_Pro_Reports_Controller {
 				$new_row->ID			= $order->order_id;
 				$new_row->order_number	= $order->order->get_order_number(); 
 				$new_row->product		= $products_html;
-				$new_row->order_date	= date_i18n( 'Y-m-d', strtotime( $order->recorded_time ) ); 
+				$new_row->order_date	= date_i18n( 'd/m/Y', strtotime( $order->recorded_time ) ); 
 				
 				$rows[] = $new_row; 
 
@@ -420,7 +420,7 @@ class WCVendors_Pro_Reports_Controller {
 			$new_row->ID	 		= $product->id; 
 			$new_row->tn 			= get_the_post_thumbnail( $product->id, array( 50,50 ) ); 
 			$new_row->details 		= sprintf( '<a href="%s">' . $product->get_title() .'<br />'. wc_price( $product->get_display_price() ) . $product->get_price_suffix() .'</a>' , $link );  
-			$new_row->status 		= sprintf('%s <br /> %s', WCVendors_Pro_Product_Controller::product_status( $product->post->post_status ), date_i18n( 'Y-m-d' , strtotime( $product->post->post_date ) ) );
+			$new_row->status 		= sprintf('%s <br /> %s', WCVendors_Pro_Product_Controller::product_status( $product->post->post_status ), date_i18n( 'd/m/Y' , strtotime( $product->post->post_date ) ) );
 
 			$rows[] = $new_row; 
 			
@@ -464,8 +464,8 @@ class WCVendors_Pro_Reports_Controller {
 			'id' 			=> '_wcv_dashboard_start_date_input', 
 			'label' 		=> __( 'Start Date', 'wcvendors-pro' ), 
 			'class'			=> 'wcv-datepicker no_limit', 
-			'value' 		=> date("Y-m-d", $this->start_date), 
-			'placeholder'	=> 'YYYY-MM-DD',  
+			'value' 		=> date("d/m/Y", $this->start_date), 
+			'placeholder'	=> 'DD/MM/YYYY',  
 			'wrapper_start' 	=> '<div class="all-66 tiny-50"><div class="wcv-cols-group wcv-horizontal-gutters"><div class="all-50 tiny-100">',
 			'wrapper_end' 		=> '</div>', 
 			'custom_attributes' => array(
@@ -480,8 +480,8 @@ class WCVendors_Pro_Reports_Controller {
 			'id' 			=> '_wcv_dashboard_end_date_input', 
 			'label' 		=> __( 'End Date', 'wcvendors-pro' ), 
 			'class'			=> 'wcv-datepicker no_limit', 
-			'value' 		=> date("Y-m-d", $this->end_date ), 
-			'placeholder'	=> 'YYYY-MM-DD',  
+			'value' 		=> date("d/m/Y", $this->end_date ), 
+			'placeholder'	=> 'DD/MM/YYYY',  
 			'wrapper_start' 	=> '<div class="all-50 tiny-100">',
 			'wrapper_end' 		=> '</div></div></div>', 
 			'custom_attributes' => array(
