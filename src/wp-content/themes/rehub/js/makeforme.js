@@ -7,6 +7,7 @@
 		var classActive = $('#dashboard-menu-item-settings').attr('class');
 		if( classActive != "active" ){
 			$('.wcv-navigation').show();
+			$('.title').show();
 		}	
 
 		//show save button settings

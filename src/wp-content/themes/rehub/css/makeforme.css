@@ -625,7 +625,7 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
 #payment .control-group{display: none;}
 #payment .field{ margin-bottom: 15px;}
 #payment .field label{display: inline-block;margin:0px; margin-right:2%;font-family: 'Poppins', sans-serif;font-weight: 300; width: 15%;}
-.wcv-navigation ul.menu.black li a:hover{background: #24b9d6!important;color:#fff!important;}
+.wcv-navigation ul.menu.black li a:hover{background: #0b6c5e!important;color: #fff;padding: .5em .5em .5em 1em;border-color: #0b6c5e;margin-right: .5em;}
 #payment .field input{display: inline-block;font-family: 'Poppins', sans-serif;width: 80%;font-size: 1em;padding: 5px;letter-spacing: 0.5px;font-weight: 100;}
 #payment .field .all-50 label{display: inline-block;margin:0px; margin-right:4%;font-family: 'Poppins', sans-serif;font-weight: 300; width: 30%;}
 #payment .field .all-50 input{display: inline-block;width: 65%;}
@@ -661,5 +661,16 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
 
 /* Página configurações/settings */
 #page-31 .wcv-navigation{display: none;}
-
-
+#page-31 h3.title{display: none;}
+#page-31 h3.title{font-family: 'Poppins', sans-serif;font-weight: 300;color: #14a18c;margin-bottom: 15px;font-size: 1.2em;}
+#page-31 .button.shop_coupon{display: none;}
+#minha-loja-dash {margin-top: 30px;}
+#minha-loja-dash h3{font-family: 'Poppins', sans-serif;font-weight: 200;color:#24b9d9;margin-bottom: 5px;}
+#minha-loja-dash h4{font-family: 'Poppins', sans-serif;font-weight: 200;color:#14a18c;margin-bottom: 5px;}
+#minha-loja-dash .wcv_dashboard_datepicker{margin-top: 30px;}
+#minha-loja-dash .wcv_dashboard_datepicker label{float: inherit;width: 70%;color:#14a18c;display: inline-block;text-align: left;}
+#minha-loja-dash .wcv_dashboard_overview .large-30{margin-top: 10px;}
+#minha-loja-dash .wcv_dashboard_overview .a-receber{padding-left: 0px;}
+#minha-loja-dash .wcv-datepicker-calendar{position: absolute;top: 0px;left: initial;margin-left: -20%;}
+.wcv_recent_orders{margin-top: 20px;}
+.wcv_recent_orders strong{font-weight: 500;}

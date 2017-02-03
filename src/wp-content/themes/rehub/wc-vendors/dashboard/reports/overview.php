@@ -40,81 +40,87 @@
   		$transferred = "00,00";
   	}
 ?>
+<div id="minha-loja-dash">
+	<div class="wcv_dashboard_datepicker wcv-cols-group"> 
+		
+		<div class="all-100">
+		<h3>Filtro de informação por Data</h3>
+		<hr />
+		<form method="post" action="" class="wcv-form"> 
+			<?php $store_report->date_range_form(); ?>
+		</form>
+		</div>
+	</div>
 
-<div class="wcv_dashboard_datepicker wcv-cols-group"> 
+	<div class="wcv_dashboard_overview wcv-cols-group wcv-horizontal-gutters"> 
+
+		<h3>Extrado de Pagamento</h3>
+		<hr>
+		<div class="xlarge-30 large-30 medium-100 small-100 tiny-100 a-receber">
+			<h4><?php _e( 'A Receber', 'wcvendors-pro'); ?></h4>
+			<table role="grid" class="wcvendors-table wcvendors-table-recent_order wcv-table">
+		  	<tbody>
+			    <tr>
+			      <td><?php _e( 'Saldo: ', 'wcvendors-pro'); ?></td>
+			      <td> R$ <?php echo $waitpayment; ?></td>
+			    </tr>
+		  	</tbody>
+
+			</table>
+		</div>
+
+		<div class="xlarge-30 large-30 medium-100 small-100 tiny-100">
+			<h4><?php _e( 'Já foi transferido', 'wcvendors-pro'); ?></h4>
+			<table role="grid" class="wcvendors-table wcvendors-table-recent_order wcv-table">
+		  	<tbody>
+			    <tr>
+			      <td><?php _e( 'Saldo: ', 'wcvendors-pro'); ?></td>
+			      <td> R$ <?php echo $transferred; ?></td>
+			    </tr>
+		  	</tbody>
+
+			</table>
+		</div>
+
+		<div class="xlarge-30 large-30 medium-100 small-100 tiny-100">
+			<h4><?php _e( 'Será transferido', 'wcvendors-pro'); ?></h4>
+			<table role="grid" class="wcvendors-table wcvendors-table-recent_order wcv-table">
+		  	<tbody>
+			    <tr>
+			      <td><?php _e( 'Saldo: ', 'wcvendors-pro'); ?></td>
+			      <td> R$ <?php echo $available; ?></td>
+			    </tr>
+		  	</tbody>
+			</table>
+		</div>
+
+	</div>
+
+	<?php if ( 'something' == 'somethingelse' ) : ?> 
+
+		<div class="wcv_dashboard_overview wcv-cols-group"> 
+
+			  <div class="xlarge-25 large-25 medium-50 small-50 tiny-100 stats">
+		        	<span><?php _e( 'Orders', 'wcvendors-pro'); ?></span>
+		        	<h3><?php echo $store_report->total_orders; ?></h3>
+			        		<!-- <i class="fa fa-shopping-cart fa-3x orders"></i> -->
+			  </div>
+			  <div class="xlarge-25 large-25 medium-50 small-50 tiny-100 stats">
+		            <span><?php _e( 'Total Products Sold', 'wcvendors-pro'); ?></span>
+		            <h3><?php echo $store_report->total_products_sold; ?></h3>
+			  </div>
+			  <div class="xlarge-25 large-25 medium-50 small-50 tiny-100 stats">
+			   	  <span><?php _e( 'Commission Owed', 'wcvendors-pro'); ?></span>
+			      <h3><?php echo woocommerce_price( $store_report->commission_due ) ;?></h3>
+			  </div>
+			  <div class="xlarge-25 large-25 medium-50 small-50 tiny-100 stats">
+			   	 	<span><?php _e( 'Commission Paid', 'wcvendors-pro'); ?></span>
+			        <h3><?php echo woocommerce_price( $store_report->commission_paid ); ?></h3>
+			  </div>
+
+		</div>
+
+	<?php endif; ?>
+
 	
-	<div class="all-100">
-	<hr />
-	<form method="post" action="" class="wcv-form"> 
-		<?php $store_report->date_range_form(); ?>
-	</form>
-	</div>
 </div>
-
-<div class="wcv_dashboard_overview wcv-cols-group wcv-horizontal-gutters"> 
-
-	<div class="xlarge-30 large-30 medium-100 small-100 tiny-100">
-		<h3><?php _e( 'A Receber', 'wcvendors-pro'); ?></h3>
-		<table role="grid" class="wcvendors-table wcvendors-table-recent_order wcv-table">
-	  	<tbody>
-		    <tr>
-		      <td><?php _e( 'Saldo: ', 'wcvendors-pro'); ?></td>
-		      <td> R$ <?php echo $waitpayment; ?></td>
-		    </tr>
-	  	</tbody>
-
-		</table>
-	</div>
-
-	<div class="xlarge-30 large-30 medium-100 small-100 tiny-100">
-		<h3><?php _e( 'Já foi transferido', 'wcvendors-pro'); ?></h3>
-		<table role="grid" class="wcvendors-table wcvendors-table-recent_order wcv-table">
-	  	<tbody>
-		    <tr>
-		      <td><?php _e( 'Saldo: ', 'wcvendors-pro'); ?></td>
-		      <td> R$ <?php echo $transferred; ?></td>
-		    </tr>
-	  	</tbody>
-
-		</table>
-	</div>
-
-	<div class="xlarge-30 large-30 medium-100 small-100 tiny-100">
-		<h3><?php _e( 'Será transferido', 'wcvendors-pro'); ?></h3>
-		<table role="grid" class="wcvendors-table wcvendors-table-recent_order wcv-table">
-	  	<tbody>
-		    <tr>
-		      <td><?php _e( 'Saldo: ', 'wcvendors-pro'); ?></td>
-		      <td> R$ <?php echo $available; ?></td>
-		    </tr>
-	  	</tbody>
-		</table>
-	</div>
-
-</div>
-
-<?php if ( 'something' == 'somethingelse' ) : ?> 
-
-<div class="wcv_dashboard_overview wcv-cols-group"> 
-
-	  <div class="xlarge-25 large-25 medium-50 small-50 tiny-100 stats">
-        	<span><?php _e( 'Orders', 'wcvendors-pro'); ?></span>
-        	<h3><?php echo $store_report->total_orders; ?></h3>
-	        		<!-- <i class="fa fa-shopping-cart fa-3x orders"></i> -->
-	  </div>
-	  <div class="xlarge-25 large-25 medium-50 small-50 tiny-100 stats">
-            <span><?php _e( 'Total Products Sold', 'wcvendors-pro'); ?></span>
-            <h3><?php echo $store_report->total_products_sold; ?></h3>
-	  </div>
-	  <div class="xlarge-25 large-25 medium-50 small-50 tiny-100 stats">
-	   	  <span><?php _e( 'Commission Owed', 'wcvendors-pro'); ?></span>
-	      <h3><?php echo woocommerce_price( $store_report->commission_due ) ;?></h3>
-	  </div>
-	  <div class="xlarge-25 large-25 medium-50 small-50 tiny-100 stats">
-	   	 	<span><?php _e( 'Commission Paid', 'wcvendors-pro'); ?></span>
-	        <h3><?php echo woocommerce_price( $store_report->commission_paid ); ?></h3>
-	  </div>
-
-</div>
-
-<?php endif; ?>

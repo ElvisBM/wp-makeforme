@@ -15,8 +15,8 @@
 		<div class="clearfix">
 		      <!-- Main Side -->
               <div class="main-side page clearfix full_width">
-           
-                <article class="post" id="page-<?php the_ID(); ?>">				
+                <article class="post" id="page-<?php the_ID(); ?>">
+                <h3 class="title">Minha Loja</h3>				
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                   <?php the_content(); ?>
                   <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'rehub_framework' ), 'after' => '</div>' ) ); ?>
