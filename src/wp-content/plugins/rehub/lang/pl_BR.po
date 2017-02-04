@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: rehub_translation\n"
 "POT-Creation-Date: 2016-07-27 19:54+0200\n"
-"PO-Revision-Date: 2017-01-28 18:34-0200\n"
+"PO-Revision-Date: 2017-02-03 23:44-0200\n"
 "Last-Translator: Sizam themes <sizamtheme@gmail.com>\n"
 "Language-Team: Make for Me <elvisbmartins@gmail.com>\n"
 "Language: pt_BR\n"
@@ -5180,7 +5180,7 @@ msgstr ""
 
 #: ../catalogue_constructor.php:123 ../functions/review_functions.php:1244
 msgid "READ MORE  +"
-msgstr ""
+msgstr "Ver mais +"
 
 #: ../catalogue_constructor.php:131 ../inc/widgets/featured_sidebar.php:128
 #: ../inc/widgets/latest_video.php:51 ../inc/widgets/posts_list.php:108
@@ -5957,7 +5957,7 @@ msgstr ""
 #: ../functions/helper_functions.php:205
 #, php-format
 msgid "Search results for \"%s\""
-msgstr ""
+msgstr "Resultado da busca por \"%s\""
 
 #: ../functions/helper_functions.php:206
 #, php-format
@@ -9377,7 +9377,7 @@ msgstr ""
 
 #: ../search.php:7
 msgid "Search Results"
-msgstr ""
+msgstr "Resultado da busca"
 
 #: ../search.php:28
 msgid "Sorry. No search results found"
