@@ -4,7 +4,7 @@
     <div class="clearfix">
           <!-- Main Side -->
           <div class="main-side clearfix<?php if (rehub_option('rehub_framework_search_layout') == 'rehub_framework_archive_gridfull') : ?> full_width<?php endif ;?>">
-            <div class="wpsm-title middle-size-title wpsm-cat-title"><h5><?php _e('Search Results', 'rehub_framework'); ?></h5></div>
+            <div class="wpsm-title middle-size-title wpsm-cat-title"><h5><?php _e('Resultado da busca', 'rehub_framework'); ?></h5></div>
             <?php if (rehub_option('rehub_framework_search_layout') == 'rehub_framework_archive_grid') : ?>
                 <?php  wp_enqueue_script('masonry'); wp_enqueue_script('imagesloaded'); wp_enqueue_script('masonry_init'); ?>
                 <div class="masonry_grid_fullwidth two-col-gridhub">

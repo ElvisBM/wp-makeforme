@@ -168,6 +168,7 @@ nav.top_menu > ul:not(.off-canvas) > li > a:hover, nav.top_menu > ul:not(.off-ca
     float:right;
     margin-left: 10px;
 }
+.mobileinmenu .user-dropdown-intop-menu .menu-item{margin-top: 0px!important;}
 .is-sticky .user-dropdown-intop{margin-top: 25px;}
 .is-sticky .user-dropdown-intop .user-ava-intop:after{color: #11b8d7!important;}
 .is-sticky .top-social{margin-top: 22px;}

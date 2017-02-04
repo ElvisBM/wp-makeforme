@@ -733,7 +733,7 @@ function rehub_create_btn ($btn_more='', $showme = '') {
 				<?php elseif (rehub_option('rehub_readmore_text') !=''): ?>
 			  		<a href="<?php the_permalink();?>" class="btn_more"><?php echo strip_tags(rehub_option('rehub_readmore_text'));?></a>
 			  	<?php else: ?>
-					<a href="<?php the_permalink();?>" class="btn_more"><?php _e('READ MORE  +', 'rehub_framework') ;?></a>
+					<a href="<?php the_permalink();?>" class="btn_more"> Ver Mais ;)</a>
 			  	<?php endif ?>
 
         	<?php endif ;?>
