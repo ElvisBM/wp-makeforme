@@ -233,7 +233,7 @@ a.wcv-media-uploader-featured-add, a.wcv-media-uploader-featured-delete{display:
 a.wcv-media-uploader-featured-add:hover, a.wcv-media-uploader-featured-delete:hover{background: #14a18c;color:#fff;text-decoration: none;}
 .wcv-product-media a.hidden{display: none;}
 .wcv-product-media .all-66{padding:0 35px;}
-.wcv-product-upsells .control, .wcv-coupon-usage-restrictions > .control{margin: 0 0 25px 0}
+.wcv-product-upsells .control, .wcv-coupon-usage-restrictions > .control{margin: 20px 0 25px 0}
 .button.add_attribute{padding: 10px 14px;border: none;background: #111;color: #fff;line-height: 14px;font-size: 14px; box-shadow: none;}
 .wcv_product_attributes .expand-close {font-size: 90%}
 .wcv-gallery-image{box-shadow: 0 4px 5px #ccc}
@@ -294,4 +294,3 @@ table.wcv-table tr td, table.wcv-table tr th{border-bottom: 1px solid #E1E1E1;}
 .wcv_vendorslist{ overflow: hidden; margin: 0 0 30px 0 !important;}
 .rh_vendors_listflat .vendor_user_meta{padding:0;}
 #buddypress .vendor-list-like{position: absolute; top:10px; right: 15px}
-}

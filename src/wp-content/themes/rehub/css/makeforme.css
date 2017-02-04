@@ -572,6 +572,9 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
 .logo h6{font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #11b8d7;}
+
+.logo_section_wrap .logo a{background:transparent; box-shadow: inherit;}
+.logo_section_wrap .logo a:hover{text-decoration: none;background: transparent;color:#fff;}
 .logo a{    background: #11b8d7;
     color: #fff;
     font-family: 'Poppins', sans-serif;
@@ -665,7 +668,7 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
 /* Página configurações/settings */
 #page-31 .wcv-navigation{display: none;}
 #page-31 h3.title{display: none;}
-#page-31 h3.title{font-family: 'Poppins', sans-serif;font-weight: 300;color: #14a18c;margin-bottom: 15px;font-size: 1.2em;}
+#page-31 h3.title{font-family: 'Poppins', sans-serif;font-weight: 300;color: #14a18c;margin-bottom: 5px;font-size: 1.3em;text-transform: uppercase;margin-top: -2px;letter-spacing: 1px;}
 #page-31 .button.shop_coupon{display: none;}
 #minha-loja-dash {margin-top: 30px;}
 #minha-loja-dash h3{font-family: 'Poppins', sans-serif;font-weight: 200;color:#24b9d9;margin-bottom: 5px;}
@@ -715,3 +718,19 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
 #add-product .wcv_shipping_rates label{width: 100%; text-align: left;}
 #add-product .wcv-product-shipping table{ width: 100%; }
 #add-product .wcv-product-shipping p{font-family: 'Poppins', sans-serif;font-weight: 200;font-size: 1em;color: #605e5e;margin-top: 5px;margin-right: 10px;line-height: 1.3em;}
+
+.wcv-order-header .wcv-form label{width: auto;}
+.wcv-order-header .wcv-form .all-33, .wcv-order-header .wcv-form>.all-33{width: 33%!important;}
+.wcvendors-table-order  strong{font-weight: 400;}
+.wcvendors-table-order .row-actions a{margin: 5px 0px;}
+
+.wcv-modal{margin-top:-250px!important;width: 70%!important; }
+
+#add-coupom h3{font-family: 'Poppins', sans-serif;font-weight: 200;color: #e05d4e;margin-bottom: 5px;}
+#add-coupom .description .control{width: 100%;}
+#add-coupom .description textarea{width: 75%;}
+#add-coupom .unstyled{margin-left: 20px}
+#add-coupom .unstyled label{ width: auto;text-align: left;}
+
+
+
