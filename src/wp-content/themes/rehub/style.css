@@ -33,12 +33,12 @@ a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; color: #000;}
 h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1em; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #111; font-family: 'Poppins', sans-serif; font-size: 1em; font-weight: 500;text-decoration: none !important; }
-h1 { font: 700 28px/38px 'Roboto', trebuchet ms, arial; color: #111111;  margin: 12px 0 15px 0; letter-spacing: -0.5px }
-h2 { font: 700 25px/30px 'Roboto', trebuchet ms; color: #111111; margin: 25px 0 30px 0;  }
-h3 { font: 700 21px/25px 'Roboto', trebuchet ms; color: #111111; margin: 20px 0 25px 0;  }
-h4 { font: 700 18px/21px 'Roboto', trebuchet ms; color: #111111; margin: 15px 0 18px 0  }
-h5 { font: 700 16px/18px 'Roboto', trebuchet ms; color: #111111; margin: 10px 0 15px 0 }
-h6 { font: 700 14px/16px 'Roboto', trebuchet ms; margin: 10px 0 }
+h1 { font: 700 28px/38px 'Roboto', trebuchet ms, arial; color: #24b9d6;  margin: 12px 0 15px 0; letter-spacing: -0.5px }
+h2 { font-weight: 400;font-size: 1.3em;color: #24b9d6; margin: 25px 0 30px 0;  }
+h3 { font-weight: 400; font-size: 1.5em;color: #24b9d6; margin: 20px 0 25px 0;  }
+h4 { font-weight: 400; font-size: 1.5em;color: #24b9d6; margin: 15px 0 18px 0  }
+h5 { font-weight: 400; font-size: 1.5em;color: #24b9d6; margin: 10px 0 15px 0 }
+h6 { font-weight: 400; font-size: 1.5em;margin: 10px 0 }
 .rehub-main-font{font-family: Roboto}
 article p { margin: 0 0 28px 0 }
 article em { font-style: italic }
@@ -640,7 +640,7 @@ span.postview_meta:before{content: "\f06e"; font-size: 12px; font-style: normal;
 .main_slider .flex-control-paging li a { background: none repeat scroll 0 0 #ddd; height: 8px; width: 8px; border-radius: 16px }
 .main_slider .flex-control-nav li { margin: 2px !important }
 .main_slider.flexslider .priced_block{display: inline-block; margin: 0}
-.main_slider.flexslider .hero-description {min-height: 30px; font-size: 1em;line-height: 1.25em;color: #f6f6f6;margin: 0 auto 30px auto;max-width: 500px;position: relative;-webkit-font-smoothing: antialiased;}
+.main_slider.flexslider .hero-description {min-height: 30px; font-size: 1em;line-height: 1.25em;color: #3c9988;margin: 0 auto 30px auto;max-width: 500px;position: relative;-webkit-font-smoothing: antialiased;}
 .main_slider.flexslider .hero-description ul li{list-style: none;}
 .main_slider.bottom_style_slider .slide .flex-overlay{ position: absolute; bottom: 0; left: 0; right: 0; padding: 40px; 
 background: -moz-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.65) 100%);
@@ -2604,7 +2604,7 @@ article.post .rate_bar_wrap_two_reviews a.link_to_review{ position: absolute; bo
 .social_icon_inimage span.share-link-image{ width: 50px; height: 50px; line-height: 50px; display:block; margin-bottom: 5px; font-size: 24px}
 .small_social_inimage.social_icon_inimage span.share-link-image{ width: 38px; height: 38px; line-height: 38px; font-size: 19px}
 .social_icon_inimage span:hover{ top:0; right: 2px}
-.row_social_inpost span.share-link-image { box-shadow: 0 1px 2px #E4E4E4; width: auto;min-width: 20px;height: 20px;line-height: 20px;margin: 0 6px 6px 0;font-size: 16px;padding: 5px 9px;}
+.row_social_inpost span.share-link-image { background: #53ad9d;box-shadow: 0 1px 2px #E4E4E4; width: auto;min-width: 20px;height: 20px;line-height: 20px;margin: 0 6px 6px 0;font-size: 16px;padding: 5px 9px;}
 .row_social_inpost span i{font-size: 15px;}
 .row_social_inpost span.fb:after{content: "Facebook";font-size: 12px;text-decoration: none;margin-left: 8px;}
 .row_social_inpost span.tw:after{content: "Twitter";font-size: 12px;text-decoration: none;margin-left: 8px;}

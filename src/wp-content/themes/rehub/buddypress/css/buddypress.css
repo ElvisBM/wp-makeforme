@@ -609,11 +609,11 @@ li.friend-tab img.avatar {margin: 0 4px;}
 #gmw-your-location-wrapper form .gmw-yl-tab-wrapper table{background-color: transparent !important;}
 #gmw-your-location-wrapper form .gmw-yl-tab-wrapper table tr td{padding: 5px 0 !important}
 #gmw-your-location-wrapper form .gmw-yl-tab-wrapper table tr th{text-align: left !important;}
-.adress-user-geo{font-size: 84%;background: #f2fbff;padding: 20px 10px;border-top: 1px solid #ddd;padding-top: 10px;line-height: 20px;color: #666;}
+.adress-user-geo{display:none;font-size: 84%;background: #f2fbff;padding: 20px 10px;border-top: 1px solid #ddd;padding-top: 10px;line-height: 20px;color: #666;}
 #buddypress #members-list.geowp-item-list .member-inner-list{padding-bottom: 0}
 .geo-pagination{margin: 15px 0; color: #777; font-size: 90%; overflow: hidden;}
-.distance-to-user-geo{margin: 12px 0}
-.distance-to-user-geo i{color: #999}
+.distance-to-user-geo{margin: 0px;}
+.distance-to-user-geo i{color: #fff}
 #gmw-your-location-wrapper div#your-location-section {background: #F8F8F8 !important;border: #d8d8d8 solid 1px !important;}
 #gmw-your-location-wrapper div#your-location-section p{border-bottom: #d8d8d8 solid 1px !important;}
 .editfield p.field-visibility-settings-toggle{margin: 0}

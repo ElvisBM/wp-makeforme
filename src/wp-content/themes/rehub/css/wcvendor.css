@@ -169,12 +169,12 @@ span.product_count_in_member { position: absolute; bottom: 0; right: 0; backgrou
 .vcwendor_profile_content{width: 100%; float: right;}
 .wcvendor_ownertitle{text-align: center;}
 .wcvendor_ownertitle h5{margin: -20px -20px 20px -20px;padding: 12px;color: #000;background: #f7f7f7;}
-.vendor_store_details{margin-bottom:20px;border: 1px solid #f1f1f1;background: #f9f9f9; display: table; width: 100%; box-sizing: border-box; }
+.vendor_store_details{margin-bottom:20px;border: 1px solid #f9c173;background: #fbf8da; display: table; width: 100%; box-sizing: border-box; }
 .vendor_store_details_image, .vendor_store_details_single {display: table-cell;vertical-align: top;line-height: 0.8; padding: 10px}
 .vendor_store_details_single{padding-left: 0}
 .vendor_store_details_single .favorshop_like i{color: #cc0000}
 .vendor_store_details_image{width: 50px}
-.vendor_store_details_label {font-size: 80%;line-height: .8;color: #b7b7b7;}
+.vendor_store_details_label {font-size: 80%;line-height: .8;color:#53ad9d;}
 .vendor_store_details_title h5{font-size: 16px; display: block; margin: 0}
 .vendor_store_details_title{display: block; margin: 5px 0}
 .vendor_store_details_contact {font-size: 0.82em;color: #b7b7b7;line-height: 15px;cursor: pointer;font-family: Arial,Verdana,Helvetica,sans-serif;}
@@ -221,7 +221,7 @@ body.rtl .vendor_store_in_bp_last_products{text-align: left;}
 .wcv-form.wcv-feedbackform input[type="submit"]{padding: 8px 16px; font-size: 16px}
 #tab-vendor_ratings_tab a, .wcv_grid_rating a{text-decoration: none;}
 .wcv_grid_rating{font-size: 90%;}
-#tab-vendor_ratings_tab a i, #tab-vendor_ratings_tab i, .wcv-rating-item h4 i, .wcv_grid_rating i{color: #fb9900}
+#tab-vendor_ratings_tab a i, #tab-vendor_ratings_tab i, .wcv-rating-item h4 i, .wcv_grid_rating i{color: #f2cc31}
 .wcv-rating-posted-by{font-size: 90%; color: #999; line-height: 18px}
 .wcv-rating-posted-by p{margin: 0 0 18px 0}
 .wcv-rating-item {border-bottom: 1px solid #ddd;margin-bottom: 25px;}
