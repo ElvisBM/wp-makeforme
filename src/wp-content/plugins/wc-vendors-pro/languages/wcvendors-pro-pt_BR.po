@@ -3,7 +3,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: WC Vendors Pro\n"
 "POT-Creation-Date: 2016-03-19 13:04+0000\n"
-"PO-Revision-Date: 2017-02-01 18:37-0200\n"
+"PO-Revision-Date: 2017-02-03 18:36-0200\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1189,7 +1189,7 @@ msgstr "Descrição Abreviada"
 #: public/forms/class-wcvendors-pro-product-form.php:384
 #: public/forms/class-wcvendors-pro-product-form.php:417
 msgid "Categories"
-msgstr "Segmentos"
+msgstr "Categorias"
 
 #: includes/class-wcvendors-pro.php:846
 #: public/forms/class-wcvendors-pro-product-form.php:523
@@ -1202,11 +1202,11 @@ msgstr "Atributos"
 
 #: includes/class-wcvendors-pro.php:854
 msgid "Category Display"
-msgstr "Mostrar Segmento"
+msgstr "Mostrar Categoria"
 
 #: includes/class-wcvendors-pro.php:855
 msgid "What kind of category selection."
-msgstr "Que tipo de seleção de  segmento"
+msgstr "Que tipo de seleção de  categoria"
 
 #: includes/class-wcvendors-pro.php:859
 msgid "Multi select"
@@ -1218,11 +1218,11 @@ msgstr "Conferir"
 
 #: includes/class-wcvendors-pro.php:866
 msgid "Hide Categories"
-msgstr "Esconder Segmentos"
+msgstr "Esconder Categorias"
 
 #: includes/class-wcvendors-pro.php:867
 msgid "A comma separated list of categories to hide from the vendor product form. "
-msgstr "Uma lista de segmentos separada por vírgulas para não apresentar no formulário do produto do vendedor. "
+msgstr "Uma lista de categorias separada por vírgulas para não apresentar no formulário do produto do vendedor. "
 
 #: includes/class-wcvendors-pro.php:873
 msgid "Hide Attributes"
@@ -1708,7 +1708,7 @@ msgstr "Administradores não podem ser vendedores. "
 
 #: public/class-wcvendors-pro-dashboard.php:519
 msgid "Dashboard"
-msgstr "Painel"
+msgstr "Minha Loja"
 
 #: public/class-wcvendors-pro-export-helper.php:102
 #: public/class-wcvendors-pro-order-controller.php:385
@@ -3420,7 +3420,7 @@ msgstr "Categoria"
 
 #: public/forms/class-wcvendors-pro-product-form.php:530
 msgid "Search or add a tag&hellip;"
-msgstr "Pesquisar ou adicionar uma etiqueta&hellip;"
+msgstr "Pesquisar ou adicionar uma tag&hellip;"
 
 #: public/forms/class-wcvendors-pro-product-form.php:564
 msgid "Simple product"
@@ -3488,11 +3488,11 @@ msgstr "Para"
 
 #: public/forms/class-wcvendors-pro-product-form.php:733
 msgid "To&hellip;"
-msgstr "Para&hellip;"
+msgstr "Até&hellip;"
 
 #: public/forms/class-wcvendors-pro-product-form.php:738
 msgid "The sale will end at the beginning of the set date."
-msgstr "A data da promoção terminará no início da data definida."
+msgstr "A data da promoção terminará na data definida."
 
 #: public/forms/class-wcvendors-pro-product-form.php:738
 msgid "Cancel"
@@ -4091,7 +4091,7 @@ msgstr "Data de término da venda:"
 #: public/forms/partials/wcvendors-pro-product-variation.php:153
 msgctxt "placeholder"
 msgid "To&hellip;"
-msgstr "Para&hellip;"
+msgstr "Até&hellip;"
 
 #: public/forms/partials/wcvendors-pro-product-variation.php:155
 msgid "Cancel schedule"
