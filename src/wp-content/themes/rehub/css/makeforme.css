@@ -682,9 +682,9 @@ footer#theme_footer.white_style .f_text{color: #fff!important;}
 #minha-loja-dash h4{font-family: 'Poppins', sans-serif;font-weight: 200;color:#14a18c;margin-bottom: 5px;}
 #minha-loja-dash .wcv_dashboard_datepicker{margin-top: 30px;}
 #minha-loja-dash .wcv_dashboard_datepicker label{float: inherit;width: 70%;color:#14a18c;display: inline-block;text-align: left;}
-#minha-loja-dash .wcv_dashboard_overview .large-30{margin-top: 10px;}
+#minha-loja-dash .wcv_dashboard_overview .large-50{margin-top: 10px;}
 #minha-loja-dash .wcv_dashboard_overview .a-receber{padding-left: 0px;}
-#minha-loja-dash .wcv-datepicker-calendar{position: absolute;top: 0px;left: initial;margin-left: -20%;}
+.wcv-datepicker-calendar{position: absolute;top: 0px!important;left: initial!important;margin-left: -2%;z-index: 999;}
 .wcv_recent_orders{margin-top: 20px;}
 .wcv_recent_orders strong{font-weight: 500;}
 
