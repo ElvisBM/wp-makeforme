@@ -9,6 +9,11 @@
  */
 ?>
 
+<?php 
+	//remove
+	if(false){
+?>
+
 <div class="wcv_reports wcv-cols-group wcv-horizontal-gutters"> 
 
 	<div class="all-50 small-100 tiny-100">
@@ -87,9 +92,15 @@
 	</div>
 
 </div>
+<?php 
+	}//enf if remove
+?>
+
 
 <div class="wcv_recent wcv_recent_orders wcv-cols-group wcv-horizontal-gutters"> 	
-	<div class="xlarge-50 large-50 medium-100 small-100 tiny-100">
+
+
+	<div class="xlarge-100 large-100 medium-100 small-100 tiny-100">
 		<h3><?php _e( 'Recent Orders', 'wcvendors-pro'); ?></h3>
 		<hr />
 		<?php $recent_orders = $store_report->recent_orders_table(); ?>
@@ -101,6 +112,10 @@
 	</div>
 
 
+	<?php 
+		//remove
+		if(false){ 
+	?>
 	<div class="xlarge-50 large-50 medium-100 small-100 tiny-100">
 		<h3><?php _e( 'Recent Products', 'wcvendors-pro'); ?></h3>
 		<hr />
@@ -111,5 +126,8 @@
 			<?php endif; ?>
 		<?php endif; ?>
 	</div>
+	<?php 
+		}//endif remove
+	?>
 </div>
 
