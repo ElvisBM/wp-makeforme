@@ -3750,8 +3750,13 @@ function rh_add_map_gmw($atts, $content = null ) {
 		if (is_user_logged_in()){
 			ob_start(); 
 			$mapform = new RH_GMW_FL_Location_Page($user_id);
+
+			if( empty( $mapform->location ) ){
+				$mapform->location = (object) array( 'member_id' => 36, 'lat' => -23.550291, 'long' => -46.634190, 'street_number' =>'', 'street_name' => 'Praça da Sé', 'street' => 'Praça da Sé', 'apt' => '','city' => 'São Paulo', 'state' => 'SP', 'state_long' => 'São Paulo', 'zipcode' => '', 'country' => 'BR', 'country_long' => 'Brasil', 'address' => 'Praça da Sé, São Paulo - SP, Brasil', 'formatted_address' => 'Praça da Sé, São Paulo - SP, Brasil', 'map_icon' => '_default.png');
+			}
+			
 			echo '<div id="buddypress">';
-			$mapform->display_location_form( $mapform->location, $user_id );
+			$mapform->display_location_form( $endereco, $user_id );
 			echo '</div>';
 			$output = ob_get_contents();
 			ob_end_clean();
