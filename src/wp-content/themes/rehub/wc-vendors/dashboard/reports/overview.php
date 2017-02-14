@@ -56,20 +56,7 @@
 
 		<h3>Extrado de Pagamento</h3>
 		<hr>
-		<div class="xlarge-30 large-30 medium-100 small-100 tiny-100 a-receber">
-			<h4><?php _e( 'A Receber', 'wcvendors-pro'); ?></h4>
-			<table role="grid" class="wcvendors-table wcvendors-table-recent_order wcv-table">
-		  	<tbody>
-			    <tr>
-			      <td><?php _e( 'Saldo: ', 'wcvendors-pro'); ?></td>
-			      <td> R$ <?php echo $waitpayment; ?></td>
-			    </tr>
-		  	</tbody>
-
-			</table>
-		</div>
-
-		<div class="xlarge-30 large-30 medium-100 small-100 tiny-100">
+		<div class="xlarge-50 large-50 medium-100 small-100 tiny-100 a-receber">
 			<h4><?php _e( 'Já foi transferido', 'wcvendors-pro'); ?></h4>
 			<table role="grid" class="wcvendors-table wcvendors-table-recent_order wcv-table">
 		  	<tbody>
@@ -82,7 +69,7 @@
 			</table>
 		</div>
 
-		<div class="xlarge-30 large-30 medium-100 small-100 tiny-100">
+		<div class="xlarge-50 large-50 medium-100 small-100 tiny-100">
 			<h4><?php _e( 'Será transferido', 'wcvendors-pro'); ?></h4>
 			<table role="grid" class="wcvendors-table wcvendors-table-recent_order wcv-table">
 		  	<tbody>
