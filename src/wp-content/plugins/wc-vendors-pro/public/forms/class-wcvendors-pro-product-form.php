@@ -759,7 +759,7 @@ class WCVendors_Pro_Product_Form {
 				'wrapper_start' => $wrapper_start, 
 				'wrapper_end' 	=> '</div>', 
 				'custom_attributes' => array( 
-		 			'data-rules' => 'decimal', 
+		 			'data-rules' => '', 
 		 			'data-error' => __( 'Price should be a number.', 'wcvendors-pro' )
 
 		 		)
@@ -789,7 +789,7 @@ class WCVendors_Pro_Product_Form {
 				'wrapper_start' => '<div class="all-50 small-100">', 
 				'wrapper_end' 	=>  '</div></div>', 
 				'custom_attributes' => array( 
-		 			'data-rules' => 'decimal', 
+		 			'data-rules' => '', 
 		 			'data-error' => __( 'Sale price should be a number.', 'wcvendors-pro' )
 
 		 		)
@@ -1745,7 +1745,7 @@ class WCVendors_Pro_Product_Form {
 			'wrapper_start' => '<div class="wcv-cols-group wcv-horizontal-gutters"><div class="all-50 small-100">', 
 			'wrapper_end' 	=>  '</div>', 
 			'custom_attributes' => array( 
-		 			'data-rules' => 'decimal', 
+		 			'data-rules' => '', 
 		 			'data-error' => __( 'This should be a number.', 'wcvendors-pro' )
 
 		 		)
@@ -1851,7 +1851,7 @@ class WCVendors_Pro_Product_Form {
 			'wrapper_start' => '<div class="all-50 small-100">', 
 			'wrapper_end' 	=>  '</div></div>', 
 			'custom_attributes' => array( 
-		 			'data-rules' => 'decimal', 
+		 			'data-rules' => '', 
 		 			'data-error' => __( 'This should be a number.', 'wcvendors-pro' )
 
 		 		)
