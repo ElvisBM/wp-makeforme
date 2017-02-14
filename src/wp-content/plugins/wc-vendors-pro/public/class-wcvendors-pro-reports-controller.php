@@ -316,6 +316,7 @@ class WCVendors_Pro_Reports_Controller {
 			'ID' 			=> __( 'ID', 		'wcvendors-pro' ), 
 			'order_number'	=> __( 'Order #', 	'wcvendors-pro' ),
 			'product'  		=> __( 'Details', 	'wcvendors-pro' ),
+			'status'  		=> __( 'Status Pagamento', 	'wcvendors-pro' ),
 			'order_date'  	=> __( 'Date', 		'wcvendors-pro' ), 
 		); 
 		$recent_order_table->set_columns( $columns ); 
@@ -343,6 +344,7 @@ class WCVendors_Pro_Reports_Controller {
 				$new_row->ID			= $order->order_id;
 				$new_row->order_number	= $order->order->get_order_number(); 
 				$new_row->product		= $products_html;
+				$new_row->status  		= $order->order->get_status();  
 				$new_row->order_date	= date_i18n( 'd/m/Y', strtotime( $order->recorded_time ) ); 
 				
 				$rows[] = $new_row; 
@@ -470,7 +472,7 @@ class WCVendors_Pro_Reports_Controller {
 			'wrapper_end' 		=> '</div>', 
 			'custom_attributes' => array(
 				'maxlenth' 	=> '10', 
-				'pattern' 	=> '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])'
+				'pattern' 	=> '(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}'
 				),
 			) )
 		);
@@ -486,7 +488,7 @@ class WCVendors_Pro_Reports_Controller {
 			'wrapper_end' 		=> '</div></div></div>', 
 			'custom_attributes' => array(
 				'maxlenth' 	=> '10', 
-				'pattern' 	=> '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])'
+				'pattern' 	=> '(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}'
 				),
 			) )
 		);
