@@ -250,10 +250,10 @@ class es_cls_registerhook {
 		wp_enqueue_script( 'es-widget' );
 		$es_select_params = array(
 			'es_email_notice'       => _x( 'Please enter email address.', 'widget-enhanced-select', ES_TDOMAIN ),
-			'es_incorrect_email'    => _x( 'Please provide a valid email address.', 'widget-enhanced-select', ES_TDOMAIN ),
+			'es_incorrect_email'    => _x( 'Por favor coloque um email válido.', 'widget-enhanced-select', ES_TDOMAIN ),
 			'es_load_more'          => _x( 'loading...', 'widget-enhanced-select', ES_TDOMAIN ),
 			'es_ajax_error'         => _x( 'Cannot create XMLHTTP instance', 'widget-enhanced-select', ES_TDOMAIN ),
-			'es_success_message'    => _x( 'Subscribed successfully.', 'widget-enhanced-select', ES_TDOMAIN ),
+			'es_success_message'    => _x( 'Cadastro com sucesso, enviararemos novidades da PETVIVO e do mundo PET.', 'widget-enhanced-select', ES_TDOMAIN ),
 			'es_success_notice'     => _x( 'Your subscription was successful! Within a few minutes, kindly check the mail in your mailbox and confirm your subscription. If you can\'t see the mail in your mailbox, please check your spam folder.', 'widget-enhanced-select', ES_TDOMAIN ),
 			'es_email_exists'       => _x( 'Email Address already exists.', 'widget-enhanced-select', ES_TDOMAIN ),
 			'es_error'              => _x( 'Oops.. Unexpected error occurred.', 'widget-enhanced-select', ES_TDOMAIN ),
@@ -267,10 +267,10 @@ class es_cls_registerhook {
 		wp_enqueue_script( 'es-widget-page' );
 		$es_select_params = array(
 			'es_email_notice'       => _x( 'Please enter email address.', 'widget-page-enhanced-select', ES_TDOMAIN ),
-			'es_incorrect_email'    => _x( 'Please provide a valid email address.', 'widget-page-enhanced-select', ES_TDOMAIN ),
+			'es_incorrect_email'    => _x( 'Por favor coloque um email válido.', 'widget-page-enhanced-select', ES_TDOMAIN ),
 			'es_load_more'          => _x( 'loading...', 'widget-page-enhanced-select', ES_TDOMAIN ),
 			'es_ajax_error'         => _x( 'Cannot create XMLHTTP instance', 'widget-page-enhanced-select', ES_TDOMAIN ),
-			'es_success_message'    => _x( 'Subscribed successfully.', 'widget-page-enhanced-select', ES_TDOMAIN ),
+			'es_success_message'    => _x( 'Cadastro com sucesso, enviararemos novidades da PETVIVO e do mundo PET.', 'widget-page-enhanced-select', ES_TDOMAIN ),
 			'es_success_notice'     => _x( 'Your subscription was successful! Within a few minutes, kindly check the mail in your mailbox and confirm your subscription. If you can\'t see the mail in your mailbox, please check your spam folder.', 'widget-page-enhanced-select', ES_TDOMAIN ),
 			'es_email_exists'       => _x( 'Email Address already exists.', 'widget-page-enhanced-select', ES_TDOMAIN ),
 			'es_error'              => _x( 'Oops.. Unexpected error occurred.', 'widget-page-enhanced-select', ES_TDOMAIN ),
