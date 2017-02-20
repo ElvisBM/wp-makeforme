@@ -282,6 +282,7 @@ nav.top_menu > ul:not(.off-canvas) > li > a:hover, nav.top_menu > ul:not(.off-ca
     z-index: 999;
     position: absolute;
     left: 0px;
+    bottom: 0px;
 }
 
 .promocoes .main_slider.full_width_slider.flexslider{height: 600px;}
@@ -310,8 +311,8 @@ nav.top_menu > ul:not(.off-canvas) > li > a:hover, nav.top_menu > ul:not(.off-ca
     display: inline-block;
     margin: 0;
     float: left;
-    margin-left: -40px;
-    margin-top: 182px;
+    margin-left: -30px;
+    margin-top: 50px;
 }
 
 .promocoes .priced_block .price_count{
@@ -415,6 +416,10 @@ nav.top_menu > ul:not(.off-canvas) > li > a:hover, nav.top_menu > ul:not(.off-ca
 .footer-bottom .container .footer_widget a{
     text-decoration: none;
 }
+
+
+.es_textbox_class{width: 100%;}
+
 footer#theme_footer.white_style{
     background: #1fa58c;
     border:0px;

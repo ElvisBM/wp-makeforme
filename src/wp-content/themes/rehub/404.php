@@ -5,9 +5,9 @@
           <!-- Main Side -->
           <div class="main-side clearfix">
             <div class="post errorpage">				
-                <span class="error-text"><?php _e('Houston, we have a problem.', 'rehub_framework'); ?></span>
+                <span class="error-text"><?php _e('Desculpe, não encontramos o que procurava.', 'rehub_framework'); ?></span>
                 <h2>404</h2>
-                <span class="error-text"><?php _e('The page you are looking for has not been found.', 'rehub_framework'); ?></span>
+                <span class="error-text"><?php _e('Use nosso campo de busca, que encontramos a gostosura que deseja :)', 'rehub_framework'); ?></span>
                 <div class="clearfix"></div>
                 <?php get_search_form(); ?>			
             </div>	

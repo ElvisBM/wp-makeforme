@@ -1707,21 +1707,22 @@ input[type="text"]:focus, textarea:focus, input[type="tel"]:focus, input[type="p
 .rh_table_image{display: table-cell; vertical-align: middle; text-align: center;}
 .rh_table_image img{width: auto; max-width: 100%; height: auto;}
 .def_btn, input[type="submit"], input[type="button"]{ 
-	display: inline-block;
-	padding: 6px 7px; color: #444; text-align: center; vertical-align: middle; cursor: pointer;
-	background-color: #ebebeb;
-    background: -webkit-linear-gradient(top, #fff 1px, #f9f9f9 1px, #ebebeb);
-    background: linear-gradient(to bottom, #fff 1px, #f9f9f9 1px, #ebebeb);
-    border: 1px solid #b9bbbd; border-radius: 3px; *zoom: 1;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7), 0 1px 2px rgba(0, 0, 0, 0.08); 
-	transition: all 0.4s ease 0s;outline: none;font: 700 14px/16px 'Roboto', trebuchet ms; text-decoration: none;-webkit-appearance: none; }
-.def_btn{text-shadow: 0 1px 1px #fff;}
+	font-family: 'Poppins', sans-serif;
+    background-color: #0db5d9;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+    vertical-align: top;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;border: 0px;}
 .def_btn:hover, input[type="submit"]:hover, input[type="submit"]:focus {
-	background-color: #f4f4f4;
-    background: -webkit-linear-gradient(top, #fff, #f4f4f4);
-    background: linear-gradient(to bottom, #fff, #f4f4f4);
-    box-shadow: inset 0 -100px 0 #f9f9f9;
-    color: #111;
+	background-color: #53ad9d;
+	background: -webkit-linear-gradient(top, #5dd2bd, #68d6c2);
+	background: linear-gradient(to bottom, #5dd2bd, #53ad9d);
+	text-decoration: none !important;
 }
 .def_btn:active, input[type="submit"]:active { box-shadow: inset 0 6px 12px rgba(218, 218, 218, 0.8), 0 1px 2px rgba(0, 0, 0, 0.09); }
 select{padding: 6px 8px; border-radius: 0; outline: 0}

@@ -1,22 +1,28 @@
 ﻿.post .woocommerce ul li { list-style: none; }
 .nobr { white-space: nowrap; }
 .single-product .post { overflow: visible; }
-.wc_vendors_dash_links a.button, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #content input.button, .woocommerce-page #content input.button { padding: 8px 14px; font-size: 14px; font-weight: bold; line-height: 14px; text-transform:uppercase;  color: #111; text-align: center; text-shadow: 0 1px 1px #fff; vertical-align: middle; cursor: pointer;  border-radius: 3px;
-background-color: #ebebeb;
-background: -webkit-linear-gradient(top, #fff 1px, #f9f9f9 1px, #ebebeb);
-background: linear-gradient(to bottom, #fff 1px, #f9f9f9 1px, #ebebeb);
-border: 1px solid #b9bbbd; 
-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7), 0 1px 2px rgba(0, 0, 0, 0.08); 
-transition: all 0.4s ease 0s; position: relative; text-decoration: none;}
+.wc_vendors_dash_links a.button, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #content input.button, .woocommerce-page #content input.button {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0db5d9;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+    vertical-align: top;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 .woocommerce .button.alt, .woocommerce .checkout_coupon .button{ padding: 10px 16px}
 .wc_vendors_dash_links a.button{ font-size: 13px; padding: 6px 12px}
 .single-product .summary .rehub_offer_coupon.not_masked_coupon{ padding: 8px 15px; margin-bottom: 10px; background-color: #fff; font-size: 15px  }
 .single-product article h1{ font-size: 25px; line-height: 30px}
 .single-product .related{ clear: both;}
 .woocommerce a.button:hover, .woocommerce-page a.button:hover, .woocommerce button.button:hover, .woocommerce-page button.button:hover, .woocommerce input.button:hover, .woocommerce-page input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce-page #respond input#submit:hover, .woocommerce #content input.button:hover, .woocommerce-page #content input.button:hover { 
-background-color: #f4f4f4;
-background: -webkit-linear-gradient(top, #fff, #f4f4f4);
-background: linear-gradient(to bottom, #fff, #f4f4f4);
+background-color: #53ad9d;
+background: -webkit-linear-gradient(top, #5dd2bd, #68d6c2);
+background: linear-gradient(to bottom, #5dd2bd, #53ad9d);
 text-decoration: none !important; }
 .woocommerce a.button:active, .woocommerce-page a.button:active, .woocommerce button.button:active, .woocommerce-page button.button:active, .woocommerce input.button:active, .woocommerce-page input.button:active, .woocommerce #respond input#submit:active, .woocommerce-page #respond input#submit:active, .woocommerce #content input.button:active, .woocommerce-page #content input.button:active { 
 box-shadow: inset 0 6px 12px rgba(218, 218, 218, 0.8), 0 1px 2px rgba(0, 0, 0, 0.09); 

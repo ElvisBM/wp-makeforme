@@ -10,7 +10,7 @@
     <div class="clearfix">
           <!-- Main Side -->
           <div class="main-side clearfix<?php if (rehub_option('rehub_framework_archive_layout') == 'rehub_framework_archive_gridfull') : ?> full_width<?php endif ;?>">
-            <div class="wpsm-title under-title-line middle-size-title"><h5><?php _e('Latest Posts', 'rehub_framework'); ?></h5></div>
+            <div class="wpsm-title under-title-line middle-size-title"><h5><?php _e('Novidades', 'rehub_framework'); ?></h5></div>
             <?php
                 $module_exclude = rehub_option('rehub_exclude_posts');
                 if(($module_exclude) == 1) {
