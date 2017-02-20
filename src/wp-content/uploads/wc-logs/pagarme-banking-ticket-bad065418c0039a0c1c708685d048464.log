@@ -1,0 +1,694 @@
+02-14-2017 @ 16:25:05 - Doing a transaction for order 5836...
+02-14-2017 @ 16:25:15 - WP_Error in doing the transaction: cURL error 28: Connection timed out after 10022 milliseconds
+02-14-2017 @ 16:25:15 - Payment status for order 5836 is now: 
+02-20-2017 @ 15:34:21 - Doing a transaction for order 5845...
+02-20-2017 @ 15:34:22 - Failed to make the transaction: Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [access-control-allow-credentials] => true
+                    [access-control-allow-headers] => Content-Type, Authorization, X-Requested-With, X-HTTP-Method-Override
+                    [access-control-allow-methods] => GET,PUT,POST,DELETE
+                    [access-control-allow-origin] => *
+                    [charset] => utf-8
+                    [content-type] => application/json
+                    [date] => Mon, 20 Feb 2017 15:34:25 GMT
+                    [server] => nginx
+                    [x-powered-by] => Express
+                    [x-response-time] => 22ms
+                    [set-cookie] => Array
+                        (
+                            [0] => visid_incap_166741=IFRc3veFRWikV3BJtrvjb34Mq1gAAAAAQUIPAAAAAADZc8W9OtVrQ7F6i7CNLCvk; expires=Tue, 20 Feb 2018 07:38:25 GMT; path=/; Domain=.pagar.me
+                            [1] => nlbi_166741=SVwRUP68y3OhvkDstCXDpgAAAADibQi3ze1W5Jahc86LP5kF; path=/; Domain=.pagar.me
+                            [2] => incap_ses_297_166741=PkBvMrdiBQLu21U8dCgfBH4Mq1gAAAAAls/t6vlP1G/CoLapw4tmEw==; path=/; Domain=.pagar.me
+                        )
+
+                    [x-iinfo] => 8-34649029-34649052 NNNN CT(125 186 0) RT(1487604861305 70) q(0 0 3 -1) r(5 7) U5
+                    [x-cdn] => Incapsula
+                    [content-encoding] => gzip
+                )
+
+        )
+
+    [body] => {"errors":[{"type":"invalid_parameter","parameter_name":"split_rules","message":"O valor total do split deve ser igual ao valor da transação."}],"url":"/transactions","method":"post"}
+    [response] => Array
+        (
+            [code] => 400
+            [message] => Bad Request
+        )
+
+    [cookies] => Array
+        (
+            [0] => WP_Http_Cookie Object
+                (
+                    [name] => visid_incap_166741
+                    [value] => IFRc3veFRWikV3BJtrvjb34Mq1gAAAAAQUIPAAAAAADZc8W9OtVrQ7F6i7CNLCvk
+                    [expires] => 1519112305
+                    [path] => /
+                    [domain] => pagar.me
+                )
+
+            [1] => WP_Http_Cookie Object
+                (
+                    [name] => nlbi_166741
+                    [value] => SVwRUP68y3OhvkDstCXDpgAAAADibQi3ze1W5Jahc86LP5kF
+                    [expires] => 
+                    [path] => /
+                    [domain] => pagar.me
+                )
+
+            [2] => WP_Http_Cookie Object
+                (
+                    [name] => incap_ses_297_166741
+                    [value] => PkBvMrdiBQLu21U8dCgfBH4Mq1gAAAAAls/t6vlP1G/CoLapw4tmEw==
+                    [expires] => 
+                    [path] => /
+                    [domain] => pagar.me
+                )
+
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => {"errors":[{"type":"invalid_parameter","parameter_name":"split_rules","message":"O valor total do split deve ser igual ao valor da transação."}],"url":"/transactions","method":"post"}
+                    [raw] => HTTP/1.1 400 Bad Request
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With, X-HTTP-Method-Override
+Access-Control-Allow-Methods: GET,PUT,POST,DELETE
+Access-Control-Allow-Origin: *
+Charset: utf-8
+Content-Type: application/json
+Date: Mon, 20 Feb 2017 15:34:25 GMT
+Server: nginx
+X-Powered-By: Express
+X-Response-Time: 22ms
+Connection: Close
+Set-Cookie: visid_incap_166741=IFRc3veFRWikV3BJtrvjb34Mq1gAAAAAQUIPAAAAAADZc8W9OtVrQ7F6i7CNLCvk; expires=Tue, 20 Feb 2018 07:38:25 GMT; path=/; Domain=.pagar.me
+Set-Cookie: nlbi_166741=SVwRUP68y3OhvkDstCXDpgAAAADibQi3ze1W5Jahc86LP5kF; path=/; Domain=.pagar.me
+Set-Cookie: incap_ses_297_166741=PkBvMrdiBQLu21U8dCgfBH4Mq1gAAAAAls/t6vlP1G/CoLapw4tmEw==; path=/; Domain=.pagar.me
+X-Iinfo: 8-34649029-34649052 NNNN CT(125 186 0) RT(1487604861305 70) q(0 0 3 -1) r(5 7) U5
+X-CDN: Incapsula
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{"errors":[{"type":"invalid_parameter","parameter_name":"split_rules","message":"O valor total do split deve ser igual ao valor da transação."}],"url":"/transactions","method":"post"}
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [access-control-allow-credentials] => Array
+                                        (
+                                            [0] => true
+                                        )
+
+                                    [access-control-allow-headers] => Array
+                                        (
+                                            [0] => Content-Type, Authorization, X-Requested-With, X-HTTP-Method-Override
+                                        )
+
+                                    [access-control-allow-methods] => Array
+                                        (
+                                            [0] => GET,PUT,POST,DELETE
+                                        )
+
+                                    [access-control-allow-origin] => Array
+                                        (
+                                            [0] => *
+                                        )
+
+                                    [charset] => Array
+                                        (
+                                            [0] => utf-8
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => application/json
+                                        )
+
+                                    [date] => Array
+                                        (
+                                            [0] => Mon, 20 Feb 2017 15:34:25 GMT
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => nginx
+                                        )
+
+                                    [x-powered-by] => Array
+                                        (
+                                            [0] => Express
+                                        )
+
+                                    [x-response-time] => Array
+                                        (
+                                            [0] => 22ms
+                                        )
+
+                                    [set-cookie] => Array
+                                        (
+                                            [0] => visid_incap_166741=IFRc3veFRWikV3BJtrvjb34Mq1gAAAAAQUIPAAAAAADZc8W9OtVrQ7F6i7CNLCvk; expires=Tue, 20 Feb 2018 07:38:25 GMT; path=/; Domain=.pagar.me
+                                            [1] => nlbi_166741=SVwRUP68y3OhvkDstCXDpgAAAADibQi3ze1W5Jahc86LP5kF; path=/; Domain=.pagar.me
+                                            [2] => incap_ses_297_166741=PkBvMrdiBQLu21U8dCgfBH4Mq1gAAAAAls/t6vlP1G/CoLapw4tmEw==; path=/; Domain=.pagar.me
+                                        )
+
+                                    [x-iinfo] => Array
+                                        (
+                                            [0] => 8-34649029-34649052 NNNN CT(125 186 0) RT(1487604861305 70) q(0 0 3 -1) r(5 7) U5
+                                        )
+
+                                    [x-cdn] => Array
+                                        (
+                                            [0] => Incapsula
+                                        )
+
+                                    [content-encoding] => Array
+                                        (
+                                            [0] => gzip
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 400
+                    [protocol_version] => 1.1
+                    [success] => 
+                    [redirects] => 0
+                    [url] => https://api.pagar.me/1/transactions
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                    [visid_incap_166741] => Requests_Cookie Object
+                                        (
+                                            [name] => visid_incap_166741
+                                            [value] => IFRc3veFRWikV3BJtrvjb34Mq1gAAAAAQUIPAAAAAADZc8W9OtVrQ7F6i7CNLCvk
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [expires] => 1519112305
+                                                            [path] => /
+                                                            [domain] => pagar.me
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1487604862
+                                                    [last-access] => 1487604862
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1487604862
+                                        )
+
+                                    [nlbi_166741] => Requests_Cookie Object
+                                        (
+                                            [name] => nlbi_166741
+                                            [value] => SVwRUP68y3OhvkDstCXDpgAAAADibQi3ze1W5Jahc86LP5kF
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [path] => /
+                                                            [domain] => pagar.me
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1487604862
+                                                    [last-access] => 1487604862
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1487604862
+                                        )
+
+                                    [incap_ses_297_166741] => Requests_Cookie Object
+                                        (
+                                            [name] => incap_ses_297_166741
+                                            [value] => PkBvMrdiBQLu21U8dCgfBH4Mq1gAAAAAls/t6vlP1G/CoLapw4tmEw==
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [path] => /
+                                                            [domain] => pagar.me
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1487604862
+                                                    [last-access] => 1487604862
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1487604862
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+
+02-20-2017 @ 16:27:11 - Doing a transaction for order 5845...
+02-20-2017 @ 16:27:13 - Failed to make the transaction: Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [access-control-allow-credentials] => true
+                    [access-control-allow-headers] => Content-Type, Authorization, X-Requested-With, X-HTTP-Method-Override
+                    [access-control-allow-methods] => GET,PUT,POST,DELETE
+                    [access-control-allow-origin] => *
+                    [charset] => utf-8
+                    [content-type] => application/json
+                    [date] => Mon, 20 Feb 2017 16:27:16 GMT
+                    [server] => nginx
+                    [x-powered-by] => Express
+                    [x-response-time] => 42ms
+                    [set-cookie] => Array
+                        (
+                            [0] => visid_incap_166741=Kz9C3jBrQEOusvH8x3973eEYq1gAAAAAQUIPAAAAAABGt7DxYWM15LzGg/MhqDyf; expires=Tue, 20 Feb 2018 07:38:25 GMT; path=/; Domain=.pagar.me
+                            [1] => nlbi_166741=7wErbNn1GwkU5Hf0tCXDpgAAAADljI8okM2l/bGEGIj6Hq52; path=/; Domain=.pagar.me
+                            [2] => incap_ses_297_166741=B6AuIZHKFjDsIHg8dCgfBOEYq1gAAAAALAitqcEBtIBKV2X1L6nRIg==; path=/; Domain=.pagar.me
+                        )
+
+                    [x-iinfo] => 8-35327145-35327193 NNNN CT(197 135 0) RT(1487608031475 390) q(0 0 3 -1) r(5 13) U5
+                    [x-cdn] => Incapsula
+                    [content-encoding] => gzip
+                )
+
+        )
+
+    [body] => {"errors":[{"type":"invalid_parameter","parameter_name":"split_rules","message":"O valor total do split deve ser igual ao valor da transação."}],"url":"/transactions","method":"post"}
+    [response] => Array
+        (
+            [code] => 400
+            [message] => Bad Request
+        )
+
+    [cookies] => Array
+        (
+            [0] => WP_Http_Cookie Object
+                (
+                    [name] => visid_incap_166741
+                    [value] => Kz9C3jBrQEOusvH8x3973eEYq1gAAAAAQUIPAAAAAABGt7DxYWM15LzGg/MhqDyf
+                    [expires] => 1519112305
+                    [path] => /
+                    [domain] => pagar.me
+                )
+
+            [1] => WP_Http_Cookie Object
+                (
+                    [name] => nlbi_166741
+                    [value] => 7wErbNn1GwkU5Hf0tCXDpgAAAADljI8okM2l/bGEGIj6Hq52
+                    [expires] => 
+                    [path] => /
+                    [domain] => pagar.me
+                )
+
+            [2] => WP_Http_Cookie Object
+                (
+                    [name] => incap_ses_297_166741
+                    [value] => B6AuIZHKFjDsIHg8dCgfBOEYq1gAAAAALAitqcEBtIBKV2X1L6nRIg==
+                    [expires] => 
+                    [path] => /
+                    [domain] => pagar.me
+                )
+
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => {"errors":[{"type":"invalid_parameter","parameter_name":"split_rules","message":"O valor total do split deve ser igual ao valor da transação."}],"url":"/transactions","method":"post"}
+                    [raw] => HTTP/1.1 400 Bad Request
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With, X-HTTP-Method-Override
+Access-Control-Allow-Methods: GET,PUT,POST,DELETE
+Access-Control-Allow-Origin: *
+Charset: utf-8
+Content-Type: application/json
+Date: Mon, 20 Feb 2017 16:27:16 GMT
+Server: nginx
+X-Powered-By: Express
+X-Response-Time: 42ms
+Connection: Close
+Set-Cookie: visid_incap_166741=Kz9C3jBrQEOusvH8x3973eEYq1gAAAAAQUIPAAAAAABGt7DxYWM15LzGg/MhqDyf; expires=Tue, 20 Feb 2018 07:38:25 GMT; path=/; Domain=.pagar.me
+Set-Cookie: nlbi_166741=7wErbNn1GwkU5Hf0tCXDpgAAAADljI8okM2l/bGEGIj6Hq52; path=/; Domain=.pagar.me
+Set-Cookie: incap_ses_297_166741=B6AuIZHKFjDsIHg8dCgfBOEYq1gAAAAALAitqcEBtIBKV2X1L6nRIg==; path=/; Domain=.pagar.me
+X-Iinfo: 8-35327145-35327193 NNNN CT(197 135 0) RT(1487608031475 390) q(0 0 3 -1) r(5 13) U5
+X-CDN: Incapsula
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{"errors":[{"type":"invalid_parameter","parameter_name":"split_rules","message":"O valor total do split deve ser igual ao valor da transação."}],"url":"/transactions","method":"post"}
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [access-control-allow-credentials] => Array
+                                        (
+                                            [0] => true
+                                        )
+
+                                    [access-control-allow-headers] => Array
+                                        (
+                                            [0] => Content-Type, Authorization, X-Requested-With, X-HTTP-Method-Override
+                                        )
+
+                                    [access-control-allow-methods] => Array
+                                        (
+                                            [0] => GET,PUT,POST,DELETE
+                                        )
+
+                                    [access-control-allow-origin] => Array
+                                        (
+                                            [0] => *
+                                        )
+
+                                    [charset] => Array
+                                        (
+                                            [0] => utf-8
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => application/json
+                                        )
+
+                                    [date] => Array
+                                        (
+                                            [0] => Mon, 20 Feb 2017 16:27:16 GMT
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => nginx
+                                        )
+
+                                    [x-powered-by] => Array
+                                        (
+                                            [0] => Express
+                                        )
+
+                                    [x-response-time] => Array
+                                        (
+                                            [0] => 42ms
+                                        )
+
+                                    [set-cookie] => Array
+                                        (
+                                            [0] => visid_incap_166741=Kz9C3jBrQEOusvH8x3973eEYq1gAAAAAQUIPAAAAAABGt7DxYWM15LzGg/MhqDyf; expires=Tue, 20 Feb 2018 07:38:25 GMT; path=/; Domain=.pagar.me
+                                            [1] => nlbi_166741=7wErbNn1GwkU5Hf0tCXDpgAAAADljI8okM2l/bGEGIj6Hq52; path=/; Domain=.pagar.me
+                                            [2] => incap_ses_297_166741=B6AuIZHKFjDsIHg8dCgfBOEYq1gAAAAALAitqcEBtIBKV2X1L6nRIg==; path=/; Domain=.pagar.me
+                                        )
+
+                                    [x-iinfo] => Array
+                                        (
+                                            [0] => 8-35327145-35327193 NNNN CT(197 135 0) RT(1487608031475 390) q(0 0 3 -1) r(5 13) U5
+                                        )
+
+                                    [x-cdn] => Array
+                                        (
+                                            [0] => Incapsula
+                                        )
+
+                                    [content-encoding] => Array
+                                        (
+                                            [0] => gzip
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 400
+                    [protocol_version] => 1.1
+                    [success] => 
+                    [redirects] => 0
+                    [url] => https://api.pagar.me/1/transactions
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                    [visid_incap_166741] => Requests_Cookie Object
+                                        (
+                                            [name] => visid_incap_166741
+                                            [value] => Kz9C3jBrQEOusvH8x3973eEYq1gAAAAAQUIPAAAAAABGt7DxYWM15LzGg/MhqDyf
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [expires] => 1519112305
+                                                            [path] => /
+                                                            [domain] => pagar.me
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1487608033
+                                                    [last-access] => 1487608033
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1487608033
+                                        )
+
+                                    [nlbi_166741] => Requests_Cookie Object
+                                        (
+                                            [name] => nlbi_166741
+                                            [value] => 7wErbNn1GwkU5Hf0tCXDpgAAAADljI8okM2l/bGEGIj6Hq52
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [path] => /
+                                                            [domain] => pagar.me
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1487608033
+                                                    [last-access] => 1487608033
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1487608033
+                                        )
+
+                                    [incap_ses_297_166741] => Requests_Cookie Object
+                                        (
+                                            [name] => incap_ses_297_166741
+                                            [value] => B6AuIZHKFjDsIHg8dCgfBOEYq1gAAAAALAitqcEBtIBKV2X1L6nRIg==
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [path] => /
+                                                            [domain] => pagar.me
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1487608033
+                                                    [last-access] => 1487608033
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1487608033
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+
+02-20-2017 @ 16:53:54 - Doing a transaction for order 5845...
+02-20-2017 @ 16:53:56 - Transaction completed successfully! The transaction response is: Array
+(
+    [object] => transaction
+    [status] => waiting_payment
+    [refuse_reason] => 
+    [status_reason] => acquirer
+    [acquirer_response_code] => 
+    [acquirer_name] => pagarme
+    [acquirer_id] => 584b1c87bec203db21f109e7
+    [authorization_code] => 
+    [soft_descriptor] => 
+    [tid] => 1309465
+    [nsu] => 1309465
+    [date_created] => 2017-02-20T16:53:55.658Z
+    [date_updated] => 2017-02-20T16:53:55.885Z
+    [amount] => 5117
+    [authorized_amount] => 5117
+    [paid_amount] => 0
+    [refunded_amount] => 0
+    [installments] => 1
+    [id] => 1309465
+    [cost] => 0
+    [card_holder_name] => 
+    [card_last_digits] => 
+    [card_first_digits] => 
+    [card_brand] => 
+    [card_pin_mode] => 
+    [postback_url] => http://localhost/makeforme/src/wc-api/WC_Pagarme_Banking_Ticket_Gateway/
+    [payment_method] => boleto
+    [capture_method] => ecommerce
+    [antifraud_score] => 
+    [boleto_url] => https://pagar.me
+    [boleto_barcode] => 1234 5678
+    [boleto_expiration_date] => 2017-02-27T03:00:00.000Z
+    [referer] => api_key
+    [ip] => 201.6.134.158
+    [subscription_id] => 
+    [phone] => Array
+        (
+            [object] => phone
+            [ddi] => 55
+            [ddd] => 11
+            [number] => 968610838
+            [id] => 76639
+        )
+
+    [address] => Array
+        (
+            [object] => address
+            [street] => Rua Jerônimo Veloso Cubas, 390
+            [complementary] => Jardim Fanganiello
+            [street_number] => Jardim Fanganiello
+            [neighborhood] => Jardim Fanganiello
+            [city] => São Paulo
+            [state] => SP
+            [zipcode] => 08450550
+            [country] => Brasil
+            [id] => 78970
+        )
+
+    [customer] => Array
+        (
+            [object] => customer
+            [document_number] => 
+            [document_type] => cpf
+            [name] => Elvis Martins
+            [email] => elvisbmartins@gmail.com
+            [born_at] => 1991-10-25T02:00:00.000Z
+            [gender] => M
+            [date_created] => 2017-01-09T22:51:16.530Z
+            [id] => 133733
+        )
+
+    [card] => 
+    [split_rules] => Array
+        (
+            [0] => Array
+                (
+                    [object] => split_rule
+                    [id] => sr_cizecd93w00x2ou6e0nwdxgf9
+                    [recipient_id] => re_ciygav1qn003yj16d6xmz1w61
+                    [charge_processing_fee] => 
+                    [charge_remainder] => 
+                    [liable] => 
+                    [percentage] => 
+                    [amount] => 2083
+                    [date_created] => 2017-02-20T16:53:55.676Z
+                    [date_updated] => 2017-02-20T16:53:55.676Z
+                )
+
+            [1] => Array
+                (
+                    [object] => split_rule
+                    [id] => sr_cizecd93w00x1ou6exonxtz2f
+                    [recipient_id] => re_cixqssa0c004z4w6ew2fn8mob
+                    [charge_processing_fee] => 
+                    [charge_remainder] => 
+                    [liable] => 
+                    [percentage] => 
+                    [amount] => 2267
+                    [date_created] => 2017-02-20T16:53:55.676Z
+                    [date_updated] => 2017-02-20T16:53:55.676Z
+                )
+
+            [2] => Array
+                (
+                    [object] => split_rule
+                    [id] => sr_cizecd93v00x0ou6euvk9vtd7
+                    [recipient_id] => re_cixqs8mzn004z4m6e4q7kml2l
+                    [charge_processing_fee] => 1
+                    [charge_remainder] => 1
+                    [liable] => 1
+                    [percentage] => 
+                    [amount] => 767
+                    [date_created] => 2017-02-20T16:53:55.676Z
+                    [date_updated] => 2017-02-20T16:53:55.676Z
+                )
+
+        )
+
+    [metadata] => Array
+        (
+            [order_number] => 5845
+        )
+
+    [antifraud_metadata] => Array
+        (
+        )
+
+)
+
+02-20-2017 @ 16:53:56 - Payment status for order 5845 is now: waiting_payment
