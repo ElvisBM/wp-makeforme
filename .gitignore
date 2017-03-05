@@ -1,0 +1,17 @@
+# remove uploads
+src/wp-content/uploads/
+
+#remove wp-config-sample
+src/wp-config-sample.php
+
+# remove plg all-in-one-wp-migration
+src/wp-content/ai1wm-backups/
+src/wp-content/plugins/all-in-one-wp-migration/
+
+#remove plg woocommerce-pagarme-receiver
+src/wp-content/plugins/woocommerce-pagarme-receiver/
+
+#remove themes base wp
+src/wp-content/themes/twentyfifteen/
+src/wp-content/themes/twentyseventeen/
+src/wp-content/themes/twentysixteen/
