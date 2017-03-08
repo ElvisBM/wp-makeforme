@@ -36,7 +36,7 @@ function gmw_fl_update_location() {
 
     else :
 
-        echo __( 'Location successfully saved!', 'GMW' );
+        echo __( 'Endereço salvo com Sucesso!', 'GMW' );
 
     	$args = array( 
     			'location' 	=> apply_filters('gmw_fl_activity_address_fields', $location['gmw_formatted_address'], $location ),

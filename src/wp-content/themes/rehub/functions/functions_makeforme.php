@@ -1,6 +1,9 @@
 <?php 
 
 
+//Add Busca MakerMe
+include (TEMPLATEPATH . '/functions/busca_makerme.php');
+
 
 //Header Top Widget
 function makeforme_register_sidebars() {
@@ -79,3 +82,89 @@ function wc_producao() {
     $output = get_post_meta( get_the_ID(), 'wcv_custom_product_producao', true ); // Change wcv_custom_product_ingredients to your meta key
     echo 'Tempo para a produção: ' . $output . '<br>';
 }
+
+
+/**
+ * Add Field upload CPF
+ */
+function upload_cpf_cnpj_maker( ){ 
+	if ( class_exists( 'WCVendors_Pro' ) ){ 
+		$key = '_wcv_custom_settings_cpf_cnpj_maker'; 
+		$value = get_user_meta( get_current_user_id(), $key, true ); 
+		WCVendors_Pro_Form_Helper::file_uploader(  array(  
+			'header_text'		=> __('Enviar CPF ou CNPJ', 'wcvendors-pro' ), 
+			'add_text' 			=> __('Adicionar Imagem', 'wcvendors-pro' ), 
+			'remove_text'		=> __('Remover imagem', 'wcvendors-pro' ), 
+			'image_meta_key' 	=> $key, 
+			'save_button'		=> __('Salvar Imagem', 'wcvendors-pro' ), 
+			'window_title'		=> __('Selecionar CPF ou CNPJ', 'wcvendors-pro' ), 
+			'value'				=> $value, 
+			'size'				=> 'thumbnail', 
+			'class'				=> ''
+			)
+		);
+	} 
+}
+
+add_action( 'wcvendors_admin_after_shop_name', 'wcv_cpf_cnpj_maker_admin' );
+function wcv_cpf_cnpj_maker_admin( $user ) {
+?>
+  <tr>
+    <th><label for="<!-- _wcv_custom_settings_cpf_cnpj_maker -->"><?php _e( 'CPF ou CNPJ', 'wcvendors-pro' ); ?></label></th>
+    <td>
+    	<?php 
+
+    		$img_id = get_user_meta( $user->ID, '_wcv_custom_settings_cpf_cnpj_maker', true ); 
+    		if( !empty( $img_id ) ){
+    			echo wp_get_attachment_image( $img_id, array('350', '300'), "", array( "class" => "img-responsive" ) ); 
+    		} 		
+    	?>
+    </td>
+  </tr>
+<?php
+}
+
+/**
+ * Add Field upload Comprovante de Residência
+ */
+function upload_comprovante_residencia_maker( ){ 
+	if ( class_exists( 'WCVendors_Pro' ) ){ 
+		$key = '_wcv_custom_settings_comprovante_residencia_maker'; 
+		$value = get_user_meta( get_current_user_id(), $key, true ); 
+		WCVendors_Pro_Form_Helper::file_uploader( apply_filters( 'wcv_vendor_comprovante_residencia_maker', array(  
+			'header_text'		=> __('Enviar Comprovante de Residência', 'wcvendors-pro' ), 
+			'add_text' 			=> __('Adicionar Imagem', 'wcvendors-pro' ), 
+			'remove_text'		=> __('Remover Imagem', 'wcvendors-pro' ), 
+			'image_meta_key' 	=> $key, 
+			'save_button'		=> __('Salvar Comprovante de Residência', 'wcvendors-pro' ), 
+			'window_title'		=> __('Selecionar Comprovante de Residência', 'wcvendors-pro' ), 
+			'value'				=> $value, 
+			'size'				=> 'thumbnail', 
+			'class'				=> ''
+			)
+		) );
+	} 
+}
+
+add_action( 'wcvendors_admin_after_shop_name', 'wcv_comprovante_residencia_maker_admin' );
+function wcv_comprovante_residencia_maker_admin( $user ) {
+?>
+  <tr>
+    <th><label for="<!-- _wcv_custom_settings_comprovante_residencia_maker -->"><?php _e( 'Comprovante residência', 'wcvendors-pro' ); ?></label></th>
+    <td>
+    	<?php 
+
+    		$img_id = get_user_meta( $user->ID, '_wcv_custom_settings_comprovante_residencia_maker', true ); 
+    		if( !empty( $img_id ) ){
+    			echo wp_get_attachment_image( $img_id, array('350', '300'), "", array( "class" => "img-responsive" ) ); 
+    		} 		
+    	?>
+	</td>
+  </tr>
+<?php
+}
+
+
+
+
+

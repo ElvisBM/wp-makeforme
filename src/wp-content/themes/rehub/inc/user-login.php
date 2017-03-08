@@ -27,6 +27,11 @@ function rehub_login_register_modal() {
 					<div id="rehub-register-popup">
 					<div class="rehub-register-popup">	 
 						<div class="re_title_inmodal"><?php _e('Criar conta', 'rehub_framework'); ?></div>
+						<div class="description">
+							
+							<p>Cadastre-se e conheça o mundo de Gostosuras do MakerMe!<br />Para montar sua loja e se tornar um Maker, marque a opção "Quero ser um Maker/Vendedor".<br />
+							Caso tenha alguma dúvida sobre o processo, <a href="<?php echo get_page_link(5890); ?>">acesse aqui</a>.</p><br />
+						</div>
 						<?php if (rehub_option('custom_msg_popup') !='') {
 							echo '<div class="mb15 mt15 rh_custom_msg_popup">';
 							echo do_shortcode(rehub_option('custom_msg_popup'));
@@ -98,7 +103,7 @@ function rehub_login_register_modal() {
 								<?php do_action( 'wcvendors_apply_for_vendor_before' ); ?>
 								<div class="re-form-group mb20">
 									<div class="checkbox">
-										<label><input name="wcv_apply_as_vendor" type="checkbox"> <?php _e('É um maker/vendedor?', 'rehub_framework'); ?></label>
+										<label><input name="wcv_apply_as_vendor" type="checkbox"> <?php _e('Quero ser um maker/vendedor?', 'rehub_framework'); ?></label>
 									</div>
 								</div>
 								<?php do_action( 'wcvendors_apply_for_vendor_after' ); ?>
@@ -344,7 +349,7 @@ function rehub_register_member_popup_function(){
 			}
 			elseif ($role == 'customer'){
 				$status = 'customer';				
-				$message = '<div class="wpsm_box green_type">'.__( 'Parabéns! Agora você deve adicionar suas informações e produtos, enquanto atualizamos o Make for Me.', 'rehub_framework').'</div>';
+				$message = '<div class="wpsm_box green_type">'.__( 'Parabéns! Agora você deve adicionar as informações de sua loja para a ativação, enquanto atualizamos o Maker Me.', 'rehub_framework').'</div>';
 			}			
 			else{
                 $status = 'pending';

@@ -1513,7 +1513,7 @@ class WCVendors_Pro_Store_Form {
 			// Vendor Terms checkbox 
 			WCVendors_Pro_Form_Helper::input( apply_filters( 'wcv_shipping_national_qty', array( 
 						'id' 				=> '_wcv_agree_to_terms', 
-						'label' 			=> sprintf( __( 'I have read and accepted the <a href="%s">terms and conditions</a>', 'wcvendors-pro' ), get_permalink( $terms_page ) ), 
+						'label' 			=> sprintf( __( 'Eu li e aceito os <a href="%s">termos e condições</a>', 'wcvendors-pro' ), get_permalink( $terms_page ) ), 
 						'type' 				=> 'checkbox', 
 						'class' 			=> '',
 						'wrapper_start' 	=> '<div class="wcv-cols-group wcv-horizontal-gutters"><div class="all-100>', 

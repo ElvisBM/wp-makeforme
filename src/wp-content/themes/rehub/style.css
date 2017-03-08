@@ -27,7 +27,6 @@ BASIC STYLES
 body { background-color: #f5f5f5; color: #000; font: 15px Arial, Helvetica, trebuchet ms; }
 a { text-decoration: none; outline: none !important; -webkit-transition: all 0.4s ease 0s; -moz-transition: all 0.4s ease 0s; -ms-transition: all 0.4s ease 0s; -o-transition: all 0.4s ease 0s; transition: all 0.4s ease 0s; }
 a:after{-webkit-transition: all 0.4s ease 0s; -moz-transition: all 0.4s ease 0s; -ms-transition: all 0.4s ease 0s; -o-transition: all 0.4s ease 0s; transition: all 0.4s ease 0s;}
-.post a { text-decoration: underline; color:#111}
 .btn{ text-decoration: none;}
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; color: #000;}
@@ -64,7 +63,7 @@ text-shadow: none;
 /****************************************************************************
 Header
 ****************************************************************************/
-#main_header { width: 100%; background-color: #fff; position: relative; z-index: 9000 }
+#main_header { width: 100%; background-color: #fff; position: relative; z-index: 1000 }
 .header_top_wrap{background-color: #fff;}
 .header-top { width: 1200px; margin: 0 auto; border-bottom: 1px solid #dddddd; border-left: 1px solid #dddddd; border-right: 1px solid #dddddd; min-height: 40px; overflow: visible; box-sizing: border-box; }
 .header-top .top-nav {float: left;overflow: hidden }
@@ -677,14 +676,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',end
 .side-twocol figure img, .side-twocol figure{height: 100%; width: 100% }
 .col-feat-grid{z-index:2; background-position: center center;background-size: cover; box-shadow: -5px 0px 0px rgba(255, 255, 255, 1), 0px -5px 0px rgba(255, 255, 255, 1); position: relative;}
 .col-feat-grid.item-1, .col-feat-50{ width: 50%; float: left; height: 450px}
-.col-feat-50 .col-feat-grid{ width: 50%; float: left; height: 225px}
+.col-feat-50 .col-feat-grid{ width: 50%; float: left; height: 225px;margin: 2px;}
 .featured_grid{overflow: hidden;}
 .feat_overlay_link{width: 100%;height: 100%;position: absolute;z-index: 1; bottom: 0; left: 0; right: 0; bottom: 0}
 .col-feat-grid.item-1 .text_in_thumb h2{ font-size: 28px; line-height: 34px}
 .featured_grid .text_in_thumb h2{margin-top: 0 }
 .featured_grid .wcvendors_sold_by_in_loop{color: #eee}
 .featured_grid .wcvendors_sold_by_in_loop a{color: #fff}
-.woopriceInGrid {margin: 0 0 12px 0;background: #000000;padding: 4px 8px;display: inline-block;font-weight: bold;}
+.woopriceInGrid {margin: 0 0 12px 0;background: #53ad9d;padding: 4px 8px;display: inline-block;font-weight: bold;}
 .woopriceInGrid del{font-size: 0.8em;opacity: 0.8;font-weight: normal;}
 @media screen and (max-width: 1224px) and (min-width: 1024px) {
 .col-feat-grid.item-1, .col-feat-50{ height: 400px}
@@ -1702,7 +1701,7 @@ body .bg_r_b{ background-position: right bottom !important;}body .bg_r_t{ backgr
 .re-form-group .option-label{ margin: 0 5px 5px 0 }
 .xprofile_hidename .field_name, .re-form-group .clear-value{display: none;}
 #xp-woo-profile-details-section .xp-woo-description{margin: 0 0 0 0; font-size: 80%; color: #777}
-input[type="text"], textarea, input[type="tel"], input[type="password"], input[type="email"], input[type="url"]{box-sizing:border-box;outline:0;padding: 9px 10px;color: #444;background:#53ad9d; font-size:1.2em; border-radius: 0; border:0px;line-height: 18px; -webkit-appearance: none;}
+input[type="text"], textarea, input[type="tel"], input[type="password"], input[type="email"], input[type="url"]{box-sizing:border-box;outline:0;padding: 9px 10px;color: #444;background:rgba(83, 173, 157, 0.23); font-size:1.2em; border-radius: 0; border:0px;line-height: 18px; -webkit-appearance: none;}
 input[type="text"]:focus, textarea:focus, input[type="tel"]:focus, input[type="password"]:focus, input[type="email"]:focus{border-color:#444;}
 .rh_table_image{display: table-cell; vertical-align: middle; text-align: center;}
 .rh_table_image img{width: auto; max-width: 100%; height: auto;}
@@ -2696,7 +2695,7 @@ body.pgwModalOpen { overflow: hidden; }
 #pgwModalBackdrop { background: #000; opacity: 0.5; filter: alpha(opacity=50); }
 #pgwModal .pm-body { background-color: #fff; -webkit-box-shadow: 0 0px 15px #444; box-shadow: 0 0px 15px #444; }
 #pgwModal .pm-title { background: #e5e5e5; padding: 5px 0 6px; border-bottom: 1px solid #d5d5d5;  font-size: 1rem; min-height: 25px; }
-#pgwModal .pm-content { background: #f6f3a6; padding: 25px;  text-align: left;color: #53ad9d;}
+#pgwModal .pm-content { background: #fff; padding: 25px;  text-align: left;color: #53ad9d;}
 #pgwModal .pm-close { cursor: pointer; position: absolute; top: 0; right: 0;height: 30px; width: 30px; }
 #pgwModal .pm-close span.pm-icon:before { display: block; height: 30px; width: 30px; content: "x"; font: 16px/30px Verdana; color: #fff;  background-color: rgba(222, 80, 70, 0.54);text-align: center;}
 #pgwModal .pm-close:hover span.pm-icon:before { background-color: #999}

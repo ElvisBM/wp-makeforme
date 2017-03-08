@@ -161,7 +161,9 @@ $post_status				= ( isset($product) && null !== $product ) ? $product->post->pos
 			<?php do_action( 'wcv_after_inventory_tab', $object_id ); ?>
 
 			<?php do_action( 'wcv_before_shipping_tab', $object_id ); ?>
-
+			<?php 
+				if(false){
+			?>
 			<!-- Shipping  -->
 			<div class="wcv-product-shipping shipping_product_data tabs-content" id="shipping">
 
@@ -182,6 +184,9 @@ $post_status				= ( isset($product) && null !== $product ) ? $product->post->pos
 				</div>
 			
 			</div>
+			<?php 
+				}//endiffalse
+			?>
 
 			<?php do_action( 'wcv_after_shipping_tab', $object_id ); ?>
 

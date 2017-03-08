@@ -3,7 +3,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: WC Vendors Pro\n"
 "POT-Creation-Date: 2016-03-19 13:04+0000\n"
-"PO-Revision-Date: 2017-02-03 18:36-0200\n"
+"PO-Revision-Date: 2017-02-27 12:26-0300\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +24,7 @@ msgstr "loja"
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:82
 msgid "Trusted Vendor"
-msgstr "Vendedor de confiança"
+msgstr "Maker de confiança"
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:83
 msgid " Check to allow this vendor to publish products immediately regardless of global publishing rules."
@@ -32,7 +32,7 @@ msgstr " Marque para permitir que este vendedor publique de imediato produtos, i
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:87
 msgid "Untrusted Vendor"
-msgstr "Vendedor não confiável"
+msgstr "Maker não confiável"
 
 #: admin/class-wcvendors-pro-admin-vendor-controller.php:88
 msgid " Check to require all products submitted to be reviewed, regardless of global publishing rules. This overrides the trusted vendor option."
@@ -232,11 +232,11 @@ msgstr "Taxa Fixa por País"
 #: admin/class-wcvendors-pro-shipping.php:106
 #: includes/class-wcvendors-pro.php:606
 msgid "Vendor Shipping"
-msgstr "Entrega do Vendedor"
+msgstr "Entrega do Maker"
 
 #: admin/class-wcvendors-pro-shipping.php:65
 msgid "This shipping module is for your vendors to input their own shipping prices on their Pro Dashboard.  <p>The prices you enter for Product Cost and Handling Fees will only be used if a vendor has not entered their own prices on their Pro Vendor Dashboard.  <p>The simplest shipping system is Flat Rate, where vendors can input a cost within their country, and outside of their country.  Country Table Rate will require vendors to enter country codes that they ship to and set prices for each country.  <p><strong><a href=\"https://www.wcvendors.com/kb/pro-shipping/\" target=\"prodocs\">WC Vendors Pro Shipping Documentation</a></strong>"
-msgstr "Este módulo de Entrega é para os seus vendedores introduzirem os seus próprios preços de Entrega no Painel Pro.  <p>Os preços que você coloca no custo do produto e taxas de manipulação só serão usados se um vendedor não carregou os seus próprios preços no Painel Vendedor Pro.  <p>O sistema de Entrega mais simples é a taxa fixa, onde os vendedores podem inserir um custo dentro e fora do seu país. A opção de Entrega Taxa por País exigirá que os vendedores digitem códigos de país para os quais pretendem vender e carreguem os preços de para cada país. <p><strong><a href=\"https://www.wcvendors.com/kb/pro-shipping/\" target=\"prodocs\">WC Vendors Pro Shipping Documentation</a></strong>"
+msgstr "Este módulo de Entrega é para os seus vendedores introduzirem os seus próprios preços de Entrega no Painel Pro.  <p>Os preços que você coloca no custo do produto e taxas de manipulação só serão usados se um vendedor não carregou os seus próprios preços no Painel Maker Pro.  <p>O sistema de Entrega mais simples é a taxa fixa, onde os vendedores podem inserir um custo dentro e fora do seu país. A opção de Entrega Taxa por País exigirá que os vendedores digitem códigos de país para os quais pretendem vender e carreguem os preços de para cada país. <p><strong><a href=\"https://www.wcvendors.com/kb/pro-shipping/\" target=\"prodocs\">WC Vendors Pro Shipping Documentation</a></strong>"
 
 #: admin/class-wcvendors-pro-shipping.php:97
 msgid "Standalone Method"
@@ -561,7 +561,7 @@ msgstr "O sistema de avaliações dos vendedores não funcionará sem esta pági
 
 #: admin/partials/wcvendors-pro-system-status.php:64
 msgid "Vendor Shop Permalink"
-msgstr "Ligação Permanente da Loja do Vendedor"
+msgstr "Ligação Permanente da Loja do Maker"
 
 #: admin/partials/wcvendors-pro-system-status.php:68
 #, php-format
@@ -630,7 +630,7 @@ msgstr "Título"
 #: includes/class-wcvendors-pro-ratings-admin-table.php:88
 #: public/class-wcvendors-pro-store-controller.php:919
 msgid "Vendor"
-msgstr "Vendedor"
+msgstr "Maker"
 
 #: includes/class-wcvendors-pro-ratings-admin-table.php:89
 #: includes/class-wcvendors-pro-ratings-controller.php:638
@@ -674,7 +674,7 @@ msgstr "Avaliação(s) do vendedor apagada."
 #: includes/class-wcvendors-pro.php:719
 #: includes/partials/ratings/admin/wcvendors-pro-ratings-table-title.php:16
 msgid "Vendor Ratings"
-msgstr "Avaliações do Vendedor"
+msgstr "Avaliações do Maker"
 
 #: includes/class-wcvendors-pro-ratings-admin-table.php:386
 msgid "No vendor ratings found."
@@ -822,7 +822,7 @@ msgstr "Bloqueie o acesso dos vendedores a /wp-admin/."
 
 #: includes/class-wcvendors-pro.php:550
 msgid "Vendor Dashboard Notice"
-msgstr "Aviso Painel do Vendedor"
+msgstr "Aviso Painel do Maker"
 
 #: includes/class-wcvendors-pro.php:551
 msgid "Display a message to vendors on all dashboard pages below the dashboard menu."
@@ -1029,7 +1029,7 @@ msgstr "Selecione uma imagem para o banner padrão da loja"
 
 #: includes/class-wcvendors-pro.php:720
 msgid "Vendor Ratings System."
-msgstr "Sistema de Avaliação do Vendedor."
+msgstr "Sistema de Avaliação do Maker."
 
 #: includes/class-wcvendors-pro.php:724
 msgid "Feedback Form Page"
@@ -1041,7 +1041,7 @@ msgstr "A página para exibir o formulário dos comentários terá o [wcv_feedba
 
 #: includes/class-wcvendors-pro.php:733
 msgid "Vendor Ratings Label"
-msgstr "Etiqueta de Avaliação do Vendedor"
+msgstr "Etiqueta de Avaliação do Maker"
 
 #: includes/class-wcvendors-pro.php:734
 msgid "The vendor ratings tab title on the single product page."
@@ -1416,7 +1416,7 @@ msgstr "Descrição da Loja"
 
 #: includes/class-wcvendors-pro.php:981 includes/class-wcvendors-pro.php:1061
 msgid "Seller info"
-msgstr "Informação do Vendedor"
+msgstr "Informação do Maker"
 
 #: includes/class-wcvendors-pro.php:982 includes/class-wcvendors-pro.php:1062
 msgid "Company / blog URL"
@@ -1628,7 +1628,7 @@ msgstr "Modificou a subscrição para %s, pelo que terá que colocar o código d
 
 #: includes/partials/ratings/admin/wcvendors-pro-ratings-feedback-form.php:30
 msgid "Edit Vendor Rating"
-msgstr "Editar Avaliação do Vendedor"
+msgstr "Editar Avaliação do Maker"
 
 #: includes/partials/ratings/admin/wcvendors-pro-ratings-feedback-form.php:31
 msgid "Rating Details"
@@ -3119,17 +3119,17 @@ msgstr "Produto % desconto"
 #: public/class-wcvendors-pro-shop-coupon-controller.php:470
 #: public/class-wcvendors-pro-store-controller.php:88
 msgid "Vendor Store"
-msgstr "Loja de Vendedor"
+msgstr "Loja de Maker"
 
 #: public/class-wcvendors-pro-store-controller.php:87
 #: public/class-wcvendors-pro-store-controller.php:89
 #: public/class-wcvendors-pro-store-controller.php:99
 msgid "Vendor Stores"
-msgstr "Lojas do Vendedor"
+msgstr "Lojas do Maker"
 
 #: public/class-wcvendors-pro-store-controller.php:90
 msgid "New Vendor Store"
-msgstr "Nova Loja de Vendedor"
+msgstr "Nova Loja de Maker"
 
 #: public/class-wcvendors-pro-store-controller.php:91
 msgid "Add New"
@@ -3137,19 +3137,19 @@ msgstr "Adicionar Novo"
 
 #: public/class-wcvendors-pro-store-controller.php:92
 msgid "Add New Vendor Store"
-msgstr "Adicionar Nova Loja de Vendedor"
+msgstr "Adicionar Nova Loja de Maker"
 
 #: public/class-wcvendors-pro-store-controller.php:93
 msgid "Edit Vendor Store"
-msgstr "Editar Loja de Vendedor"
+msgstr "Editar Loja de Maker"
 
 #: public/class-wcvendors-pro-store-controller.php:94
 msgid "View Vendor Store"
-msgstr "Ver Loja de Vendedor"
+msgstr "Ver Loja de Maker"
 
 #: public/class-wcvendors-pro-store-controller.php:95
 msgid "Search Vendor Stores"
-msgstr "Procurar Loja de Vendedor"
+msgstr "Procurar Loja de Maker"
 
 #: public/class-wcvendors-pro-store-controller.php:96
 msgid "No Vendor Stores found"
@@ -3157,11 +3157,11 @@ msgstr "Loja de vendedor não encontrada"
 
 #: public/class-wcvendors-pro-store-controller.php:97
 msgid "No Vendor Stores found in trash"
-msgstr "Nenhuma Loja de Vendedor encontrada no lixo"
+msgstr "Nenhuma Loja de Maker encontrada no lixo"
 
 #: public/class-wcvendors-pro-store-controller.php:98
 msgid "Parent Vendor Store"
-msgstr "Loja Principal de Vendedor"
+msgstr "Loja Principal de Maker"
 
 #: public/class-wcvendors-pro-store-controller.php:101
 msgid "Set store banner"
@@ -3178,7 +3178,7 @@ msgstr "Utilizar como banner da loja"
 #: public/class-wcvendors-pro-store-controller.php:135
 #, php-format
 msgid "updated. <a target=\"_blank\" href=\"%s\">View Vendor Store</a>"
-msgstr "atualizado. <a target=\"_blank\" href=\"%s\">Ver Loja de Vendedor</a>"
+msgstr "atualizado. <a target=\"_blank\" href=\"%s\">Ver Loja de Maker</a>"
 
 #: public/class-wcvendors-pro-store-controller.php:136
 msgid "Custom field updated."
@@ -3200,7 +3200,7 @@ msgstr "restaurado para revisão desde %s"
 #: public/class-wcvendors-pro-store-controller.php:141
 #, php-format
 msgid "published. <a href=\"%s\">View Vendor Store</a>"
-msgstr "publicado. <a href=\"%s\">Ver Loja de Vendedor/a>"
+msgstr "publicado. <a href=\"%s\">Ver Loja de Maker/a>"
 
 #: public/class-wcvendors-pro-store-controller.php:142
 msgid "saved."
@@ -3209,12 +3209,12 @@ msgstr "salvo."
 #: public/class-wcvendors-pro-store-controller.php:143
 #, php-format
 msgid "submitted. <a target=\"_blank\" href=\"%s\">Preview Vendor Store</a>"
-msgstr "submetido. <a target=\"_blank\" href=\"%s\">Pré-visualizar Loja de Vendedor</a>"
+msgstr "submetido. <a target=\"_blank\" href=\"%s\">Pré-visualizar Loja de Maker</a>"
 
 #: public/class-wcvendors-pro-store-controller.php:144
 #, php-format
 msgid "scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview Vendor Store</a>"
-msgstr "programado para: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Pré-visualizar Loja de Vendedor</a>"
+msgstr "programado para: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Pré-visualizar Loja de Maker</a>"
 
 #: public/class-wcvendors-pro-store-controller.php:146
 msgid "M j, Y @ G:i"
@@ -3223,7 +3223,7 @@ msgstr "M j, Y @ G:i"
 #: public/class-wcvendors-pro-store-controller.php:147
 #, php-format
 msgid "draft updated. <a target=\"_blank\" href=\"%s\">Preview Vendor Store</a>"
-msgstr "rascunho atualizado. <a target=\"_blank\" href=\"%s\">Pré-visualizar Loja de Vendedor</a>"
+msgstr "rascunho atualizado. <a target=\"_blank\" href=\"%s\">Pré-visualizar Loja de Maker</a>"
 
 #: public/class-wcvendors-pro-store-controller.php:260
 #: public/forms/class-wcvendors-pro-store-form.php:456
@@ -3263,7 +3263,7 @@ msgstr "Não "
 
 #: public/class-wcvendors-pro-vendor-controller.php:397
 msgid "The Vendor Dashboard is only visible to Vendors. Due to WordPress capabilities and its limitations, Administrators can not view it. You should create a test vendor user account, with the role Vendor, and use that account to view and experience the Vendor Dashboard. "
-msgstr "O Painel de vendedor só é visível para os vendedores. Devido aos recursos do WordPress e às suas limitações, os administradores não conseguem visualizá-lo. Deve criar uma conta de vendedor de testes e usá-la para ver e experimentar o Painel de Vendedor. "
+msgstr "O Painel de vendedor só é visível para os vendedores. Devido aos recursos do WordPress e às suas limitações, os administradores não conseguem visualizá-lo. Deve criar uma conta de vendedor de testes e usá-la para ver e experimentar o Painel de Maker. "
 
 #: public/class-wcvendors-pro-vendor-controller.php:410
 msgid "pending"
@@ -3838,7 +3838,7 @@ msgstr "Este é o número de contacto da sua loja"
 #: public/forms/class-wcvendors-pro-store-form.php:533
 #: public/forms/class-wcvendors-pro-store-form.php:542
 msgid "Seller Info"
-msgstr "Informação do Vendedor"
+msgstr "Informação do Maker"
 
 #: public/forms/class-wcvendors-pro-store-form.php:580
 #: public/forms/class-wcvendors-pro-store-form.php:588
@@ -4519,11 +4519,11 @@ msgstr "Qualquer"
 
 #: templates/front/vendor-signup-form.php:15
 msgid "Vendor Application"
-msgstr "Pedido de Vendedor"
+msgstr "Pedido de Maker"
 
 #: templates/front/vendor-signup-form.php:103
 msgid "Apply to be Vendor"
-msgstr "Solicitação para Vendedor"
+msgstr "Quero ser um Maker :)"
 
 #: templates/store/store-ratings.php:23
 msgid "Customer Ratings"

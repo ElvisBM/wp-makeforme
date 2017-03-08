@@ -25,7 +25,7 @@ get_header(); ?>
     <div class="content"> 
 		<div class="clearfix">
 		      <!-- Main Side -->
-              <div class="main-side page clearfix <?php if(rehub_option('woo_single_sidebar') !='1') {echo ' full_width';}?>">
+              <div class="page clearfix <?php if(rehub_option('woo_single_sidebar') !='1') {echo ' full_width';}?>">
                 <article class="post" id="page-<?php the_ID(); ?>">
 	               <?php
                         /**
@@ -41,14 +41,6 @@ get_header(); ?>
 					<?php endwhile; // end of the loop. ?>               
                 </article>
 			</div>	
-            <!-- /Main Side --> 
-            <!-- Sidebar -->
-            <?php if(rehub_option('woo_single_sidebar') !='1'):?>
-            <?php else :?>
-                <?php get_sidebar('shop'); ?>
-            <?php endif;?>
-            <!-- /Sidebar --> 
-
         </div>
     </div>
     <!-- /CONTENT -->     

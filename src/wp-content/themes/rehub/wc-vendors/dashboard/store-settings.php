@@ -36,7 +36,7 @@ foreach ( $settings_social as $value) { if ( 1 == $value ) $social_count +=1;  }
 				<!-- Store Name -->
 				<?php WCVendors_Pro_Store_Form::store_name( $store_name ); ?>
 				<?php do_action( 'wcvendors_settings_after_shop_name' ); ?>
-
+				
 				<!-- Company URL -->
 				<?php do_action( 'wcvendors_settings_before_company_url' ); ?>
 				<?php WCVendors_Pro_Store_Form::company_url( ); ?>
@@ -72,6 +72,24 @@ foreach ( $settings_social as $value) { if ( 1 == $value ) $social_count +=1;  }
 						Tamanho:  Até 4mb
 					</p>
 				</div>
+				
+				<div class="uploads-files">
+					<label>Imagem do CPF ou CNPJ<small>Obrigátorio</small></label>
+					<div class="control">
+						<?php upload_cpf_cnpj_maker(); ?>
+						<p>Formato: JPEG ou PNG <br />Tamanho: Até 4mb</p>
+					</div>
+				</div>
+
+				<div class="uploads-files">
+					<label>Imagem do Comprovante de Residência<small>Obrigátorio</small></label>
+					<div class="control">
+						<?php upload_comprovante_residencia_maker(); ?>
+						<p>Formato: JPEG ou PNG <br />Tamanho: Até 4mb</p>
+					</div>
+				</div>
+
+				
 			</div>
 		</div>
 	</div>

@@ -3574,7 +3574,7 @@ msgstr ""
 # @ GMW
 #: plugins/friends/includes/gmw-fl-update-location.php:39
 #, fuzzy
-msgid "Location successfully saved!"
+msgid "Endereço salvo com Sucesso!"
 msgstr "Daten wurden erfolgreich gespeichert!"
 
 # @ GMW

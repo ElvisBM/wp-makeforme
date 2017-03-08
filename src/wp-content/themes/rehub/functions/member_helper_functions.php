@@ -477,7 +477,7 @@ function rh_gmw_fl_update_location() {
             ) ) === FALSE ) :
         echo __( 'There was a problem saving your location.', 'rehub_framework' );
     else :
-        echo __( 'Location successfully saved!', 'rehub_framework' );
+        echo __( 'Endereço salvo com Sucesso!', 'rehub_framework' );
         do_action( 'gmw_fl_after_location_saved', $userid, $location );
     endif;
     die();

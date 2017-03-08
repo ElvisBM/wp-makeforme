@@ -6137,7 +6137,7 @@ msgid "There was a problem saving your location."
 msgstr ""
 
 #: ../functions/member_helper_functions.php:480
-msgid "Location successfully saved!"
+msgid "Endereço salvo com Sucesso!"
 msgstr ""
 
 #: ../functions/member_helper_functions.php:496

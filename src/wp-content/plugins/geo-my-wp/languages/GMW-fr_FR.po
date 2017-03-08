@@ -3739,7 +3739,7 @@ msgstr "Un probl&egrave; est survenu en sauvegardant votre position."
 
 # @ GMW
 #: plugins/friends/includes/gmw-fl-update-location.php:39
-msgid "Location successfully saved!"
+msgid "Endereço salvo com Sucesso!"
 msgstr "La position a bien &eacute;t&eacute; sauvegard&eacute;e !"
 
 # @ GMW

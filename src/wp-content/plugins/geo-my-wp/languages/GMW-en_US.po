@@ -3076,7 +3076,7 @@ msgid "There was a problem saving your location."
 msgstr ""
 
 #: plugins/friends/includes/gmw-fl-update-location.php:39
-msgid "Location successfully saved!"
+msgid "Endereço salvo com Sucesso!"
 msgstr ""
 
 #: plugins/friends/includes/gmw-fl-update-location.php:69

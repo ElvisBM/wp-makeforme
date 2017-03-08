@@ -1,5 +1,6 @@
 # remove uploads
 src/wp-content/uploads/
+src/wp-content/uploads
 
 #remove wp-config-sample
 src/wp-config-sample.php
